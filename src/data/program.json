@@ -1,0 +1,82 @@
+[
+  {
+    "id": "MS1",
+    "title": "Mini‑Symposium: Topological Methods in Biophysics",
+    "organizers": [
+      { "name": "Y. Sakamaki", "affiliation": "UArk" },
+      { "name": "M. Beyzavi", "affiliation": "UArk" }
+    ],
+    "day": "2025-10-17",
+    "room": "Room 201, Science Hall",
+    "timezone": "America/Chicago",
+    "sessions": [
+      {
+        "start": "2025-10-17T09:00:00-05:00",
+        "end": "2025-10-17T10:30:00-05:00",
+        "chair": "J. Chen",
+        "talks": [
+          {
+            "start": "2025-10-17T09:00:00-05:00",
+            "end": "2025-10-17T09:20:00-05:00",
+            "title": "Persistent Laplacians for Protein Dynamics",
+            "speakers": [{ "name": "Rachel Chen", "affiliation": "UArk" }]
+          },
+          {
+            "start": "2025-10-17T09:20:00-05:00",
+            "end": "2025-10-17T09:45:00-05:00",
+            "title": "Energy‑Aware Diffusion Models for MD",
+            "speakers": [{ "name": "A. Researcher", "affiliation": "NYU" }]
+          },
+          {
+            "start": "2025-10-17T09:45:00-05:00",
+            "end": "2025-10-17T10:10:00-05:00",
+            "title": "Graph Neural Operators for Binding Free Energy",
+            "speakers": [{ "name": "B. Scientist", "affiliation": "UT Austin" }]
+          },
+          {
+            "start": "2025-10-17T10:10:00-05:00",
+            "end": "2025-10-17T10:30:00-05:00",
+            "title": "Panel Q&A",
+            "speakers": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "MS2",
+    "title": "Mini‑Symposium: ML for Materials",
+    "organizers": [{ "name": "K. Lee", "affiliation": "MIT" }],
+    "day": "2025-10-17",
+    "room": "Auditorium A",
+    "timezone": "America/Chicago",
+    "sessions": [
+      {
+        "start": "2025-10-17T11:00:00-05:00",
+        "end": "2025-10-17T12:30:00-05:00",
+        "chair": "K. Lee",
+        "talks": [
+          {
+            "start": "2025-10-17T11:00:00-05:00",
+            "end": "2025-10-17T11:30:00-05:00",
+            "title": "Self‑Supervised Graph Pretraining for Crystals",
+            "speakers": [{ "name": "L. Gomez", "affiliation": "Caltech" }]
+          },
+          {
+            "start": "2025-10-17T11:30:00-05:00",
+            "end": "2025-10-17T12:00:00-05:00",
+            "title": "Diffusion on Manifolds for Microstructures",
+            "speakers": [{ "name": "P. Singh", "affiliation": "UIUC" }]
+          },
+          {
+            "start": "2025-10-17T12:00:00-05:00",
+            "end": "2025-10-17T12:30:00-05:00",
+            "title": "Roundtable: Datasets & Benchmarks",
+            "speakers": []
+          }
+        ]
+      }
+    ]
+  }
+]
+

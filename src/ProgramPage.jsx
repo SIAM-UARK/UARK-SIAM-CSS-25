@@ -1,0 +1,289 @@
+import React, { useMemo, useState } from "react";
+import { motion } from "framer-motion";
+import { Calendar, CalendarClock, Clock, Filter, MapPin, Users, Search, Download, Globe2 } from "lucide-react";
+import programData from "./data/program.json";
+
+// --- Utilities --------------------------------------------------------------
+const fmtTime = (iso, tz) =>
+  new Date(iso).toLocaleTimeString(undefined, {
+    hour: "2-digit",
+    minute: "2-digit",
+    timeZone: tz,
+  });
+
+const fmtDay = (iso, tz) =>
+  new Date(iso).toLocaleDateString(undefined, {
+    weekday: "short",
+    month: "short",
+    day: "numeric",
+    timeZone: tz,
+  });
+
+function downloadICS(filename, ics) {
+  const blob = new Blob([ics], { type: "text/calendar;charset=utf-8" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = filename;
+  a.click();
+  URL.revokeObjectURL(url);
+}
+
+function createICS(ms) {
+  const lines = [
+    "BEGIN:VCALENDAR",
+    "VERSION:2.0",
+    "PRODID:-//Conference Program//EN",
+  ];
+  ms.sessions.forEach((s, si) => {
+    const uid = `${ms.id}-S${si}@program`;
+    lines.push("BEGIN:VEVENT");
+    lines.push(`UID:${uid}`);
+    lines.push(`SUMMARY:${ms.title} — Session ${si + 1}`);
+    lines.push(`DTSTART:${toICSDate(s.start)}`);
+    lines.push(`DTEND:${toICSDate(s.end)}`);
+    lines.push(`LOCATION:${escapeICS(ms.room || "TBA")}`);
+    lines.push(`DESCRIPTION:Chair: ${escapeICS(s.chair || "TBA")}`);
+    lines.push("END:VEVENT");
+    s.talks.forEach((t, ti) => {
+      lines.push("BEGIN:VEVENT");
+      lines.push(`UID:${uid}-T${ti}`);
+      const spk = t.speakers?.map((p) => p.name).join(", ") || "";
+      lines.push(`SUMMARY:${escapeICS(t.title)}${spk ? ` — ${escapeICS(spk)}` : ""}`);
+      lines.push(`DTSTART:${toICSDate(t.start)}`);
+      lines.push(`DTEND:${toICSDate(t.end)}`);
+      lines.push(`LOCATION:${escapeICS(ms.room || "TBA")}`);
+      lines.push("END:VEVENT");
+    });
+  });
+  lines.push("END:VCALENDAR");
+  return lines.join("\r\n");
+}
+
+function toICSDate(iso) {
+  // Convert ISO string to UTC Zulu format without separators
+  const d = new Date(iso);
+  const pad = (n) => String(n).padStart(2, "0");
+  return (
+    d.getUTCFullYear().toString() +
+    pad(d.getUTCMonth() + 1) +
+    pad(d.getUTCDate()) +
+    "T" +
+    pad(d.getUTCHours()) +
+    pad(d.getUTCMinutes()) +
+    pad(d.getUTCSeconds()) +
+    "Z"
+  );
+}
+
+function escapeICS(text) {
+  return String(text).replaceAll(",", "\\,").replaceAll("\n", "\\n");
+}
+
+// --- UI ---------------------------------------------------------------------
+export default function ProgramPage() {
+  const [query, setQuery] = useState("");
+  const [day, setDay] = useState("all");
+  const [tz, setTz] = useState("America/Chicago");
+
+  const allDays = useMemo(() => {
+    const dset = new Set(programData.map((m) => m.day));
+    return ["all", ...Array.from(dset).sort()];
+  }, []);
+
+  const filtered = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    return programData
+      .filter((ms) => (day === "all" ? true : ms.day === day))
+      .map((ms) => ({
+        ...ms,
+        sessions: ms.sessions.map((s) => ({
+          ...s,
+          talks: s.talks.filter((t) => {
+            if (!q) return true;
+            const hay = [t.title, ...(t.speakers || []).map((p) => p.name)].join(" ").toLowerCase();
+            return hay.includes(q);
+          }),
+        })),
+      }))
+      .filter((ms) =>
+        q
+          ? [ms.title, ms.organizers.map((o) => o.name).join(" ")].join(" ").toLowerCase().includes(q) ||
+            ms.sessions.some((s) => s.talks.length > 0)
+          : true
+      );
+  }, [query, day]);
+
+  return (
+    <div className="min-h-screen bg-neutral-50 text-neutral-900">
+      <header className="sticky top-0 z-30 backdrop-blur bg-white/80 border-b">
+        <div className="max-w-6xl mx-auto px-4 py-4 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+          <div className="flex items-center gap-3">
+            <Calendar className="h-6 w-6" />
+            <h1 className="text-2xl font-semibold">Conference Program</h1>
+          </div>
+          <div className="flex flex-col md:flex-row gap-2 md:items-center">
+            <div className="flex items-center gap-2">
+              <Globe2 className="h-4 w-4" />
+              <select
+                value={tz}
+                onChange={(e) => setTz(e.target.value)}
+                className="rounded-xl border px-3 py-2 text-sm shadow-sm"
+                aria-label="Timezone selector"
+              >
+                <option value="America/Chicago">Central (CT)</option>
+                <option value="America/New_York">Eastern (ET)</option>
+                <option value="America/Los_Angeles">Pacific (PT)</option>
+                <option value="UTC">UTC</option>
+              </select>
+            </div>
+            <div className="flex items-center gap-2">
+              <Filter className="h-4 w-4" />
+              <select
+                value={day}
+                onChange={(e) => setDay(e.target.value)}
+                className="rounded-xl border px-3 py-2 text-sm shadow-sm"
+                aria-label="Day filter"
+              >
+                {allDays.map((d) => (
+                  <option key={d} value={d}>
+                    {d === "all" ? "All days" : d}
+                  </option>
+                ))}
+              </select>
+            </div>
+            <div className="relative">
+              <Search className="h-4 w-4 absolute left-3 top-3 opacity-60" />
+              <input
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+                placeholder="Search talks, speakers, organizers…"
+                className="pl-9 pr-3 py-2 rounded-xl border text-sm shadow-sm w-64"
+                aria-label="Search"
+              />
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main className="max-w-6xl mx-auto px-4 py-8">
+        <div className="grid gap-6">
+          {filtered.map((ms, idx) => (
+            <motion.section
+              key={ms.id}
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.25, delay: idx * 0.04 }}
+              className="bg-white rounded-2xl shadow-sm border"
+            >
+              <div className="p-5 border-b flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+                <div className="flex flex-col gap-1">
+                  <h2 className="text-xl font-semibold">{ms.title}</h2>
+                  <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-neutral-600">
+                    <span className="inline-flex items-center gap-1"><CalendarClock className="h-4 w-4" />{fmtDay(ms.day, tz)} </span>
+                    {ms.room && (
+                      <span className="inline-flex items-center gap-1"><MapPin className="h-4 w-4" />{ms.room}</span>
+                    )}
+                    {ms.organizers?.length > 0 && (
+                      <span className="inline-flex items-center gap-1"><Users className="h-4 w-4" />
+                        Organizers: {ms.organizers.map((o) => o.name).join(", ")}
+                      </span>
+                    )}
+                  </div>
+                </div>
+                <div className="flex items-center gap-2">
+                  <button
+                    onClick={() => downloadICS(`${ms.id}.ics`, createICS(ms))}
+                    className="inline-flex items-center gap-2 rounded-xl border px-3 py-2 text-sm shadow-sm hover:bg-neutral-50"
+                    aria-label="Download calendar"
+                  >
+                    <Download className="h-4 w-4" /> Export .ics
+                  </button>
+                </div>
+              </div>
+
+              <div className="p-5 grid gap-4">
+                {ms.sessions.map((s, si) => (
+                  <div key={si} className="rounded-xl border bg-neutral-50">
+                    <div className="p-4 flex flex-wrap items-center gap-4 border-b">
+                      <div className="inline-flex items-center gap-2 text-sm">
+                        <Clock className="h-4 w-4" />
+                        <span>
+                          {fmtTime(s.start, tz)} – {fmtTime(s.end, tz)}
+                        </span>
+                      </div>
+                      <div className="text-sm text-neutral-600">Chair: {s.chair || "TBA"}</div>
+                    </div>
+                    <ul className="divide-y">
+                      {s.talks.map((t, ti) => (
+                        <li key={ti} className="p-4 bg-white">
+                          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
+                            <div>
+                              <div className="text-sm text-neutral-600">
+                                {fmtTime(t.start, tz)} – {fmtTime(t.end, tz)}
+                              </div>
+                              <div className="font-medium">{t.title}</div>
+                              {t.speakers?.length > 0 && (
+                                <div className="text-sm text-neutral-700">
+                                  {t.speakers.map((p, i) => (
+                                    <span key={i}>
+                                      {p.name}
+                                      {p.affiliation ? ` (${p.affiliation})` : ""}
+                                      {i < t.speakers.length - 1 ? ", " : ""}
+                                    </span>
+                                  ))}
+                                </div>
+                              )}
+                            </div>
+                          </div>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </motion.section>
+          ))}
+
+          {filtered.length === 0 && (
+            <div className="text-center text-neutral-600 py-16">
+              No results. Try a different day or search term.
+            </div>
+          )}
+        </div>
+      </main>
+
+      <footer className="max-w-6xl mx-auto px-4 py-10 text-sm text-neutral-500">
+        © {new Date().getFullYear()} Your Conference. Program subject to change.
+      </footer>
+    </div>
+  );
+}
+
+/* --------------------------------------------------------------------------
+HOW TO USE THIS COMPONENT
+
+1) Replace SAMPLE_DATA with your own data. A simple JSON export from your
+   spreadsheet will work if you map columns to the fields in SAMPLE_DATA.
+   Minimal required fields per talk: start, end, title, (optional speakers[])
+
+2) Timezone handling: store times in ISO 8601 with offset (e.g., 2025-10-17T09:00:00-05:00).
+   The selector lets attendees view in their own timezone (client side).
+
+3) Export .ics: Each mini-symposium can be downloaded as a calendar file
+   containing a VEVENT for the session and each talk. You can also add per-talk
+   download buttons similarly if desired.
+
+4) Accessibility: All interactive elements have labels. Headings are ordered.
+   Ensure color contrast meets WCAG AA if you tweak styles.
+
+5) Styling: Uses Tailwind utility classes for a clean, responsive layout.
+   You can replace with your design system. Cards scale nicely on mobile.
+
+6) Deployment: Place this component in your site/app. If you use plain HTML,
+   I can provide a static HTML version with minimal JS—just ask.
+
+7) Data at larger scale: If you have many mini-symposia over multiple days,
+   consider grouping by day first, then by mini-symposium. The same component
+   logic applies; use a top-level array per day.
+-------------------------------------------------------------------------- */
