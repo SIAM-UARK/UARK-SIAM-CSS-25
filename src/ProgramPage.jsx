@@ -2,6 +2,8 @@ import React, { useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import { Calendar, CalendarClock, Clock, Filter, MapPin, Users, Search, Download, Globe2 } from "lucide-react";
 import { Link } from 'react-router-dom'
+// Load abstracts to auto-add minisymposia not present in sessions
+const abstractModules = import.meta.glob('./data/abstract/*.json', { eager: true });
 import rawSessions from "./sessions.js";
 
 // --- Utilities --------------------------------------------------------------
@@ -144,15 +146,36 @@ export default function ProgramPage() {
     // Temporary session time template
     const TEMP_SESSION_START = "2025-10-11T09:00:00-05:00";
     const TEMP_SESSION_END = "2025-10-11T10:30:00-05:00";
-    return (rawSessions || []).map((ms, i) => {
+    const slugify = (s) => String(s || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '')
+
+    // Build a meta map from abstracts (organizers, maybe later room/timezone)
+    const absMeta = Object.values(abstractModules).reduce((acc, mod) => {
+      const data = mod?.default || mod
+      if (!data) return acc
+      const title = data.minisymposium_title || data.title
+      if (!title) return acc
+      const key = slugify(title)
+      acc[key] = {
+        organizers: data.organizers || [],
+      }
+      return acc
+    }, {})
+
+    const fromSessions = (rawSessions || []).map((ms, i) => {
       const sessionsArray = (ms.sessions && Array.isArray(ms.sessions) && ms.sessions.length > 0)
         ? ms.sessions
         : [{ start: ms.start, end: ms.end, chair: ms.chair, talks: ms.talks }];
 
+      const title = ms.minisymposium_title || ms.title || `Mini‑Symposium ${i + 1}`
+      const key = slugify(title)
+      const mergedOrganizers = (ms.organizers && ms.organizers.length > 0)
+        ? ms.organizers
+        : (absMeta[key]?.organizers || [])
+
       return {
         id: ms.id || `MS${i + 1}`,
-        title: ms.minisymposium_title || ms.title || `Mini‑Symposium ${i + 1}`,
-        organizers: ms.organizers || [],
+        title,
+        organizers: mergedOrganizers,
         day: TEMP_DAY_OVERRIDE,
         room: ms.room || null,
         timezone: ms.timezone || "America/Chicago",
@@ -170,6 +193,42 @@ export default function ProgramPage() {
         })),
       };
     });
+
+    const existingTitles = new Set(fromSessions.map((m) => slugify(m.title)))
+
+    const fromAbstractsOnly = Object.values(abstractModules).flatMap((mod) => {
+      const data = mod?.default || mod
+      if (!data) return []
+      const msTitle = data.minisymposium_title || data.title
+      if (!msTitle) return []
+      const key = slugify(msTitle)
+      if (existingTitles.has(key)) return []
+      const slugId = `MS-${key}`
+      return [{
+        id: slugId,
+        title: msTitle,
+        organizers: data.organizers || [],
+        day: TEMP_DAY_OVERRIDE,
+        room: null,
+        timezone: "America/Chicago",
+        sessions: [
+          {
+            id: `${slugId}-S1`,
+            start: TEMP_SESSION_START,
+            end: TEMP_SESSION_END,
+            chair: null,
+            talks: (data.talks || []).map((t) => ({
+              start: null,
+              end: null,
+              title: t?.title,
+              speakers: t?.speakers || [],
+            })),
+          },
+        ],
+      }]
+    })
+
+    return [...fromSessions, ...fromAbstractsOnly]
   }, []);
 
   const allDays = useMemo(() => {

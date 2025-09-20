@@ -1,5 +1,8 @@
 {
   "minisymposium_title": "PDEs Modelling Numerics and Applications",
+  "organizers": [
+    { "name": "James Liu", "affiliation": "Colorado State University" }
+  ],
   "talks": [
     {
       "title": "Variational data assimilation with finite element discretization for second order parabolic interface equation",

@@ -1,0 +1,28 @@
+{
+  "minisymposium_title": "Adaptive mesh refinement for fluid flows",
+  "organizers": [
+    { "name": "James Burton", "affiliation": "University of Arkansas" }
+  ],
+  "talks": [
+    {
+      "title": "Vidyut3d: A performance portable adaptive mesh-based solver for non-equilibrium plasmas",
+      "speakers": [
+        { "name": "Hari Sitaraman", "affiliation": "" },
+        { "name": "Nicholas Deak", "affiliation": "National Renewable Energy Laboratory" },
+        { "name": "T Taneja", "affiliation": "University of Minnesota" }
+      ],
+      "abstract": "We present the numerical methods, performance portable programming paradigm, verification, and performance of a non-equilibrium plasma fluid solver on adaptive Cartesian grids that can effectively utilize CPU+GPU architectures. Our plasma model solves the governing equations for electron and heavy species transport, electrostatic Poisson and electron temperature on adaptive Cartesian grids. Our solver is written using the AMReX library (Zhang et al., JOSS, 4 (37) 1370, 2019) and can be built and run on widely available vendor specific GPU architectures (NVIDIA/AMD/Intel).  We use a non-subcycled second order semi-implicit method for time advance with the composite multi-level multigrid solver from within AMReX for solving the linear equation systems. A python based chemical mechanism parser framework that uses a similar format as CANTERA (Goodwin et al., Zenodo, 2018) yaml files is used to generate unrolled host and device compatible code for plasma chemistry. Non-Cartesian geometry is handled using an immersed boundary approach with cell masking and interface flux corrections. Verification of our solver using method of manufactured solutions is presented that indicate formal second order accuracy with central diffusion and fifth order weighted-essentially-non-oscillatory (WENO) advection scheme.  We also validate our solver with published literature on low-pressure capacitive and high-pressure streamer discharges. Our performance studies indicate 150-400X speed-up using AMD and NVIDIA GPUs per time step compared to a single CPU core for a 4 million cell simulation with 15 species (https://arxiv.org/abs/2507.08200)."
+    },
+    {
+      "title": "Leveraging AMR to enable high-fidelity simulations of reacting and multiphase flows in practical energy systems with the Pele suite",
+      "speakers": [
+        { "name": "Bruce A Perry", "affiliation": "National Renewable Energy Laboratory" },
+        { "name": "David Montgomery", "affiliation": "National Renewable Energy Laboratory" },
+        { "name": "Sreejtih Nadakkal Appukuttan", "affiliation": "National Renewable Energy Laboratory" },
+        { "name": "Shashank Yellapantula", "affiliation": "National Renewable Energy Laboratory" },
+        { "name": "Marc Day", "affiliation": "National Renewable Energy Laboratory" }
+      ],
+      "abstract": "The Pele suite of fluid flow solvers was developed as part of the Department of Energy’s Exascale Computing Project with the objective of enabling high-fidelity simulations of reacting flows in emerging energy technologies. The Pele flow solvers are based on the AMReX library, which provided routines for block-structured adaptive mesh refinement (AMR) and a performance portability layer using an MPI+X strategy to enable efficient computation on GPUs from all major vendors. The Pele suite also contains two flow solvers and a multi-physics modeling library, PelePhysics, which multiple equations of state, chemical reaction models, spray physics models, and more. This talk will cover background on the AMR-based algorithms in the PeleLMeX low Mach number flow solver and updates made to facilitate its application to industrially relevant problems, including algorithmic updates for computational efficiency, new physical models relevant to the systems being considered, and practical considerations like enhanced capabilities for user-defined boundary conditions. Then, two case studies showing application of PeleLMeX to applied problems will be presented: combustion of synthetic aviation turbine fuel in an aircraft gas turbine combustor and heterogeneous frosting of CO2 at cryogenic conditions to enable its capture. These case studies will highlight lessons learned for transitioning research codes with the algorithmic complexity that comes from AMR to be used in conjunction with industry partners for engineering simulations of complex systems."
+    }
+  ]
+}
