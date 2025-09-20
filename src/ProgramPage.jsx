@@ -4,6 +4,8 @@ import { Calendar, CalendarClock, Clock, Filter, MapPin, Users, Search, Download
 import { Link } from 'react-router-dom'
 // Load abstracts to auto-add minisymposia not present in sessions
 const abstractModules = import.meta.glob('./data/abstract/*.json', { eager: true });
+import contributedCsvRaw from './data/contributed_talks.csv?raw'
+import Papa from 'papaparse'
 import rawSessions from "./sessions.js";
 
 // --- Utilities --------------------------------------------------------------
@@ -228,7 +230,43 @@ export default function ProgramPage() {
       }]
     })
 
-    return [...fromSessions, ...fromAbstractsOnly]
+    // Parse contributed talks CSV into a minisymposium
+    let contributed = null
+    if (contributedCsvRaw && contributedCsvRaw.length > 0) {
+      const parsed = Papa.parse(contributedCsvRaw, { header: true, skipEmptyLines: true })
+      const rows = (parsed?.data || []).filter((r) => (r.Title && r.Title.trim().length > 0))
+      if (rows.length > 0) {
+        const msTitle = 'Contributed Talks'
+        if (!existingTitles.has(slugify(msTitle))) {
+          contributed = {
+            id: 'CT',
+            title: msTitle,
+            organizers: [],
+            day: TEMP_DAY_OVERRIDE,
+            room: null,
+            timezone: 'America/Chicago',
+            sessions: [
+              {
+                id: 'CT-S1',
+                start: TEMP_SESSION_START,
+                end: TEMP_SESSION_END,
+                chair: null,
+                talks: rows.map((r) => ({
+                  title: r.Title?.trim(),
+                  speakers: [
+                    { name: [r['First Name'], r['Last Name']].filter(Boolean).join(' ').trim(), affiliation: (r.Affiliation || '').trim() },
+                  ],
+                  start: null,
+                  end: null,
+                })),
+              },
+            ],
+          }
+        }
+      }
+    }
+
+    return contributed ? [...fromSessions, ...fromAbstractsOnly, contributed] : [...fromSessions, ...fromAbstractsOnly]
   }, []);
 
   const allDays = useMemo(() => {
