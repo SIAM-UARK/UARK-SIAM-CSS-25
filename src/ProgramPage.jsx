@@ -327,10 +327,12 @@ export default function ProgramPage() {
                   </div>
                     <ul className="divide-y">
                       {s.talks.map((t, ti) => {
-                        const slug = String(t.title || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '')
+                        const slugify = (str) => String(str || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '')
+                        const slug = slugify(t.title)
+                        const msSlug = slugify(ms.title)
                         return (
                           <li key={ti} className="p-4 bg-white hover:bg-neutral-50 transition">
-                            <Link to={`/talk/${slug}`} className="block">
+                            <Link to={`/talk/${slug}?ms=${msSlug}`} className="block">
                               <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
                                 <div>
                                   {(t.start || t.end) && (

@@ -13,14 +13,14 @@
       "_match": "title"
     },
     {
-      "title": "Professor",
+      "title": "Learning Generalized Diffusions using an Energetic Variational Approach",
       "speakers": [
         {
           "name": "Xiaofan Li",
           "affiliation": "Illinois Institute of Technology"
         }
       ],
-      "abstract": "Title:   Learning Generalized Diffusions using an Energetic Variational Approach  Abstract:  Extracting governing physical laws from computational or experimental data is important in various applications such as fluid dynamics and plasma physics.  Many of those physical laws are dissipative due to fluid viscosity or plasma collisions.  For such a dissipative physical system, we propose two distinct methods to learn the corresponding laws of the systems based on their energy-dissipation laws, assuming either continuous data (probability density) or discrete data (particles) are available. Our methods offer several key advantages, including their robustness to corrupted observations, their easy extension to more complex physical systems, and the potential to address higher-dimensional systems. We validate our approach through representative numerical examples and carefully investigate the impacts of data quantity and data property on the model discovery.",
+      "abstract": "Extracting governing physical laws from computational or experimental data is important in various applications such as fluid dynamics and plasma physics.  Many of those physical laws are dissipative due to fluid viscosity or plasma collisions.  For such a dissipative physical system, we propose two distinct methods to learn the corresponding laws of the systems based on their energy-dissipation laws, assuming either continuous data (probability density) or discrete data (particles) are available. Our methods offer several key advantages, including their robustness to corrupted observations, their easy extension to more complex physical systems, and the potential to address higher-dimensional systems. We validate our approach through representative numerical examples and carefully investigate the impacts of data quantity and data property on the model discovery.",
       "_match": "title"
     },
     {

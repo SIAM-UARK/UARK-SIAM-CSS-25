@@ -1000,7 +1000,7 @@ export default [
         ]
       },
       {
-        "title": "Professor",
+        "title": "Learning Generalized Diffusions using an Energetic Variational Approach",
         "speakers": [
           {
             "name": "Xiaofan Li",

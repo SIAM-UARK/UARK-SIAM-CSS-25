@@ -1,5 +1,5 @@
 import { useMemo } from 'react'
-import { useParams, Link } from 'react-router-dom'
+import { useParams, Link, useLocation } from 'react-router-dom'
 import { ArrowLeft, Calendar, Users } from 'lucide-react'
 
 // Load all abstract bundles eagerly
@@ -14,6 +14,8 @@ function slugify(s) {
 
 export default function TalkPage() {
   const { slug } = useParams()
+  const location = useLocation()
+  const msParam = useMemo(() => new URLSearchParams(location.search).get('ms') || null, [location.search])
 
   const talkData = useMemo(() => {
     // Build an index of talks by slug across all minisymposia files
@@ -32,9 +34,14 @@ export default function TalkPage() {
         })
       }
     }
-    const match = all.find((t) => t.slug === slug)
-    return match || null
-  }, [slug])
+    // Prefer a match that also matches the minisymposium slug if provided
+    const candidates = all.filter((t) => t.slug === slug)
+    if (candidates.length === 0) return null
+    if (!msParam) return candidates[0]
+    const msSlug = slugify(candidates[0].msTitle || '')
+    const exact = candidates.find((t) => slugify(t.msTitle || '') === msParam)
+    return exact || candidates[0]
+  }, [slug, msParam])
 
   if (!talkData) {
     return (
@@ -92,4 +99,3 @@ export default function TalkPage() {
     </div>
   )
 }
-
