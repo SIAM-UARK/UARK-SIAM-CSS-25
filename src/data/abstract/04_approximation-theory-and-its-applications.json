@@ -1,0 +1,104 @@
+{
+  "minisymposium_title": "Approximation Theory and its Applications",
+  "talks": [
+    {
+      "title": "Minimax rates for learning kernels in operators",
+      "speakers": [
+        {
+          "name": "Sichong Zhang",
+          "affiliation": "Johns Hopkins University"
+        }
+      ],
+      "abstract": "Learning kernels in operators from data lies at the intersection of inverse problems and statistical learning, providing a powerful framework for capturing non-local dependencies in function spaces and high-dimensional settings. In contrast to classical nonparametric regression, where the inverse problem is well-posed, kernel estimation involves a compact normal operator and an ill-posed deconvolution. To address these challenges, we introduce adaptive spectral Sobolev spaces, which unify Sobolev spaces and reproducing kernel Hilbert spaces (RKHSs), automatically discarding non-identifiable components and controlling terms with small eigenvalues. Within this framework, we establish the minimax convergence rates for the mean squared error under both polynomial and exponential spectral decay regimes. Methodologically, we develop a tamed least squares estimator achieving the minimax upper rates via controlling the left-tail probability for eigenvalues of the random normal matrix; and for the minimax lower rates, we resolve challenges from infinite-dimensional measures through their projections.",
+      "_match": "title"
+    },
+    {
+      "title": "Cauchy Random Features for Operator Learning in Sobolev Space",
+      "speakers": [
+        {
+          "name": "Chunyang Liao",
+          "affiliation": "University of California, Los Angeles"
+        }
+      ],
+      "abstract": "Operator learning is the approximation of operators between infinite dimensional Banach spaces using machine learning approaches. While most progress in this area has been driven by variants of deep neural networks such as the Deep Operator Network and Fourier Neural Operator, the theoretical guarantees are often in the form of a universal approximation property. However, the existence theorems do not guarantee that an accurate operator network is obtainable in practice. Motivated by the recent kernel-based operator learning framework, we propose a random feature operator learning method with theoretical guarantees and error bounds.  In this talk, we will introduce the random features method for operator learning problems. Then we present a generalization error analysis along with several numerical results. Our results show that the proposed method can obtain similar or better test errors across benchmarks examples with significantly reduced training complexities.",
+      "_match": "title"
+    },
+    {
+      "title": "Transformers for learning on noisy and task-level manifolds: Approximation and generalization insights",
+      "speakers": [
+        {
+          "name": "Zhaiming Shen",
+          "affiliation": "Georgia Institute of Technology"
+        }
+      ],
+      "abstract": "Transformers serve as the foundational architecture for large language and video generation models, such as GPT, BERT, SORA and their successors. Empirical studies have demonstrated that real-world data and learning tasks exhibit low-dimensional structures, along with some noise or measurement error. The performance of transformers tends to depend on the intrinsic dimension of the data/tasks, though theoretical understandings remain largely unexplored for transformers. This work establishes a theoretical foundation by analyzing the performance of transformers for regression tasks involving noisy input data on a manifold. Specifically, the input data are in a tubular neighborhood of a manifold, while the ground truth function depends on the projection of the noisy data onto the manifold. We prove approximation and generalization errors which crucially depend on the intrinsic dimension of the manifold. Our results demonstrate that transformers can leverage low-complexity structures in learning task even when the input data are perturbed by high-dimensional noise. Our novel proof technique constructs representations of basic arithmetic operations by transformers, which may hold independent interest.",
+      "_match": "title"
+    },
+    {
+      "title": "Geometry-Preserving Encoder/Decoder In Latent Generative Models",
+      "speakers": [
+        {
+          "name": "Wonjun Lee",
+          "affiliation": "The Ohio State University"
+        }
+      ],
+      "abstract": "Generative modeling aims to generate new data samples that resemble a given dataset, with diffusion models recently becoming the most popular generative model. One of the main challenges of diffusion models is solving the problem in the input space, which tends to be very high-dimensional. Recently, solving diffusion models in the latent space through an encoder that maps from the data space to a lower-dimensional latent space has been considered to make the training process more efficient and has shown state-of-the-art results. The variational autoencoder (VAE) is the most commonly used encoder/decoder framework in this domain, known for its ability to learn latent representations and generate data samples. In this paper, we introduce a novel encoder/decoder framework with theoretical properties distinct from those of the VAE, specifically designed to preserve the geometric structure of the data distribution. We demonstrate the significant advantages of this geometry-preserving encoder in the training process of both the encoder and decoder. Additionally, we provide theoretical results proving convergence of the training process, including convergence guarantees for encoder training, and results showing faster convergence of decoder training when using the geometry-preserving encoder.",
+      "_match": "title"
+    },
+    {
+      "title": "In-context operator learning on probability measure spaces",
+      "speakers": [
+        {
+          "name": "Dixi Wang",
+          "affiliation": "Purdue University"
+        }
+      ],
+      "abstract": "We introduce in-context operator learning on probability measure spaces for optimal transport (OT). The goal is to learn a single solution operator that maps a pair of distributions  to the OT map, using only few-shot samples from each distribution as a prompt without gradient updates at inference. We parameterize the solution operator and develop scaling-law theory in two regimes. In the nonparametric setting, when tasks concentrate on a low-intrinsic-dimension manifold of source--target pairs, we establish generalization bounds that quantify how in-context accuracy scales with prompt size, intrinsic task dimension, and model capacity. In the parametric setting (e.g., Gaussian families), we give an explicit architecture that recovers the exact OT map in context and provide finite-sample excess-risk bounds. Our numerical experiments on synthetic transports and generative-modeling benchmarks validate the framework.",
+      "_match": "title"
+    },
+    {
+      "title": "Optimal Approximation of High-dimensional Functions on Smooth Manifolds Using Deep ReLU Neural Networks",
+      "speakers": [
+        {
+          "name": "Ji Shi",
+          "affiliation": "University of Houston"
+        }
+      ],
+      "abstract": "The expressive power of deep neural networks is manifested by their remarkable ability to approximate multivariate functions in a way that appears to overcome the curse of dimensionality. This ability is exemplified by their success in solving high-dimensional problems where traditional numerical solvers fail due to their limitations in accurately representing high-dimensional structures. In this talk, we focus on the approximation theory of neural networks to explain this phenomenon.",
+      "_match": "title"
+    },
+    {
+      "title": "From Single to Multiple Kernels: Learning Interacting Particle Systems on Networks.",
+      "speakers": [
+        {
+          "name": "Quanjun Lang",
+          "affiliation": "Duke University"
+        }
+      ],
+      "abstract": "We present a framework for jointly learning the network structure, interaction kernels, and type assignments in heterogeneous interacting particle systems (IPS) on networks. The agents follow first-order stochastic dynamics, with interactions governed by unknown kernel functions depending on discrete type pairs. Since species information is not observed a priori, the learning problem is inherently a non-convex mixed-integer optimization. To address this challenge, we decouple the task into a low-rank matrix sensing stage and a clustering stage, followed by decomposition and post-processing to refine estimates. The matrix sensing step leverages shared kernel structure to recover a low-rank embedding of network and kernel parameters, while the clustering step infers discrete types via angular separation of normalized embeddings. We establish theoretical guarantees under restricted isometry properties (RIP), and validate the method on synthetic examples, including heterogeneous predator–prey systems. Our approach generalizes to a broad class of multitype IPS models and provides a scalable, robust solution for learning structured particle interactions from trajectory data.",
+      "_match": "title"
+    },
+    {
+      "title": "Novel Neural Networks for Efficient Inverse Modeling of Nonlinear Schr\\\"{o}dinger  Equations",
+      "speakers": [
+        {
+          "name": "Yiran Wang",
+          "affiliation": "The University of Alabama"
+        }
+      ],
+      "abstract": "In this work, we address inverse problems for nonlinear Schr\\\"{o}dinger equations (NLSEs) by framing them as a learning process within a specialized convolutional neural network (CNN). The NLSE, given by $\\mathrm{i}\\frac{\\partial \\psi}{\\partial t}+\\beta\\frac{\\partial^2 \\psi}{\\partial x^2}+\\gamma|\\psi|^2\\psi+V(x)\\psi=0$, involves recovering the potential $V(x)$ from data while simultaneously solving for the wave function $\\psi(x,t)$. Instead of directly approximating functions, we embed a low-dimensional manifold into the network, reducing the unknowns to a set of scalar coefficients. The CNN architecture is derived from the Schr\\\"{o}dinger equation via operator splitting, ensuring interpretability and provable convergence. Each convolutional layer and activation function is designed to reflect the mathematical structure of the equation, aligning with its linear and nonlinear components. Additionally, a compressed sensing-inspired library search algorithm further simplifies training by projecting the solution space onto a lower-dimensional approximation space. We provide theoretical insights into the well-posedness of the inverse problem and the convergence of the network. Numerical experiments on both single and coupled NLSEs validate our method, demonstrating strong performance. Future work may enhance the library search algorithm using manifold learning techniques to further improve approximation accuracy for inverse problems involving nonlinear PDEs.",
+      "_match": "title"
+    },
+    {
+      "title": "Geometry-Preserving Encoder/Decoder In Latent Generative Models",
+      "speakers": [
+        {
+          "name": "Wonjun Lee",
+          "affiliation": "The Ohio State University"
+        }
+      ],
+      "abstract": "Generative modeling aims to generate new data samples that resemble a given dataset, with diffusion models recently becoming the most popular generative model. One of the main challenges of diffusion models is solving the problem in the input space, which tends to be very high-dimensional. Recently, solving diffusion models in the latent space through an encoder that maps from the data space to a lower-dimensional latent space has been considered to make the training process more efficient and has shown state-of-the-art results. The variational autoencoder (VAE) is the most commonly used encoder/decoder framework in this domain, known for its ability to learn latent representations and generate data samples. In this paper, we introduce a novel encoder/decoder framework with theoretical properties distinct from those of the VAE, specifically designed to preserve the geometric structure of the data distribution. We demonstrate the significant advantages of this geometry-preserving encoder in the training process of both the encoder and decoder. Additionally, we provide theoretical results proving convergence of the training process, including convergence guarantees for encoder training, and results showing faster convergence of decoder training when using the geometry-preserving encoder.",
+      "_match": "title"
+    }
+  ]
+}

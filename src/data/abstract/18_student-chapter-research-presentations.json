@@ -1,0 +1,82 @@
+{
+  "minisymposium_title": "Student Chapter Research Presentations",
+  "talks": [
+    {
+      "title": "Numerical solution to the three-dimensional $p$-Laplace equation: Finite difference methods and biological applications",
+      "speakers": [
+        {
+          "name": "Matthias Dogbatsey",
+          "affiliation": "The University of Alabama"
+        }
+      ],
+      "abstract": "Solving the nonlinear and degenerate $p$-Laplace equation numerically is highly challenging, yet it has numerous applications across various fields such as image processing, biophysics, membrane modeling, and solvation energy calculations. Consequently, developing efficient solvers for this equation has garnered significant attention in the numerical analysis community. Recently, $p$-Laplace equations have also been incorporated into promising computational solvation models for predicting Ensemble Average Solvation Energy (EASE), which aims to dramatically speed up calculations compared to methods relying on thousands of molecular snapshots. However, investigating effective numerical schemes for solving the $p$-Laplace equation in protein systems is a crucial first step toward devising efficient solvers for the full, complex coupled system derived from the EASE models. In this work, we propose and explore numerical schemes for solving the $p$-Laplace equation in $\\mathbb{R}^3$ for $p \\in [1,2)$, aiming to identify the most effective numerical approaches within the framework of finite difference methods. To our knowledge, this is the first comprehensive study on the three-dimensional (3D) case. Our results demonstrate that the Alternating Direction Implicit (ADI) scheme is the most efficient among the proposed 3D numerical schemes, which include Picard's Iteration scheme and the Crank-Nicolson (CN) method. The ADI scheme requires the least computational time while maintaining comparable accuracy in both analytical tests and solvation energy calculations. Moreover, we numerically verify that the solution of the pseudo-time parabolic $p$-Laplace equation converges to the solution of the corresponding highly nonlinear elliptic $p$-Laplace equation. In the existing literature, studies on the parabolic $p$-Laplace equation primarily consider the Cauchy problem with $p \\geq 2$. Our study bridges this gap by examining the parabolic $p$-Laplace equation for $p \\in [1,2)$.",
+      "_match": "title"
+    },
+    {
+      "title": "Identifying drug targets with a reduced model for competitive inhibitor stimulation",
+      "speakers": [
+        {
+          "name": "Garrett Young",
+          "affiliation": "University of Iowa"
+        }
+      ],
+      "abstract": "Studies on Terazosin (TZ) have demonstrated that it may be neuroprotective, possibly due to increasing the production of adenosine triphosphate (ATP) through its interaction with the enzyme phosphoglycerate kinase 1 (PGK1) despite behaving as a competitive inhibitor by binding in the same pocket as adenosine diphosphate (ADP). A mathematical model developed purely through mass action was able to replicate experimental results; however, the model lacks an analytical solution due to its nonlinearity. Understanding the mechanism of competitive inhibitor stimulation could provide better understanding of how to slow neurodegenerative disease progression or even benefit drug development by offering insight into determining when this stimulation will occur. Thus, there is a desire to reduce this model into a form that can be analyzed and allow for a clearer picture of when and why inhibitors could lead to increased product production.",
+      "_match": "title"
+    },
+    {
+      "title": "Fast Updating of Low-Rank Factorizations",
+      "speakers": [
+        {
+          "name": "Kamrun Nahar Keya",
+          "affiliation": "Arizona State University"
+        }
+      ],
+      "abstract": "Low-rank approximation of streaming matrices is important in large-scale data applications, including video data and recommendation systems data. We present a modified low-rank matrix factorization method designed for streaming data, with the aim of improving computational efficiency, robustness, and accuracy. The central idea is to reuse the factorization from the previous time step to define a sequence of small least-squares problems, an approach that is particularly advantageous for large-scale problems. The proposed method incorporates error control mechanisms and demonstrates fast convergence and low computational costs compared to techniques such as the incremental SVD or SVDs. Preliminary experiments highlight its numerical stability and competitiveness, and ongoing work focuses on extending the analysis and exploring broader applications.",
+      "_match": "title"
+    },
+    {
+      "title": "Diffusive-interface size-modified Poisson-Boltzmann models: Ion-size effects",
+      "speakers": [
+        {
+          "name": "Md Borhan Uddin",
+          "affiliation": "The University of Alabama"
+        }
+      ],
+      "abstract": "In the standard Poisson–Boltzmann (PB) model, the ions in the solvent region surrounding a biomolecule are assumed to be point-like (volume-less) and to form a sharp interface at the solute–solvent boundary. Theoretically, this assumption can lead to excessive ion crowding near the solute surface, which may affect the accuracy of electrostatic free energy (EFE) calculations. To address this issue, various size-modified Poisson–Boltzmann (SMPB) models have been developed by incorporating the finite size of ions. This study investigates the effect of finite ion size on EFE calculations under both diffusive- and sharp-interface settings. To this end, we have developed a unified framework whose limiting cases correspond to different SMPB and PB models, enabling comparative studies for the Kirkwood sphere and various proteins. Our results show that the diffusive-interface SMPB and the classical PB model yield significantly different results. In a charged ball test case, the diffusive-interface SMPB model generates Stern layer-like ion concentration profiles near the solute surface, which are absent in the standard PB model and sharp-interface formulations. These findings underscore the importance of incorporating diffuse interface setting in the SMPB model for representing finite sized ions in the solvent.",
+      "_match": "title"
+    },
+    {
+      "title": "Improving Model Predictions: ALFFI for In-Depth Uncertainty Analysis in SIR Parameter Estimation",
+      "speakers": [
+        {
+          "name": "Madison Pratt",
+          "affiliation": "University of Tennessee, Knoxville"
+        }
+      ],
+      "abstract": "Dynamic epidemiological models, such as the foundational Susceptible-Infected-Recovered (SIR) differential equation model, face significant challenges in parameter estimation due to intractable likelihood functions, which complicate the process of accurately fitting the model to data. Traditional methods, like least squares, can yield parameter estimates that are biologically implausible and poorly characterize uncertainty, leading to overconfidence in predictions.  To address this, recent advancements in neural network-based methods, such as LF2I and ALFFI, provide more reliable uncertainty estimates and confidence sets, even when the likelihood function is intractable. We present preliminary results utilizing ALFFI to estimate uncertainty in model parameters and investigate how this uncertainty might influence model outputs. We explore how varying parameters within the uncertainty bounds derived from ALFFI could potentially affect key epidemic predictions. These results will be compared to those obtained from traditional parameter estimation methods, with the aim of highlighting how ALFFI may offer more robust uncertainty quantification and provide a better understanding of the variability in model predictions.",
+      "_match": "title"
+    },
+    {
+      "title": "Limiting Strategies for High-Order Discontinuous Galerkin Methods Based on Entropy Dissipation",
+      "speakers": [
+        {
+          "name": "Galiya Myrzabayeva",
+          "affiliation": "Iowa State University"
+        }
+      ],
+      "abstract": "Subcell limiting has been extensively developed in a series of papers by Dumbser and co-authors. The approach advances an unlimited high-order DG candidate, applies local admissibility tests, and only where the candidate fails recomputes the in the follwing way: the DG solution at time tn is redistributed into subcell averages (typically Ns = 2N + 1 subcells per element), these averages are advanced to t^(n+1) by a robust TVD/monotone finite-volume scheme applied only inside the troubled elements, and the updated cell averages at t^(n+1) are gathered back (projected) to the DG space. Recent development by Chan (2025) introduces an entropy-correction artificial viscosity whose coefficient is computed locally per cell from two quantities: the measured violation of a cell entropy inequality and the local entropy dissipation. This yields artificial viscosity coefficients that are nonzero near discontinuities. We combine these ideas by repurposing Chan’s entropy-correction coefficient solely as a smoothness/trouble indicator to drive the a posteriori subcell fallback. Cells with negligible entropy-inequality violation accept the high-order DG candidate unchanged, whereas cells with significant violation are flagged and re-updated on a finite-volume subgrid before projection back to DG. This pairing preserves the efficiency and accuracy of DG in smooth zones while focusing subcell resolution precisely where it is needed",
+      "_match": "title"
+    },
+    {
+      "title": "Mathematical Modeling of Infectious Disease Dynamics Using SIR and SIRS Frameworks",
+      "speakers": [
+        {
+          "name": "Anjuman Ara Rashid",
+          "affiliation": "University of Arkansas, Fayetteville"
+        }
+      ],
+      "abstract": "he spread of infectious diseases can be effectively studied using compartmental models that describe the interaction of susceptible, infected, and recovered individuals within a population. In this project, we investigate the classical SIR model and its extension, the SIRS model with temporary immunity, to analyze epidemic dynamics. Using systems of nonlinear differential equations, we derive and interpret key parameters such as the basic reproduction number and explore their influence on long-term disease outcomes, including eradication, endemicity, and recurrent outbreaks. Numerical simulations illustrate the time evolution of susceptible, infected, and recovered classes under varying conditions of infection rate, recovery rate, and immunity duration. Applications to real-world diseases such as influenza and dengue fever are discussed, with parameter estimation carried out using basic statistical techniques. Our results demonstrate that the inclusion of temporary immunity in the SIRS model captures recurrent epidemic behavior that the SIR model alone cannot explain. This work highlights the utility of differential equation models in epidemiology and emphasizes their flexibility in adapting to different infectious disease contexts. The project serves both as an educational exploration of mathematical epidemiology and as a demonstration of how relatively simple models can provide valuable insights into public health phenomena",
+      "_match": "title"
+    }
+  ]
+}

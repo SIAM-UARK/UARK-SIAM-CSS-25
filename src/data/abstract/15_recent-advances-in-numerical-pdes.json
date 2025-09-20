@@ -1,0 +1,104 @@
+{
+  "minisymposium_title": "Recent advances in numerical PDEs",
+  "talks": [
+    {
+      "title": "High-Order Micro-Macro Decomposition Schemes for Kinetic Plasma Models",
+      "speakers": [
+        {
+          "name": "James Rossmanith",
+          "affiliation": "Iowa State University"
+        }
+      ],
+      "abstract": "Kinetic models are widely used to simulate the dynamics of plasmas and rarefied gases in many application areas, including astrophysics, magnetically confined fusion, high-altitude aircraft, various propulsion mechanisms for spacecraft, and microfluidic devices. Kinetic models arise from a statistical mechanics approximation of the underlying particle motion and typically manifest as nonlinear integro-differential equations defined in a high-dimensional phase space. The challenge of reducing this phase space to a lower dimensional space is called the moment-closure problem. The goal is to replace the full kinetic distribution function with a (hopefully small) set of moments (e.g., mass, momentum, and energy); unfortunately, with only a finite set of moments, the underlying evolution equations are not closed, and additional assumptions must be made. In this talk, I will describe an approach known as micro-macro decomposition for that will allow us to efficiently divide the kinetic equations into its low-order statistics and the remaining high-order corrections. A high-order discontinuous Galerkin finite element method will be developed to numerically solve the resulting micro-macro system. The resulting scheme is verified on several standard test cases.",
+      "_match": "title"
+    },
+    {
+      "title": "Continuous data assimilation by non-interpolant observables",
+      "speakers": [
+        {
+          "name": "Vladimir Yushutin",
+          "affiliation": "University of Tennessee, Knoxville"
+        }
+      ],
+      "abstract": "Continuous data assimilation  approaches a time-dependent PDE with an unknown initial condition by utilizing temporal observations of the evolving system. Typically, the application and the analysis of this methodology rely on observations that approximate the solution in space through an interpolation operator. In this talk, we demonstrate that continuous data assimilation can still yield an effective finite element method even when the data are non-interpolant --- for instance, when only boundary values are observed.",
+      "_match": "title"
+    },
+    {
+      "title": "A Dynamic Flux-Based Surrogate Approach to Interface Couplings Involving Full-Order Models and DMD-Based Surrogates",
+      "speakers": [
+        {
+          "name": "Edward Huynh",
+          "affiliation": "The University of Texas at Austin"
+        }
+      ],
+      "abstract": "Partitioned methods for coupled problems rely on data transfers between subdomains to synchronize the subdomain equations and enable their independent solution. These methods enable code reuse, increase concurrency, and provide a convenient framework for plug-and-play multiphysics simulations. However, accuracy and stability of partitioned methods depends crucially on the type of information exchanged between the subproblems. Data-driven system identification methods allow the construction of accurate, computationally efficient and minimally intrusive data transfer surrogates. This approach leaves the main computational burden to an offline phase and consequently the application of this approach as the sole additional cost during the online simulation phase. In this presentation, we formulate and couple together fully data-driven (DMD-DMD) and hybrid (FOM-DMD) solvers for a model advection-diffusion transmission problem by using Dynamic Mode Decomposition (DMD) to learn the dynamics of both the subdomain states and the interface flux from data. Our results demonstrate that these couplings can be accomplished accurately at a cheaper computational cost.",
+      "_match": "title"
+    },
+    {
+      "title": "An Inverse Problem of Plasma Charging with Applications to Lunar Exploration",
+      "speakers": [
+        {
+          "name": "Frank D. Han",
+          "affiliation": "Missouri University of Science and Technology"
+        }
+      ],
+      "abstract": "One of the most widely used kinetic methods for collision-less plasma simulation is the Particle-In-Cell (PIC) method. The electric potential in a PIC simulation domain involving materials is governed by the second-order elliptic interface problem with discontinuous dielectric coefficients and non-homogeneous flux jumps. Numerical methods based on Cartesian meshes, such as immersed finite element methods, are particularly desirable in these simulations because they enable efficient particle tracking and save computing time in particle-mesh interactions. However, in practical simulations, one usually only knows the total electric charge quantity on the surface of the conductor, not the surface charge density, which is necessary to complete the forward problem of the elliptic interface equation. Our project will start from the modeling for an inverse interface problem to identify the surface charge density with given total charge on the conducting object immersed in plasmas.",
+      "_match": "title"
+    },
+    {
+      "title": "A second-order accurate, positivity-preserving numerical scheme for the Poisson–Nernst–Planck–Navier–Stokes system",
+      "speakers": [
+        {
+          "name": "Yuzhe Qin",
+          "affiliation": "University of British Columbia"
+        }
+      ],
+      "abstract": "Electro-diffusion of ions coupled with fluid motion arises in microfluidics, electrochemistry, and soft matter. I will present a structure-preserving, second-order scheme (in time and space) for the coupled Poisson--Nernst--Planck--Navier--Stokes system. The key idea is to recast the PNP equations as a gradient flow with non-constant mobility within the energetic variational framework, then use a MAC finite-difference discretization in space and a modified Crank-Nicolson with second-order extrapolation in time. Nonlinear regularization in the chemical potential guarantees positivity of concentrations; a semi-implicit treatment of convection and the momentum equations ensures stability without sacrificing accuracy. I will outline proofs of unique solvability, discrete total energy dissipation, and optimal order error bounds, and show benchmarks consistent with the theory. The result is a practical, rigorously analyzed tool for reliably simulating electro-hydrodynamic phenomena.",
+      "_match": "title"
+    },
+    {
+      "title": "Semi-Lagrangian Discontinuous Galerkin Methods for Multiscale Vlasov-Poisson Systems",
+      "speakers": [
+        {
+          "name": "Dauda Gambo",
+          "affiliation": "Iowa State University"
+        }
+      ],
+      "abstract": "We present a high-order discontinuous Galerkin finite elements method for the Vlasov-Poisson system, a kinetic model for collisionless plasmas describing the evolution of particle distribution functions coupled with self-consistent electrostatic fields. Traditional mesh-based solvers often face severe stability-imposed time-step restriction, particularly in multiscale plasma simulations where spatial and temporal scales differ by orders of magnitude.    Our method employs an operator-splitting framework, advancing free-streaming and acceleration subproblems separately using a semi-Lagrangian DG scheme that is unconditionally stable with respect to time-step size. This enables efficient resolution of multiscale dynamics while preserving high-order accuracy in both space and time.    Benchmark problems demonstrate the method’s accuracy, efficiency, and robustness. Profiling results are provided to guide future large-scale multiscale plasma simulations.",
+      "_match": "title"
+    },
+    {
+      "title": "Error Analysis of An Upwind Weak Galerkin Finite Element Method for Time-Dependent Hyperbolic Problems",
+      "speakers": [
+        {
+          "name": "Saqib Hussain",
+          "affiliation": "Texas A&M International University"
+        }
+      ],
+      "abstract": "In this work, we develop and analyze a fully discrete upwind weak Galerkin finite element method for solving time-dependent linear hyperbolic equations. The proposed numerical framework incorporates spatial discretization via the weak Galerkin method and employs both backward Euler and Crank-Nicolson schemes for temporal discretization. An upwind stabilization is introduced to handle discontinuities effectively. Stability and error estimates in both 𝐿2 and energy norms are established. The numerical results demonstrate that the method achieves expected accuracy and stability, validating the proposed scheme’s robustness and effectiveness for practical applications involving time-dependent convection-dominated problems.",
+      "_match": "title"
+    },
+    {
+      "title": "Accelerating eigensolvers in variational form",
+      "speakers": [
+        {
+          "name": "Sara Pollock",
+          "affiliation": "University of Florida"
+        }
+      ],
+      "abstract": "We will discuss accelerating iterative methods for PDE eigenvalue problems posed in variational form.  We will discuss the underlying theory of the momentum method we can use for symmetric problems, together with a technique for dynamic parameter selection. We will demonstrate it numerically on examples run within the FEniCS environment.  We will then mention new approaches for nonsymmetric problems based on continuing our extrapolation to greater depth, based on the recurrence relation for Faber polynomials.",
+      "_match": "title"
+    },
+    {
+      "title": "Finite element discretization of multiple-network poroelasticity with fluid transfer constraints",
+      "speakers": [
+        {
+          "name": "Jeonghun J. Lee",
+          "affiliation": "Baylor University"
+        }
+      ],
+      "abstract": "The multiple-network poroelasticity (MPET) model is an extended model of poroelasticity with multi-porosity or multiple pore-network elastic media. One of main applications of the model is modelling fluid flows in human brain by taking the arteries, the arterioles/capillaries, the veins, and the interstitial fluid-filled extracellular space as different pore networks. In previous MPET models fluid transfer between pore-networks is bi-directional. However, fluid transfer between pore-networks in consideration of physiological observations requires specific fluid transfer directions. In this work we propose an MPET model implementing fluid transfer constraints and discuss its finite element discretization.",
+      "_match": "title"
+    }
+  ]
+}

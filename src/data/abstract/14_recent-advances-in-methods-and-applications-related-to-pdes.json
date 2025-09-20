@@ -1,0 +1,93 @@
+{
+  "minisymposium_title": "Recent Advances in Methods and Applications Related to PDEs",
+  "talks": [
+    {
+      "title": "Structure-preserving discretization of the Poisson-Nernst-Planck Equations via the Onsager principle",
+      "speakers": [
+        {
+          "name": "Qianyi Li",
+          "affiliation": "Iowa State University"
+        }
+      ],
+      "abstract": "We present a variational approach for constructing energy-stable and positivity-preserving numerical schemes for the Poisson-Nernst-Planck (PNP) equations. Using the Onsager variational principle, we reformulate the governing PDEs as a constrained minimization problem. A straightforward time discretization naturally leads to a mass-transport formulation, ensuring mass conservation and energy dissipation.  The spatial discretization extends this formulation to a well-posed  minimization problem with linear constraints. We rigorously establish  positivity preservation, even in high-dimensional settings, and prove that the scheme maintains mass conservation and unconditional energy dissipation. Theoretical analysis confirms these structure-preserving properties, and numerical results further demonstrate the accuracy and robustness of the proposed approach.",
+      "_match": "title"
+    },
+    {
+      "title": "Professor",
+      "speakers": [
+        {
+          "name": "Xiaofan Li",
+          "affiliation": "Illinois Institute of Technology"
+        }
+      ],
+      "abstract": "Title:   Learning Generalized Diffusions using an Energetic Variational Approach  Abstract:  Extracting governing physical laws from computational or experimental data is important in various applications such as fluid dynamics and plasma physics.  Many of those physical laws are dissipative due to fluid viscosity or plasma collisions.  For such a dissipative physical system, we propose two distinct methods to learn the corresponding laws of the systems based on their energy-dissipation laws, assuming either continuous data (probability density) or discrete data (particles) are available. Our methods offer several key advantages, including their robustness to corrupted observations, their easy extension to more complex physical systems, and the potential to address higher-dimensional systems. We validate our approach through representative numerical examples and carefully investigate the impacts of data quantity and data property on the model discovery.",
+      "_match": "title"
+    },
+    {
+      "title": "Uniformly Accurate High-Frequency Asymptotic Approximations for Helmholtz and Fractional Helmholtz Equations with Fox H-Functions",
+      "speakers": [
+        {
+          "name": "Songting Luo",
+          "affiliation": "Iowa State University"
+        }
+      ],
+      "abstract": "In this talk, we will present recent findings on high-frequency asymptotic approximations for fractional Helmholtz equations. We will report formulations similar to WKBJ ansatz and formulations based on Fox H-functions, aiming to fill in the gap in asymptotic approximations for fractional wave equations. The proposed forms will reduce consistently to those for the standard Helmholtz equations when fractional order approaches integer order. Numerical examples will be also presented.",
+      "_match": "title"
+    },
+    {
+      "title": "Abstract Spectral Approximation Theories and Finite Element Methods for PDE Eigenvalue Problems",
+      "speakers": [
+        {
+          "name": "Jiguang Sun",
+          "affiliation": "Michigan Technological University"
+        }
+      ],
+      "abstract": "We review the abstract spectral approximation theory of linear compact operators. The theory has been used to show the convergence of finite element methods for various eigenvalue problems of PDEs such as the Dirichlet eigenvalue problem, biharmonic eigenvalue problem, and Maxwell's eigenvalue problem. Then we discuss the abstract approximation theory for holomorphic Fredholm operator-valued functions, known as Karma's theory. This theory requires the regular convergence of the discrete approximation operators. We employ the theory to prove the error estimates of the finite element methods for several nonlinear eigenvalue problems including the band structure of dispersive photonic crystals and scattering resonances.",
+      "_match": "title"
+    },
+    {
+      "title": "A unifying equidistribution–alignment-based moving mesh method for curves, surfaces, and domains",
+      "speakers": [
+        {
+          "name": "Weizhang Huang",
+          "affiliation": "Department of Mathematics, University of Kansas"
+        }
+      ],
+      "abstract": "A unifying moving mesh method will be presented in this talk for general m-dimensional geometric objects in d-dimensions (with m = 1, ..., d-1, or d) including curves, surfaces, and domains. The method is based on mesh equidistribution and alignment and does not require the availability of an analytical parametric representation of the underlying geometric object. Mathematical characterizations of shape and size of m-simplexes and properties of corresponding edge matrices and affine mappings are derived. The equidistribution and alignment conditions are presented in a unifying form for m-simplicial meshes. The equation for mesh movement is defined based on the moving mesh PDE approach, and suitable projection of the nodal mesh velocities is employed to ensure the mesh points are not moved out of the underlying geometric object. The analytical expression for the mesh velocities is obtained in a compact matrix form. The nonsingularity of moving meshes is proved. Numerical results for curves (m = 1) and surfaces (m = 2) in two and three dimensions are presented to demonstrate the ability of the developed method to move mesh points without causing singularity and control their concentration.",
+      "_match": "title"
+    },
+    {
+      "title": "Characterization of nonlinear objects in a waveguide using boundary scattering data",
+      "speakers": [
+        {
+          "name": "Dinh-Liem Nguyen",
+          "affiliation": "Kansas State University"
+        }
+      ],
+      "abstract": "This talk addresses the inverse scattering problem for the nonlinear Helmholtz equation of Kerr type in two-dimensional waveguides. The objective is to determine the shape and location of nonlinear scattering objects within the waveguide using boundary scattered field data. This problem has significant applications in physics and engineering, including radar, sonar, optics, and nondestructive testing. We present a factorization analysis of the measurement operator, which enables a complete characterization of the nonlinear scatterer. This characterization also ensures the unique identification of the target from the given scattering data. The result presented is based on joint work with Nhung Nguyen and Thi-Phong Nguyen.",
+      "_match": "title"
+    },
+    {
+      "title": "Finding Cheeger cuts via 1-Laplacian of graphs",
+      "speakers": [
+        {
+          "name": "Wei Zhu",
+          "affiliation": "University of Alabama"
+        }
+      ],
+      "abstract": "Finding Cheeger cuts of graphs is an NP-hard problem, and one often resorts to approximate solutions. In the literature, spectral graph theory provides the most popular approaches for obtaining such approximate solutions. Recently, Prof. K.C. Chang introduced a novel nonlinear spectral graph theory and proved  that the seek of Cheeger cuts is equivalent to solving a constrained optimization problem. However, this resulting optimization problem is also very challenging  as it involves a non-differentiable function over a non-convex set that is composed of simplex cells of different dimensions. In this talk, we will discuss an ADMM  algorithm for solving this optimization problem and provide some convergence analysis. Experimental results will be presented for typical graphs, including  Petersen's graph and Cockroach graphs, the well-known Zachary karate club graph, and some preliminary applications in material sciences.",
+      "_match": "title"
+    },
+    {
+      "title": "Efficient high-order methods for wave propagation.",
+      "speakers": [
+        {
+          "name": "Ian T. Morgan",
+          "affiliation": "Iowa State University"
+        }
+      ],
+      "abstract": "Due to dispersion errors, numerically solving the wave equation is challenging.  Conventional methods generally need a more refined mesh to maintain accuracy, which often leads to large linear systems that are prohibitively expensive to solve.  As a result, higher-order methods are required, like Fourier pseudospectral and spectral element spatial approximations.  For time integration, two methods will be presented: diagonalizable Runge-Kutta methods, which necessitate the solution of one or more modified Helmholtz equations at every timestep, which is done efficiently using multigrid methods, and an exponential integrator paired with high-order operator splitting shows promise as being both incredibly stable and easily parallelizable.",
+      "_match": "title"
+    }
+  ]
+}

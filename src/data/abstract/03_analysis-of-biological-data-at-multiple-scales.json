@@ -1,0 +1,60 @@
+{
+  "minisymposium_title": "Analysis of Biological Data at Multiple Scales",
+  "talks": [
+    {
+      "title": "OTMol: Robust Molecular Structure Comparison via Optimal Transport",
+      "speakers": [
+        {
+          "name": "Xiaoqi Wei",
+          "affiliation": "North Carolina State University"
+        }
+      ],
+      "abstract": "Root-mean-square deviation (RMSD) is widely used to assess structural similarity in systems ranging from flexible ligand conformers to complex molecular clusters configurations. Despite its wide utility, RMSD calculation is often challenged by inconsistent atom ordering, indistinguishable configurations in molecular clusters, and potential chirality inversion during alignment. These issues highlight the necessity of accurately establishing atom-to-atom correspondence as a prerequisite for meaningful alignment. Traditional approaches often rely on heuristic cost matrices combined with the Hungarian algorithm, yet these methods underutilize the rich intra-molecular structural information and may fail to generalize across chemically diverse systems. In this work, we introduce OTMol, a novel method that formulates the molecular alignment task as a fused supervised Gromov–Wasserstein (fsGW) optimal transport problem. By leveraging the intrinsic geometric and topological relationships within each molecule, OTMol eliminates the need for manually defined cost functions and enables a principled, data-driven matching strategy. We evaluate OTMol across a wide range of molecular systems, including small peptides, noble gas clusters, and water clusters, and demonstrate that it consistently achieves low RMSD values while preserving computational efficiency. Importantly, OTMol maintains molecular integrity by enforcing one-to-one mappings between entire molecules, thereby avoiding erroneous many-to-one alignments that often arise in clustering scenarios. Our results underscore the utility of optimal transport theory for molecular alignment and offer a generalizable framework applicable to structural comparison tasks in cheminformatics, molecular modeling, and related disciplines.",
+      "_match": "title"
+    },
+    {
+      "title": "PLD-Tree: Persistent Laplacian Decision Tree for Protein-Protein Binding Free Energy Prediction",
+      "speakers": [
+        {
+          "name": "Xingjian Xu",
+          "affiliation": "University of Florida"
+        }
+      ],
+      "abstract": "In this talk,  a novel machine learning-based method is proposed to tackle the challenging task of predicting protein–protein interaction (PPI) affinities. Our method focuses on protein chains at binding interfaces and extracts three distinct types of features that capture key inter-protein interactions. Notably, our approach outperforms all previously reported state-of-the-art methods on several benchmark datasets. These results highlight the potential of machine learning in molecular docking and virtual screening, offering a robust and accurate framework for predicting protein–protein binding affinities.",
+      "_match": "title"
+    },
+    {
+      "title": "Breast Cancer Detection with Topological Deep Learning",
+      "speakers": [
+        {
+          "name": "Brighton Nuwagira",
+          "affiliation": "University of Texas at Dallas"
+        }
+      ],
+      "abstract": "In this paper, we investigate the integration of topological data analysis (TDA) techniques with deep learning (DL) models to improve breast cancer diagnosis from ultrasound images. By leveraging persistent homology, a TDA method that captures global structural patterns, we enrich the local spatial features typically learned by DL models. We incorporate topological features into various pre-trained architectures, including CNNs and vision transformers (VTs), aiming to enhance screening accuracy for breast cancer, which remains the most common cancer among women.   Experiments on publicly available ultrasound datasets demonstrate that combining CNNs and VTs with topological features consistently yields statistically significant performance improvements. Notably, this approach also helps to address challenges faced by DL models, such as interpretability and reliance on large labeled datasets. Furthermore, we generalize the Alexander duality theorem to cubical persistence, showing that persistent homology remains invariant under sublevel and superlevel filtrations for image data. This advancement reduces computational costs, making TDA methods more practical for image analysis.",
+      "_match": "title"
+    },
+    {
+      "title": "Multi-level, multi-color mathematical graph neural networks for molecular property prediction",
+      "speakers": [
+        {
+          "name": "Trung Nguyen",
+          "affiliation": "University of Tennessee, Knoxville"
+        }
+      ],
+      "abstract": "Graph Neural Networks (GNNs) have demonstrated significant potential in molecular property prediction. However, current GNN architectures mostly rely on standard node or edge features that overlook the complex, multi-scale interactions between atoms in small molecules. This research introduces a mathematics-driven approach that integrates concepts from Geometric Graph Learning (GGL) and Algebraic Graph Learning (AGL) to enhance molecular representations. Drawing upon GGL principles, we construct multi-color molecular graphs where nodes represent atoms and edges are weighted based on both spatial distances and local geometric features, such as curvatures derived from differential geometry applied to atomic interactions. Furthermore, we encode high-dimensional atomic interactions through the spectral properties of algebraic subgraphs, such as the Laplacian and adjacency matrices derived from these geometric graphs. The construction of these multi-level graphs and their connectivity follow the principles of Persistent Spectral Graph Theory, where a filtration process generates a family of graphs across different scales, capturing both topological persistence and geometric evolution of atomic relationships. This integrated approach enables reliable and robust molecular representations by incorporating both short- and long-range dependencies, thereby surpassing the limitations of conventional GNNs. Our approach significantly improves predictive performance in molecular property prediction tasks and provides a reliable framework to advance drug discovery and materials science applications.",
+      "_match": "title"
+    },
+    {
+      "title": "Modeling Epidemics in Metapopulations: Integrating Human Mobility and Heterogeneity",
+      "speakers": [
+        {
+          "name": "Haridas K. Das",
+          "affiliation": "Oklahoma State University"
+        }
+      ],
+      "abstract": "Human mobility is an inherent aspect of the interconnected world and a key driver in disease transmission through networked populations. Despite its importance, the role of actual mobility patterns in driving or containing disease transmission has received relatively less attention. To address this limitation, we investigated the impact of network structure and human mobility on disease spread within a metapopulation and derived epidemic threshold formulas that take mobility into account. We implemented simplified analogs of real-world networks, such as stars and cycles, and obtained classes of networks with the same epidemic threshold formula. Identifying the pivotal role of network structures in disease dynamics, we developed and deployed a novel hybrid mechanistic metapopulation model that incorporated cellphone mobility data, such as human movement trajectories between counties, into the mechanistic model. This allowed us to trace the disease's evolution across counties. Using daily county-level travel networks across all 50 states in the United States, we simulated various outbreak and intervention scenarios to capture more realistic epidemic patterns, revealing richer dynamics than traditional metapopulation models.",
+      "_match": "title"
+    }
+  ]
+}

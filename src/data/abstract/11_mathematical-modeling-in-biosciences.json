@@ -1,0 +1,159 @@
+{
+  "minisymposium_title": "Mathematical Modeling in Biosciences",
+  "talks": [
+    {
+      "title": "A DNN Biophysics Model with Topological and Electrostatic Features",
+      "speakers": [
+        {
+          "name": "Weihua Geng",
+          "affiliation": "Southern Methodist University"
+        }
+      ],
+      "abstract": "In this project, we provide a deep-learning neural network (DNN) based biophysics model to predict protein properties. The model uses multi-scale and uniform topological and electrostatic features generated using protein structural information and force field. The topological features are gen- erated using the element specified persistent homology (ESPH) on a selection of heavy atoms or carbon atoms which contribute significantly in the protein biophysical properties. The electrostatic features are fast computed using a Cartesian treecode, modulated with treecode parameters for accuracy-cost tradeoff. These features are uniform in number for proteins with various sizes thus the broadly available protein structure database can be used to train the network. These features are also multi-scale thus the resolution and computational cost can be balanced by the users at the consideration of available computing powers. The machine learning simulations on two data sets with 4000+ and 17000+ protein structures showed the efficiency and fidelity of these features in representing the protein structure and force field for the predication of their biophysical properties such as electrostatic Coulombic energies and solvation energies. The feature generation algorithms have the potential as general tools in assisting machine learning based biophysical properties and function prediction for the broad biomolecules whose structures are obtained from both theoretical computing and experiments.",
+      "_match": "title"
+    },
+    {
+      "title": "A Bubble Model for the Gating of Kv Channels",
+      "speakers": [
+        {
+          "name": "Zilong Song",
+          "affiliation": "Utah State University"
+        }
+      ],
+      "abstract": "N/A",
+      "_match": "title"
+    },
+    {
+      "title": "Constrained variational models of biomolecular solvation and their numerical implementation",
+      "speakers": [
+        {
+          "name": "Zhan Chen",
+          "affiliation": "Georgia Southern University"
+        }
+      ],
+      "abstract": "Variational solvation models with smooth solute–solvent interfaces have attracted considerable attention over the past decade, as they provide efficient and reliable implicit representations of biomolecular solvation. This work establishes rigorous mathematical foundations for a promising geometric flow–based solvation model with diffuse interfaces (GFBDS) and its associated computational framework. Specifically, we enhance the GFBDS model by explicitly incorporating two physical constraints: (1) a novel experimental-based domain decomposition, and (2) a two-sided obstacle for the characteristic function defining the optimal diffuse solute–solvent boundary. In addition, we introduce a diffuse-interface based size-modified Poisson–Boltzmann equation to improve solvation related simulation for protein systems. We show that the resulting constrained model is mathematically well-posed. To address the computational challenges arising from these constraints, we propose a family of generalized constrained energy functionals whose variations lead to a q Laplacian type equation applicable to both polar and nonpolar molecules. The model validation, numerical implementation, and convergence of solvation energies are demonstrated through several benchmark biomolecular modeling tasks.",
+      "_match": "title"
+    },
+    {
+      "title": "Poisson-Boltzmann theory for biomolecular electrostatics: Self-energies, regularization, and far-field approximation",
+      "speakers": [
+        {
+          "name": "Shan Zhao",
+          "affiliation": "The University of Alabama"
+        }
+      ],
+      "abstract": "The Poisson-Boltzmann (PB) model is one of the most widely used implicit solvent models for electrostatic analysis at the molecular level and has been highly successful in various biological applications. However, the electrostatic free energy computed by the PB model involves self-energy terms, i.e., the singular charge at an atom centre will interact with the potential induced by itself, which yields infinite energy values at atom centres. Consequently, the PB calculation of the polar solvation energy must assume that the biomolecules are rigid in solvent and vacuum states, so that the same self-energies in two states can be cancelled. To reduce the numerical error involved in grid energy cancellation, the regularization is commonly used in the classical two-dielectric PB model. Recently, we have developed the first regularization for the PB models with diffuse interface or super-Gaussian heterogeneous dielectric media, in which a dual decomposition is proposed for potential and dielectric functions so that the solution singularities can be analytically captured by using Green’s functions. More recently, a novel far-field (FF) energy method is proposed, which reconstructs the energies by using far-field solutions outside the solute so that the self-energy terms are avoided. The robustness of the FF method in treating a non-rigid biomolecular with different molecular structures in solvent and vacuum has been explored, taking advantage of the fact that the far-field potential is insensitive to perturbations of singular charge locations. This research was partially supported by the NSF DMS-2306991 and DMS-2521204.",
+      "_match": "title"
+    },
+    {
+      "title": "Computational Modeling of Anti-Amyloid-beta Antibody Therapies in Alzheimer’s Disease",
+      "speakers": [
+        {
+          "name": "Lida Rabiei",
+          "affiliation": "Pennsylvania State University"
+        }
+      ],
+      "abstract": "Alzheimer’s disease (AD) involves the accumulation of amyloid-β (Aβ), closely linked to progression and cognitive decline. Although monoclonal antibodies targeting Aβ have been approved, balancing treatment efficacy and side effects remains challenging. We develop a mathematical framework for Aβ aggregation dynamics using mass-action kinetics and coarse-grained modeling, calibrated with data through parameter estimation and sensitivity analysis. An optimal control approach is applied to identify dosing strategies that reduce toxic oligomers and fibrils while limiting adverse effects such as ARIA. Results show Donanemab produces the greatest reduction in fibrils, offering quantitative insights for optimizing AD therapies.",
+      "_match": "title"
+    },
+    {
+      "title": "Structure analytics with polynomial encoding reveal mechanisms of R-loop formation",
+      "speakers": [
+        {
+          "name": "Pengyu (Peter) Liu",
+          "affiliation": "University of Rhode Island"
+        }
+      ],
+      "abstract": "Advancements in sequencing technologies have produced a wealth of genomic data. At the same time, the development of artificial intelligence has enabled powerful folding models, such as AlphaFold 3, that can accurately predict molecular structures from sequences. Biomolecular structures are more evolutionarily conserved than sequences and more directly linked to biological functions. Analytics of structure data therefore offer more accurate approaches to predicting, classifying and analyzing phenotypes from genotypes. Structural analytics require structure encoding. In this talk, we introduce a polynomial encoding of RNA secondary structures and a computational pipeline built on this encoding to predict the formation of a class of non-B nucleic acid structures known as R-loops. R-loops are abundant in nature and related to various human diseases, including cancers and genetic disorders. Recent studies suggest that both DNA sequence and topology affect R-loop formation, while R-loop formation sites and mechanisms remain unclear. We demonstrate that our computational pipeline can accurately predict R-loop formation sites, and that the interpretability of the polynomial encoding provides novel insights into the mechanisms of R-loop formation.",
+      "_match": "title"
+    },
+    {
+      "title": "Phase Field Modeling of  Dictyostelium Discoideum Chemotaxis",
+      "speakers": [
+        {
+          "name": "Yanxiang Zhao",
+          "affiliation": "George Washington University"
+        }
+      ],
+      "abstract": "A phase field approach is proposed to model the chemotaxis of Dictyostelium discoideum. In this framework, motion is controlled by active forces as determined by the Meinhardt model of chemical dynamics which is used to simulate directional sensing during chemotaxis. Then, the movement of the cell is achieved by the phase field dynamics, while the reaction-diffusion equations of the Meinhardt model are solved on an evolving cell boundary. This task requires the extension of the usual phase-field formulation to allow for components that are restricted to the membrane.  The coupled system is numerically solved by an efficient spectral method under periodic boundary conditions. Numerical experiments show that our model system can successfully mimic the typically observed pseudopodia patterns during chemotaxis.",
+      "_match": "title"
+    },
+    {
+      "title": "Topological Machine Learning for Drug Discovery",
+      "speakers": [
+        {
+          "name": "Baris Coskunuzer",
+          "affiliation": "University of Texas at Dallas"
+        }
+      ],
+      "abstract": "In this talk, we present Topoformers, a novel framework that combines topological data analysis with transformer architectures for graph learning. Rather than relying on computationally expensive Persistent Homology, our approach employs Topo-Scan, an efficient method that encodes topological features in a sequential format, enabling seamless integration with transformers. This reduces computational costs while enhancing adaptability across diverse graph datasets. Benchmark experiments demonstrate that Topo-Transformers achieve state-of-the-art performance in graph classification and molecular property prediction, offering a scalable solution for incorporating topological insights into deep learning.",
+      "_match": "title"
+    },
+    {
+      "title": "Mathematical AI models for drug discovery",
+      "speakers": [
+        {
+          "name": "Hongsong Feng",
+          "affiliation": "University of North Carolina at Charlotte"
+        }
+      ],
+      "abstract": "The effectiveness of machine learning in molecular bioscience and biophysics research is often hindered by the curse of dimensionality associated with biomolecular structures and the varying sizes of biomolecules, which limits the large-scale use of biological data. To overcome these challenges, we employ advanced mathematical theories, such as topological data analysis, geometric data analysis, and multiscale differential geometry, to provide mathematical representations of high dimensional data. By integrating these mathematical models with machine learning algorithms, cutting-edge mathematical AI models have been developed which consistently outperform state-of-the-art methods in numerous benchmarks. Additionally, these mathematical AI models can be used to address real-world biological challenges, with a particular focus on AI-assisted drug design/discovery.",
+      "_match": "title"
+    },
+    {
+      "title": "Topological Data Analysis on Manifolds",
+      "speakers": [
+        {
+          "name": "Zhe Su",
+          "affiliation": "Auburn University"
+        }
+      ],
+      "abstract": "Topological data analysis (TDA) provides powerful tools for understanding the structure of complex data, yet most applications have focused on points, graphs, or simplicial complexes. In this talk, I will present an approach to TDA for analyzing data on manifolds, grounded in de Rham-Hodge theory, which provides deep insight into both the topological and geometric features of data. These frameworks have proven to be effective, efficient, and well-suited for integration with machine learning. I will illustrate their effectiveness through applications in mathematical biology, including protein–drug binding affinity prediction, single-cell RNA velocity analysis, and medical image classification, etc.",
+      "_match": "title"
+    },
+    {
+      "title": "Topological and spatial imaging biomarkers for glioma survival prediction",
+      "speakers": [
+        {
+          "name": "Chul Moon",
+          "affiliation": "Southern Methodist University"
+        }
+      ],
+      "abstract": "Tumor shape plays a critical role in influencing both growth and metastasis. We introduce a novel topological feature, derived using persistent homology, to characterize tumor progression with a focus on its relationship to time-to-event data. These features, which are invariant to scale-preserving transformations, effectively capture diverse tumor shape patterns. To analyze these features, we propose a functional spatial Cox proportional hazards model that represents the topological features in a functional space, incorporating both the features and their spatial information as functional predictors. This approach enables interpretable analysis of the association between tumor shape characteristics and survival risks. Two case studies were conducted using radiomic images of high-grade and low-grade gliomas. The findings suggest that the topological features serve as strong predictors of survival prognosis, remaining significant after adjusting for clinical variables, and contribute further clinically relevant understanding.",
+      "_match": "title"
+    },
+    {
+      "title": "Experimental and theoretical investigations of rotating algae biofilm reactors (RABRs): Areal productivity, nutrient recovery, and energy efficiency",
+      "speakers": [
+        {
+          "name": "Jia Zhao",
+          "affiliation": "University of Alabama"
+        }
+      ],
+      "abstract": "Microalgae biofilms have been demonstrated to recover nutrients from wastewater and serve as biomass feedstock for bioproducts. In this talk, we present a platform to quantitatively describe microalgae biofilm production that can provide guidance and insights for improving biomass areal productivity and nutrient uptake efficiency of a rotating algae biofilm reactor (RABR).  Furthermore, we will present a novel mathematical model to accurately capture the growth dynamics of algae biofilms within RABR.",
+      "_match": "title"
+    },
+    {
+      "title": "Graph and Geometry-Inspired Machine Learning Approaches for Molecular Interaction Prediction",
+      "speakers": [
+        {
+          "name": "Md Masud Rana",
+          "affiliation": "Kennesaw State University"
+        }
+      ],
+      "abstract": "Predicting molecular properties such as drug–target binding affinity and protein–protein interactions remains a central challenge in molecular bioscience and drug discovery, with significant implications for therapeutic design. Although accurately estimating binding affinities or the free energy changes of proteins upon mutations is inherently challenging, advances in machine learning, together with the growing availability of structural and experimental data, have enabled accurate and efficient solutions. Differential geometry and graph theory provide powerful frameworks for representing and analyzing complex biomolecular systems: molecular surface representations encode essential chemical and biological information into differentiable manifolds that reduce dimensionality, while graph-based models naturally capture molecular structures by treating atoms as vertices and interactions as edges. In this talk, I will present several models that integrate these mathematical approaches with advanced machine learning techniques to predict protein–ligand binding affinity and changes in affinity upon mutation, achieving superior performance compared to many state-of-the-art methods on established benchmark datasets.",
+      "_match": "title"
+    },
+    {
+      "title": "A simple two-phase model for simulating vesicle dynamics",
+      "speakers": [
+        {
+          "name": "Shuwang Li",
+          "affiliation": "Illinois Institute of Technology"
+        }
+      ],
+      "abstract": "We present a diffuse interface model for vesicle growth or shrinkage induced by an osmotic pressure. The model consists of an Allen-Cahn equation describing the evolution of the phase field and a Cahn-Hilliard equation describing the evolution of the concentration field. We establish control conditions for expanding or shrinking vesicles using the concept of common tangent construction in materials science. Numerical experiments reveal that the model can capture the main feature of dynamics: formation of circle-like (expanding) and finger-like (shrinking) vesicles.",
+      "_match": "title"
+    }
+  ]
+}

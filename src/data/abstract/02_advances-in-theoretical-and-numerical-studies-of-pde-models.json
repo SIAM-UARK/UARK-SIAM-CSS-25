@@ -1,0 +1,93 @@
+{
+  "minisymposium_title": "Advances in theoretical and numerical studies of PDE models",
+  "talks": [
+    {
+      "title": "Gamma-Convergence and Asymptotic Analysis for a Diffuse Domain Problem with Transmission Boundary Conditions: Part 2, Numerical Confirmation",
+      "speakers": [
+        {
+          "name": "Calvin Wong",
+          "affiliation": "The University of Tennessee, Knoxville"
+        }
+      ],
+      "abstract": "Diffuse domain methods (DDMs) have garnered significant attention for approximating solutions to partial differential equations on complex geometries. These methods implicitly represent the geometry by replacing the sharp boundary interface with a diffuse layer of thickness \\epsilon, which scales with the minimum grid size. This approach reformulates the original equations on an extended regular domain, incorporating boundary conditions through singular source terms. In this work, we conduct a matched asymptotic analysis of a DDM for a two-sided problem with transmission Robin boundary conditions. Our results show that, in one dimension, the solution of the diffuse domain approximation asymptotically converges to the solution of the original problem, with exactly first-order accuracy in \\epsilon. Furthermore, for the Neumann boundary condition case, we show that the associated energy functional of the diffuse domain approximation \\Gamma convergences to the energy functional of the original problem, and the solution of the diffuse domain approximation strongly converges, up to a subsequence, to the solution of the original problem in H^1(\\Omega), as \\epsilon \\to 0. In this talk (Part 2 of 2), we focus on the numerical confirmation of the theoretical results using highly efficient multigrid solvers and fast marching methods for building interfacial features for complex domains.",
+      "_match": "title"
+    },
+    {
+      "title": "Stability of Interfacial Energies Under Gradient Flows",
+      "speakers": [
+        {
+          "name": "Qiliang Wu",
+          "affiliation": "Ohio University"
+        }
+      ],
+      "abstract": "We present a systematic derivation of the gradient flows associated to a broad class of inter- facial energies, emphasizing the relation between intrinsic and extrinsic variations of the interface. We show that the intrinsic variables formulation brings the gradient flow into alignment with the traditional analysis of quasi-steady dynamical systems defined on a stationary domain. Gradient flows are derived for model systems which exhibit quasi-steady pattern formation including coarsening among faceted interfaces and nonlocal interactions that model membrane self-adhesion and self-avoidance.",
+      "_match": "title"
+    },
+    {
+      "title": "Analysis and computation of a generalized Ohta-Kawasaki model",
+      "speakers": [
+        {
+          "name": "Yanxiang Zhao",
+          "affiliation": "George Washington University"
+        }
+      ],
+      "abstract": "Abstract: In this talk, we present a generalized nonlocal Ohta-Kawasaki model to investigate the nonlocal effects on pattern formation in binary systems with general long-range interactions. In the 1D case, the generalized model exhibits bubble patterns similar to those of the standard Ohta-Kawasaki model. However, through Fourier analysis, we find that the optimal number of bubbles in the generalized model may have an upper bound, regardless of the repulsive strength. This upper bound is determined by the eigenvalues of the nonlocal kernels. To explore the nonlocal effects in the 2D Ohta-Kawasaki model, we develop asymptotically compatible numerical schemes. Furthermore, our numerical studies are extended to disk and spherical domains, uncovering new patterns.",
+      "_match": "title"
+    },
+    {
+      "title": "Gamma-Convergence and Asymptotic Analysis for a Diffuse Domain Problem with Transmission Boundary Conditions, Part 1: Theoretical Analysis",
+      "speakers": [
+        {
+          "name": "Toai Luong",
+          "affiliation": "Virginia Commonwealth University"
+        }
+      ],
+      "abstract": "Diffuse domain methods (DDMs) have garnered significant attention for approximating solutions to partial differential equations on complex geometries. These methods implicitly represent the geometry by replacing the sharp boundary interface with a diffuse layer of thickness $\\epsilon$, which scales with the minimum grid size. This approach reformulates the original equations on an extended regular domain, incorporating boundary conditions through singular source terms. In this work, we conduct a matched asymptotic analysis of a DDM for a two-sided problem with transmission Robin boundary conditions. Our results show that, in one dimension, the solution of the diffuse domain approximation asymptotically converges to the solution of the original problem, with exactly first-order accuracy in $\\epsilon$. Furthermore, for the Neumann boundary condition case, we show that the associated energy functional of the diffuse domain approximation Gamma-converges to the energy functional of the original problem, and the solution of the diffuse domain approximation strongly converges, up to a subsequence, to the solution of the original problem in $H^1(\\Omega)$, as $\\epsilon \\to 0$. In this talk (Part 1 of 2), we focus on the theoretical analysis of the problem, specifically, the details of the asymptotic and Gamma-convergence analyses.",
+      "_match": "title"
+    },
+    {
+      "title": "Minimizers for the Cahn–Hilliard Energy Functional with the Flory–Huggins Potential under Strong Anchoring Conditions",
+      "speakers": [
+        {
+          "name": "Abba Ramadan",
+          "affiliation": "The University of Alabama"
+        }
+      ],
+      "abstract": "We investigate minimizers of the Cahn–Hilliard energy functional with the Flory–Huggins (logarithmic) potential under strong anchoring conditions. Using the Nehari manifold framework and the eigenvalue problem for the negative Laplacian with Dirichlet boundary conditions, we provide an analytical characterization of these minimizers on bounded domains. Our analysis reveals a bifurcation phenomenon governed by the boundary value, the temperature, and a bifurcation parameter that quantifies the thickness of the transition layer separating the two phases of the binary mixture. Furthermore, we establish bounds on the minimizers that incorporate the influence of boundary conditions and structural features of the Cahn–Hilliard energy. Finally, we complement the theoretical results with numerical minimization of the energy functional.",
+      "_match": "title"
+    },
+    {
+      "title": "Limiting behavior of the De Gennes-Cahn-Hilliard Energy",
+      "speakers": [
+        {
+          "name": "Shibin Dai",
+          "affiliation": "The University of Alabama"
+        }
+      ],
+      "abstract": "The degenerate de Gennes-Cahn-Hilliard (dGCH) equation is a model for phase separation which may more closely approximate surface diffusion than others in the limit when the thickness of the transition layer approaches zero. We find that its Gamma–limit is a constant multiple of the interface area, where the constant is determined by the de Gennes coefficient together with the double well potential. In contrast, the transition layer profile is solely determined by the double well potential. We will also talk about the force convergence and the classification of the minimizers of the dGCH energy.",
+      "_match": "title"
+    },
+    {
+      "title": "An Efficient, Decoupled, and Linearly Stabilized Scheme for Phase-Field Models with Variable Mobility",
+      "speakers": [
+        {
+          "name": "Zhiwei Zhang (Speaker), Shuwang Li (co-author, Illinois Institute of Tecnology), and Steve Wise (co-author,University of Tennessee at Knoxville))",
+          "affiliation": "Illinois Institute of Technology"
+        }
+      ],
+      "abstract": "Phase-field models for multiphysics problems, such as vesicle deformation under osmotic pressure, often result in complex, coupled nonlinear PDEs. A key computational challenge arises in systems with variable mobility, which can preclude the use of the most efficient, high-order implicit schemes that rely on constant-coefficient operators.  To address this challenge, we develop and analyze a novel numerical scheme based on the Multiple Scalar Auxiliary Variable (MSAV) method. Our approach introduces a linear stabilization term outside of the chemical potential. This strategy successfully decouples the system into a sequence of linear, constant-coefficient elliptic equations at each time step, which can be solved with high efficiency using fast direct solvers. We present a rigorous numerical verification of the scheme's second-order accuracy in time and an analysis of its spatial convergence properties. Numerical experiments demonstrate the scheme's computational efficiency against a baseline nonlinear multigrid (NLMG) solver, showing that our method's key advantage is replacing the complex, iterative nonlinear solve at each step with a small, fixed number of non-iterative linear solves.",
+      "_match": "title"
+    },
+    {
+      "title": "An Efficient, Decoupled, and Linearly Stabilized Scheme for Phase-Field Models with Variable Mobility",
+      "speakers": [
+        {
+          "name": "Zhiwei Zhang",
+          "affiliation": "Illinois Institute Of Technology"
+        }
+      ],
+      "abstract": "Phase-field models for multiphysics problems, such as vesicle deformation under osmotic pressure, often result in complex, coupled nonlinear PDEs. A key computational challenge arises in systems with variable mobility, which can preclude the use of the most efficient, high-order implicit schemes that rely on constant-coefficient operators.  To address this challenge, we develop and analyze a novel numerical scheme based on the Multiple Scalar Auxiliary Variable (MSAV) method. Our approach introduces a linear stabilization term outside of the chemical potential. This strategy successfully decouples the system into a sequence of linear, constant-coefficient elliptic equations at each time step, which can be solved with high efficiency using fast direct solvers. We present a rigorous numerical verification of the scheme's second-order accuracy in time and an analysis of its spatial convergence properties. Numerical experiments demonstrate the scheme's computational efficiency against a baseline nonlinear multigrid (NLMG) solver, showing that our method's key advantage is replacing the complex, iterative nonlinear solve at each step with a small, fixed number of non-iterative linear solves.",
+      "_match": "title"
+    }
+  ]
+}

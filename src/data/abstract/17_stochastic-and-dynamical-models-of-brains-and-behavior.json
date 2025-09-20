@@ -1,0 +1,71 @@
+{
+  "minisymposium_title": "Stochastic and dynamical models of brains and behavior",
+  "talks": [
+    {
+      "title": "How groups decide without leaders in changing environment",
+      "speakers": [
+        {
+          "name": "Hyunjoong Kim",
+          "affiliation": "University of Cincinnati"
+        }
+      ],
+      "abstract": "We study how effective decision-making can arise in social animal groups without central control. Our model considers collective foraging, where agents either invest in costly exploration or remain idle, with both rewards and information shared across the group. Using dynamic programming and asymptotic analysis, we find that optimal performance requires structured heterogeneity: a small subset of scouts continues to explore under uncertainty, while most deliberators act in synchrony and commit only when conditions are likely to yield rewards. The balance between these roles shifts non-monotonically with environmental volatility and metabolic cost, showing how groups reconfigure internally to manage trade-offs between speed, accuracy, and efficiency. Importantly, the optimal policy can be realized through simple threshold rules followed by individuals, without the need for centralized coordination. These results provide a mechanistic account of self-organization under uncertainty and predict how group composition should change with ecological pressures.",
+      "_match": "title"
+    },
+    {
+      "title": "Are the differences between Parkinsonian and healthy subjects like other brain diseases?",
+      "speakers": [
+        {
+          "name": "Cheng Ly",
+          "affiliation": "Virginia Commonwealth University"
+        }
+      ],
+      "abstract": "The timescales of cortical activity is a reflection of the complexity of functions it can perform. The brain criticality hypothesis, i.e., neural networks can operate near a critical point, is supported by a growing body of evidence. Neural networks at criticality have desirable features: maximal range of activity, information storage and transmission, etc.; we focus on maximal range of timescales at criticality (or temporal scale-invariance).  We analyze resting state EEG activity in primary motor cortex of healthy and Parkinsonian human subjects. We apply our recently developed temporal renormalization group (tRG) theory to this dataset to quantify how close each subject is to criticality, i.e., temporal scale-invariance. We find in many relevant frequency bands that healthy subjects were on average further away from criticality than Parkinsonian. Although consistent with other commonly used methods to assess timescales (ACF, DFA), our calculations directly measure distance to criticality, and is independent of model parameterization, using an information-theoretic framework.   Thus the motor cortex EEG activity of Parkinsonian patients have a broader range and longer timescales than healthy subjects. This is at odds with the notion that healthy brain states operate closer to criticality than pathological ones. Although these results appear controversial, they are in line with two recent publications in whole brain areas where i) authors found that Parkinsonian subjects have more frequency bands closer to edge of chaos than control subjects in whole brain MEG, ii) authors found Parkinsonian subjects can have longer timescales via DFA in whole brain EEG.   Work with: Sam Sooter (U Arkansas), Andrea Barreiro (SMU), Woodrow Shew (U Arkansas)",
+      "_match": "title"
+    },
+    {
+      "title": "Disentangling bidirectional astrocyte-neuron interactions during learned behavior",
+      "speakers": [
+        {
+          "name": "Sam Sooter",
+          "affiliation": "University of Arkansas"
+        }
+      ],
+      "abstract": "Sam Sooter (1), Marco Celotto (2, 3), Gabrielle Drummond (2), Jennifer Shih (2), Jiho Park (2), Arundhati Natesan (2), Hiroki Sugihara (2), Stefano Panzeri (3), Mriganka Sur (2)   (1) Department of Physics, University of Arkansas, Fayetteville, AR, 72701, USA   (2) Department of Brain and Cognitive Sciences, Picower Institute for Learning and Memory, Massachusetts Institute of Technology, Cambridge, MA, 02139, USA   (3) Institute of Neural Information Processing, Center for Molecular Neurobiology (ZMNH), University Medical Center Hamburg-Eppendorf (UKE), 20251 Hamburg, Germany   Cortical astrocytes sense and regulate ongoing neuronal activity through diverse biophysical pathways. However, the role of astrocyte-neuron interactions in complex learned behaviors remains unclear. Here we leveraged dual-color neuron-astrocyte imaging data to investigate the directionality, population geometry, content, and timing of information flows between these cell types in motor cortex of mice executing a serial go/no-go task. We found that past neuronal activity is transmitted to astrocytes through a low-dimensional communication subspace. Using partial information decomposition, we resolved this neuron-to-astrocyte information transfer into movement-related and movement-unrelated components, finding rich dynamics in the proportion of movement-related transfer around the time of the tone onset. To assess the role of astrocytes beyond just reading out past neuronal activity, we trained a cross-validated generalized linear model to predict astrocyte activity from task events, continuous motor variables, and neuronal activity. The full model robustly predicted astrocyte fluctuations; importantly, removing the non-neuronal predictors significantly reduced performance, suggesting that astrocytes integrate past task variables (specifically, punishment events) independently of neuronal activity. Interestingly, post-punishment astrocyte events coincided with a next-trial boost in neuronal encoding of the animal’s choice (whether to press or not press the lever), but not in encoding of the stimulus. We are currently developing methods to test whether astrocytes actively contribute to post-punishment modulation of neuronal encoding, independent of their effect on overall neuronal activity. Together, our results point to a dual role for astrocytes as slow integrators of past events and as context-dependent modulators of neuronal encoding.",
+      "_match": "title"
+    },
+    {
+      "title": "From Chaos to Coherence: Effects of High-Order Synaptic Correlations on Neural Dynamics",
+      "speakers": [
+        {
+          "name": "Krešimir Josić",
+          "affiliation": "University of Houston"
+        }
+      ],
+      "abstract": "Recurrent Neural Network models have elucidated the interplay between structure and dynamics in biological neural networks, particularly the emergence of irregular and rhythmic activities in cortex. However,  most studies have focused on networks with random or simple connectivity structures.  Experimental observations find that high-order cortical connectivity patterns affect the temporal patterns of network activity, but a theory that relates such complex structure to network dynamics has yet to be developed. Here, we show that third- and higher-order cyclic correlations in synaptic connectivities greatly impact neuronal dynamics. Specifically, strong cyclic correlations in a network suppress chaotic dynamics and promote oscillatory or fixed activity. This change in dynamics is related to the form of the unstable eigenvalues of the random connectivity matrix.  A phase transition from chaotic to fixed or oscillatory activity coincides with the development of a cusp at the leading edge of the eigenvalue support.  We also relate the dimensions of activity to the network structure.",
+      "_match": "title"
+    },
+    {
+      "title": "Arousal: how the brain controls its proximity to criticality",
+      "speakers": [
+        {
+          "name": "Woodrow L. Shew",
+          "affiliation": "University of Arkansas"
+        }
+      ],
+      "abstract": "Growing evidence supports the hypothesis that the brain operates close to a marginally stable regime - called criticality - imbued with approximately scale-invariant spatiotemporal dynamics and multiple beneficial computational properties.  However, not all computations performed by brains benefit from critical dynamics.  Thus, it stands to reason that, to optimize computation, in general, the brain needs to tune itself towards or away from criticality to meet current computational needs.  How does the brain tune itself?  Here I will present evidence from multiple lines of experiments in mice supporting the claim that the arousal system serves this role.  As an animal transitions from sleep to low arousal awake state its brain comes closer to criticality.  Moreover, the transition from low to high arousal in the awake state causes a departure from criticality.",
+      "_match": "title"
+    },
+    {
+      "title": "Spike-adding in bursting driven by slowly modulated rhythms",
+      "speakers": [
+        {
+          "name": "Rodica Curtu",
+          "affiliation": "Michigan Technological University"
+        }
+      ],
+      "abstract": "A common firing pattern in neurons is the busting, which is characterized by a sequence of spikes (\"the active phase\") followed by non-spiking activity (\"the silent phase\"). While questions related to the transition from spiking to bursting have received considerable attention in the literature, those concerning the process of adding spikes within a burst have remained less explored.  In this presentation, we study the spike-adding structure of a class of bursting generated by a three-dimensional system with three distinct timescales. The bursting shares some features with the elliptic bursters and others with the parabolic bursters, why not falling entirely in either class. We show theoretically how spikes are added to or removed from bursts by linking the system's trajectories to its folded node and folded saddle singularities. We also provide a detailed theoretical and numerical exploration of how the intrinsic dynamics of a neuronal model could be finely tuned by controlling the frequency and/or the amplitude of the external input.",
+      "_match": "title"
+    }
+  ]
+}

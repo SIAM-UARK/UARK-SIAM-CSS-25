@@ -1,0 +1,60 @@
+{
+  "minisymposium_title": "Recent Advances in Scientific Machine Learning",
+  "talks": [
+    {
+      "title": "Physics-constrained generative artificial intelligence-enabled rapid engineering design",
+      "speakers": [
+        {
+          "name": "Xiaosong Du",
+          "affiliation": "Missouri University of Science and Technology"
+        }
+      ],
+      "abstract": "Engineering design optimization significantly shortens design cycles and discovers real optimal design compared with human-supervised design optimization. Engineering design has demonstrated its success in designing automobiles, aircraft, spacecraft, watercraft, bridges, buildings, electric circuits, and manufacturing equipment with unprecedented detail and completeness. Conventional design optimization, however, has drawbacks when dealing with large-scale engineering applications. First, conventional optimization iteratively evaluates high-fidelity but time-consuming simulation models, which makes design optimization computationally prohibitive. Second, practical optimization typically involves complex, nonlinear constraints posing critical challenges to optimization algorithms.  To address the challenges above, this work proposes the physics-constrained generative adversarial networks (physicsGAN) and surrogate modeling. Generative adversarial networks are a state-of-the-art generative artificial intelligence to enable intelligent parameterization in engineering design by generating only realistic shapes, such as realistic takeoff trajectory of an electric drone without sudden drops in this work. The proposed physicsGAN transforms the original space to a feasible space, where all design constraints are inherently satisfied. Specifically, physicsGAN leverages surrogates to efficiently predict the satisfaction/violation of design constraints which add corresponding penalty to the training process of physicsGAN. The proposed approach will be demonstrated on optimal takeoff trajectory design of an electric drone. We will show the superior performance of physicsGAN-enabled design optimization compared against simulation-based design and conventional surrogate-based design optimization in terms of accuracy and efficiency.",
+      "_match": "title"
+    },
+    {
+      "title": "Solver-in-the-Loop joint operator learning in PDE inverse problem",
+      "speakers": [
+        {
+          "name": "Shuhao Cao",
+          "affiliation": "UMKC"
+        }
+      ],
+      "abstract": "In this work, we propose a joint operator learning method for reconstructing images of conductivity coefficients from boundary data. Inspired by the idea of employing partial differential equation (PDE) solvers as preconditioners for this inverse problem,  we investigate a ``solver-in-the-loop'' training mechanism. It allows the interaction of learnable parameters integrated in a PDE solver module and those in neural networks for reconstructing images.  Specifically, we employ a fractional Laplace-Beltrami operator with a learnable fractional order, which transforms boundary data into high-dimensional features.  These features then serve as input to a neural network, significantly improving reconstruction accuracy.",
+      "_match": "title"
+    },
+    {
+      "title": "Provable Nonlinear Regression In-Context",
+      "speakers": [
+        {
+          "name": "Alex Hsu",
+          "affiliation": "Purdue University"
+        }
+      ],
+      "abstract": "Trained transformer models exhibit a powerful phenomenon known as in-context learning (ICL): at inference time, they can learn from examples provided as part of the prompt without any parameter updates. We study ICL in a nonlinear regression setting and, under certain assumptions, derive end-to-end generalization error bounds for regressing a function given by input-output pairs in the prompt. Along the way, we explicitly construct a transformer that performs polynomial regression in-context. We also present numerical results verifying the predicted scaling laws, as well as preliminary investigations towards interpretability of the learned mechanisms.",
+      "_match": "title"
+    },
+    {
+      "title": "Estimating Curvatures of Manifolds and Point Clouds by Closest Point Projection of Rays",
+      "speakers": [
+        {
+          "name": "Liangchen Liu",
+          "affiliation": "the University of Texas at Austin"
+        }
+      ],
+      "abstract": "Closest point projection of a ray in the embedding space onto a smooth manifold locally induces a smooth curve. The direction of the induced curve deviates from that of the ray, where the deviation is characterized by the local curvatures of the manifold. We demonstrate mathematical relation of the curvatures between the induced curve and the non-parameterized manifold, and provide efficient algorithms to practically compute the extrinsic curvatures on manifolds and point clouds along with their error analysis.",
+      "_match": "title"
+    },
+    {
+      "title": "Conservative cell-average-based neural network method for nonlinear conservation laws",
+      "speakers": [
+        {
+          "name": "Ty Kroells",
+          "affiliation": "Iowa St University"
+        }
+      ],
+      "abstract": "This talk introduces the recently developed Cell-Average-Based Neural Network (CANN). The method utilizes the integral or weak formulation of partial differential equations and is inspired by finite volume schemes. The structure of the CANN network is designed to align with traditional one-step methods, with the well-trained network parameters serving as the scheme coefficients for an explicit one-step method. Unlike conventional numerical methods, the CANN approach is not constrained by small time-step CFL conditions, allowing for significantly larger time steps to be used for evolving solutions in an explicit manner. This results in a highly efficient and rapid method. We  present a conservative version of the CANN method for nonlinear conservation laws. This conser- vative approach ensures mass conservation and effectively captures physically relevant entropy so- lutions, including phenomena such as contact discontinuities, shock collisions, and interactions be- tween shocks and rarefaction waves.",
+      "_match": "title"
+    }
+  ]
+}

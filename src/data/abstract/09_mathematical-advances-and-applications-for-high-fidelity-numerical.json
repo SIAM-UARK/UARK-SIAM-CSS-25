@@ -1,0 +1,49 @@
+{
+  "minisymposium_title": "Mathematical Advances and Applications for High-Fidelity Numerical",
+  "talks": [
+    {
+      "title": "Vortex Dynamics and Energy Trade-offs in Tandem and Multi-MVG Supersonic Flow Control",
+      "speakers": [
+        {
+          "name": "Yong Yang, Caixia Chen",
+          "affiliation": "West Texas A&M University, Jackson State University"
+        }
+      ],
+      "abstract": "As the demand for effective flow control in supersonic boundary layers intensifies, particularly to mitigate shock-wave boundary-layer interactions, micro-vortex generators (MVGs) have emerged as promising passive devices. This study employs Large Eddy Simulation (LES) to investigate the aerodynamic performance of multiple MVG configurations in a supersonic flow, focusing on their ability to energize the boundary layer and enhance mixing. Configurations include tandem MVGs with varying spacings (11.75h to 18.75h), closely spaced parallel MVGs, a three-MVG setup with an upstream unit, and a single-MVG reference. High-order numerical schemes were used to solve the unfiltered Navier-Stokes equations, and vortex structures were visualized using the newly developed vortex identification techniques. Results show that tandem MVGs trigger complex vortex merging and cancellation, weakening vortex strength and doubling boundary layer energy thickness—reducing control effectiveness. closely spaced parallel MVGs generate symmetric vortex pairs with limited interaction. In contrast, the three-MVG setup produces chaotic, hairpin-like vortices that boost mixing, increase TKE, and reduce downstream energy loss. These results highlight a trade-off between flow complexity and control performance in MVG. Overall, the three-MVG configuration demonstrates superior boundary-layer energization and mixing potential, offering valuable insights for optimizing MVG deployment in high-speed aerodynamic applications.",
+      "_match": "title"
+    },
+    {
+      "title": "High-Fidelity Numerical Modeling of High-Speed Flows Using a Two-Step Compact Correction Approach",
+      "speakers": [
+        {
+          "name": "Yonghua Yan, Yong Yang",
+          "affiliation": "Jackson State University, West Texas A&M University"
+        }
+      ],
+      "abstract": "This study presents a novel two-step compact scheme-based high-order correction method designed to enhance the accuracy and stability of numerical simulations in computational fluid dynamics (CFD). Departing from traditional single-formula-based approaches, the proposed method refines flux function values by incorporating results from high-order compact schemes applied to the same stencils, contingent on a smoothness condition. This correction framework significantly improves the performance of compact corrected Weighted Essentially Non-Oscillatory (WENO) schemes, yielding sharper shock resolution and robust stability in challenging scenarios such as interacting blast waves, as demonstrated through one-dimensional benchmark tests. Beyond its application to high-order schemes, the method is also compatible with lower-order formulations. This correction strategy enhances precision while maintaining computational efficiency—offering a practical pathway to reduce numerical dissipation without incurring the high cost typically associated with higher-order methods. Error analysis for the WENO-based correction configurations confirms the method’s versatility and effectiveness.",
+      "_match": "title"
+    },
+    {
+      "title": "Decomposition-Based Characterization of Vortex Structures in MVG-Controlled Supersonic Boundary Layers",
+      "speakers": [
+        {
+          "name": "Joey Takei, Yonghua Yan, Caixia Chen",
+          "affiliation": "Yale University, Jackson State University, Jackson State University"
+        }
+      ],
+      "abstract": "Characterizing coherent vortex structures in high-speed turbulent boundary layers remains a fundamental challenge due to the nonlinear complexity and high dimensionality inherent in the governing Navier–Stokes equations. In this study, we investigated the optimized matrix decompositions tailored to the extraction of dynamically significant vortex features in MVG controlled supersonic flows. Our approach integrates modal decomposition techniques—specifically proper orthogonal decomposition (POD), with a newly developed novel vortex identification method designed to isolate coherent structures across multiple vector fields. This yields a reduced-order representation of the flow, capturing dominant spatial modes and their associated temporal dynamics. To mitigate the influence of truncation-induced pseudo-vortices and enhance the fidelity of reconstructed fields, we systematically evaluate several normalization schemes that preserve physical interpretability and improve modal convergence. The resulting methodology enables robust identification and reconstruction of vortex structures, even in the presence of strong compressibility effects and anisotropic turbulence. These findings lay the groundwork for scalable analysis and flow control strategies in high-speed boundary layer environments.",
+      "_match": "title"
+    },
+    {
+      "title": "A spatiotemporal decomposition-based prediction method for High-Speed Complex Fluid Dynamics",
+      "speakers": [
+        {
+          "name": "Caixia Chen, Mai Al Shaaban, Yonghua Yan",
+          "affiliation": "Jackson State University, Brandeis University, Jackson State University"
+        }
+      ],
+      "abstract": "This work presents a data-driven framework for forecasting the evolution of complex fluid flows using time series analysis of reduced-order models. After extracting the low-dimensional temporal coefficients from a decomposed high-dimensional flow field, an optimized time series prediction method is adopted to analyze and predict the future dynamics of these coefficients. This predictive model enables the accurate reconstruction of the full flow field, capturing the emergence and development of coherent structures within high-speed boundary layers. Unlike traditional simulations that require immense computational power, this approach achieves high-fidelity forecasts using limited data and minimal computational resources. The results establish a promising path for real-time, cost-effective modeling of complex flow environments through time series prediction.",
+      "_match": "title"
+    }
+  ]
+}

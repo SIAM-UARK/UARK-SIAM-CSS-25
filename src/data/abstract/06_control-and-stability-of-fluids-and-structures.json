@@ -1,0 +1,93 @@
+{
+  "minisymposium_title": "Control and Stability of Fluids and Structures",
+  "talks": [
+    {
+      "title": "An Optimal Control Framework for Maxwell’s Equations",
+      "speakers": [
+        {
+          "name": "Xiang Wan",
+          "affiliation": "Loyola University Chicago"
+        }
+      ],
+      "abstract": "This talk will focus on analytical and computational aspects related to dynamic optimization of electromagnetic phenomena. The optimization framework assumes the form of an optimal control problem for the Maxwell’s system seeking a control strategy via distributed electric currents or boundary steering functions to optimize a prescribed objective functional under suitable constraints on the state and/or control variables. One of the main challenges lies in the complexity of the full time-dependent Maxwell’s system which features a first-order hyperbolic coupled structure of semi- or quasilinear type. We will discuss how Pontryagin’s and Bellman’s principles can be used to treat this type of problems both analytically and numerically.",
+      "_match": "title"
+    },
+    {
+      "title": "Chasing Traces: 25 years of Flow-Plate Interactions",
+      "speakers": [
+        {
+          "name": "Justin T. Webster",
+          "affiliation": "University of Maryland, Baltimore County"
+        }
+      ],
+      "abstract": "Flow-plate interactions arise in aerodynamical applications, including projectiles and large structures. These systems constitute a 3D hyperbolic dynamics (corresponding to a potential flow) coupled to a 2D nonlinear plate active on the flow boundary. Well-posedness and regularity issues abound in such systems, owing to the Neumann type coupling for the wave dynamics, and established regularity issues of corresponding traces for finite energy solutions. These issues are deeply connected to stability and control considerations, including so called flutter control for panels. In this talk we review this class of models, and provide a survey of several critical breakthroughs over the past 25 years. This will lead to the very recent subsonic stabilization results due to Balakrishna, Lasiecka, and Webster from 2024.",
+      "_match": "title"
+    },
+    {
+      "title": "Long-time behavior of fluid-structure interaction models",
+      "speakers": [
+        {
+          "name": "Igor Kukavica",
+          "affiliation": "University of Southern California"
+        }
+      ],
+      "abstract": "We consider a system of partial differential equations describing the interaction between an incompressible viscous fluid and an elastic body. The fluid dynamics are governed by the incompressible Navier–Stokes equations, while the structural motion is modeled by the wave equation. We review local and global existence results for this coupled free-boundary system. The results were obtained jointly with Ignatova, Lasiecka, Ozanski, and Tuffaha.",
+      "_match": "title"
+    },
+    {
+      "title": "Inviscid Fluid Interacting With Nonlinear Structure With Moving Boundary",
+      "speakers": [
+        {
+          "name": "Abhishek Balakrishna",
+          "affiliation": "University of Southern California"
+        }
+      ],
+      "abstract": "While fluid and structure interaction (FSI) models involving a viscous fluid have been studied extensively, FSI models with involving an inviscid fluid that have typically fallen in one of the following categories: (1) an inviscid fluid coupled to a nonlinear structure structure with stationary boundary, and (3) an inviscid fluid coupled to a linear structure structure with moving boundary. In this talk, a model coupling an inviscid fluid to a nonlinear structure with moving boundary is considered. The nonlinear structure in the model obeys Koiter plate model. Arbitrary Lagrange Euler (ALE) coordinates are used to fix the domain and obtain careful estimates for the nonlinear Koiter plate, ALE velocity, and pressure without any viscoelastic smoothing. For the nonlinear Koiter plate, higher order energy estimates are obtained, whereas estimates for the ALE pressure are obtained by setting up an elliptic problem. For the ALE velocity, the bounds are obtained through div-curl estimates by estimating the ALE vorticity. We then extend our results in two directions: (1) to include fractional Sobolev spaces and (2) to incorporate the normalized second fundamental form.",
+      "_match": "title"
+    },
+    {
+      "title": "Attractors for Second Order in Time Non-Conservative Dynamics with Nonlinear Damping",
+      "speakers": [
+        {
+          "name": "Madhumita Roy",
+          "affiliation": "North Carolina State University"
+        }
+      ],
+      "abstract": "In this talk, we will discuss the long-time behavior of solutions to a nonlinear plate model subjected to non-conservative and non-dissipative effects under nonlinear damping. The model under study serves as a prototype for a suspension bridge affected by an unstable gas flow. To counteract the resulting unwanted oscillations, a nonlinear damping mechanism is applied.",
+      "_match": "title"
+    },
+    {
+      "title": "A BKM-type criterion for the Euler equations",
+      "speakers": [
+        {
+          "name": "Mustafa Sencer Aydın",
+          "affiliation": "University of Southern California"
+        }
+      ],
+      "abstract": "In 1984, Beale, Kato, and Majda established a celebrated blow-up criterion for the 3D incompressible Euler equations: the growth of velocity gradients can occur only if the time integral of the vorticity’s  𝐿 ∞ L ∞ -norm diverges. This result has since inspired a wide family of BKM-type criteria. In this talk, I will briefly review these developments before presenting a new criterion that depends solely on the tangential derivatives of the velocity. In particular, our result shows that if a strong Euler solution blows up, the singularity must manifest in its tangential derivatives.",
+      "_match": "title"
+    },
+    {
+      "title": "Fluid-Plate Interaction with Square Root Damping and Bending Moment Operator at the Interface",
+      "speakers": [
+        {
+          "name": "Rasika Mahawattege",
+          "affiliation": "University of Maryland Baltimore County"
+        }
+      ],
+      "abstract": "We study a fluid–plate interaction model in which a two-dimensional elastic plate is subject to square-root structural damping, a dissipation mechanism encountered in certain physical and engineering systems. Unlike strong viscoelastic damping, square-root damping produces a weaker, nonlocal influence on the plate’s dynamics. The fluid and structure are coupled through their common interface under low physically hinged boundary conditions that involve the bending moment operator. The principal contributions of this work are the establishment of well-posedness for the coupled fluid–structure system in the natural energy space, the demonstration of analyticity for the associated contraction semigroup and its adjoint, and a sharp spectral characterization of the generator and its adjoint that reveals features comparable to models with stronger damping. Collectively, these results provide a rigorous mathematical framework for fluid–plate interactions with square-root damping and highlight the stabilizing influence of square-root dissipation.",
+      "_match": "title"
+    },
+    {
+      "title": "Flow-Induced Large Deflections of a Cantilever under Kutta–Joukowski Conditions",
+      "speakers": [
+        {
+          "name": "Maria Deliyianni",
+          "affiliation": "University of Arizona"
+        }
+      ],
+      "abstract": "This talk is motivated by piezoelectric energy harvesting, where cantilevered beams undergo large deflections and interact with surrounding flow. While existence and uniqueness for the beam model alone have been established previously, the new contribution lies in coupling this nonlinear beam equation with potential flow through the Kutta–Joukowski conditions, yielding a fluid–structure interaction problem.  We study this system within the semigroup framework. After first analyzing the linear setting and constructing the associated semigroup, we use this structure to address the nonlinear problem without inertia. A key step involves introducing a structurally damped version of the beam equation. We construct solutions there via a fixed point argument, and then pass to the limit as the damping vanishes to recover solutions of the original system. This approach provides a pathway to the broader use of semigroup methods in quasilinear PDE theory.",
+      "_match": "title"
+    }
+  ]
+}

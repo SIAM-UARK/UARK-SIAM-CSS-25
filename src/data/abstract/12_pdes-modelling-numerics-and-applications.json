@@ -1,0 +1,60 @@
+{
+  "minisymposium_title": "PDEs Modelling Numerics and Applications",
+  "talks": [
+    {
+      "title": "Variational data assimilation with finite element discretization for second order parabolic interface equation",
+      "speakers": [
+        {
+          "name": "Xiaoming He",
+          "affiliation": "Missouri University of Science and Technology"
+        }
+      ],
+      "abstract": "In this talk, we present a finite element method of variational data assimilation for a second order parabolic interface equation on a two-dimensional bounded domain. The Tikhonov regularization plays a key role in translating the data assimilation problem into an optimization problem. Then the existence, uniqueness, and stability are analyzed for the solution of the optimization problem. We utilize the finite element method for spatial discretization and backward Euler method for the temporal discretization. Then based on the Lagrange multiplier idea, we derive the optimality systems for both the continuous and the discrete data assimilation problems for the second order parabolic interface equation. The convergence and the optimal error estimate are proved with the recovery of Galerkin orthogonality. Moreover, three iterative methods, which decouple the optimality system and significantly save computational cost, are developed to solve the discrete time evolution optimality system. Finally, numerical results are provided to validate the proposed method.",
+      "_match": "title"
+    },
+    {
+      "title": "General Numerical Framework for Structure-Preserving Reduced Order Models of Thermodynamically Consistent Reversible-Irreversible PDEs",
+      "speakers": [
+        {
+          "name": "Jia Zhao",
+          "affiliation": "University of Alabama"
+        }
+      ],
+      "abstract": "In this talk, I will present a general numerical framework to derive structure-preserving reduced-order models for thermodynamically consistent PDEs. Our numerical framework has two primary features: (a) a systematic way to extract reduced-order models for thermodynamically consistent PDE systems while maintaining their inherent thermodynamic principles and (b) a general process to derive accurate, efficient, and structure-preserving numerical algorithms to solve these reduced-order models.",
+      "_match": "title"
+    },
+    {
+      "title": "Numerical Analysis of a Second-Order Numerical Scheme for a sixth-order Cahn-Hilliard type Equation",
+      "speakers": [
+        {
+          "name": "Natasha S. Sharma",
+          "affiliation": "The University of Texas at El Paso"
+        }
+      ],
+      "abstract": "We consider a second-order numerical scheme for a sixth-order Cahn-Hilliard type equation modeling the dynamics of phase transitions in ternary mixtures. The numerical scheme was proposed in Sharma and Tierra (2025) with  the solvability and unconditional energy stability proved. A key feature of this scheme is it introduces no numerical dissipation. Additionally, that unlike the existing methods in the literautre, the proofs of the solvability and unconditional stability hold for a wider range of model parameter thus making this scheme applicable to wider range of model parameters. In this talk, we complete the numerical analysis of this scheme by deriving its convergence analysis.",
+      "_match": "title"
+    },
+    {
+      "title": "Parameter-free regularization preconditioners for nearly singular poroelasticity problems",
+      "speakers": [
+        {
+          "name": "Zhuoran Wang",
+          "affiliation": "University of Kansas"
+        }
+      ],
+      "abstract": "While block Schur complement preconditioning has been widely studied for saddle point systems, challenges remain when addressing nearly singular systems that arise from nearly incompressible poroelasticity problems, particular in the locking case when the Lamé constant lambda is large. In this talk, we will present a new approach for developing effective and parameter-free block Schur complement preconditioners for the corresponding preconditioned system. A key of this approach is to reformulate the original system as an equivalent three-field problem, apply regularization using inherent identities, and construct preconditioners based on the resulting regularized systems. We will show that these preconditioners are straightforward to construct and implement. Moreover, we analyze the convergence of MINRES and GMRES applied to systems and demonstrate that it is independent of locking parameters and mesh size. Numerical results in 2D and 3D will be presented to demonstrate the effectiveness, and a spinal cord simulation will further illustrate the robustness.",
+      "_match": "title"
+    },
+    {
+      "title": "Well-balanced Any-order Numerical Solvers for Linear and Nonlinear Poroelasticity Based on Combination of BDF and Weak Galerkin",
+      "speakers": [
+        {
+          "name": "James Liu",
+          "affiliation": "Colorado State University"
+        }
+      ],
+      "abstract": "This talk presents a family of any order finite element solvers for both linear and nonlinear poroelasticity problems.  The backward differentiation formulas (BDFs) are used for temporal discretizations, whereas the weak Galerkin (WG) finite elements on quadrilaterals are utilized for spatial discretizations.  For the latter, the discrete weak gradients of shape functions are established in the vector- or matrix- Arbogast-Correa spaces.  Such combinations of BDF and WG discretizations produce numerical solutions that have well-balanced spatial and temporal errors in all six quantities (pressure, velocity, and normal flux, displacement, dilation, stress).  For nonlinear poroelasticity problems in which permeability depends on solid dilation or the mean stress, Picard iterations are employed to solve the resulting nonlinear algebraic systems.  Analysis together with numerical results demonstrate that these new solvers have optimal-order convergence and are free of locking.",
+      "_match": "title"
+    }
+  ]
+}

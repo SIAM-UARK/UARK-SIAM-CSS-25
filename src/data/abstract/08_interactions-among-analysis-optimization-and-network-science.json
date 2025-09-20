@@ -1,0 +1,148 @@
+{
+  "minisymposium_title": "Interactions among analysis optimization and network science",
+  "talks": [
+    {
+      "title": "Large Deviations of Dyson-type Diffusions and Multiradial SLE(0+)",
+      "speakers": [
+        {
+          "name": "Vivian Olsiewski Healey",
+          "affiliation": "Texas State University"
+        }
+      ],
+      "abstract": "Schramm-Loewner evolution (SLE) is a model of a random curve that appears in the scaling limit of many discrete models in statistical physics. Multiradial SLE, the multiple curve version of this process in the disk, is constructed via an interacting particle system on the circle that evolves according to Dyson Brownian motion. We show a finite-time large deviations principle (LDP) for Dyson-type diffusions (including Dyson Brownian motion on the circle), as the Brownian term in the diffusion is scaled to 0. Building on this, we show a finite-time LDP for multiradial SLE_\\kappa as the parameter \\kappa goes to 0. We also characterize the large-time behavior of curves with finite energy and zero energy (corresponding to the Calogero-Moser-Sutherland integrable system). Joint work with O. Abuzaid and E. Peltola.",
+      "_match": "title"
+    },
+    {
+      "title": "A Data-Parsimonious Model for Long-Term Risk Assessments of West Nile Virus Spillover",
+      "speakers": [
+        {
+          "name": "Saman Hosseini",
+          "affiliation": "Kansas State University"
+        }
+      ],
+      "abstract": "Many West Nile virus (WNV) forecasting frameworks incorporate entomological or avian surveillance data, which may be unavailable in some regions. We introduce a novel data-parsimonious probabilistic model to predict seasonal severity of WNV spillover. Our approach combines a temperature-driven compartmental model of WNV with nonparametric kernel density estimation methods to construct a joint probability density function and a Poisson rate surface as function of mosquito abundance and normalized cumulative temperature. Calibrated on human incidence records, the model produces reliable forecasts several months before the transmission season begins, supporting proactive mitigation efforts.",
+      "_match": "title"
+    },
+    {
+      "title": "Discrete Quasiconformal Maps and PDE's on Graphs",
+      "speakers": [
+        {
+          "name": "David Pechersky",
+          "affiliation": "Beijing Institute of Mathematical Sciences and Applications (BIMSA)"
+        }
+      ],
+      "abstract": "A classic result of Benjamini and Schramm says that a planar graph with uniformly bounded degrees admits nonconstant bounded harmonic functions if and only if a simple random walk on this graph is transient. Benjamini and Schramm give two proofs of this result: one using circle packings and one using square tilings. Both circle packings and square tilings can be thought as discrete conformal maps. In both cases, uniformizing our graph in this way endows the graph with a geometry that is better than the usual graph metric for the analysis of harmonic functions. In this talk, we will see how for other divergence-form PDE's on graphs, there exist certain discrete quasiconformal maps that play the same role, providing a favorable geometry for the analysis of our PDE. This allows us to extend Benjamini and Schramm's result to a wide variety of PDE's on graphs.",
+      "_match": "title"
+    },
+    {
+      "title": "Pliability and Lusin Approximation for Curves in Carnot Groups",
+      "speakers": [
+        {
+          "name": "Gareth Speight",
+          "affiliation": "University of Cincinnati"
+        }
+      ],
+      "abstract": "In Euclidean space every absolutely continuous curve admits a Lusin-type approximation by C^1 curves. It is natural to study this question in Carnot groups. These spaces have many similarities to Euclidean space, but the objects of interest are horizontal curves that follow a constrained family of directions. This talk will summarize what is known about the problem in Carnot groups, where the approximation obtained depends greatly on the geometry of the space.",
+      "_match": "title"
+    },
+    {
+      "title": "Machine Learning Approaches for the Detection of Acoustic Leaks in WAI Measurements",
+      "speakers": [
+        {
+          "name": "Luca Capogna",
+          "affiliation": "Smith College"
+        }
+      ],
+      "abstract": "Wideband acoustic immittance (WAI)—also known as wideband reflectance—offers a powerful, noninvasive method for detecting a range of middle-ear disorders using absorbance and impedance measurements taken in the ear canal in a certain frequencies range. Despite its diagnostic potential, WAI remains challenging in clinical practice due to factors that can corrupt measurements, such as air leaks, calibration errors, or poorly positioned probes. Among these, undetected air leaks are particularly problematic, as they can lead to misinterpretation and unnecessary referrals.  In this talk, I will present recent joint work with the Voss Lab at Smith College, where we developed machine learning (ML) methods to automatically detect acoustic leaks in ambient-pressure WAI measurements. The project has two main goals: (1) to explore model paradigms for applying ML techniques to WAI data, and (2) to offer a practical tool that alerts clinicians in real time when a leak is present, allowing the measurement to be repeated immediately and improving diagnostic reliability.",
+      "_match": "title"
+    },
+    {
+      "title": "Topological Clustering and Beyond",
+      "speakers": [
+        {
+          "name": "Farzana Nasrin",
+          "affiliation": "University of Tennessee"
+        }
+      ],
+      "abstract": "Mapper, a topological clustering algorithm, generates network graphs to visually explore and capture the intrinsic shape of complex high dimensional data, preserving intricate structures that conventional clustering methods may overlook. However, the absence of robust statistical tools to interpret Mapper networks has limited its application in clinical and genomic studies. In this talk, I introduce new analytical frameworks that integrate Mapper with graph theory, enabling rigorous statistical inference within the Mapper framework. The first framework utilizes Mapper and Dijkstra’s algorithm to identify optimal subject clusters from microbiota data, which are then applied in sparse modeling to pinpoint trait-associated genes. The second framework combines Mapper and spectral shape analysis, leveraging heat kernel signatures to score Mapper nodes. Together, these approaches illustrate Mapper’s utility beyond exploratory analysis, offering a pathway toward deeper insights into gene regulation, disease progression, and therapeutic targeting.",
+      "_match": "title"
+    },
+    {
+      "title": "Graph iteration and combinatorial Julia sets",
+      "speakers": [
+        {
+          "name": "Lukas Geyer",
+          "affiliation": "Montana State University"
+        }
+      ],
+      "abstract": "In complex dynamics, many classes of post-critically finite rational and anti-rational maps have been successfully classified through combinatorial models. In many of these cases, the dynamics on their Julia set can be represented as the limit of a sequence of maps between finite graphs. For the special class of critically fixed anti-rational maps, the corresponding graph maps arise from iterating a particular graph reflection. In this talk, I will present an ongoing joint project with Mikhail Hlushchanka (University of Amsterdam), where we study combinatorial graph reflections not necessarily arising from complex dynamics, and the limit dynamics on their (combinatorial) Julia sets.",
+      "_match": "title"
+    },
+    {
+      "title": "The Loewner equation and SLE",
+      "speakers": [
+        {
+          "name": "Joan Lind",
+          "affiliation": "University of Tennessee"
+        }
+      ],
+      "abstract": "Through the Loewner equation, real-valued functions, called driving functions, generate growing 2-dimensional sets. When the driving function is a multiple of Brownian motion, the corresponding random curves are called Schramm-Loewner Evolution (SLE), and these are related to several discrete models in statistical physics. This introductory talk will explore the foundations of SLE, setting the stage for the subsequent talk by Vivian Healey.",
+      "_match": "title"
+    },
+    {
+      "title": "Semi-Supervised Relation Extraction Guided by Large Language Models",
+      "speakers": [
+        {
+          "name": "Nikita Gautam",
+          "affiliation": "Kansas State University"
+        }
+      ],
+      "abstract": "Relation extraction plays a central role in identifying structured relationships between entities, supporting the construction of knowledge graphs, and enabling automated knowledge discovery. While supervised models can be used for this task, their effectiveness relies heavily on large, labeled datasets, which are often expensive and difficult to obtain. Semi-supervised learning offers a principled way to address this limitation by combining scarce labeled data with abundant unlabeled data. Standard self-training approaches, however, rely on iterative teacher-student frameworks that frequently introduce noise through unreliable pseudo-labels. In this work, we propose a semi-supervised framework that integrates Area Under the Margin (AUM) ranking with large language models (LLMs) to improve the quality of pseudo-labels and reduce error propagation. More specifically, AUM is used to identify and prioritize informative samples, while LLMs are used to enhance pseudo-label generation. Experiments on two benchmark datasets demonstrate that the proposed approach consistently outperforms strong baselines and achieves state-of-the-art performance in low-resource relation extraction.",
+      "_match": "title"
+    },
+    {
+      "title": "Uncertainty Quantification in Computational Epidemiology: Methods and Applications",
+      "speakers": [
+        {
+          "name": "Arash Latifi",
+          "affiliation": "Kansas State University"
+        }
+      ],
+      "abstract": "Uncertainty quantification (UQ) is crucial for studying dynamical systems, and it plays a significant role in epidemiology. Sources of uncertainty arise not only from noisy and delayed data, but also from incomplete system knowledge, model structure, and inherent randomness in disease transmission. UQ methods make it possible to trace how these uncertainties propagate through epidemic forecasts and affect estimates of key epidemiological indicators such as reproduction numbers, prevalence, and incidence curves. Such approaches are applied in both compartmental and network-based models, spanning diseases spread by direct human-to-human transmission as well as vector-borne pathogens. By addressing multiple layers of uncertainty, UQ strengthens the reliability of epidemic models and enhances their value for scientific analysis and public health policy.",
+      "_match": "title"
+    },
+    {
+      "title": "Epidemic Thresholds of SIS Dynamics on Temporal Multiplex Networks with Activity-Driven Layers.",
+      "speakers": [
+        {
+          "name": "Matin Marjani",
+          "affiliation": "Kansas State University"
+        }
+      ],
+      "abstract": "I study the susceptible–infected–susceptible (SIS) process on a temporal multiplex network that combines a static layer of persistent links with an activity-driven layer of short-lived contacts. Each node activates with some probability and creates a fixed number of temporary connections, capturing fast, random mixing on top of the static structure. By linearizing the dynamics near the disease-free state and replacing the random temporal contacts with their mean effect, I obtain a simple spectral condition that links three ingredients: the leading eigenvalue of the static layer, the activation rate, and the number of temporary contacts per activation. This condition unifies classic thresholds for purely static and purely temporal networks and gives a practical control knob: the minimal integer number of temporary contacts needed to sustain transmission.",
+      "_match": "title"
+    },
+    {
+      "title": "Multi-Agent LLM Framework for Accelerated Epidemic Modeling Research",
+      "speakers": [
+        {
+          "name": "Mohammad Hossein Samaei",
+          "affiliation": "Kansas State University"
+        }
+      ],
+      "abstract": "Epidemic modeling is a multidisciplinary process requiring expertise in epidemiology, network science, stochastic simulations, and data analysis. This workflow is slow and requires a cooperative team with multiple expertise, involving literature review, model formulation, parameter estimation, simulation design, and interpretation and reporting of findings. Recent advances in large language models (LLMs) open a path to accelerate this process through multi-agent collaboration. In a multi-agent setup, specialized AI agents can be assigned complementary roles, such as literature discovery, mechanistic model design, code generation for simulations, result visualization, and report drafting, while coordinating through structured reasoning and tool use. This agentic approach enables rapid testing of different scenarios, supports reproducibility by generating code and logs automatically, and facilitates more transparent and explainable research. By combining human collaboration with autonomous AI agents, this paradigm holds promise for faster epidemic preparedness studies, scenario planning, and education, helping researchers to test their ideas quickly and getting us closer to autonomous research tools.",
+      "_match": "title"
+    },
+    {
+      "title": "Modulus of hypertrees",
+      "speakers": [
+        {
+          "name": "Huy Truong",
+          "affiliation": "Kansas State University"
+        }
+      ],
+      "abstract": "Lorea [11] and later Frank et al. [8] generalized graphic matroids to hypergraphic matroids. In [8], the authors introduced hypertrees as a generalization of spanning trees and proved a form of the theorem of Tutte [18] and Nash-Williams [14]. In [3, 15, 17], the authors explored the modulus of the family of spanning trees in graphs and of the family of bases of matroids, and provided connections to the notions of strength and fractional arboricity. They also established Fulkerson duality for these families. In this paper, we extend these results to hypertrees, and show that the modulus of hypertrees uncovers a hierarchical structure within arbitrary hypergraphs.",
+      "_match": "title"
+    }
+  ]
+}

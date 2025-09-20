@@ -1,0 +1,71 @@
+{
+  "minisymposium_title": "Computational Mathematics and related applications",
+  "talks": [
+    {
+      "title": "Mathematical model of how the  immune system fights  a viral infection",
+      "speakers": [
+        {
+          "name": "Benito Chen-Charpentier",
+          "affiliation": "University of Texas at Arlington"
+        }
+      ],
+      "abstract": "Viruses cause a large number of diseases. After penetrating into a host, the virus starts infecting healthy cells. Then it uses the RNA or DNA of the cell to replicate and afterward it explodes the infected cell,  letting out many copies of the virus that can infect new cells. The innate and adaptive parts of the immune system defend the body \tby eliminating both the free viruses and the infected cells. Neutrophils, macrophages, natural killer cells, helper T cells (CD4+)  and cytotoxic T lymphocytes (CD8+)  re among the participating immune cells. The interactions are complex  and not fully understood. In this talk, we present a new mathematical model based on ordinary differential equations of virus and immune system interactions and compare with two other models with different complexities. We introduce possible treatments. We discuss the advantages and disadvantages of each model. We do global sensitivity analysis and numerical simulations. Finally, we present conclusions including comments about the complexity of mathematical models.",
+      "_match": "title"
+    },
+    {
+      "title": "Social Media Mobs as Epidemics: A Mathematical Approach to Narrative Spread",
+      "speakers": [
+        {
+          "name": "Ahmed Al-Taweel",
+          "affiliation": "Georgia Southern University"
+        }
+      ],
+      "abstract": "In this work, we develop an epidemiological mathematical models of social media mobs based on a mobility control strategy designed to adjust the spread rate in response to social interactions. We tested our model on two datasets: a South China Sea YouTube dataset and a Twitter dataset related to the COVID-19 pandemic. The use of high temporal resolution real-world data enables us to build near-real-time predictive analytics for campaigns. Primary qualitative analyzes, such as the mob free equilibrium point (MFE) of social media, endemic equilibrium point, and the basic reproduction number $\\Re_{0}$, were calculated. Our analysis reveals that the stability analysis shows that the MFE point of social media is locally asymptotically stable if $\\Re_{0} < 1$. The existence of a bifurcation and the stability of the steady states are established. Numerical simulations and sensitivity analysis of relevant parameters are also carried out.",
+      "_match": "title"
+    },
+    {
+      "title": "Numerical studies to the Chaplygin gas equation",
+      "speakers": [
+        {
+          "name": "Ying Wang",
+          "affiliation": "University of Oklahoma"
+        }
+      ],
+      "abstract": "In this talk, we will discuss the numerical solutions to the Riemann problem for Chaplygin gas equation, which is the Euler equations equipped with the state equation p = -1/\\rho. The spatial discretization is performed using WENO reconstruction and time integration is achieved using TVD RK4. The numerical results confirm high order of accuracy. This is a joint work with Ling Jin.",
+      "_match": "title"
+    },
+    {
+      "title": "Parameter-robust operator preconditioning for condensed hybridized systems",
+      "speakers": [
+        {
+          "name": "Jeonghun J. Lee",
+          "affiliation": "Baylor University"
+        }
+      ],
+      "abstract": "Static condensation with hybridization is a popular finite element method technique to reduce the number of global unknowns of linear systems. The condensed system is mathematically equivalent to the original linear system but construction of preconditioners for condensed linear systems needs a separate study. In this talk we present an operator preconditioning approach for condensed linear systems leading to construction of parameter-robust preconditioners. We show two examples analyzed by the framework, one for hybridized dual mixed reaction-diffusion equations and the other for hybridized discontinuous Galerkin methods for the incompressible stationary Stokes equations.   The talk is based on a joint work with Sander Rhebergen and Esteban Henriquez (University of Waterloo).",
+      "_match": "title"
+    },
+    {
+      "title": "Averaging in a Certain Almost Hamiltonian System with Singularities",
+      "speakers": [
+        {
+          "name": "Alex Grigo",
+          "affiliation": "University of Oklahoma"
+        }
+      ],
+      "abstract": "In this talk I will present an averaging theorem for a fully coupled system with singularities. Specifically, I will discuss a particular fast-slow system that arises in modeling energy transport in an open system of interacting hard-spheres. The technical part of this work addresses how to deal with singularities of the dynamics and the fact that the dynamics is fully coupled.",
+      "_match": "title"
+    },
+    {
+      "title": "Data assimilation and uncertainty quantification in molecular dynamics",
+      "speakers": [
+        {
+          "name": "Anastasios Matzavinos",
+          "affiliation": "Pontifical Catholic University of Chile"
+        }
+      ],
+      "abstract": "Recent advances in Bayesian uncertainty quantification with transitional Markov chain Monte Carlo (TMCMC) have produced algorithms that are both highly parallelizable and computationally efficient, opening the way to applications that were previously out of reach. In this talk, I will outline the essential elements of Bayesian uncertainty quantification via TMCMC and show how they can be applied to molecular simulation. I will focus on dissipative particle dynamics, a particle-based method particularly suited to modeling extended biomolecular structures, and illustrate the approach with a lipid bilayer membrane in fluid. Applying TMCMC to this system allows us to recover target parameters together with their associated uncertainty distributions, demonstrating both the feasibility and the practical value of Bayesian uncertainty quantification in complex particle simulations. This work was supported in part by ANID FONDECYT Regular grant No. 1221220.",
+      "_match": "title"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "minisymposium_title": "Mathematical Modeling and Numerical Solvers in PDEs",
+  "talks": [
+    {
+      "title": "Reducing polynomial degree by one for inner-stage operators affects neither stability type nor accuracy order of the Runge--Kutta discontinuous Galerkin method",
+      "speakers": [
+        {
+          "name": "Zheng Sun",
+          "affiliation": "The University of Alabama"
+        }
+      ],
+      "abstract": "The Runge--Kutta (RK) discontinuous Galerkin (DG) method is a mainstream numerical algorithm for solving hyperbolic equations. In this talk, we use the linear advection equation in one and two dimensions as a model problem to prove the following results: For an arbitrarily high-order RKDG scheme in Butcher form, as long as we use the $P^k$ approximation in the final stage, even if we drop the $k$th-order polynomial modes and use the $P^{k−1}$ approximation for the DG operators at all inner RK stages, the resulting numerical method still maintains the same type of stability and convergence rate as those of the original RKDG method. Numerical examples are provided to validate the analysis. The numerical method analyzed in this paper is a special case of the Class A RKDG method with stage-dependent polynomial spaces proposed in [Chen, Sun, and Xing, J. Comput. Phys. 523, 113654, 2025]. Our analysis provides theoretical justifications for employing cost-effective and low-order spatial discretization at specific RK stages for developing more efficient DG schemes without affecting stability type and accuracy order of the original method.",
+      "_match": "title"
+    },
+    {
+      "title": "Continuum-Based Stochastic Simulation Method for Reactive Microfluids",
+      "speakers": [
+        {
+          "name": "Changho Kim",
+          "affiliation": "University of California, Merced"
+        }
+      ],
+      "abstract": "At the macroscale, fluids are typically modeled using the traditional Navier-Stokes equations, in which the underlying fluid particles are abstracted as continuous fields. While this approach is computationally efficient, it neglects the effects of thermal fluctuations. At the microscale, methods such as molecular dynamics (MD) explicitly simulate the underlying particles, capturing these effects at the cost of much greater computational expense. In between these two scales (i.e. the mesoscale), a range of problems exist which are small enough that thermal fluctuations play an important role, but too large to efficiently simulate using particle-based techniques. At this scale, fluctuating hydrodynamics (FHD) provides an approach which is relatively computationally efficient, but still incorporates the effects of thermal fluctuations. The FHD approach has been successfully applied to this type of problem. In this talk, I will describe how the FHD approach can be extended to reactive microfluids, where both hydrodynamics and chemistry play essential roles. I will explain how to incorporate various stochastic chemistry descriptions to the stochastic PDE description of FHD and how to construct numerical methods for reactive microfluids. I will also explain high-performance computing implementations.",
+      "_match": "title"
+    },
+    {
+      "title": "A Conservative and Positivity-Preserving Discontinuous Galerkin Method for the Population Balance Equation",
+      "speakers": [
+        {
+          "name": "Ziyao Xu",
+          "affiliation": "Binghamton University"
+        }
+      ],
+      "abstract": "We develop a conservative, positivity-preserving discontinuous Galerkin (DG) method for the population balance equation (PBE), which models the distribution of particle numbers across particle sizes due to growth, nucleation, aggregation, and breakage. To ensure number conservation in growth and mass conservation in aggregation and breakage, we design a DG scheme that applies standard treatment for growth and nucleation, and introduces a novel discretization for aggregation and breakage. The birth and death terms are discretized in a symmetric double-integral form, evaluated using a common refinement of the integration domain and carefully selected quadrature rules. Beyond conservation, we focus on preserving the positivity of the number density in aggregation–breakage. Since local mass corresponds to the first moment, the classical Zhang–Shu limiter, which preserves the zeroth moment (cell average), is not directly applicable. We address this by proving the positivity of the first moment on each cell and constructing a moment-conserving limiter that enforces nonnegativity across the domain. To our knowledge, this is the first work to develop a positivity-preserving algorithm that conserves a prescribed moment. Numerical results verify the accuracy, conservation, and robustness of the proposed method.",
+      "_match": "title"
+    }
+  ]
+}

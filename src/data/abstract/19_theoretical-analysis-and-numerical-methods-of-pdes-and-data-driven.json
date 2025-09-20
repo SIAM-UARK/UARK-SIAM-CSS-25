@@ -1,0 +1,93 @@
+{
+  "minisymposium_title": "Theoretical Analysis and Numerical Methods of PDEs and Data-Driven",
+  "talks": [
+    {
+      "title": "Neural POD: A Neural Operator for Functional Proper Orthogonal Decomposition",
+      "speakers": [
+        {
+          "name": "Changhong Mou",
+          "affiliation": "Utah State University"
+        }
+      ],
+      "abstract": "We propose the Neural Proper Orthogonal Decomposition (Neural POD), a data-driven framework that constructs nonlinear, orthogonal basis functions using neural networks. Unlike classical Proper Orthogonal Decomposition (POD), which relies on linear subspace approximations via singular value decomposition, Neural POD formulates basis construction as a sequence of residual minimization problems solved through neural network training. Each basis function is obtained by learning to represent the remaining structure in the data, following a process analogous to Gram–Schmidt orthogonalization. This neural formulation offers several key advantages over classical POD: it allows optimization in arbitrary norms (e.g., $L^2$, $L^1$, $H^1$), exhibits resolution independence, generalizes well to unseen parameters, and naturally captures nonlinear features in complex spatiotemporal systems. The resulting basis functions are interpretable, reusable, and adaptable for many applications like reduced order modeling (ROM) and Deep Operator Network (DeepONet) for PDEs.  We test Neural POD on benchmark problems, including the one-dimensional Burgers’ equation and two-dimensional Navier–Stokes equations, and demonstrate its applications into both projection-based ROMs and DeepONet frameworks.",
+      "_match": "title"
+    },
+    {
+      "title": "Improved long time accuracy for Fluid Models using EMAC formulation",
+      "speakers": [
+        {
+          "name": "Jorge Reyes",
+          "affiliation": "Virginia Tech"
+        }
+      ],
+      "abstract": "This talk will focus on the energy, linear momentum, and angular momentum conserving (EMAC) scheme. We show how EMAC provides improved long-time accuracy for fluid models by leveraging its built-in conservation properties, which mitigate error growth in extended simulations. In addition to standard flow problems, we will discuss its application in the context of Large Eddy Simulation (LES), with particular attention to the Ladyzhenskaya model, and highlight how EMAC can enhance the reliability of turbulence models.",
+      "_match": "title"
+    },
+    {
+      "title": "Time-periodic solution and its stability of a forced parabolic model",
+      "speakers": [
+        {
+          "name": "TAIGE WANG",
+          "affiliation": "University of Cincinnati"
+        }
+      ],
+      "abstract": "This talk focuses on establishing the existence and stability of periodic forced oscillation in an abstract parabolic equation subjected to a time-periodic force within a given bounded medium. The model can be related to 2D hydrodynamic models under specific physical settings. The work extends the methodology in situation of dimension 1(1D) to high dimensions. In the attempt, first we proved the existence of such periodic solutions, then obtained their local or global stability by analyzing the related error equation.",
+      "_match": "title"
+    },
+    {
+      "title": "Design and analysis of Geometry-Conforming immersed finite element methods for interface problems",
+      "speakers": [
+        {
+          "name": "Haroun Meghaichi",
+          "affiliation": "The Ohio State University"
+        }
+      ],
+      "abstract": "The Frenet Immersed Finite Element (IFE) method is a new framework for designing geometry-conforming, high-order unfitted methods for interface problems. In this approach, basis functions are defined in the Frenet coordinate system and are designed to satisfy the interface conditions exactly. In this talk, I will introduce the Frenet IFE space and method, and present key results demonstrating the space’s optimal approximation properties and the convergence of the associated numerical scheme.",
+      "_match": "title"
+    },
+    {
+      "title": "Least-Squares Induced Higher-Degree Rectangular Immersed Finite Element Methods for Elliptic Interface Problems",
+      "speakers": [
+        {
+          "name": "Qiao Zhuang",
+          "affiliation": "University of Missouri-Kansas City"
+        }
+      ],
+      "abstract": "We propose and analyze higher-degree rectangular immersed finite elements (IFE) for elliptic interface problems. These IFE functions are constructed by a Cauchy extension induced by least-squares. Properties of the proposed IFE functions are analyzed, including the optimal approximation capability of the resulting IFE spaces, as well as inverse and trace inequalities. The higher-degree rectangular IFE spaces are employed in discontinuous Galerkin (DG) formulations to solve the elliptic interface problems.  The optimal error estimates for the proposed DGIFE methods in both an energy and L2 norms are derived. Numerical results are provided to illustrate the convergence of the proposed DGIFE methods.",
+      "_match": "title"
+    },
+    {
+      "title": "Runge--Kutta discontinuous Galerkin methods for hyperbolic problems with generalized method of lines",
+      "speakers": [
+        {
+          "name": "qifan chen",
+          "affiliation": "The Ohio State University"
+        }
+      ],
+      "abstract": "The method-of-lines approach for time-dependent PDEs typically applies the same spatial discretization at every stage of a Runge-Kutta (RK) time integrator. This work challenges that convention by introducing a framework that employs different spatial operators at different RK stages. We investigate this strategy within the context of Runge-Kutta discontinuous Galerkin methods for hyperbolic conservation laws. By strategically blending operators, our approach yields several possible benefits, such as easier boundary treatment for order reduction, larger time step sizes, or small stencil size. These results demonstrate a versatile new direction for designing fully-discrete methods for PDEs.",
+      "_match": "title"
+    },
+    {
+      "title": "On the Probabilistic Approximation in Reproducing Kernel Hilbert Spaces",
+      "speakers": [
+        {
+          "name": "Dongwei Chen",
+          "affiliation": "Colorado State University"
+        }
+      ],
+      "abstract": "This talk is about the probabilistic function approximation problem over reproducing kernel Hilbert spaces. We show the existence and uniqueness of the optimizer under mild assumptions.  Furthermore, we generalize the celebrated representer theorem to our setting, and especially when the probability measure is finitely supported, or the Hilbert space is finite-dimensional, we show that the probabilistic approximation problem turns out to be a measure quantization problem, which connects the probabilistic function approximation to the sampling theory.  Some discussions and examples are also given when the reproducing kernel Hilbert space is infinite-dimensional and the measure is infinitely supported.",
+      "_match": "title"
+    },
+    {
+      "title": "Improved convergence of the Arrow–Hurwicz iteration for the Navier–Stokes equation via grad–div stabilization and Anderson acceleration",
+      "speakers": [
+        {
+          "name": "Ahmed Zytoon",
+          "affiliation": "Oklahoma State University"
+        }
+      ],
+      "abstract": "We consider two modifications of the Arrow–Hurwicz (AH) iteration for solving the incompressible steady Navier–Stokes equations for the purpose of accelerating the algorithm: grad–div stabilization, and Anderson acceleration. AH is a classical iteration for general saddle point linear systems and it was later extended to Navier–Stokes iterations in the 1970’s which has recently come under study again. We apply recently developed ideas for grad–div stabilization and divergence-free finite element methods along with Anderson acceleration of fixed-point iterations to AH in order to improve its convergence. Analytical and numerical results show that each of these methods improves AH convergence, but the combination of them yields an efficient and effective method that is competitive with more commonly used solvers.",
+      "_match": "title"
+    }
+  ]
+}

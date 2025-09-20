@@ -1,0 +1,49 @@
+{
+  "minisymposium_title": "Recent advances in mathematics for scientific machine learning",
+  "talks": [
+    {
+      "title": "tLaSDI: Thermodynamics-informed latent space dynamics identification",
+      "speakers": [
+        {
+          "name": "Siu Wun Cheung",
+          "affiliation": "Lawrence Livermore National Laboratory"
+        }
+      ],
+      "abstract": "We present a thermodynamics-informed latent space dynamics identification (tLaSDI) method for learn- ing an intrinsic invariant manifold which comply with the first and second principles of thermodynamics from data. The approach utilizes an autoencoder to provide a nonlinear latent representation and the reconstruction of the high-dimensional data, and the corresponding latent space dynamics are captured using GENERIC formalism informed neural networks (GFINNs). The GFINNs are designed to exactly satisfy the degeneracy condition of the GENERIC formalism, ensuring that the latent space dynamics adhere to fundamental thermodynamics principles. In addition, we develop a novel loss formulation based on rigorous error estimates, which significantly improve the generalization performance.",
+      "_match": "title"
+    },
+    {
+      "title": "Balancing Spectral Bias in PINNs via Loss Design",
+      "speakers": [
+        {
+          "name": "Ying Liang",
+          "affiliation": "Duke University"
+        }
+      ],
+      "abstract": "We study the frequency bias of neural networks in function approximation and PINNs, highlighting how differential operators reshape spectral learning dynamics. Motivated by this, we propose a new loss formulation that balances frequency components during training. We compare its performance with standard PINNs on PDEs with multiscale features.",
+      "_match": "title"
+    },
+    {
+      "title": "Matrix analysis for shallow ReLU neural network least-squares approximations",
+      "speakers": [
+        {
+          "name": "Tong Ding",
+          "affiliation": "Purdue Univeristy"
+        }
+      ],
+      "abstract": "Neural network provides an effective tool for the approximation of some challenging functions. However, fast and accurate solvers for relevant dense linear systems are rarely studied. This work gives a comprehensive characterization of the ill conditioning of some dense linear systems arising from shallow neural network least squares approximations. It shows that the systems are typically very ill conditioned, and the conditioning gets even worse with challenging functions such as those with jumps. This makes the solutions hard for typical iterative solvers. On the other hand, we can further show the existence of some intrinsic rank structures within those matrices, which make it feasible to obtain nearly linear complexity robust direct solutions. Most of our discussions focus on the 1D case, but",
+      "_match": "title"
+    },
+    {
+      "title": "Understanding In-Context Learning on Structured Manifolds: Bridging Attention to Kernel Methods",
+      "speakers": [
+        {
+          "name": "Zhaiming Shen",
+          "affiliation": "Georgia Institute of Technology"
+        }
+      ],
+      "abstract": "While in-context learning (ICL) has achieved remarkable success in natural language and vision domains, its theoretical understanding--particularly in the context of structured geometric data--remains unexplored. In this work, we initiate a theoretical study of ICL for regression of Hölder functions on manifolds. By establishing a novel connection between the attention mechanism and classical kernel methods, we derive generalization error bounds in terms of the prompt length and the number of training tasks. When a sufficient number of training tasks are observed, transformers give rise to the minimax regression rate of Hölder functions on manifolds, which scales exponentially with the intrinsic dimension of the manifold, rather than the ambient space dimension. Our result also characterizes how the generalization error scales with the number of training tasks, shedding light on the complexity of transformers as in-context algorithm learners. Our findings provide foundational insights into the role of geometry in ICL and novels tools to study ICL of nonlinear models.",
+      "_match": "title"
+    }
+  ]
+}

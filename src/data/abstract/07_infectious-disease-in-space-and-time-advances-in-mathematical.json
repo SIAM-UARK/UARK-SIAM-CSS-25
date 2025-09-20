@@ -1,0 +1,71 @@
+{
+  "minisymposium_title": "Infectious Disease in Space and Time Advances in Mathematical",
+  "talks": [
+    {
+      "title": "Analyzing Zoonotic Spillover Risk Under Extreme Weather Events Using a Deterministic and Stochastic Lotka-Volterra Modeling Approach",
+      "speakers": [
+        {
+          "name": "Barsha Saha",
+          "affiliation": "University of Missouri-Kansas City"
+        }
+      ],
+      "abstract": "Extreme weather events —both acute and chronic—are reshaping ecological systems by altering wildlife abundance, dispersal, and infection prevalence, thereby heightening zoonotic spillover risk. We develop a zoonotic spillover framework that couples wildlife community dynamics with human exposure under weather disturbance. Wildlife populations are modeled by a stochastic competitive Lotka–Volterra system with diffusion–advection terms, where Brownian noise represents chronic fluctuations and Lévy jumps capture acute shocks. These dynamics determine both direct exposure from infected wildlife and indirect exposure through free-living pathogens shed into the environment which is considered as proportion of infected wildlife. Using a dose–response formulation, we quantify zoonotic spillover probability as a function of species densities, movement, and environmental pathogen loads. Analytical results establish conditions for persistence and extinction of wildlife reservoirs, while simulations reveal how intensified stochastic forcing drives shifts in community structure, pathogen load, and human exposure risk. By linking species dynamics to spillover pathways, this framework advances our understanding of how climate-driven extreme events amplify the likelihood of zoonotic emergence.",
+      "_match": "title"
+    },
+    {
+      "title": "Approximate Solutions for HIV Infection Dynamics via Legendre Collocation",
+      "speakers": [
+        {
+          "name": "Beyza Cetin",
+          "affiliation": "Missouri University Science and Technology"
+        }
+      ],
+      "abstract": "We propose a Legendre polynomial collocation framework for simulating an HIV infection model that tracks uninfected CD4$^+$ T cells, productively infected cells, and free virions. The scheme computes a polynomial approximation of the solution via Legendre collocation and reconstructs the state variables by integrating this approximation consistent with the prescribed initial data. To provide a fair evaluation, we adopt benchmark parameter sets from the literature  and compare against the Laplace--Adomian decomposition method, the variational iteration method, the modified VIM , and a classical Runge--Kutta solver. Even at modest polynomial degrees (e.g., \\(N=8\\)), Legendre collocation yields consistently smaller residuals of the governing equations for \\(T\\), \\(I\\), and \\(V\\), and produces trajectories that closely track reference solutions. Accuracy is comparable to or better than competing approaches. These findings support Legendre collocation as a reliable, easy-to-implement alternative for precise simulation and benchmarking of nonlinear ODE systems in virus dynamics.",
+      "_match": "title"
+    },
+    {
+      "title": "Bayesian Inference of MRSA Transmission from 2024 EHR Data in Drug-Using and Non–Drug-Using Patient Populations",
+      "speakers": [
+        {
+          "name": "Kiel Corkran",
+          "affiliation": "University of Missouri-Kansas City"
+        }
+      ],
+      "abstract": "We used Bayesian compartmental modeling to quantify healthcare-associated MRSA (HA-MRSA) transmission among drug-using and drug-free patient populations in a Midwestern safety-net hospital over 2024. From 18,192 electronic health records (7,076 drug-using; 11,116 drug-free), we estimated transmission, isolation, and discharge rates across multiple nursing unit types using the Delayed Rejection Adaptive Metropolis (DRAM) MCMC algorithm. Most nursing units showed higher mean transmission rates for drug-using patients, with differences up to 0.034, particularly in Progressive Care Units and Surgical ICUs. Only specialized units such as the Cardiac Care Center had higher rates in drug-free patients. These findings highlight structural vulnerabilities in high-acuity units serving drug-using populations and demonstrate the power of Bayesian modeling to guide targeted infection control interventions in safety-net hospital settings.",
+      "_match": "title"
+    },
+    {
+      "title": "Leveraging mobility data to understand COVID-19 Deaths in United States",
+      "speakers": [
+        {
+          "name": "Folashade B. Agusto",
+          "affiliation": "University of Kansas"
+        }
+      ],
+      "abstract": "In the United States, COVID-19 has resulted in 103,436,829 confirmed cases and 1,225,706 confirmed deaths. The pandemic stands as the deadliest disaster in U.S. history and was the nation’s third-leading cause of death in 2020, following heart disease and cancer. In this study, we examine the geographical patterns of COVID-19 deaths at the county level across the country by utilizing five newly defined spatial weights, developed using mobility data from Google and Facebook. Google. These spatial weights are based on the correlation of mobility data between two spatial units and a threshold distance decay between them. We analyze the spatial distribution of COVID-19 deaths using datasets from County Health Rankings and Roadmaps, as well as the Centers for Disease Control and Prevention, focusing on the COVID-19 era spanning 2020, 2021, and 2022. By incorporating spatial covariate information into the new spatial weight definitions, these methods more accurately represent the relationships between spatial units and enhance the performance of spatial analysis techniques. Three of the methods effectively captured nearly all high-incident counties and accurately identified hot and cold spot clusters over the years. In contrast, the other two methods failed to identify many counties with high cases, classifying them as insignificant.",
+      "_match": "title"
+    },
+    {
+      "title": "Spatio-temporal Analysis of Domestic Violence in Puerto Rico",
+      "speakers": [
+        {
+          "name": "Phylis Njeri Muniu",
+          "affiliation": "University of Kansas"
+        }
+      ],
+      "abstract": "Domestic violence is a growing public health concern in Puerto Rico, with reported cases rising sharply in recent years. This study examined the spatiotemporal relationships between domestic violence and socioeconomic factors from 2020 to 2022 using Geographically and Temporally Weighted Regression (GTWR). The analysis reveals significant regional variations in predictors such as education, marital status, and income stress. The results highlight the importance of accounting for spatial and temporal heterogeneity to inform targeted prevention and intervention strategies, ultimately guiding more effective allocation of public health resources.",
+      "_match": "title"
+    },
+    {
+      "title": "Complex Structure in the Endemic Equilibrium Set of an  SIS Epidemic Patch Model with the Mass-Action Infection Mechanism",
+      "speakers": [
+        {
+          "name": "Rachidi B. Salako",
+          "affiliation": "University of Nevada Las Vegas"
+        }
+      ],
+      "abstract": "We investigate the structure of the endemic equilibrium (EE) set in a multi-patch SIS epidemic model with mass-action transmission. For the corresponding single-patch model, the basic reproduction number $\\mathcal{R}_0$ completely determines the disease dynamics: a unique stable EE exists if and only if $\\mathcal{R}_0 > 1$. In contrast, the multi-patch setting exhibits far more complex behavior. First, we show that as the dispersal rate of susceptible individuals $d_S$ varies, the EE set consists of a finite union of disjoint curves. Under mild conditions, when $\\mathcal{R}_0 < 1$, the closure of each curve forms a loop in the $d_S \\times \\|{I}\\|_1$-plane, where $\\|{I}\\|_1$ denotes the total infected population at equilibrium. When $\\mathcal{R}_0 > 1$, the EE set contains two distinct types of curves: bounded and unbounded. Moreover, the structure of the EE set as $d_S \\to 0$ provides explicit spatial patterns of the EEs, offering insights into how restricting susceptible movement influences disease dynamics. Second, using $\\mathcal{R}_0$ as the bifurcation parameter, we establish that the EE set forms a simple unbounded curve in the $\\mathcal{R}_0 \\times \\|{I}\\|_1$-plane, which may exhibit an S-shape and undergo either a backward or forward transcritical bifurcation at $\\mathcal{R}_0 = 1$. These results refine and extend previous findings by revealing novel and intricate structures within the EE set. They underscore the interplay between population movement, total population size, and spatial heterogeneity, providing new insights into the long-term dynamics of infectious diseases. This is a joint work with Kingsley Ukandu.",
+      "_match": "title"
+    }
+  ]
+}

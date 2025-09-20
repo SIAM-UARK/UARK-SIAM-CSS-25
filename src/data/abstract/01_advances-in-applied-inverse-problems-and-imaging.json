@@ -1,0 +1,82 @@
+{
+  "minisymposium_title": "Advances in Applied Inverse Problems and Imaging",
+  "talks": [
+    {
+      "title": "Efficient Symmetry-Driven Diffusion Models for Wideband Inverse Scattering",
+      "speakers": [
+        {
+          "name": "Borong Zhang",
+          "affiliation": "University of Wisconsin, Madison"
+        }
+      ],
+      "abstract": "The wideband inverse scattering problem is a classical inverse problem that uses scattered waves to infer the refractive index (media) in the Helmholtz equation.  Classical PDE-based optimization methods face challenges with instability, high computational costs, and diffraction limits.  We propose leveraging a conditional diffusion model to examine this classical problem from a deep learning perspective.  Specifically, inspired by classical back-projection and filtering procedures, we factorize the score function of our conditional diffusion model into a physics-based latent representation and a convolutional neural network.  In this training process, we respect the equivariance properties inherent to the physics problem and conduct optimization over a compressed space with a designed rank structure.  Our framework empirically provides sharp reconstructions and even recovers sub-Nyquist features in multiple-scattering regimes.  It also features low sample and computational complexity, with the number of parameters scaling sub-linearly with the target resolution and maintaining stable training dynamics.",
+      "_match": "title"
+    },
+    {
+      "title": "Laser propagation through random media: speckle formation and the Gaussian conjecture",
+      "speakers": [
+        {
+          "name": "Anjali Nair",
+          "affiliation": "University of Chicago"
+        }
+      ],
+      "abstract": "Laser light passing through strongly scattering media form random interference patterns called speckle. Understanding the formation and propagation of speckle finds important applications in imaging and optimization of optical links.   A well-known conjecture in physical literature states that high frequency waves propagating over long distances through turbulence eventually become complex Gaussian distributed. The intensity of such wave fields then follows an exponential law, consistent with speckle formation observed in physical experiments.   Though fairly well-accepted and intuitive, this conjecture is not entirely supported by any detailed mathematical derivation. In this talk, I will discuss some recent results demonstrating the Gaussian conjecture in a weak-coupling regime of the paraxial approximation. I will describe two scaling regimes, one is a kinetic scaling where the second moment is given by a transport equation and a second diffusive scaling, where the second moment follows an anomalous diffusion. In both cases, the limiting complex Gaussian distribution is fully characterized by its first and second moments. Theoretical results are supported through numerical simulations.  This is joint work with Guillaume Bal.",
+      "_match": "title"
+    },
+    {
+      "title": "Exploring Low-Rank Structures in Inverse Scattering",
+      "speakers": [
+        {
+          "name": "Shixu Meng",
+          "affiliation": "The University of Texas at Dallas"
+        }
+      ],
+      "abstract": "The inverse scattering problem plays an important role in a wide range of physical and engineering applications where hidden or internal features need to be analyzed. It is a challenging problem because inverse scattering is intrinsically nonlinear and ill-posed, and the measurement data are corrupted by noise.  I will discuss a low-rank structure tailored for the inverse medium scattering problem, a regularized numerical method, and an explicit stability estimate. I will conclude the talk with further development of the low-rank structure.",
+      "_match": "title"
+    },
+    {
+      "title": "A fast sampling method for Maxwell's equations with applications to unprocessed experimental data",
+      "speakers": [
+        {
+          "name": "Thu Le",
+          "affiliation": "University of Wisconsin–Madison"
+        }
+      ],
+      "abstract": "We consider an inverse electromagnetic scattering problem aimed at reconstructing the geometry of unknown objects from boundary measurements of scattered fields at a fixed frequency. Such problems arise in applications including radar imaging and nondestructive testing and are particularly challenging due to their nonlinear and ill-posed nature. In this talk, I will present a fast, non-iterative sampling method for solving the problem governed by Maxwell’s equations. A factorization-based analysis is provided to justify the method and establish a uniqueness result for the inverse problem. The approach is then applied directly to raw 3D experimental data from the Fresnel Institute. Numerical results demonstrate that the method is practical, easy to implement, and robust to noise and limited-aperture measurements. This is joint work with Dinh-Liem Nguyen.",
+      "_match": "title"
+    },
+    {
+      "title": "Recovering elastic subdomains with strain-gradient elastic interfaces from force measurements",
+      "speakers": [
+        {
+          "name": "Govanni Granados",
+          "affiliation": "University of North Carolina at Chapel Hill"
+        }
+      ],
+      "abstract": "In this talk, we introduce a new inverse problem for two-dimensional antiplane shear in elastic bodies with strain-gradient interfaces. The setting is a homogeneous isotropic elastic body that contains an inclusion separated by a thin interface endowed with higher-order surface energy. We show that the Dirichlet-to-Neumann map, which encodes displacement-stress measurements on the exterior boundary, uniquely recovers the mechanical parameters, as well as the shape of the inclusion. To address the inverse shape problem, we adapt the Factorization Method to handle the complications arising from a higher-order boundary operator and its nontrivial null space. Numerical examples will be presented in the unit circle.",
+      "_match": "title"
+    },
+    {
+      "title": "Numerical solution to the inverse electromagnetic scattering problem for periodic chiral media.",
+      "speakers": [
+        {
+          "name": "Cat Su Tran",
+          "affiliation": "Kansas State University"
+        }
+      ],
+      "abstract": "We study the inverse scattering problem for Maxwell's equations in periodic chiral media, with a focus on recovering the location and shape of the periodic scattering object. We propose an imaging function to reconstruct the periodic scatterer from the boundary measurements of the electromagnetic scattered field. The imaging function is computationally efficient and very stable against noise in data. To validate the effectiveness of our approach, we provide a theoretical analysis of the imaging function's behavior and present numerical studies that demonstrate its performance.",
+      "_match": "title"
+    },
+    {
+      "title": "Fourier-based model-infomed deep learning approach to solve the inverse source problem",
+      "speakers": [
+        {
+          "name": "Aravinth Ravi",
+          "affiliation": "Kansas State Univeristy"
+        }
+      ],
+      "abstract": "This talk will propose an unsupervised two-step Fourier-based deep learning approach to address the inverse source problem in 2D and 3D. The approach consists of the following steps: In the first step, boundary data is transformed into an imaging function that encodes information about the shape and location of the source function. In the second step, a model-informed neural network is trained to recover the parameter of interest by leveraging a Fourier based model equation that relates the Fourier coefficients of the imaging function to the Fourier coefficients of the parameter. We will see that this approach allows us to recover the source function quickly while maintaining accuracy and robustness against noise. This will be substantiated with several numerical examples, and we will further compare its performance with the results we obtained in the Euclidean space.",
+      "_match": "title"
+    }
+  ]
+}
