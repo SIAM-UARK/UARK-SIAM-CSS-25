@@ -90,7 +90,7 @@ export default [
     sessions: [
       {
         start: "2025-10-11T15:30:00-05:00",
-        end: "2025-10-11T18:20:00-05:00",
+        end: "2025-10-11T18:00:00-05:00",
         talks: [
           {
             title: "Gamma-Convergence and Asymptotic Analysis for a Diffuse Domain Problem with Transmission Boundary Conditions: Part 2, Numerical Confirmation",
@@ -133,12 +133,6 @@ export default [
             start: "2025-10-11T17:40:00-05:00",
             end: "2025-10-11T18:00:00-05:00",
             speakers: [{ name: "Zhiwei Zhang (Speaker), Shuwang Li (co-author, Illinois Institute of Tecnology), and Steve Wise (co-author,University of Tennessee at Knoxville))", affiliation: "Illinois Institute of Technology" }]
-          },
-          {
-            title: "An Efficient, Decoupled, and Linearly Stabilized Scheme for Phase-Field Models with Variable Mobility",
-            start: "2025-10-11T18:00:00-05:00",
-            end: "2025-10-11T18:20:00-05:00",
-            speakers: [{ name: "Zhiwei Zhang", affiliation: "Illinois Institute Of Technology" }]
           }
         ]
       }
