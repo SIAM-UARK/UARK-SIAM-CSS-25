@@ -201,86 +201,37 @@ export default [
     day: "",
     room: "",
     timezone: "America/Chicago",
+    // Talks list de-duplicated and reordered per final schedule
     "talks": [
+      { "title": "Minimax rates for learning kernels in operators", "speakers": [{ "name": "Sichong Zhang", "affiliation": "Johns Hopkins University" }] },
+      { "title": "Cauchy Random Features for Operator Learning in Sobolev Space", "speakers": [{ "name": "Chunyang Liao", "affiliation": "University of California, Los Angeles" }] },
+      { "title": "Novel Neural Networks for Efficient Inverse Modeling of Nonlinear Schr\\\"{o}dinger  Equations", "speakers": [{ "name": "Yiran Wang", "affiliation": "The University of Alabama" }] },
+      { "title": "Geometry-Preserving Encoder/Decoder In Latent Generative Models", "speakers": [{ "name": "Wonjun Lee", "affiliation": "The Ohio State University" }] },
+      { "title": "In-context operator learning on probability measure spaces", "speakers": [{ "name": "Dixi Wang", "affiliation": "Purdue University" }] },
+      { "title": "Optimal Approximation of High-dimensional Functions on Smooth Manifolds Using Deep ReLU Neural Networks", "speakers": [{ "name": "Ji Shi", "affiliation": "University of Houston" }] },
+      { "title": "From Single to Multiple Kernels: Learning Interacting Particle Systems on Networks.", "speakers": [{ "name": "Quanjun Lang", "affiliation": "Duke University" }] },
+      { "title": "Transformers for learning on noisy and task-level manifolds: Approximation and generalization insights", "speakers": [{ "name": "Zhaiming Shen", "affiliation": "Georgia Institute of Technology" }] }
+    ],
+    // Two-panel schedule with 20-minute slots: 3:30, 3:50, 4:10, 4:30; 5:00, 5:20, 5:40, 6:00
+    sessions: [
       {
-        "title": "Minimax rates for learning kernels in operators",
-        "speakers": [
-          {
-            "name": "Sichong Zhang",
-            "affiliation": "Johns Hopkins University"
-          }
+        start: "2025-10-11T15:30:00-05:00",
+        end: "2025-10-11T16:50:00-05:00",
+        talks: [
+          { title: "Minimax rates for learning kernels in operators", start: "2025-10-11T15:30:00-05:00", end: "2025-10-11T15:50:00-05:00", speakers: [{ name: "Sichong Zhang", affiliation: "Johns Hopkins University" }] },
+          { title: "Cauchy Random Features for Operator Learning in Sobolev Space", start: "2025-10-11T15:50:00-05:00", end: "2025-10-11T16:10:00-05:00", speakers: [{ name: "Chunyang Liao", affiliation: "University of California, Los Angeles" }] },
+          { title: "Novel Neural Networks for Efficient Inverse Modeling of Nonlinear Schr\\\"{o}dinger  Equations", start: "2025-10-11T16:10:00-05:00", end: "2025-10-11T16:30:00-05:00", speakers: [{ name: "Yiran Wang", affiliation: "The University of Alabama" }] },
+          { title: "Geometry-Preserving Encoder/Decoder In Latent Generative Models", start: "2025-10-11T16:30:00-05:00", end: "2025-10-11T16:50:00-05:00", speakers: [{ name: "Wonjun Lee", affiliation: "The Ohio State University" }] }
         ]
       },
       {
-        "title": "Cauchy Random Features for Operator Learning in Sobolev Space",
-        "speakers": [
-          {
-            "name": "Chunyang Liao",
-            "affiliation": "University of California, Los Angeles"
-          }
-        ]
-      },
-      {
-        "title": "Transformers for learning on noisy and task-level manifolds: Approximation and generalization insights",
-        "speakers": [
-          {
-            "name": "Zhaiming Shen",
-            "affiliation": "Georgia Institute of Technology"
-          }
-        ]
-      },
-      {
-        "title": "Geometry-Preserving Encoder/Decoder In Latent Generative Models",
-        "speakers": [
-          {
-            "name": "Wonjun Lee",
-            "affiliation": "The Ohio State University"
-          }
-        ]
-      },
-      {
-        "title": "In-context operator learning on probability measure spaces",
-        "speakers": [
-          {
-            "name": "Dixi Wang",
-            "affiliation": "Purdue University"
-          }
-        ]
-      },
-      {
-        "title": "Optimal Approximation of High-dimensional Functions on Smooth Manifolds Using Deep ReLU Neural Networks",
-        "speakers": [
-          {
-            "name": "Ji Shi",
-            "affiliation": "University of Houston"
-          }
-        ]
-      },
-      {
-        "title": "From Single to Multiple Kernels: Learning Interacting Particle Systems on Networks.",
-        "speakers": [
-          {
-            "name": "Quanjun Lang",
-            "affiliation": "Duke University"
-          }
-        ]
-      },
-      {
-        "title": "Novel Neural Networks for Efficient Inverse Modeling of Nonlinear Schr\\\"{o}dinger  Equations",
-        "speakers": [
-          {
-            "name": "Yiran Wang",
-            "affiliation": "The University of Alabama"
-          }
-        ]
-      },
-      {
-        "title": "Geometry-Preserving Encoder/Decoder In Latent Generative Models",
-        "speakers": [
-          {
-            "name": "Wonjun Lee",
-            "affiliation": "The Ohio State University"
-          }
+        start: "2025-10-11T17:00:00-05:00",
+        end: "2025-10-11T18:20:00-05:00",
+        talks: [
+          { title: "In-context operator learning on probability measure spaces", start: "2025-10-11T17:00:00-05:00", end: "2025-10-11T17:20:00-05:00", speakers: [{ name: "Dixi Wang", affiliation: "Purdue University" }] },
+          { title: "Optimal Approximation of High-dimensional Functions on Smooth Manifolds Using Deep ReLU Neural Networks", start: "2025-10-11T17:20:00-05:00", end: "2025-10-11T17:40:00-05:00", speakers: [{ name: "Ji Shi", affiliation: "University of Houston" }] },
+          { title: "From Single to Multiple Kernels: Learning Interacting Particle Systems on Networks.", start: "2025-10-11T17:40:00-05:00", end: "2025-10-11T18:00:00-05:00", speakers: [{ name: "Quanjun Lang", affiliation: "Duke University" }] },
+          { title: "Transformers for learning on noisy and task-level manifolds: Approximation and generalization insights", start: "2025-10-11T18:00:00-05:00", end: "2025-10-11T18:20:00-05:00", speakers: [{ name: "Zhaiming Shen", affiliation: "Georgia Institute of Technology" }] }
         ]
       }
     ]
