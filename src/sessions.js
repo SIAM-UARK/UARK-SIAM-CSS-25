@@ -869,6 +869,49 @@ export default [
         ]
       }
     ]
+    ,
+    sessions: [
+      {
+        start: "2025-10-11T10:10:00-05:00",
+        end: "2025-10-11T11:30:00-05:00",
+        talks: [
+          { title: "Topological Machine Learning for Drug Discovery", start: "2025-10-11T10:10:00-05:00", end: "2025-10-11T10:30:00-05:00", speakers: [{ name: "Baris Coskunuzer", affiliation: "University of Texas at Dallas" }] },
+          { title: "Phase Field Modeling of  Dictyostelium Discoideum Chemotaxis", start: "2025-10-11T10:30:00-05:00", end: "2025-10-11T10:50:00-05:00", speakers: [{ name: "Yanxiang Zhao", affiliation: "George Washington University" }] },
+          { title: "TBD", start: "2025-10-11T10:50:00-05:00", end: "2025-10-11T11:10:00-05:00", speakers: [{ name: "Zixuan Cang", affiliation: "North Carolina State University" }] },
+          { title: "Topological and spatial imaging biomarkers for glioma survival prediction", start: "2025-10-11T11:10:00-05:00", end: "2025-10-11T11:30:00-05:00", speakers: [{ name: "Chul Moon", affiliation: "Southern Methodist University" }] }
+        ]
+      },
+      {
+        start: "2025-10-11T15:30:00-05:00",
+        end: "2025-10-11T16:50:00-05:00",
+        talks: [
+          { title: "Poisson-Boltzmann theory for biomolecular electrostatics: Self-energies, regularization, and far-field approximation", start: "2025-10-11T15:30:00-05:00", end: "2025-10-11T15:50:00-05:00", speakers: [{ name: "Shan Zhao", affiliation: "The University of Alabama" }] },
+          { title: "A DNN Biophysics Model with Topological and Electrostatic Features", start: "2025-10-11T15:50:00-05:00", end: "2025-10-11T16:10:00-05:00", speakers: [{ name: "Weihua Geng", affiliation: "Southern Methodist University" }] },
+          { title: "Constrained variational models of biomolecular solvation and their numerical implementation", start: "2025-10-11T16:10:00-05:00", end: "2025-10-11T16:30:00-05:00", speakers: [{ name: "Zhan Chen", affiliation: "Georgia Southern University" }] },
+          { title: "A simple two-phase model for simulating vesicle dynamics", start: "2025-10-11T16:30:00-05:00", end: "2025-10-11T16:50:00-05:00", speakers: [{ name: "Shuwang Li", affiliation: "Illinois Institute of Technology" }] }
+        ]
+      },
+      {
+        start: "2025-10-11T17:00:00-05:00",
+        end: "2025-10-11T18:20:00-05:00",
+        talks: [
+          { title: "Experimental and theoretical investigations of rotating algae biofilm reactors (RABRs): Areal productivity, nutrient recovery, and energy efficiency", start: "2025-10-11T17:00:00-05:00", end: "2025-10-11T17:20:00-05:00", speakers: [{ name: "Jia Zhao", affiliation: "University of Alabama" }] },
+          { title: "Topological Data Analysis on Manifolds", start: "2025-10-11T17:20:00-05:00", end: "2025-10-11T17:40:00-05:00", speakers: [{ name: "Zhe Su", affiliation: "Auburn University" }] },
+          { title: "Structure analytics with polynomial encoding reveal mechanisms of R-loop formation", start: "2025-10-11T17:40:00-05:00", end: "2025-10-11T18:00:00-05:00", speakers: [{ name: "Pengyu (Peter) Liu", affiliation: "University of Rhode Island" }] },
+          { title: "A Bubble Model for the Gating of Kv Channels", start: "2025-10-11T18:00:00-05:00", end: "2025-10-11T18:20:00-05:00", speakers: [{ name: "Zilong Song", affiliation: "Utah State University" }] }
+        ]
+      },
+      {
+        start: "2025-10-12T10:10:00-05:00",
+        end: "2025-10-12T11:30:00-05:00",
+        talks: [
+          { title: "Mathematical AI models for drug discovery", start: "2025-10-12T10:10:00-05:00", end: "2025-10-12T10:30:00-05:00", speakers: [{ name: "Hongsong Feng", affiliation: "University of North Carolina at Charlotte" }] },
+          { title: "Graph and Geometry-Inspired Machine Learning Approaches for Molecular Interaction Prediction", start: "2025-10-12T10:30:00-05:00", end: "2025-10-12T10:50:00-05:00", speakers: [{ name: "Md Masud Rana", affiliation: "Kennesaw State University" }] },
+          { title: "Computational Modeling of Anti-Amyloid-beta Antibody Therapies in Alzheimer’s Disease", start: "2025-10-12T10:50:00-05:00", end: "2025-10-12T11:10:00-05:00", speakers: [{ name: "Lida Rabiei", affiliation: "Pennsylvania State University" }] },
+          { title: "OTMol: Robust Molecular Structure Comparison via Optimal Transport", start: "2025-10-12T11:10:00-05:00", end: "2025-10-12T11:30:00-05:00", speakers: [{ name: "Xiaoqi Wei", affiliation: "North Carolina State University" }] }
+        ]
+      }
+    ]
   },
   {
     "minisymposium_title": "PDEs: Modeling Numerics and Applications",
