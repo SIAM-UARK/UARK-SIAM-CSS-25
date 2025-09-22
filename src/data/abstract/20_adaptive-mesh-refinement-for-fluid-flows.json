@@ -26,7 +26,9 @@
     },
     {
       "title": "High-Fidelity Simulations of Rayleigh–Taylor Instability Using Front-Tracking and Adaptive Mesh Refinement",
-      "speakers": [],
+      "speakers": [
+        { "name": "James Burton", "affiliation": "University of Arkansas" }
+      ],
       "abstract": "Front-tracking is an adaptive numerical technique that explicitly tracks the interface between different mediums as a hypersurface moving through a structured grid. The method provides sharp resolution of the wavefront and prevents unwanted mixing between neighboring cells of different materials, at a computational cost. For high-resolution simulations, adaptive mesh refinement (AMR) can be employed to concentrate computational resources near the interface, maintaining coarser resolution in smooth regions. To this end, the front-tracking library FronTier is integrated with the block-structured AMR framework AMReX to perform high-fidelity simulations of the Rayleigh–Taylor instability across multiple levels of refinement. The method is validated against experimental results obtained by Waddell, Niederhaus, and Jacobs in their paper on single-mode Rayleight-Taylor instabilities with low Atwood number."
     }
   ]
