@@ -427,17 +427,17 @@ export default function ProgramPage() {
                   <div className="p-4 flex flex-wrap items-center gap-4 border-b">
                     {(() => {
                       const { start, end } = inferSessionBounds(s);
+                      if (!start && !end) return null;
+                      const sameDay = start && end && (new Date(start).toDateString() === new Date(end).toDateString());
                       return (
-                        (start || end) && (
-                          <div className="inline-flex items-center gap-2 text-sm">
-                            <Clock className="h-4 w-4" />
-                            <span>
-                              {start ? fmtTime(start, tz) : ""}
-                              {(start && end) ? " – " : ""}
-                              {end ? fmtTime(end, tz) : ""}
-                            </span>
-                          </div>
-                        )
+                        <div className="inline-flex items-center gap-2 text-sm">
+                          <Clock className="h-4 w-4" />
+                          <span>
+                            {start ? `${fmtDay(start, tz)} ${fmtTime(start, tz)}` : ""}
+                            {(start && end) ? " – " : ""}
+                            {end ? `${sameDay ? "" : fmtDay(end, tz) + " "}${fmtTime(end, tz)}` : ""}
+                          </span>
+                        </div>
                       );
                     })()}
                     {s.chair && (
