@@ -1,6 +1,8 @@
 import { useMemo } from 'react'
 import { useParams, Link, useLocation } from 'react-router-dom'
 import { ArrowLeft, Calendar, Users } from 'lucide-react'
+import contributedCsvRaw from './data/contributed_talks.csv?raw'
+import Papa from 'papaparse'
 
 // Load all abstract bundles eagerly
 const modules = import.meta.glob('./data/abstract/*.json', { eager: true })
@@ -18,7 +20,7 @@ export default function TalkPage() {
   const msParam = useMemo(() => new URLSearchParams(location.search).get('ms') || null, [location.search])
 
   const talkData = useMemo(() => {
-    // Build an index of talks by slug across all minisymposia files
+    // Build an index of talks by slug across all minisymposia files (JSON)
     const all = []
     for (const [path, mod] of Object.entries(modules)) {
       const data = mod?.default || mod
@@ -34,11 +36,31 @@ export default function TalkPage() {
         })
       }
     }
+
+    // Add contributed talks from CSV so their abstracts appear
+    if (contributedCsvRaw && contributedCsvRaw.length > 0) {
+      const parsed = Papa.parse(contributedCsvRaw, { header: true, skipEmptyLines: true })
+      const rows = (parsed?.data || []).filter((r) => (r.Title && r.Title.trim().length > 0))
+      for (const r of rows) {
+        const title = (r.Title || '').trim()
+        if (!title) continue
+        const name = [r['First Name'], r['Last Name']].filter(Boolean).join(' ').trim()
+        const affiliation = (r.Affiliation || '').trim()
+        const abstract = (r.Abstract || '').trim()
+        all.push({
+          msTitle: 'Contributed Talks',
+          title,
+          speakers: name ? [{ name, affiliation }] : [],
+          abstract,
+          slug: slugify(title),
+        })
+      }
+    }
+
     // Prefer a match that also matches the minisymposium slug if provided
     const candidates = all.filter((t) => t.slug === slug)
     if (candidates.length === 0) return null
     if (!msParam) return candidates[0]
-    const msSlug = slugify(candidates[0].msTitle || '')
     const exact = candidates.find((t) => slugify(t.msTitle || '') === msParam)
     return exact || candidates[0]
   }, [slug, msParam])
