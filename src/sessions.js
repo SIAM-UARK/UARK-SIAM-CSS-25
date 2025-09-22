@@ -734,6 +734,15 @@ export default [
         ]
       },
       {
+        "title": "TBD",
+        "speakers": [
+          {
+            "name": "Zixuan Cang",
+            "affiliation": "North Carolina State University"
+          }
+        ]
+      },
+      {
         "title": "A DNN Biophysics Model with Topological and Electrostatic Features",
         "speakers": [
           {
