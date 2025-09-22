@@ -8,67 +8,70 @@ export default [
     day: "",
     room: "",
     timezone: "America/Chicago",
-    "talks": [
+    sessions: [
       {
-        "title": "Efficient Symmetry-Driven Diffusion Models for Wideband Inverse Scattering",
-        "speakers": [
+        start: "2025-10-11T10:10:00-05:00",
+        end: "2025-10-11T11:25:00-05:00",
+        talks: [
           {
-            "name": "Borong Zhang",
-            "affiliation": "University of Wisconsin, Madison"
+            title: "TBD",
+            start: "2025-10-11T10:10:00-05:00",
+            end: "2025-10-11T10:35:00-05:00",
+            speakers: [{ name: "Ngoc T. Do", affiliation: "" }]
+          },
+          {
+            title: "Numerical solution to the inverse electromagnetic scattering problem for periodic chiral media.",
+            start: "2025-10-11T10:35:00-05:00",
+            end: "2025-10-11T11:00:00-05:00",
+            speakers: [{ name: "Cat Su Tran", affiliation: "Kansas State University" }]
+          },
+          {
+            title: "Recovering elastic subdomains with strain-gradient elastic interfaces from force measurements",
+            start: "2025-10-11T11:00:00-05:00",
+            end: "2025-10-11T11:25:00-05:00",
+            speakers: [{ name: "Govanni Granados", affiliation: "University of North Carolina at Chapel Hill" }]
           }
         ]
       },
       {
-        "title": "Laser propagation through random media: speckle formation and the Gaussian conjecture",
-        "speakers": [
+        start: "2025-10-11T15:30:00-05:00",
+        end: "2025-10-11T16:45:00-05:00",
+        talks: [
           {
-            "name": "Anjali Nair",
-            "affiliation": "University of Chicago"
+            title: "Efficient Symmetry-Driven Diffusion Models for Wideband Inverse Scattering",
+            start: "2025-10-11T15:30:00-05:00",
+            end: "2025-10-11T15:55:00-05:00",
+            speakers: [{ name: "Borong Zhang", affiliation: "University of Wisconsin, Madison" }]
+          },
+          {
+            title: "Laser propagation through random media: speckle formation and the Gaussian conjecture",
+            start: "2025-10-11T15:55:00-05:00",
+            end: "2025-10-11T16:20:00-05:00",
+            speakers: [{ name: "Anjali Nair", affiliation: "University of Chicago" }]
+          },
+          {
+            title: "Fourier-based model-infomed deep learning approach to solve the inverse source problem",
+            start: "2025-10-11T16:20:00-05:00",
+            end: "2025-10-11T16:45:00-05:00",
+            speakers: [{ name: "Aravinth Krishnan", affiliation: "Kansas State University" }]
           }
         ]
       },
       {
-        "title": "Exploring Low-Rank Structures in Inverse Scattering",
-        "speakers": [
+        start: "2025-10-11T17:00:00-05:00",
+        end: "2025-10-11T18:00:00-05:00",
+        talks: [
           {
-            "name": "Shixu Meng",
-            "affiliation": "The University of Texas at Dallas"
-          }
-        ]
-      },
-      {
-        "title": "A fast sampling method for Maxwell's equations with applications to unprocessed experimental data",
-        "speakers": [
+            title: "Exploring Low-Rank Structures in Inverse Scattering",
+            start: "2025-10-11T17:00:00-05:00",
+            end: "2025-10-11T17:35:00-05:00",
+            speakers: [{ name: "Shixu Meng", affiliation: "The University of Texas at Dallas" }]
+          },
           {
-            "name": "Thu Le",
-            "affiliation": "University of Wisconsin–Madison"
-          }
-        ]
-      },
-      {
-        "title": "Recovering elastic subdomains with strain-gradient elastic interfaces from force measurements",
-        "speakers": [
-          {
-            "name": "Govanni Granados",
-            "affiliation": "University of North Carolina at Chapel Hill"
-          }
-        ]
-      },
-      {
-        "title": "Numerical solution to the inverse electromagnetic scattering problem for periodic chiral media.",
-        "speakers": [
-          {
-            "name": "Cat Su Tran",
-            "affiliation": "Kansas State University"
-          }
-        ]
-      },
-      {
-        "title": "Fourier-based model-infomed deep learning approach to solve the inverse source problem",
-        "speakers": [
-          {
-            "name": "Aravinth Ravi",
-            "affiliation": "Kansas State Univeristy"
+            title: "A fast sampling method for Maxwell's equations with applications to unprocessed experimental data",
+            start: "2025-10-11T17:35:00-05:00",
+            end: "2025-10-11T18:00:00-05:00",
+            speakers: [{ name: "Thu Le", affiliation: "University of Wisconsin–Madison" }]
           }
         ]
       }

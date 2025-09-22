@@ -2,6 +2,13 @@
   "minisymposium_title": "Advances in Applied Inverse Problems and Imaging",
   "talks": [
     {
+      "title": "TBD",
+      "speakers": [
+        { "name": "Ngoc T. Do", "affiliation": "" }
+      ],
+      "abstract": "TBD"
+    },
+    {
       "title": "Efficient Symmetry-Driven Diffusion Models for Wideband Inverse Scattering",
       "speakers": [
         {
