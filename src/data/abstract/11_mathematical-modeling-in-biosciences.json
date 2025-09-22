@@ -2,6 +2,17 @@
   "minisymposium_title": "Mathematical Modeling in Biosciences",
   "talks": [
     {
+      "title": "OTMol: Robust Molecular Structure Comparison via Optimal Transport",
+      "speakers": [
+        {
+          "name": "Xiaoqi Wei",
+          "affiliation": "North Carolina State University"
+        }
+      ],
+      "abstract": "Root-mean-square deviation (RMSD) is widely used to assess structural similarity in systems ranging from flexible ligand conformers to complex molecular clusters configurations. Despite its wide utility, RMSD calculation is often challenged by inconsistent atom ordering, indistinguishable configurations in molecular clusters, and potential chirality inversion during alignment. These issues highlight the necessity of accurately establishing atom-to-atom correspondence as a prerequisite for meaningful alignment. Traditional approaches often rely on heuristic cost matrices combined with the Hungarian algorithm, yet these methods underutilize the rich intra-molecular structural information and may fail to generalize across chemically diverse systems. In this work, we introduce OTMol, a novel method that formulates the molecular alignment task as a fused supervised Gromov–Wasserstein (fsGW) optimal transport problem. By leveraging the intrinsic geometric and topological relationships within each molecule, OTMol eliminates the need for manually defined cost functions and enables a principled, data-driven matching strategy. We evaluate OTMol across a wide range of molecular systems, including small peptides, noble gas clusters, and water clusters, and demonstrate that it consistently achieves low RMSD values while preserving computational efficiency. Importantly, OTMol maintains molecular integrity by enforcing one-to-one mappings between entire molecules, thereby avoiding erroneous many-to-one alignments that often arise in clustering scenarios. Our results underscore the utility of optimal transport theory for molecular alignment and offer a generalizable framework applicable to structural comparison tasks in cheminformatics, molecular modeling, and related disciplines.",
+      "_match": "title"
+    },
+    {
       "title": "A DNN Biophysics Model with Topological and Electrostatic Features",
       "speakers": [
         {

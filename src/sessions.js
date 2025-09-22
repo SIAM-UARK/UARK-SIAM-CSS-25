@@ -155,15 +155,6 @@ export default [
     timezone: "America/Chicago",
     "talks": [
       {
-        "title": "OTMol: Robust Molecular Structure Comparison via Optimal Transport",
-        "speakers": [
-          {
-            "name": "Xiaoqi Wei",
-            "affiliation": "North Carolina State University"
-          }
-        ]
-      },
-      {
         "title": "PLD-Tree: Persistent Laplacian Decision Tree for Protein-Protein Binding Free Energy Prediction",
         "speakers": [
           {
@@ -733,6 +724,15 @@ export default [
     room: "",
     timezone: "America/Chicago",
     "talks": [
+      {
+        "title": "OTMol: Robust Molecular Structure Comparison via Optimal Transport",
+        "speakers": [
+          {
+            "name": "Xiaoqi Wei",
+            "affiliation": "North Carolina State University"
+          }
+        ]
+      },
       {
         "title": "A DNN Biophysics Model with Topological and Electrostatic Features",
         "speakers": [
