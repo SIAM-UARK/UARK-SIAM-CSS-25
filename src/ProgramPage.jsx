@@ -188,11 +188,23 @@ export default function ProgramPage() {
         ? ms.organizers
         : (absMeta[key]?.organizers || [])
 
+      // Derive display day from earliest session/talk start if available
+      const extractDate = (iso) => (typeof iso === 'string' && iso.length >= 10) ? iso.slice(0,10) : null
+      const sessionDates = []
+      for (const s of sessionsArray) {
+        if (s?.start) sessionDates.push(extractDate(s.start))
+        for (const t of (s?.talks || [])) {
+          if (t?.start) sessionDates.push(extractDate(t.start))
+        }
+      }
+      const validDates = sessionDates.filter(Boolean)
+      const msDay = validDates.length ? validDates.sort()[0] : null
+
       return {
         id: ms.id || `MS${i + 1}`,
         title,
         organizers: mergedOrganizers,
-        day: TEMP_DAY_OVERRIDE,
+        day: msDay || TEMP_DAY_OVERRIDE,
         room: ms.room || null,
         timezone: ms.timezone || "America/Chicago",
         sessions: sessionsArray.map((s, si) => ({
