@@ -90,7 +90,7 @@ export default [
     sessions: [
       {
         start: "2025-10-11T15:30:00-05:00",
-        end: "2025-10-11T18:00:00-05:00",
+        end: "2025-10-11T16:50:00-05:00",
         talks: [
           {
             title: "Gamma-Convergence and Asymptotic Analysis for a Diffuse Domain Problem with Transmission Boundary Conditions: Part 2, Numerical Confirmation",
@@ -115,7 +115,13 @@ export default [
             start: "2025-10-11T16:30:00-05:00",
             end: "2025-10-11T16:50:00-05:00",
             speakers: [{ name: "Toai Luong", affiliation: "Virginia Commonwealth University" }]
-          },
+          }
+        ]
+      },
+      {
+        start: "2025-10-11T17:00:00-05:00",
+        end: "2025-10-11T18:00:00-05:00",
+        talks: [
           {
             title: "Minimizers for the Cahn–Hilliard Energy Functional with the Flory–Huggins Potential under Strong Anchoring Conditions",
             start: "2025-10-11T17:00:00-05:00",
