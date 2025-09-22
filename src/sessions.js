@@ -144,6 +144,18 @@ export default [
           }
         ]
       }
+    ],
+    sessions: [
+      {
+        start: "2025-10-12T10:10:00-05:00",
+        end: "2025-10-12T11:30:00-05:00",
+        talks: [
+          { title: "PLD-Tree: Persistent Laplacian Decision Tree for Protein-Protein Binding Free Energy Prediction", start: "2025-10-12T10:10:00-05:00", end: "2025-10-12T10:30:00-05:00", speakers: [{ name: "Xingjian Xu", affiliation: "University of Florida" }] },
+          { title: "Breast Cancer Detection with Topological Deep Learning", start: "2025-10-12T10:30:00-05:00", end: "2025-10-12T10:50:00-05:00", speakers: [{ name: "Brighton Nuwagira", affiliation: "University of Texas at Dallas" }] },
+          { title: "Multi-level, multi-color mathematical graph neural networks for molecular property prediction", start: "2025-10-12T10:50:00-05:00", end: "2025-10-12T11:10:00-05:00", speakers: [{ name: "Trung Nguyen", affiliation: "University of Tennessee, Knoxville" }] },
+          { title: "Modeling Epidemics in Metapopulations: Integrating Human Mobility and Heterogeneity", start: "2025-10-12T11:10:00-05:00", end: "2025-10-12T11:30:00-05:00", speakers: [{ name: "Haridas K. Das", affiliation: "Oklahoma State University" }] }
+        ]
+      }
     ]
   },
   {
