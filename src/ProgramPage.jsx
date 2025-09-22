@@ -16,13 +16,27 @@ const fmtTime = (iso, tz) =>
     timeZone: tz,
   });
 
-const fmtDay = (iso, tz) =>
-  new Date(iso).toLocaleDateString(undefined, {
+const fmtDay = (iso, tz) => {
+  if (!iso) return "";
+  // If date-only (YYYY-MM-DD), avoid timezone shifting by anchoring at UTC noon
+  if (/^\d{4}-\d{2}-\d{2}$/.test(iso)) {
+    const [y, m, d] = iso.split('-').map(Number);
+    const anchor = new Date(Date.UTC(y, (m || 1) - 1, d || 1, 12, 0, 0));
+    return anchor.toLocaleDateString(undefined, {
+      weekday: "short",
+      month: "short",
+      day: "numeric",
+      timeZone: tz,
+    });
+  }
+  // For full ISO datetimes, default formatting with timezone
+  return new Date(iso).toLocaleDateString(undefined, {
     weekday: "short",
     month: "short",
     day: "numeric",
     timeZone: tz,
   });
+}
 
 function downloadICS(filename, ics) {
   const blob = new Blob([ics], { type: "text/calendar;charset=utf-8" });
