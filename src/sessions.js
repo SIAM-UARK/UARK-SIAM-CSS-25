@@ -1355,6 +1355,15 @@ export default [
             "affiliation": "University of Arkansas, Fayetteville"
           }
         ]
+      },
+      {
+        "title": "Manifold-Based Approaches to Dimensionality Reduction in Machine Learning",
+        "speakers": [
+          {
+            "name": "Dalton Oxford",
+            "affiliation": "University of Arkansas"
+          }
+        ]
       }
     ]
   },
