@@ -77,17 +77,6 @@
       ],
       "abstract": "Phase-field models for multiphysics problems, such as vesicle deformation under osmotic pressure, often result in complex, coupled nonlinear PDEs. A key computational challenge arises in systems with variable mobility, which can preclude the use of the most efficient, high-order implicit schemes that rely on constant-coefficient operators.  To address this challenge, we develop and analyze a novel numerical scheme based on the Multiple Scalar Auxiliary Variable (MSAV) method. Our approach introduces a linear stabilization term outside of the chemical potential. This strategy successfully decouples the system into a sequence of linear, constant-coefficient elliptic equations at each time step, which can be solved with high efficiency using fast direct solvers. We present a rigorous numerical verification of the scheme's second-order accuracy in time and an analysis of its spatial convergence properties. Numerical experiments demonstrate the scheme's computational efficiency against a baseline nonlinear multigrid (NLMG) solver, showing that our method's key advantage is replacing the complex, iterative nonlinear solve at each step with a small, fixed number of non-iterative linear solves.",
       "_match": "title"
-    },
-    {
-      "title": "An Efficient, Decoupled, and Linearly Stabilized Scheme for Phase-Field Models with Variable Mobility",
-      "speakers": [
-        {
-          "name": "Zhiwei Zhang",
-          "affiliation": "Illinois Institute Of Technology"
-        }
-      ],
-      "abstract": "Phase-field models for multiphysics problems, such as vesicle deformation under osmotic pressure, often result in complex, coupled nonlinear PDEs. A key computational challenge arises in systems with variable mobility, which can preclude the use of the most efficient, high-order implicit schemes that rely on constant-coefficient operators.  To address this challenge, we develop and analyze a novel numerical scheme based on the Multiple Scalar Auxiliary Variable (MSAV) method. Our approach introduces a linear stabilization term outside of the chemical potential. This strategy successfully decouples the system into a sequence of linear, constant-coefficient elliptic equations at each time step, which can be solved with high efficiency using fast direct solvers. We present a rigorous numerical verification of the scheme's second-order accuracy in time and an analysis of its spatial convergence properties. Numerical experiments demonstrate the scheme's computational efficiency against a baseline nonlinear multigrid (NLMG) solver, showing that our method's key advantage is replacing the complex, iterative nonlinear solve at each step with a small, fixed number of non-iterative linear solves.",
-      "_match": "title"
     }
   ]
 }

@@ -87,76 +87,58 @@ export default [
     day: "",
     room: "",
     timezone: "America/Chicago",
-    "talks": [
+    sessions: [
       {
-        "title": "Gamma-Convergence and Asymptotic Analysis for a Diffuse Domain Problem with Transmission Boundary Conditions: Part 2, Numerical Confirmation",
-        "speakers": [
+        start: "2025-10-11T15:30:00-05:00",
+        end: "2025-10-11T18:20:00-05:00",
+        talks: [
           {
-            "name": "Calvin Wong",
-            "affiliation": "The University of Tennessee, Knoxville"
-          }
-        ]
-      },
-      {
-        "title": "Stability of Interfacial Energies Under Gradient Flows",
-        "speakers": [
+            title: "Gamma-Convergence and Asymptotic Analysis for a Diffuse Domain Problem with Transmission Boundary Conditions: Part 2, Numerical Confirmation",
+            start: "2025-10-11T15:30:00-05:00",
+            end: "2025-10-11T15:50:00-05:00",
+            speakers: [{ name: "Calvin Wong", affiliation: "The University of Tennessee, Knoxville" }]
+          },
           {
-            "name": "Qiliang Wu",
-            "affiliation": "Ohio University"
-          }
-        ]
-      },
-      {
-        "title": "Analysis and computation of a generalized Ohta-Kawasaki model",
-        "speakers": [
+            title: "Stability of Interfacial Energies Under Gradient Flows",
+            start: "2025-10-11T15:50:00-05:00",
+            end: "2025-10-11T16:10:00-05:00",
+            speakers: [{ name: "Qiliang Wu", affiliation: "Ohio University" }]
+          },
           {
-            "name": "Yanxiang Zhao",
-            "affiliation": "George Washington University"
-          }
-        ]
-      },
-      {
-        "title": "Gamma-Convergence and Asymptotic Analysis for a Diffuse Domain Problem with Transmission Boundary Conditions, Part 1: Theoretical Analysis",
-        "speakers": [
+            title: "Analysis and computation of a generalized Ohta-Kawasaki model",
+            start: "2025-10-11T16:10:00-05:00",
+            end: "2025-10-11T16:30:00-05:00",
+            speakers: [{ name: "Yanxiang Zhao", affiliation: "George Washington University" }]
+          },
           {
-            "name": "Toai Luong",
-            "affiliation": "Virginia Commonwealth University"
-          }
-        ]
-      },
-      {
-        "title": "Minimizers for the Cahn–Hilliard Energy Functional with the Flory–Huggins Potential under Strong Anchoring Conditions",
-        "speakers": [
+            title: "Gamma-Convergence and Asymptotic Analysis for a Diffuse Domain Problem with Transmission Boundary Conditions, Part 1: Theoretical Analysis",
+            start: "2025-10-11T16:30:00-05:00",
+            end: "2025-10-11T16:50:00-05:00",
+            speakers: [{ name: "Toai Luong", affiliation: "Virginia Commonwealth University" }]
+          },
           {
-            "name": "Abba Ramadan",
-            "affiliation": "The University of Alabama"
-          }
-        ]
-      },
-      {
-        "title": "Limiting behavior of the De Gennes-Cahn-Hilliard Energy",
-        "speakers": [
+            title: "Minimizers for the Cahn–Hilliard Energy Functional with the Flory–Huggins Potential under Strong Anchoring Conditions",
+            start: "2025-10-11T17:00:00-05:00",
+            end: "2025-10-11T17:20:00-05:00",
+            speakers: [{ name: "Abba Ramadan", affiliation: "The University of Alabama" }]
+          },
           {
-            "name": "Shibin Dai",
-            "affiliation": "The University of Alabama"
-          }
-        ]
-      },
-      {
-        "title": "An Efficient, Decoupled, and Linearly Stabilized Scheme for Phase-Field Models with Variable Mobility",
-        "speakers": [
+            title: "Limiting behavior of the De Gennes-Cahn-Hilliard Energy",
+            start: "2025-10-11T17:20:00-05:00",
+            end: "2025-10-11T17:40:00-05:00",
+            speakers: [{ name: "Shibin Dai", affiliation: "The University of Alabama" }]
+          },
           {
-            "name": "Zhiwei Zhang (Speaker), Shuwang Li (co-author, Illinois Institute of Tecnology), and Steve Wise (co-author,University of Tennessee at Knoxville))",
-            "affiliation": "Illinois Institute of Technology"
-          }
-        ]
-      },
-      {
-        "title": "An Efficient, Decoupled, and Linearly Stabilized Scheme for Phase-Field Models with Variable Mobility",
-        "speakers": [
+            title: "An Efficient, Decoupled, and Linearly Stabilized Scheme for Phase-Field Models with Variable Mobility",
+            start: "2025-10-11T17:40:00-05:00",
+            end: "2025-10-11T18:00:00-05:00",
+            speakers: [{ name: "Zhiwei Zhang (Speaker), Shuwang Li (co-author, Illinois Institute of Tecnology), and Steve Wise (co-author,University of Tennessee at Knoxville))", affiliation: "Illinois Institute of Technology" }]
+          },
           {
-            "name": "Zhiwei Zhang",
-            "affiliation": "Illinois Institute Of Technology"
+            title: "An Efficient, Decoupled, and Linearly Stabilized Scheme for Phase-Field Models with Variable Mobility",
+            start: "2025-10-11T18:00:00-05:00",
+            end: "2025-10-11T18:20:00-05:00",
+            speakers: [{ name: "Zhiwei Zhang", affiliation: "Illinois Institute Of Technology" }]
           }
         ]
       }
