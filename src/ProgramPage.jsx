@@ -266,7 +266,19 @@ export default function ProgramPage() {
       }
     }
 
-    return contributed ? [...fromSessions, ...fromAbstractsOnly, contributed] : [...fromSessions, ...fromAbstractsOnly]
+    const combined = contributed ? [...fromSessions, ...fromAbstractsOnly, contributed] : [...fromSessions, ...fromAbstractsOnly]
+
+    // Assign sequential codes MS1, MS2, ... to minisymposia; keep Contributed Talks as CT
+    let msCounter = 1
+    return combined.map((ms) => {
+      const isContrib = (ms.title || '').trim().toLowerCase() === 'contributed talks'
+      const code = isContrib ? (ms.id || 'CT') : `MS${msCounter++}`
+      const sessions = (ms.sessions || []).map((s, si) => ({
+        ...s,
+        id: `${code}-S${si + 1}`,
+      }))
+      return { ...ms, id: code, sessions }
+    })
   }, []);
 
   const allDays = useMemo(() => {
@@ -361,7 +373,12 @@ export default function ProgramPage() {
             >
               <div className="p-5 border-b flex flex-col md:flex-row md:items-center md:justify-between gap-3">
                 <div className="flex flex-col gap-1">
-                  <h2 className="text-xl font-semibold">{ms.title}</h2>
+                  <h2 className="text-xl font-semibold">
+                    <span className="inline-block rounded-full border px-2 py-0.5 text-sm mr-2 bg-neutral-50">
+                      {ms.id}
+                    </span>
+                    {ms.title}
+                  </h2>
                   <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-neutral-600">
                     {ms.day && (
                       <span className="inline-flex items-center gap-1"><CalendarClock className="h-4 w-4" />{fmtDay(ms.day, tz)}</span>
