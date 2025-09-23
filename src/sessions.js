@@ -1515,7 +1515,8 @@ export default [
   {
     "minisymposium_title": "Stochastic and dynamical models of brains and behavior",
     "organizers": [
-      { "name": "Zachary Kilpatrick", "affiliation": "University of Colorado Boulder"}
+      { "name": "Zachary Kilpatrick", "affiliation": "University of Colorado Boulder"},
+      { "name": "Krešimir Josić", "affiliation": "University of Houston"}
     ],
     day: "",
     room: "",
