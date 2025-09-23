@@ -264,25 +264,35 @@ export default [
             "affiliation": "Pontifical Catholic University of Chile"
           }
         ]
+      },
+      {
+        "title": "TBD",
+        "speakers": [
+          {
+            "name": "Joanna Held",
+            "affiliation": "TBD"
+          }
+        ]
       }
     ],
     sessions: [
       {
-        start: "2025-10-11T15:30:00-05:00",
-        end: "2025-10-11T16:30:00-05:00",
+        start: "2025-10-11T10:10:00-05:00",
+        end: "2025-10-11T11:30:00-05:00",
         talks: [
-          { title: "Mathematical model of how the  immune system fights  a viral infection", start: "2025-10-11T15:30:00-05:00", end: "2025-10-11T15:50:00-05:00", speakers: [{ name: "Benito Chen-Charpentier", affiliation: "University of Texas at Arlington" }] },
-          { title: "Social Media Mobs as Epidemics: A Mathematical Approach to Narrative Spread", start: "2025-10-11T15:50:00-05:00", end: "2025-10-11T16:10:00-05:00", speakers: [{ name: "Ahmed Al-Taweel", affiliation: "Georgia Southern University" }] },
-          { title: "Numerical studies to the Chaplygin gas equation", start: "2025-10-11T16:10:00-05:00", end: "2025-10-11T16:30:00-05:00", speakers: [{ name: "Ying Wang", affiliation: "University of Oklahoma" }] },
-          { title: "Parameter-robust operator preconditioning for condensed hybridized systems", start: "2025-10-11T16:30:00-05:00", end: "2025-10-11T16:50:00-05:00", speakers: [{ name: "Jeonghun J. Lee", affiliation: "Baylor University" }] }
+          { title: "Parameter-robust operator preconditioning for condensed hybridized systems", start: "2025-10-11T10:10:00-05:00", end: "2025-10-11T10:30:00-05:00", speakers: [{ name: "Jeonghun J. Lee", affiliation: "Baylor University" }] },
+          { title: "Data assimilation and uncertainty quantification in molecular dynamics", start: "2025-10-11T10:30:00-05:00", end: "2025-10-11T10:50:00-05:00", speakers: [{ name: "Anastasios Matzavinos", affiliation: "Pontifical Catholic University of Chile" }] },
+          { title: "Social Media Mobs as Epidemics: A Mathematical Approach to Narrative Spread", start: "2025-10-11T10:50:00-05:00", end: "2025-10-11T11:10:00-05:00", speakers: [{ name: "Ahmed Al-Taweel", affiliation: "Georgia Southern University" }] },
+          { title: "Averaging in a Certain Almost Hamiltonian System with Singularities", start: "2025-10-11T11:10:00-05:00", end: "2025-10-11T11:30:00-05:00", speakers: [{ name: "Alex Grigo", affiliation: "University of Oklahoma" }] }
         ]
       },
       {
-        start: "2025-10-11T17:00:00-05:00",
-        end: "2025-10-11T18:00:00-05:00",
+        start: "2025-10-11T15:30:00-05:00",
+        end: "2025-10-11T16:50:00-05:00",
         talks: [
-          { title: "Averaging in a Certain Almost Hamiltonian System with Singularities", start: "2025-10-11T17:00:00-05:00", end: "2025-10-11T17:20:00-05:00", speakers: [{ name: "Alex Grigo", affiliation: "University of Oklahoma" }] },
-          { title: "Data assimilation and uncertainty quantification in molecular dynamics", start: "2025-10-11T17:20:00-05:00", end: "2025-10-11T17:40:00-05:00", speakers: [{ name: "Anastasios Matzavinos", affiliation: "Pontifical Catholic University of Chile" }] }
+          { title: "Mathematical model of how the  immune system fights  a viral infection", start: "2025-10-11T15:30:00-05:00", end: "2025-10-11T15:50:00-05:00", speakers: [{ name: "Benito Chen-Charpentier", affiliation: "University of Texas at Arlington" }] },
+          { title: "Numerical studies to the Chaplygin gas equation", start: "2025-10-11T15:50:00-05:00", end: "2025-10-11T16:10:00-05:00", speakers: [{ name: "Ying Wang", affiliation: "University of Oklahoma" }] },
+          { title: "TBD", start: "2025-10-11T16:10:00-05:00", end: "2025-10-11T16:30:00-05:00", speakers: [{ name: "Joanna Held", affiliation: "TBD" }] }
         ]
       }
     ]
@@ -393,7 +403,7 @@ export default [
     ]
   },
   {
-    "minisymposium_title": "Infectious Disease in Space and Time Advances in Mathematical",
+    "minisymposium_title": "Infectious Disease in Space and Time: Advances in Mathematical Biology, Physiology, Public Health, and Spatial Analysis of Social Systems",
     "organizers": [
       { "name": "Folashade Agusto", "affiliation": "University of Kansas"},
       { "name": "Rana Parshad", "affiliation": "Iowa State University"}
@@ -402,6 +412,33 @@ export default [
     room: "",
     timezone: "America/Chicago",
     "talks": [
+      {
+        "title": "Spatio-temporal Analysis of Domestic Violence in Puerto Rico",
+        "speakers": [
+          {
+            "name": "Phyllis Muniu",
+            "affiliation": "University of Kansas"
+          }
+        ]
+      },
+      {
+        "title": "Leveraging mobility data to understand COVID-19 Deaths in United States",
+        "speakers": [
+          {
+            "name": "Folashade Agusto",
+            "affiliation": "University of Kansas"
+          }
+        ]
+      },
+      {
+        "title": "Bayesian Inference of MRSA Transmission in Drug-Using and Non–Drug-Using Patient Populations",
+        "speakers": [
+          {
+            "name": "Kiel Corkran",
+            "affiliation": "University of Missouri-Kansas City"
+          }
+        ]
+      },
       {
         "title": "Analyzing Zoonotic Spillover Risk Under Extreme Weather Events Using a Deterministic and Stochastic Lotka-Volterra Modeling Approach",
         "speakers": [
@@ -412,38 +449,38 @@ export default [
         ]
       },
       {
-        "title": "Approximate Solutions for HIV Infection Dynamics via Legendre Collocation",
+        "title": "Higher Codimension Bogdanov-Takens Bifurcation in Predator-Prey Systems with Additional Food Supplementation and Predator Competition",
         "speakers": [
           {
-            "name": "Beyza Cetin",
-            "affiliation": "Missouri University Science and Technology"
+            "name": "Kanishka Goyal",
+            "affiliation": "Iowa State University"
           }
         ]
       },
       {
-        "title": "Bayesian Inference of MRSA Transmission from 2024 EHR Data in Drug-Using and Non–Drug-Using Patient Populations",
+        "title": "An eco-epidemiological model with prey taxis and \"slow\" diffusion",
         "speakers": [
           {
-            "name": "Kiel Corkran",
+            "name": "Rana Parshad",
+            "affiliation": "Iowa State University"
+          }
+        ]
+      },
+      {
+        "title": "Dual Control of Lyme Disease and Emerald Ash Borer Under Climatic Forcing: A Hybrid ODE–PDE Model with Lévy Noise",
+        "speakers": [
+          {
+            "name": "Bani Yaghoub",
             "affiliation": "University of Missouri-Kansas City"
           }
         ]
       },
       {
-        "title": "Leveraging mobility data to understand COVID-19 Deaths in United States",
+        "title": "Spatial Pattern-Formation in Social-Ecological Systems",
         "speakers": [
           {
-            "name": "Folashade B. Agusto",
-            "affiliation": "University of Kansas"
-          }
-        ]
-      },
-      {
-        "title": "Spatio-temporal Analysis of Domestic Violence in Puerto Rico",
-        "speakers": [
-          {
-            "name": "Phylis Njeri Muniu",
-            "affiliation": "University of Kansas"
+            "name": "Daniel Cooney",
+            "affiliation": "University of Illinois Urbana-Champaign"
           }
         ]
       },
@@ -451,29 +488,48 @@ export default [
         "title": "Complex Structure in the Endemic Equilibrium Set of an  SIS Epidemic Patch Model with the Mass-Action Infection Mechanism",
         "speakers": [
           {
-            "name": "Rachidi B. Salako",
-            "affiliation": "University of Nevada Las Vegas"
+            "name": "Rachidi Salako",
+            "affiliation": "University of Nevada, Las Vegas"
+          }
+        ]
+      },
+      {
+        "title": "TBD",
+        "speakers": [
+          {
+            "name": "Beyza Cetin",
+            "affiliation": "Missouri University of Science and Technology"
           }
         ]
       }
     ],
     sessions: [
       {
-        start: "2025-10-11T17:00:00-05:00",
-        end: "2025-10-11T18:00:00-05:00",
+        start: "2025-10-11T10:10:00-05:00",
+        end: "2025-10-11T11:30:00-05:00",
         talks: [
-          { title: "Analyzing Zoonotic Spillover Risk Under Extreme Weather Events Using a Deterministic and Stochastic Lotka-Volterra Modeling Approach", start: "2025-10-11T17:00:00-05:00", end: "2025-10-11T17:20:00-05:00", speakers: [{ name: "Barsha Saha", affiliation: "University of Missouri-Kansas City" }] },
-          { title: "Approximate Solutions for HIV Infection Dynamics via Legendre Collocation", start: "2025-10-11T17:20:00-05:00", end: "2025-10-11T17:40:00-05:00", speakers: [{ name: "Beyza Cetin", affiliation: "Missouri University Science and Technology" }] },
-          { title: "Bayesian Inference of MRSA Transmission from 2024 EHR Data in Drug-Using and Non–Drug-Using Patient Populations", start: "2025-10-11T17:40:00-05:00", end: "2025-10-11T18:00:00-05:00", speakers: [{ name: "Kiel Corkran", affiliation: "University of Missouri-Kansas City" }] },
-          { title: "Leveraging mobility data to understand COVID-19 Deaths in United States", start: "2025-10-11T18:00:00-05:00", end: "2025-10-11T18:20:00-05:00", speakers: [{ name: "Folashade B. Agusto", affiliation: "University of Kansas" }] }
+          { title: "Spatio-temporal Analysis of Domestic Violence in Puerto Rico", start: "2025-10-11T10:10:00-05:00", end: "2025-10-11T10:30:00-05:00", speakers: [{ name: "Phyllis Muniu", affiliation: "University of Kansas" }] },
+          { title: "Leveraging mobility data to understand COVID-19 Deaths in United States", start: "2025-10-11T10:30:00-05:00", end: "2025-10-11T10:50:00-05:00", speakers: [{ name: "Folashade Agusto", affiliation: "University of Kansas" }] },
+          { title: "Bayesian Inference of MRSA Transmission in Drug-Using and Non–Drug-Using Patient Populations", start: "2025-10-11T10:50:00-05:00", end: "2025-10-11T11:10:00-05:00", speakers: [{ name: "Kiel Corkran", affiliation: "University of Missouri-Kansas City" }] },
+          { title: "Analyzing Zoonotic Spillover Risk Under Extreme Weather Events Using a Deterministic and Stochastic Lotka-Volterra Modeling Approach", start: "2025-10-11T11:10:00-05:00", end: "2025-10-11T11:30:00-05:00", speakers: [{ name: "Barsha Saha", affiliation: "University of Missouri-Kansas City" }] }
         ]
       },
       {
-        start: "2025-10-12T10:10:00-05:00",
-        end: "2025-10-12T11:10:00-05:00",
+        start: "2025-10-11T15:30:00-05:00",
+        end: "2025-10-11T16:50:00-05:00",
         talks: [
-          { title: "Spatio-temporal Analysis of Domestic Violence in Puerto Rico", start: "2025-10-12T10:10:00-05:00", end: "2025-10-12T10:30:00-05:00", speakers: [{ name: "Phylis Njeri Muniu", affiliation: "University of Kansas" }] },
-          { title: "Complex Structure in the Endemic Equilibrium Set of an  SIS Epidemic Patch Model with the Mass-Action Infection Mechanism", start: "2025-10-12T10:30:00-05:00", end: "2025-10-12T10:50:00-05:00", speakers: [{ name: "Rachidi B. Salako", affiliation: "University of Nevada Las Vegas" }] }
+          { title: "Higher Codimension Bogdanov-Takens Bifurcation in Predator-Prey Systems with Additional Food Supplementation and Predator Competition", start: "2025-10-11T15:30:00-05:00", end: "2025-10-11T15:50:00-05:00", speakers: [{ name: "Kanishka Goyal", affiliation: "Iowa State University" }] },
+          { title: "An eco-epidemiological model with prey taxis and \"slow\" diffusion", start: "2025-10-11T15:50:00-05:00", end: "2025-10-11T16:10:00-05:00", speakers: [{ name: "Rana Parshad", affiliation: "Iowa State University" }] },
+          { title: "Dual Control of Lyme Disease and Emerald Ash Borer Under Climatic Forcing: A Hybrid ODE–PDE Model with Lévy Noise", start: "2025-10-11T16:10:00-05:00", end: "2025-10-11T16:30:00-05:00", speakers: [{ name: "Bani Yaghoub", affiliation: "University of Missouri-Kansas City" }] },
+          { title: "Spatial Pattern-Formation in Social-Ecological Systems", start: "2025-10-11T16:30:00-05:00", end: "2025-10-11T16:50:00-05:00", speakers: [{ name: "Daniel Cooney", affiliation: "University of Illinois Urbana-Champaign" }] }
+        ]
+      },
+      {
+        start: "2025-10-11T17:00:00-05:00",
+        end: "2025-10-11T18:20:00-05:00",
+        talks: [
+          { title: "Complex Structure in the Endemic Equilibrium Set of an  SIS Epidemic Patch Model with the Mass-Action Infection Mechanism", start: "2025-10-11T17:00:00-05:00", end: "2025-10-11T17:20:00-05:00", speakers: [{ name: "Rachidi Salako", affiliation: "University of Nevada, Las Vegas" }] },
+          { title: "TBD", start: "2025-10-11T17:20:00-05:00", end: "2025-10-11T17:40:00-05:00", speakers: [{ name: "Beyza Cetin", affiliation: "Missouri University of Science and Technology" }] }
         ]
       }
     ]
@@ -1175,22 +1231,22 @@ export default [
     sessions: [
       {
         start: "2025-10-11T10:10:00-05:00",
-        end: "2025-10-11T11:10:00-05:00",
+        end: "2025-10-11T11:30:00-05:00",
         talks: [
-          { title: "Structure-preserving discretization of the Poisson-Nernst-Planck Equations via the Onsager principle", start: "2025-10-11T10:10:00-05:00", end: "2025-10-11T10:30:00-05:00", speakers: [{ name: "Qianyi Li", affiliation: "Iowa State University" }] },
-          { title: "Learning Generalized Diffusions using an Energetic Variational Approach", start: "2025-10-11T10:30:00-05:00", end: "2025-10-11T10:50:00-05:00", speakers: [{ name: "Xiaofan Li", affiliation: "Illinois Institute of Technology" }] },
-          { title: "Uniformly Accurate High-Frequency Asymptotic Approximations for Helmholtz and Fractional Helmholtz Equations with Fox H-Functions", start: "2025-10-11T10:50:00-05:00", end: "2025-10-11T11:10:00-05:00", speakers: [{ name: "Songting Luo", affiliation: "Iowa State University" }] },
-          { title: "Abstract Spectral Approximation Theories and Finite Element Methods for PDE Eigenvalue Problems", start: "2025-10-11T11:10:00-05:00", end: "2025-10-11T11:30:00-05:00", speakers: [{ name: "Jiguang Sun", affiliation: "Michigan Technological University" }] }
+          { title: "A unifying equidistribution–alignment-based moving mesh method for curves, surfaces, and domains", start: "2025-10-11T10:10:00-05:00", end: "2025-10-11T10:30:00-05:00", speakers: [{ name: "Weizhang Huang", affiliation: "University of Kansas" }] },
+          { title: "Abstract Spectral Approximation Theories and Finite Element Methods for PDE Eigenvalue Problems", start: "2025-10-11T10:30:00-05:00", end: "2025-10-11T10:50:00-05:00", speakers: [{ name: "Jiguang Sun", affiliation: "Michigan Technological University" }] },
+          { title: "Finding Cheeger cuts via 1-Laplacian of graphs", start: "2025-10-11T10:50:00-05:00", end: "2025-10-11T11:10:00-05:00", speakers: [{ name: "Wei Zhu", affiliation: "University of Alabama" }] },
+          { title: "Efficient high-order methods for wave propagation.", start: "2025-10-11T11:10:00-05:00", end: "2025-10-11T11:30:00-05:00", speakers: [{ name: "Ian Morgan", affiliation: "Iowa State University" }] }
         ]
       },
       {
         start: "2025-10-11T15:30:00-05:00",
-        end: "2025-10-11T16:30:00-05:00",
+        end: "2025-10-11T16:50:00-05:00",
         talks: [
-          { title: "A unifying equidistribution–alignment-based moving mesh method for curves, surfaces, and domains", start: "2025-10-11T15:30:00-05:00", end: "2025-10-11T15:50:00-05:00", speakers: [{ name: "Weizhang Huang", affiliation: "Department of Mathematics, University of Kansas" }] },
+          { title: "Learning Generalized Diffusions using an Energetic Variational Approach", start: "2025-10-11T15:30:00-05:00", end: "2025-10-11T15:50:00-05:00", speakers: [{ name: "Xiaofan Li", affiliation: "Illinois Institute of Technology" }] },
           { title: "Characterization of nonlinear objects in a waveguide using boundary scattering data", start: "2025-10-11T15:50:00-05:00", end: "2025-10-11T16:10:00-05:00", speakers: [{ name: "Dinh-Liem Nguyen", affiliation: "Kansas State University" }] },
-          { title: "Finding Cheeger cuts via 1-Laplacian of graphs", start: "2025-10-11T16:10:00-05:00", end: "2025-10-11T16:30:00-05:00", speakers: [{ name: "Wei Zhu", affiliation: "University of Alabama" }] },
-          { title: "Efficient high-order methods for wave propagation.", start: "2025-10-11T16:30:00-05:00", end: "2025-10-11T16:50:00-05:00", speakers: [{ name: "Ian T. Morgan", affiliation: "Iowa State University" }] }
+          { title: "Structure-preserving discretization of the Poisson-Nernst-Planck Equations via the Onsager principle", start: "2025-10-11T16:10:00-05:00", end: "2025-10-11T16:30:00-05:00", speakers: [{ name: "Qianyi Li", affiliation: "Iowa State University" }] },
+          { title: "Uniformly Accurate High-Frequency Asymptotic Approximations for Helmholtz and Fractional Helmholtz Equations with Fox H-Functions", start: "2025-10-11T16:30:00-05:00", end: "2025-10-11T16:50:00-05:00", speakers: [{ name: "Songting Luo", affiliation: "Iowa State University" }] }
         ]
       }
     ]
@@ -1294,8 +1350,8 @@ export default [
         end: "2025-10-11T16:30:00-05:00",
         talks: [
           { title: "High-Order Micro-Macro Decomposition Schemes for Kinetic Plasma Models", start: "2025-10-11T15:30:00-05:00", end: "2025-10-11T15:50:00-05:00", speakers: [{ name: "James Rossmanith", affiliation: "Iowa State University" }] },
-          { title: "Continuous data assimilation by non-interpolant observables", start: "2025-10-11T15:50:00-05:00", end: "2025-10-11T16:10:00-05:00", speakers: [{ name: "Vladimir Yushutin", affiliation: "University of Tennessee, Knoxville" }] },
-          { title: "A Dynamic Flux-Based Surrogate Approach to Interface Couplings Involving Full-Order Models and DMD-Based Surrogates", start: "2025-10-11T16:10:00-05:00", end: "2025-10-11T16:30:00-05:00", speakers: [{ name: "Edward Huynh", affiliation: "The University of Texas at Austin" }] },
+          { title: "Accelerating eigensolvers in variational form", start: "2025-10-11T15:50:00-05:00", end: "2025-10-11T16:10:00-05:00", speakers: [{ name: "Sara Pollock", affiliation: "University of Florida" }] },
+          { title: "Continuous data assimilation by non-interpolant observables", start: "2025-10-11T16:10:00-05:00", end: "2025-10-11T16:30:00-05:00", speakers: [{ name: "Vladimir Yushutin", affiliation: "University of Tennessee, Knoxville" }] },
           { title: "An Inverse Problem of Plasma Charging with Applications to Lunar Exploration", start: "2025-10-11T16:30:00-05:00", end: "2025-10-11T16:50:00-05:00", speakers: [{ name: "Frank D. Han", affiliation: "Missouri University of Science and Technology" }] }
         ]
       },
@@ -1303,10 +1359,10 @@ export default [
         start: "2025-10-11T17:00:00-05:00",
         end: "2025-10-11T18:00:00-05:00",
         talks: [
-          { title: "A second-order accurate, positivity-preserving numerical scheme for the Poisson–Nernst–Planck–Navier–Stokes system", start: "2025-10-11T17:00:00-05:00", end: "2025-10-11T17:20:00-05:00", speakers: [{ name: "Yuzhe Qin", affiliation: "University of British Columbia" }] },
-          { title: "Semi-Lagrangian Discontinuous Galerkin Methods for Multiscale Vlasov-Poisson Systems", start: "2025-10-11T17:20:00-05:00", end: "2025-10-11T17:40:00-05:00", speakers: [{ name: "Dauda Gambo", affiliation: "Iowa State University" }] },
-          { title: "Error Analysis of An Upwind Weak Galerkin Finite Element Method for Time-Dependent Hyperbolic Problems", start: "2025-10-11T17:40:00-05:00", end: "2025-10-11T18:00:00-05:00", speakers: [{ name: "Saqib Hussain", affiliation: "Texas A&M International University" }] },
-          { title: "Accelerating eigensolvers in variational form", start: "2025-10-11T18:00:00-05:00", end: "2025-10-11T18:20:00-05:00", speakers: [{ name: "Sara Pollock", affiliation: "University of Florida" }] }
+          { title: "Parameter-robust operator preconditioning for condensed hybridized systems", start: "2025-10-11T17:00:00-05:00", end: "2025-10-11T17:20:00-05:00", speakers: [{ name: "Jeonghun J. Lee", affiliation: "Baylor University" }] },
+          { title: "Error Analysis of An Upwind Weak Galerkin Finite Element Method for Time-Dependent Hyperbolic Problems", start: "2025-10-11T17:20:00-05:00", end: "2025-10-11T17:40:00-05:00", speakers: [{ name: "Saqib Hussain", affiliation: "Texas A&M International University" }] },
+          { title: "Semi-Lagrangian Discontinuous Galerkin Methods for Multiscale Vlasov-Poisson Systems", start: "2025-10-11T17:40:00-05:00", end: "2025-10-11T18:00:00-05:00", speakers: [{ name: "Dauda Gambo", affiliation: "Iowa State University" }] },
+          { title: "A Dynamic Flux-Based Surrogate Approach to Interface Couplings Involving Full-Order Models and DMD-Based Surrogates", start: "2025-10-11T18:00:00-05:00", end: "2025-10-11T18:20:00-05:00", speakers: [{ name: "Edward Huynh", affiliation: "The University of Texas at Austin" }] }
         ]
       }
     ]
