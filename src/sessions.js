@@ -1319,6 +1319,28 @@ export default [
           }
         ]
       }
+    ],
+    sessions: [
+      {
+        start: "2025-10-11T17:00:00-05:00",
+        end: "2025-10-11T18:20:00-05:00",
+        talks: [
+          { title: "Numerical solution to the three-dimensional $p$-Laplace equation: Finite difference methods and biological applications", start: "2025-10-11T17:00:00-05:00", end: "2025-10-11T17:20:00-05:00", speakers: [{ name: "Matthias Dogbatsey", affiliation: "The University of Alabama" }] },
+          { title: "Identifying drug targets with a reduced model for competitive inhibitor stimulation", start: "2025-10-11T17:20:00-05:00", end: "2025-10-11T17:40:00-05:00", speakers: [{ name: "Garrett Young", affiliation: "University of Iowa" }] },
+          { title: "Fast Updating of Low-Rank Factorizations", start: "2025-10-11T17:40:00-05:00", end: "2025-10-11T18:00:00-05:00", speakers: [{ name: "Kamrun Nahar Keya", affiliation: "Arizona State University" }] },
+          { title: "Diffusive-interface size-modified Poisson-Boltzmann models: Ion-size effects", start: "2025-10-11T18:00:00-05:00", end: "2025-10-11T18:20:00-05:00", speakers: [{ name: "Md Borhan Uddin", affiliation: "The University of Alabama" }] }
+        ]
+      },
+      {
+        start: "2025-10-12T10:10:00-05:00",
+        end: "2025-10-12T11:30:00-05:00",
+        talks: [
+          { title: "Improving Model Predictions: ALFFI for In-Depth Uncertainty Analysis in SIR Parameter Estimation", start: "2025-10-12T10:10:00-05:00", end: "2025-10-12T10:30:00-05:00", speakers: [{ name: "Madison Pratt", affiliation: "University of Tennessee, Knoxville" }] },
+          { title: "Limiting Strategies for High-Order Discontinuous Galerkin Methods Based on Entropy Dissipation", start: "2025-10-12T10:30:00-05:00", end: "2025-10-12T10:50:00-05:00", speakers: [{ name: "Galiya Myrzabayeva", affiliation: "Iowa State University" }] },
+          { title: "Mathematical Modeling of Infectious Disease Dynamics Using SIR and SIRS Frameworks", start: "2025-10-12T10:50:00-05:00", end: "2025-10-12T11:10:00-05:00", speakers: [{ name: "Anjuman Ara Rashid", affiliation: "University of Arkansas, Fayetteville" }] },
+          { title: "Manifold-Based Approaches to Dimensionality Reduction in Machine Learning", start: "2025-10-12T11:10:00-05:00", end: "2025-10-12T11:30:00-05:00", speakers: [{ name: "Dalton Oxford", affiliation: "University of Arkansas" }] }
+        ]
+      }
     ]
   },
   {
