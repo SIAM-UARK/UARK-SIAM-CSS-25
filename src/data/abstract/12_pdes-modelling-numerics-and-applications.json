@@ -5,14 +5,36 @@
   ],
   "talks": [
     {
-      "title": "Variational data assimilation with finite element discretization for second order parabolic interface equation",
+      "title": "Computation of instability-driven turbulent flows with front-tracking/ghost-fluid method",
       "speakers": [
         {
-          "name": "Xiaoming He",
-          "affiliation": "Missouri University of Science and Technology"
+          "name": "Tulin Kaman",
+          "affiliation": "University of Zurich and University of Arkansas"
         }
       ],
-      "abstract": "In this talk, we present a finite element method of variational data assimilation for a second order parabolic interface equation on a two-dimensional bounded domain. The Tikhonov regularization plays a key role in translating the data assimilation problem into an optimization problem. Then the existence, uniqueness, and stability are analyzed for the solution of the optimization problem. We utilize the finite element method for spatial discretization and backward Euler method for the temporal discretization. Then based on the Lagrange multiplier idea, we derive the optimality systems for both the continuous and the discrete data assimilation problems for the second order parabolic interface equation. The convergence and the optimal error estimate are proved with the recovery of Galerkin orthogonality. Moreover, three iterative methods, which decouple the optimality system and significantly save computational cost, are developed to solve the discrete time evolution optimality system. Finally, numerical results are provided to validate the proposed method.",
+      "abstract": "Understanding the dynamics of instability-driven turbulent flows plays a crucial role in both scientific and engineering applications. We present an increasingly accurate and robust front-tracking (FT) method coupled with the ghost-fluid method (GFM) for the numerical simulations of shock-induced single-mode Richtmyer-Meshkov Instability driven turbulent flow. We present improvements in the late-time dynamics of fluid interfaces using the FT/GFM method.",
+      "_match": "title"
+    },
+    {
+      "title": "A Priori and a Posteriori Error Estimate for Pressure Robust Schemes for Incompressible Flow",
+      "speakers": [
+        {
+          "name": "Lin Mu",
+          "affiliation": "University of Georgia"
+        }
+      ],
+      "abstract": "The incompressible fluid model is widely used in various fields in engineering and science and their numerical solutions are of prominent importance in understanding complex, natural, engineered, and societal systems. There has been considerable interest in mathematical modeling and algorithm development. One of the critical challenges is the development of the pressure robust scheme and achieve the desired mass conservation with low cost. Our effort aims at designing the low-cost divergence preserving finite element method and in turn, achieve viscosity independent velocity error estimates. Translating this result to the incompressible fluid equations, our algorithm is robust with varying viscosity permeability values and large pressure gradients. In this talk, we shall present our algorithm development, and then demonstrate the stability and convergence analysis theoretically and numerically. The profiles of benchmark tests indicate that our algorithm outperforms other non-divergence preserving numerical schemes.",
+      "_match": "title"
+    },
+    {
+      "title": "TBD",
+      "speakers": [
+        {
+          "name": "Xu Zhang",
+          "affiliation": "TBD"
+        }
+      ],
+      "abstract": "TBD",
       "_match": "title"
     },
     {
@@ -24,6 +46,17 @@
         }
       ],
       "abstract": "In this talk, I will present a general numerical framework to derive structure-preserving reduced-order models for thermodynamically consistent PDEs. Our numerical framework has two primary features: (a) a systematic way to extract reduced-order models for thermodynamically consistent PDE systems while maintaining their inherent thermodynamic principles and (b) a general process to derive accurate, efficient, and structure-preserving numerical algorithms to solve these reduced-order models.",
+      "_match": "title"
+    },
+    {
+      "title": "Variational data assimilation with finite element discretization for second order parabolic interface equation",
+      "speakers": [
+        {
+          "name": "Xiaoming He",
+          "affiliation": "Missouri University of Science and Technology"
+        }
+      ],
+      "abstract": "In this talk, we present a finite element method of variational data assimilation for a second order parabolic interface equation on a two-dimensional bounded domain. The Tikhonov regularization plays a key role in translating the data assimilation problem into an optimization problem. Then the existence, uniqueness, and stability are analyzed for the solution of the optimization problem. We utilize the finite element method for spatial discretization and backward Euler method for the temporal discretization. Then based on the Lagrange multiplier idea, we derive the optimality systems for both the continuous and the discrete data assimilation problems for the second order parabolic interface equation. The convergence and the optimal error estimate are proved with the recovery of Galerkin orthogonality. Moreover, three iterative methods, which decouple the optimality system and significantly save computational cost, are developed to solve the discrete time evolution optimality system. Finally, numerical results are provided to validate the proposed method.",
       "_match": "title"
     },
     {
@@ -57,17 +90,6 @@
         }
       ],
       "abstract": "This talk presents a family of any order finite element solvers for both linear and nonlinear poroelasticity problems.  The backward differentiation formulas (BDFs) are used for temporal discretizations, whereas the weak Galerkin (WG) finite elements on quadrilaterals are utilized for spatial discretizations.  For the latter, the discrete weak gradients of shape functions are established in the vector- or matrix- Arbogast-Correa spaces.  Such combinations of BDF and WG discretizations produce numerical solutions that have well-balanced spatial and temporal errors in all six quantities (pressure, velocity, and normal flux, displacement, dilation, stress).  For nonlinear poroelasticity problems in which permeability depends on solid dilation or the mean stress, Picard iterations are employed to solve the resulting nonlinear algebraic systems.  Analysis together with numerical results demonstrate that these new solvers have optimal-order convergence and are free of locking.",
-      "_match": "title"
-    },
-    {
-      "title": "Computation of instability-driven turbulent flows with front-tracking/ghost-fluid method",
-      "speakers": [
-        {
-          "name": "Tulin Kaman",
-          "affiliation": "University of Zurich and University of Arkansas"
-        }
-      ],
-      "abstract": "Understanding the dynamics of instability-driven turbulent flows plays a crucial role in both scientific and engineering applications. We present an increasingly accurate and robust front-tracking (FT) method coupled with the ghost-fluid method (GFM) for the numerical simulations of shock-induced single-mode Richtmyer-Meshkov Instability driven turbulent flow. We present improvements in the late-time dynamics of fluid interfaces using the FT/GFM method.",
       "_match": "title"
     }
   ]

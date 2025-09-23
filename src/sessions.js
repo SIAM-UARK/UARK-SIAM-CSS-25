@@ -143,9 +143,25 @@ export default [
             "affiliation": "Oklahoma State University"
           }
         ]
+      },
+      {
+        "title": "Synchronized Optimal Transport for Trajectory Inference in Biological Systems",
+        "speakers": [
+          {
+            "name": "Jingfeng Wang",
+            "affiliation": "North Carolina State University"
+          }
+        ]
       }
     ],
     sessions: [
+      {
+        start: "2025-10-11T17:00:00-05:00",
+        end: "2025-10-11T17:20:00-05:00",
+        talks: [
+          { title: "Synchronized Optimal Transport for Trajectory Inference in Biological Systems", start: "2025-10-11T17:00:00-05:00", end: "2025-10-11T17:20:00-05:00", speakers: [{ name: "Jingfeng Wang", affiliation: "North Carolina State University" }] }
+        ]
+      },
       {
         start: "2025-10-12T10:10:00-05:00",
         end: "2025-10-12T11:30:00-05:00",
@@ -843,6 +859,87 @@ export default [
     timezone: "America/Chicago",
     "talks": [
       {
+        "title": "Poisson-Boltzmann theory for biomolecular electrostatics: Self-energies, regularization, and far-field approximation",
+        "speakers": [
+          {
+            "name": "Shan Zhao",
+            "affiliation": "The University of Alabama"
+          }
+        ]
+      },
+      {
+        "title": "A simple two-phase model for simulating vesicle dynamics",
+        "speakers": [
+          {
+            "name": "Shuwang Li",
+            "affiliation": "Illinois Institute of Technology"
+          }
+        ]
+      },
+      {
+        "title": "Constrained variational models of biomolecular solvation and their numerical implementation",
+        "speakers": [
+          {
+            "name": "Zhan Chen",
+            "affiliation": "Georgia Southern University"
+          }
+        ]
+      },
+      {
+        "title": "Experimental and theoretical investigations of rotating algae biofilm reactors (RABRs): Areal productivity, nutrient recovery, and energy efficiency",
+        "speakers": [
+          {
+            "name": "Jia Zhao",
+            "affiliation": "University of Alabama"
+          }
+        ]
+      },
+      {
+        "title": "Topological Machine Learning for Drug Discovery",
+        "speakers": [
+          {
+            "name": "Baris Coskunuzer",
+            "affiliation": "University of Texas at Dallas"
+          }
+        ]
+      },
+      {
+        "title": "Topological and spatial imaging biomarkers for glioma survival prediction",
+        "speakers": [
+          {
+            "name": "Chul Moon",
+            "affiliation": "Southern Methodist University"
+          }
+        ]
+      },
+      {
+        "title": "A DNN Biophysics Model with Topological and Electrostatic Features",
+        "speakers": [
+          {
+            "name": "Weihua Geng",
+            "affiliation": "Southern Methodist University"
+          }
+        ]
+      },
+      {
+        "title": "Topological Data Analysis on Manifolds",
+        "speakers": [
+          {
+            "name": "Zhe Su",
+            "affiliation": "Auburn University"
+          }
+        ]
+      },
+      {
+        "title": "Phase Field Modeling of  Dictyostelium Discoideum Chemotaxis",
+        "speakers": [
+          {
+            "name": "Yanxiang Zhao",
+            "affiliation": "George Washington University"
+          }
+        ]
+      },
+      {
         "title": "OTMol: Robust Molecular Structure Comparison via Optimal Transport",
         "speakers": [
           {
@@ -861,43 +958,7 @@ export default [
         ]
       },
       {
-        "title": "A DNN Biophysics Model with Topological and Electrostatic Features",
-        "speakers": [
-          {
-            "name": "Weihua Geng",
-            "affiliation": "Southern Methodist University"
-          }
-        ]
-      },
-      {
-        "title": "A Bubble Model for the Gating of Kv Channels",
-        "speakers": [
-          {
-            "name": "Zilong Song",
-            "affiliation": "Utah State University"
-          }
-        ]
-      },
-      {
-        "title": "Constrained variational models of biomolecular solvation and their numerical implementation",
-        "speakers": [
-          {
-            "name": "Zhan Chen",
-            "affiliation": "Georgia Southern University"
-          }
-        ]
-      },
-      {
-        "title": "Poisson-Boltzmann theory for biomolecular electrostatics: Self-energies, regularization, and far-field approximation",
-        "speakers": [
-          {
-            "name": "Shan Zhao",
-            "affiliation": "The University of Alabama"
-          }
-        ]
-      },
-      {
-        "title": "Computational Modeling of Anti-Amyloid-beta Antibody Therapies in Alzheimer’s Disease",
+        "title": "Computational Modeling of Anti-Amyloid-beta Antibody Therapies in Alzheimer's Disease",
         "speakers": [
           {
             "name": "Lida Rabiei",
@@ -915,56 +976,11 @@ export default [
         ]
       },
       {
-        "title": "Phase Field Modeling of  Dictyostelium Discoideum Chemotaxis",
+        "title": "A Bubble Model for the Gating of Kv Channels",
         "speakers": [
           {
-            "name": "Yanxiang Zhao",
-            "affiliation": "George Washington University"
-          }
-        ]
-      },
-      {
-        "title": "Topological Machine Learning for Drug Discovery",
-        "speakers": [
-          {
-            "name": "Baris Coskunuzer",
-            "affiliation": "University of Texas at Dallas"
-          }
-        ]
-      },
-      {
-        "title": "Mathematical AI models for drug discovery",
-        "speakers": [
-          {
-            "name": "Hongsong Feng",
-            "affiliation": "University of North Carolina at Charlotte"
-          }
-        ]
-      },
-      {
-        "title": "Topological Data Analysis on Manifolds",
-        "speakers": [
-          {
-            "name": "Zhe Su",
-            "affiliation": "Auburn University"
-          }
-        ]
-      },
-      {
-        "title": "Topological and spatial imaging biomarkers for glioma survival prediction",
-        "speakers": [
-          {
-            "name": "Chul Moon",
-            "affiliation": "Southern Methodist University"
-          }
-        ]
-      },
-      {
-        "title": "Experimental and theoretical investigations of rotating algae biofilm reactors (RABRs): Areal productivity, nutrient recovery, and energy efficiency",
-        "speakers": [
-          {
-            "name": "Jia Zhao",
-            "affiliation": "University of Alabama"
+            "name": "Zilong Song",
+            "affiliation": "Utah State University"
           }
         ]
       },
@@ -978,11 +994,11 @@ export default [
         ]
       },
       {
-        "title": "A simple two-phase model for simulating vesicle dynamics",
+        "title": "Mathematical AI models for drug discovery",
         "speakers": [
           {
-            "name": "Shuwang Li",
-            "affiliation": "Illinois Institute of Technology"
+            "name": "Hongsong Feng",
+            "affiliation": "University of North Carolina at Charlotte"
           }
         ]
       }
@@ -993,40 +1009,40 @@ export default [
         start: "2025-10-11T10:10:00-05:00",
         end: "2025-10-11T11:30:00-05:00",
         talks: [
-          { title: "Topological Machine Learning for Drug Discovery", start: "2025-10-11T10:10:00-05:00", end: "2025-10-11T10:30:00-05:00", speakers: [{ name: "Baris Coskunuzer", affiliation: "University of Texas at Dallas" }] },
-          { title: "Phase Field Modeling of  Dictyostelium Discoideum Chemotaxis", start: "2025-10-11T10:30:00-05:00", end: "2025-10-11T10:50:00-05:00", speakers: [{ name: "Yanxiang Zhao", affiliation: "George Washington University" }] },
-          { title: "TBD", start: "2025-10-11T10:50:00-05:00", end: "2025-10-11T11:10:00-05:00", speakers: [{ name: "Zixuan Cang", affiliation: "North Carolina State University" }] },
-          { title: "Topological and spatial imaging biomarkers for glioma survival prediction", start: "2025-10-11T11:10:00-05:00", end: "2025-10-11T11:30:00-05:00", speakers: [{ name: "Chul Moon", affiliation: "Southern Methodist University" }] }
+          { title: "Poisson-Boltzmann theory for biomolecular electrostatics: Self-energies, regularization, and far-field approximation", start: "2025-10-11T10:10:00-05:00", end: "2025-10-11T10:30:00-05:00", speakers: [{ name: "Shan Zhao", affiliation: "The University of Alabama" }] },
+          { title: "A simple two-phase model for simulating vesicle dynamics", start: "2025-10-11T10:30:00-05:00", end: "2025-10-11T10:50:00-05:00", speakers: [{ name: "Shuwang Li", affiliation: "Illinois Institute of Technology" }] },
+          { title: "Constrained variational models of biomolecular solvation and their numerical implementation", start: "2025-10-11T10:50:00-05:00", end: "2025-10-11T11:10:00-05:00", speakers: [{ name: "Zhan Chen", affiliation: "Georgia Southern University" }] },
+          { title: "Experimental and theoretical investigations of rotating algae biofilm reactors (RABRs): Areal productivity, nutrient recovery, and energy efficiency", start: "2025-10-11T11:10:00-05:00", end: "2025-10-11T11:30:00-05:00", speakers: [{ name: "Jia Zhao", affiliation: "University of Alabama" }] }
         ]
       },
       {
         start: "2025-10-11T15:30:00-05:00",
         end: "2025-10-11T16:50:00-05:00",
         talks: [
-          { title: "Poisson-Boltzmann theory for biomolecular electrostatics: Self-energies, regularization, and far-field approximation", start: "2025-10-11T15:30:00-05:00", end: "2025-10-11T15:50:00-05:00", speakers: [{ name: "Shan Zhao", affiliation: "The University of Alabama" }] },
-          { title: "A DNN Biophysics Model with Topological and Electrostatic Features", start: "2025-10-11T15:50:00-05:00", end: "2025-10-11T16:10:00-05:00", speakers: [{ name: "Weihua Geng", affiliation: "Southern Methodist University" }] },
-          { title: "Constrained variational models of biomolecular solvation and their numerical implementation", start: "2025-10-11T16:10:00-05:00", end: "2025-10-11T16:30:00-05:00", speakers: [{ name: "Zhan Chen", affiliation: "Georgia Southern University" }] },
-          { title: "A simple two-phase model for simulating vesicle dynamics", start: "2025-10-11T16:30:00-05:00", end: "2025-10-11T16:50:00-05:00", speakers: [{ name: "Shuwang Li", affiliation: "Illinois Institute of Technology" }] }
+          { title: "Topological Machine Learning for Drug Discovery", start: "2025-10-11T15:30:00-05:00", end: "2025-10-11T15:50:00-05:00", speakers: [{ name: "Baris Coskunuzer", affiliation: "University of Texas at Dallas" }] },
+          { title: "Topological and spatial imaging biomarkers for glioma survival prediction", start: "2025-10-11T15:50:00-05:00", end: "2025-10-11T16:10:00-05:00", speakers: [{ name: "Chul Moon", affiliation: "Southern Methodist University" }] },
+          { title: "A DNN Biophysics Model with Topological and Electrostatic Features", start: "2025-10-11T16:10:00-05:00", end: "2025-10-11T16:30:00-05:00", speakers: [{ name: "Weihua Geng", affiliation: "Southern Methodist University" }] },
+          { title: "Topological Data Analysis on Manifolds", start: "2025-10-11T16:30:00-05:00", end: "2025-10-11T16:50:00-05:00", speakers: [{ name: "Zhe Su", affiliation: "Auburn University" }] }
         ]
       },
       {
         start: "2025-10-11T17:00:00-05:00",
         end: "2025-10-11T18:20:00-05:00",
         talks: [
-          { title: "Experimental and theoretical investigations of rotating algae biofilm reactors (RABRs): Areal productivity, nutrient recovery, and energy efficiency", start: "2025-10-11T17:00:00-05:00", end: "2025-10-11T17:20:00-05:00", speakers: [{ name: "Jia Zhao", affiliation: "University of Alabama" }] },
-          { title: "Topological Data Analysis on Manifolds", start: "2025-10-11T17:20:00-05:00", end: "2025-10-11T17:40:00-05:00", speakers: [{ name: "Zhe Su", affiliation: "Auburn University" }] },
-          { title: "Structure analytics with polynomial encoding reveal mechanisms of R-loop formation", start: "2025-10-11T17:40:00-05:00", end: "2025-10-11T18:00:00-05:00", speakers: [{ name: "Pengyu (Peter) Liu", affiliation: "University of Rhode Island" }] },
-          { title: "A Bubble Model for the Gating of Kv Channels", start: "2025-10-11T18:00:00-05:00", end: "2025-10-11T18:20:00-05:00", speakers: [{ name: "Zilong Song", affiliation: "Utah State University" }] }
+          { title: "Phase Field Modeling of  Dictyostelium Discoideum Chemotaxis", start: "2025-10-11T17:00:00-05:00", end: "2025-10-11T17:20:00-05:00", speakers: [{ name: "Yanxiang Zhao", affiliation: "George Washington University" }] },
+          { title: "OTMol: Robust Molecular Structure Comparison via Optimal Transport", start: "2025-10-11T17:20:00-05:00", end: "2025-10-11T17:40:00-05:00", speakers: [{ name: "Xiaoqi Wei", affiliation: "North Carolina State University" }] },
+          { title: "TBD", start: "2025-10-11T17:40:00-05:00", end: "2025-10-11T18:00:00-05:00", speakers: [{ name: "Zixuan Cang", affiliation: "North Carolina State University" }] },
+          { title: "Computational Modeling of Anti-Amyloid-beta Antibody Therapies in Alzheimer's Disease", start: "2025-10-11T18:00:00-05:00", end: "2025-10-11T18:20:00-05:00", speakers: [{ name: "Lida Rabiei", affiliation: "Pennsylvania State University" }] }
         ]
       },
       {
         start: "2025-10-12T10:10:00-05:00",
         end: "2025-10-12T11:30:00-05:00",
         talks: [
-          { title: "Mathematical AI models for drug discovery", start: "2025-10-12T10:10:00-05:00", end: "2025-10-12T10:30:00-05:00", speakers: [{ name: "Hongsong Feng", affiliation: "University of North Carolina at Charlotte" }] },
-          { title: "Graph and Geometry-Inspired Machine Learning Approaches for Molecular Interaction Prediction", start: "2025-10-12T10:30:00-05:00", end: "2025-10-12T10:50:00-05:00", speakers: [{ name: "Md Masud Rana", affiliation: "Kennesaw State University" }] },
-          { title: "Computational Modeling of Anti-Amyloid-beta Antibody Therapies in Alzheimer’s Disease", start: "2025-10-12T10:50:00-05:00", end: "2025-10-12T11:10:00-05:00", speakers: [{ name: "Lida Rabiei", affiliation: "Pennsylvania State University" }] },
-          { title: "OTMol: Robust Molecular Structure Comparison via Optimal Transport", start: "2025-10-12T11:10:00-05:00", end: "2025-10-12T11:30:00-05:00", speakers: [{ name: "Xiaoqi Wei", affiliation: "North Carolina State University" }] }
+          { title: "Structure analytics with polynomial encoding reveal mechanisms of R-loop formation", start: "2025-10-12T10:10:00-05:00", end: "2025-10-12T10:30:00-05:00", speakers: [{ name: "Pengyu (Peter) Liu", affiliation: "University of Rhode Island" }] },
+          { title: "A Bubble Model for the Gating of Kv Channels", start: "2025-10-12T10:30:00-05:00", end: "2025-10-12T10:50:00-05:00", speakers: [{ name: "Zilong Song", affiliation: "Utah State University" }] },
+          { title: "Graph and Geometry-Inspired Machine Learning Approaches for Molecular Interaction Prediction", start: "2025-10-12T10:50:00-05:00", end: "2025-10-12T11:10:00-05:00", speakers: [{ name: "Md Masud Rana", affiliation: "Kennesaw State University" }] },
+          { title: "Mathematical AI models for drug discovery", start: "2025-10-12T11:10:00-05:00", end: "2025-10-12T11:30:00-05:00", speakers: [{ name: "Hongsong Feng", affiliation: "University of North Carolina at Charlotte" }] }
         ]
       }
     ]
@@ -1041,11 +1057,29 @@ export default [
     timezone: "America/Chicago",
     "talks": [
       {
-        "title": "Variational data assimilation with finite element discretization for second order parabolic interface equation",
+        "title": "Computation of instability-driven turbulent flows with front-tracking/ghost-fluid method",
         "speakers": [
           {
-            "name": "Xiaoming He",
-            "affiliation": "Missouri University of Science and Technology"
+            "name": "Tulin Kaman",
+            "affiliation": "University of Zurich and University of Arkansas"
+          }
+        ]
+      },
+      {
+        "title": "A Priori and a Posteriori Error Estimate for Pressure Robust Schemes for Incompressible Flow",
+        "speakers": [
+          {
+            "name": "Lin Mu",
+            "affiliation": "University of Georgia"
+          }
+        ]
+      },
+      {
+        "title": "TBD",
+        "speakers": [
+          {
+            "name": "Xu Zhang",
+            "affiliation": "TBD"
           }
         ]
       },
@@ -1055,6 +1089,15 @@ export default [
           {
             "name": "Jia Zhao",
             "affiliation": "University of Alabama"
+          }
+        ]
+      },
+      {
+        "title": "Variational data assimilation with finite element discretization for second order parabolic interface equation",
+        "speakers": [
+          {
+            "name": "Xiaoming He",
+            "affiliation": "Missouri University of Science and Technology"
           }
         ]
       },
@@ -1084,15 +1127,6 @@ export default [
             "affiliation": "Colorado State University"
           }
         ]
-      },
-      {
-        "title": "Computation of instability-driven turbulent flows with front-tracking/ghost-fluid method",
-        "speakers": [
-          {
-            "name": "Tulin Kaman",
-            "affiliation": "University of Zurich and University of Arkansas"
-          }
-        ]
       }
     ],
     sessions: [
@@ -1100,18 +1134,20 @@ export default [
         start: "2025-10-11T10:10:00-05:00",
         end: "2025-10-11T11:10:00-05:00",
         talks: [
-          { title: "Variational data assimilation with finite element discretization for second order parabolic interface equation", start: "2025-10-11T10:10:00-05:00", end: "2025-10-11T10:30:00-05:00", speakers: [{ name: "Xiaoming He", affiliation: "Missouri University of Science and Technology" }] },
-          { title: "General Numerical Framework for Structure-Preserving Reduced Order Models of Thermodynamically Consistent Reversible-Irreversible PDEs", start: "2025-10-11T10:30:00-05:00", end: "2025-10-11T10:50:00-05:00", speakers: [{ name: "Jia Zhao", affiliation: "University of Alabama" }] },
-          { title: "Numerical Analysis of a Second-Order Numerical Scheme for a sixth-order Cahn-Hilliard type Equation", start: "2025-10-11T10:50:00-05:00", end: "2025-10-11T11:10:00-05:00", speakers: [{ name: "Natasha S. Sharma", affiliation: "The University of Texas at El Paso" }] },
-          { title: "Parameter-free regularization preconditioners for nearly singular poroelasticity problems", start: "2025-10-11T11:10:00-05:00", end: "2025-10-11T11:30:00-05:00", speakers: [{ name: "Zhuoran Wang", affiliation: "University of Kansas" }] }
+          { title: "Computation of instability-driven turbulent flows with front-tracking/ghost-fluid method", start: "2025-10-11T10:10:00-05:00", end: "2025-10-11T10:30:00-05:00", speakers: [{ name: "Tulin Kaman", affiliation: "University of Zurich and University of Arkansas" }] },
+          { title: "A Priori and a Posteriori Error Estimate for Pressure Robust Schemes for Incompressible Flow", start: "2025-10-11T10:30:00-05:00", end: "2025-10-11T10:50:00-05:00", speakers: [{ name: "Lin Mu", affiliation: "University of Georgia" }] },
+          { title: "TBD", start: "2025-10-11T10:50:00-05:00", end: "2025-10-11T11:10:00-05:00", speakers: [{ name: "Xu Zhang", affiliation: "TBD" }] },
+          { title: "General Numerical Framework for Structure-Preserving Reduced Order Models of Thermodynamically Consistent Reversible-Irreversible PDEs", start: "2025-10-11T11:10:00-05:00", end: "2025-10-11T11:30:00-05:00", speakers: [{ name: "Jia Zhao", affiliation: "University of Alabama" }] }
         ]
       },
       {
         start: "2025-10-11T15:30:00-05:00",
-        end: "2025-10-11T16:10:00-05:00",
+        end: "2025-10-11T16:50:00-05:00",
         talks: [
-          { title: "Well-balanced Any-order Numerical Solvers for Linear and Nonlinear Poroelasticity Based on Combination of BDF and Weak Galerkin", start: "2025-10-11T15:30:00-05:00", end: "2025-10-11T15:50:00-05:00", speakers: [{ name: "James Liu", affiliation: "Colorado State University" }] },
-          { title: "Computation of instability-driven turbulent flows with front-tracking/ghost-fluid method", start: "2025-10-11T15:50:00-05:00", end: "2025-10-11T16:10:00-05:00", speakers: [{ name: "Tulin Kaman", affiliation: "University of Zurich and University of Arkansas" }] }
+          { title: "Variational data assimilation with finite element discretization for second order parabolic interface equation", start: "2025-10-11T15:30:00-05:00", end: "2025-10-11T15:50:00-05:00", speakers: [{ name: "Xiaoming He", affiliation: "Missouri University of Science and Technology" }] },
+          { title: "Numerical Analysis of a Second-Order Numerical Scheme for a sixth-order Cahn-Hilliard type Equation", start: "2025-10-11T15:50:00-05:00", end: "2025-10-11T16:10:00-05:00", speakers: [{ name: "Natasha S. Sharma", affiliation: "The University of Texas at El Paso" }] },
+          { title: "Parameter-free regularization preconditioners for nearly singular poroelasticity problems", start: "2025-10-11T16:10:00-05:00", end: "2025-10-11T16:30:00-05:00", speakers: [{ name: "Zhuoran Wang", affiliation: "University of Kansas" }] },
+          { title: "Well-balanced Any-order Numerical Solvers for Linear and Nonlinear Poroelasticity Based on Combination of BDF and Weak Galerkin", start: "2025-10-11T16:30:00-05:00", end: "2025-10-11T16:50:00-05:00", speakers: [{ name: "James Liu", affiliation: "Colorado State University" }] }
         ]
       }
     ]
@@ -1286,7 +1322,7 @@ export default [
     "minisymposium_title": "Recent advances in numerical PDEs",
     "organizers": [
       { "name": "Xiaoming He", "affiliation": "Missouri University of Science and Technology"},
-      { "name": "Xiaofeng Yang", "affiliation": "Wayne State University"},
+      { "name": "Xiaofeng Yang", "affiliation": "University of South Carolina"},
       { "name": "Pengtao Yue", "affiliation": "Virginia Tech"}
     ],
     day: "",

@@ -45,6 +45,17 @@
       ],
       "abstract": "Human mobility is an inherent aspect of the interconnected world and a key driver in disease transmission through networked populations. Despite its importance, the role of actual mobility patterns in driving or containing disease transmission has received relatively less attention. To address this limitation, we investigated the impact of network structure and human mobility on disease spread within a metapopulation and derived epidemic threshold formulas that take mobility into account. We implemented simplified analogs of real-world networks, such as stars and cycles, and obtained classes of networks with the same epidemic threshold formula. Identifying the pivotal role of network structures in disease dynamics, we developed and deployed a novel hybrid mechanistic metapopulation model that incorporated cellphone mobility data, such as human movement trajectories between counties, into the mechanistic model. This allowed us to trace the disease's evolution across counties. Using daily county-level travel networks across all 50 states in the United States, we simulated various outbreak and intervention scenarios to capture more realistic epidemic patterns, revealing richer dynamics than traditional metapopulation models.",
       "_match": "title"
+    },
+    {
+      "title": "Synchronized Optimal Transport for Trajectory Inference in Biological Systems",
+      "speakers": [
+        {
+          "name": "Jingfeng Wang",
+          "affiliation": "North Carolina State University"
+        }
+      ],
+      "abstract": "Trajectory inference is a central task in computational biology, particularly for uncovering cellular dynamics from high-dimensional and multimodal data. However, existing methods often fail to coherently integrate information across primary and secondary modalities, leading to suboptimal representations of biological processes. To address this challenge, we propose a neural network–based framework that incorporates Synchronized Optimal Transport (SyncOT) for trajectory inference. By jointly optimizing across primary and auxiliary spaces, our method achieves synchronized modeling of cellular dynamics while minimizing the aggregated cost across modalities. This enables more consistent and biologically meaningful trajectory reconstruction. Experimental results on biological datasets demonstrate that SyncOT provides a robust and effective approach for multimodal optimization, yielding more accurate and interpretable trajectories of cellular processes.",
+      "_match": "title"
     }
   ]
 }
