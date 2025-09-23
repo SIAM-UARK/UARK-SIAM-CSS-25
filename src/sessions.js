@@ -1575,6 +1575,16 @@ export default [
             "affiliation": "Michigan Technological University"
           }
         ]
+      },
+      {
+        "title": "Remember to Forget: Balancing Encoding and Removal Mechanisms in Working Memory",
+        "speakers": [
+          {
+            "name": "Zachary Kilpatrick",
+            "affiliation": "University of Colorado Boulder"
+          }
+        ],
+        "abstract": "The maintenance of parametric variables in working memory is thought to rely on persistent cortical neural activity and short-term augmentation of connectivity. Mapping activity patterns according to cell feature preference reveals \"bumps\" predictive of behavioral responses and continuum neural field models are oft used to explore single-trial response errors in delayed estimation tasks. However, these models may ignore the removal of information and memory remnants that could impact subsequent trials. Inspired by data on forgetting, we mechanistically model intertrial activity where we incorporate (1) passive forgetting via increased internal noise to 'clear the slate,' (2) an active forgetting variable for more conscious task-dependent removal of information, (3) the possibility of 'overwriting' prior memories, and (4) short-term presynaptic facilitation that allows for ghosts of information to linger. Through this tunable model, we study sequences of trials and compare with behavioral data to explore how balancing these mechanisms may improve/worsen response errors."
       }
     ],
     sessions: [
@@ -1590,10 +1600,11 @@ export default [
       },
       {
         start: "2025-10-11T17:00:00-05:00",
-        end: "2025-10-11T17:40:00-05:00",
+        end: "2025-10-11T18:00:00-05:00",
         talks: [
           { title: "Arousal: how the brain controls its proximity to criticality", start: "2025-10-11T17:00:00-05:00", end: "2025-10-11T17:20:00-05:00", speakers: [{ name: "Woodrow L. Shew", affiliation: "University of Arkansas" }] },
-          { title: "Spike-adding in bursting driven by slowly modulated rhythms", start: "2025-10-11T17:20:00-05:00", end: "2025-10-11T17:40:00-05:00", speakers: [{ name: "Rodica Curtu", affiliation: "Michigan Technological University" }] }
+          { title: "Spike-adding in bursting driven by slowly modulated rhythms", start: "2025-10-11T17:20:00-05:00", end: "2025-10-11T17:40:00-05:00", speakers: [{ name: "Rodica Curtu", affiliation: "Michigan Technological University" }] },
+          { title: "Remember to Forget: Balancing Encoding and Removal Mechanisms in Working Memory", start: "2025-10-11T17:40:00-05:00", end: "2025-10-11T18:00:00-05:00", speakers: [{ name: "Zachary Kilpatrick", affiliation: "University of Colorado Boulder" }] }
         ]
       }
     ]
