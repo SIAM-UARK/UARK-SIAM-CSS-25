@@ -58,6 +58,17 @@
       ],
       "abstract": "This talk presents a family of any order finite element solvers for both linear and nonlinear poroelasticity problems.  The backward differentiation formulas (BDFs) are used for temporal discretizations, whereas the weak Galerkin (WG) finite elements on quadrilaterals are utilized for spatial discretizations.  For the latter, the discrete weak gradients of shape functions are established in the vector- or matrix- Arbogast-Correa spaces.  Such combinations of BDF and WG discretizations produce numerical solutions that have well-balanced spatial and temporal errors in all six quantities (pressure, velocity, and normal flux, displacement, dilation, stress).  For nonlinear poroelasticity problems in which permeability depends on solid dilation or the mean stress, Picard iterations are employed to solve the resulting nonlinear algebraic systems.  Analysis together with numerical results demonstrate that these new solvers have optimal-order convergence and are free of locking.",
       "_match": "title"
+    },
+    {
+      "title": "Computation of instability-driven turbulent flows with front-tracking/ghost-fluid method",
+      "speakers": [
+        {
+          "name": "Tulin Kaman",
+          "affiliation": "University of Zurich and University of Arkansas"
+        }
+      ],
+      "abstract": "Understanding the dynamics of instability-driven turbulent flows plays a crucial role in both scientific and engineering applications. We present an increasingly accurate and robust front-tracking (FT) method coupled with the ghost-fluid method (GFM) for the numerical simulations of shock-induced single-mode Richtmyer-Meshkov Instability driven turbulent flow. We present improvements in the late-time dynamics of fluid interfaces using the FT/GFM method.",
+      "_match": "title"
     }
   ]
 }

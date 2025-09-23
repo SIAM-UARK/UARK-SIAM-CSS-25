@@ -310,7 +310,8 @@ export default [
   {
     "minisymposium_title": "Control and Stability of Fluids and Structures",
     "organizers": [
-      { name: "Justin Webster", affiliation: "University of Maryland, Baltimore County"}
+      { name: "Justin Webster", affiliation: "University of Maryland, Baltimore County"},
+      { name: "Igor Kukavica", affiliation: "University of Southern California"}
     ],
     day: "",
     room: "",
@@ -671,6 +672,15 @@ export default [
             "affiliation": "Kansas State University"
           }
         ]
+      },
+      {
+        "title": "Operator-Theoretic Meal Detection: Windowed DMD, Stability Cues, and Translation to Closed-Loop Care",
+        "speakers": [
+          {
+            "name": "Heman Shakeri",
+            "affiliation": "School of Data Science, University of Virginia"
+          }
+        ]
       }
     ],
     sessions: [
@@ -678,7 +688,7 @@ export default [
         start: "2025-10-11T10:10:00-05:00",
         end: "2025-10-11T11:10:00-05:00",
         talks: [
-          { title: "Large Deviations of Dyson-type Diffusions and Multiradial SLE(0+)", start: "2025-10-11T10:10:00-05:00", end: "2025-10-11T10:30:00-05:00", speakers: [{ name: "Vivian Olsiewski Healey", affiliation: "Texas State University" }] },
+          { title: "Operator-Theoretic Meal Detection: Windowed DMD, Stability Cues, and Translation to Closed-Loop Care", start: "2025-10-11T10:10:00-05:00", end: "2025-10-11T10:30:00-05:00", speakers: [{ name: "Heman Shakeri", affiliation: "School of Data Science, University of Virginia" }] },
           { title: "A Data-Parsimonious Model for Long-Term Risk Assessments of West Nile Virus Spillover", start: "2025-10-11T10:30:00-05:00", end: "2025-10-11T10:50:00-05:00", speakers: [{ name: "Saman Hosseini", affiliation: "Kansas State University" }] },
           { title: "Discrete Quasiconformal Maps and PDE's on Graphs", start: "2025-10-11T10:50:00-05:00", end: "2025-10-11T11:10:00-05:00", speakers: [{ name: "David Pechersky", affiliation: "Beijing Institute of Mathematical Sciences and Applications (BIMSA)" }] },
           { title: "Pliability and Lusin Approximation for Curves in Carnot Groups", start: "2025-10-11T11:10:00-05:00", end: "2025-10-11T11:30:00-05:00", speakers: [{ name: "Gareth Speight", affiliation: "University of Cincinnati" }] }
@@ -706,9 +716,10 @@ export default [
       },
       {
         start: "2025-10-12T10:10:00-05:00",
-        end: "2025-10-12T11:10:00-05:00",
+        end: "2025-10-12T10:50:00-05:00",
         talks: [
-          { title: "Modulus of hypertrees", start: "2025-10-12T10:10:00-05:00", end: "2025-10-12T10:30:00-05:00", speakers: [{ name: "Huy Truong", affiliation: "Kansas State University" }] }
+          { title: "Large Deviations of Dyson-type Diffusions and Multiradial SLE(0+)", start: "2025-10-12T10:10:00-05:00", end: "2025-10-12T10:30:00-05:00", speakers: [{ name: "Vivian Olsiewski Healey", affiliation: "Texas State University" }] },
+          { title: "Modulus of hypertrees", start: "2025-10-12T10:30:00-05:00", end: "2025-10-12T10:50:00-05:00", speakers: [{ name: "Huy Truong", affiliation: "Kansas State University" }] }
         ]
       }
     ]
@@ -1073,6 +1084,15 @@ export default [
             "affiliation": "Colorado State University"
           }
         ]
+      },
+      {
+        "title": "Computation of instability-driven turbulent flows with front-tracking/ghost-fluid method",
+        "speakers": [
+          {
+            "name": "Tulin Kaman",
+            "affiliation": "University of Zurich and University of Arkansas"
+          }
+        ]
       }
     ],
     sessions: [
@@ -1088,9 +1108,10 @@ export default [
       },
       {
         start: "2025-10-11T15:30:00-05:00",
-        end: "2025-10-11T16:30:00-05:00",
+        end: "2025-10-11T16:10:00-05:00",
         talks: [
-          { title: "Well-balanced Any-order Numerical Solvers for Linear and Nonlinear Poroelasticity Based on Combination of BDF and Weak Galerkin", start: "2025-10-11T15:30:00-05:00", end: "2025-10-11T15:50:00-05:00", speakers: [{ name: "James Liu", affiliation: "Colorado State University" }] }
+          { title: "Well-balanced Any-order Numerical Solvers for Linear and Nonlinear Poroelasticity Based on Combination of BDF and Weak Galerkin", start: "2025-10-11T15:30:00-05:00", end: "2025-10-11T15:50:00-05:00", speakers: [{ name: "James Liu", affiliation: "Colorado State University" }] },
+          { title: "Computation of instability-driven turbulent flows with front-tracking/ghost-fluid method", start: "2025-10-11T15:50:00-05:00", end: "2025-10-11T16:10:00-05:00", speakers: [{ name: "Tulin Kaman", affiliation: "University of Zurich and University of Arkansas" }] }
         ]
       }
     ]

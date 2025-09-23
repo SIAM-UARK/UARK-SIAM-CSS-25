@@ -143,6 +143,17 @@
       ],
       "abstract": "Lorea [11] and later Frank et al. [8] generalized graphic matroids to hypergraphic matroids. In [8], the authors introduced hypertrees as a generalization of spanning trees and proved a form of the theorem of Tutte [18] and Nash-Williams [14]. In [3, 15, 17], the authors explored the modulus of the family of spanning trees in graphs and of the family of bases of matroids, and provided connections to the notions of strength and fractional arboricity. They also established Fulkerson duality for these families. In this paper, we extend these results to hypertrees, and show that the modulus of hypertrees uncovers a hierarchical structure within arbitrary hypergraphs.",
       "_match": "title"
+    },
+    {
+      "title": "Operator-Theoretic Meal Detection: Windowed DMD, Stability Cues, and Translation to Closed-Loop Care",
+      "speakers": [
+        {
+          "name": "Heman Shakeri",
+          "affiliation": "School of Data Science, University of Virginia"
+        }
+      ],
+      "abstract": "We cast continuous glucose monitoring (CGM) as a partially observed dynamical system and detect meals by testing for transient instability in a windowed Koopman approximation. Using a delay embedding to recover state from a single output, we perform Dynamic Mode Decomposition (DMD) on sliding windows: form $X_t,Y_t$ from snapshot pairs, compute a rank-$r$ SVD, and estimate the compressed propagator. Meal events manifest as growth modes with spectral radius $\\rho(\\Lambda)>1$, while mode shapes $\\Phi$ encode prandial magnitude. We model meal probability via a regularized classifier on short eigenvalue trajectories, enabling early decisions (10--15 minutes) from CGM alone, with population-level tuning and no subject-specific parameters. On in-silico UVA/Padova cohorts and two clinical datasets, the approach attains higher recall at shorter detection windows than a clinically validated baseline, with reduced latency. We discuss identifiability under noise, rank selection as a bias--variance trade-off, and how operator-theoretic features interface with closed-loop optimization. This highlights how advanced analysis (Koopman/DMD) and modest optimization (regularized classification) deliver deployable, interpretable signals for automated insulin delivery.",
+      "_match": "title"
     }
   ]
 }
