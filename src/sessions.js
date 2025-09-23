@@ -1578,21 +1578,21 @@ export default [
     ],
     sessions: [
       {
-        start: "2025-10-11T17:00:00-05:00",
-        end: "2025-10-11T18:00:00-05:00",
+        start: "2025-10-11T15:30:00-05:00",
+        end: "2025-10-11T16:50:00-05:00",
         talks: [
-          { title: "How groups decide without leaders in changing environment", start: "2025-10-11T17:00:00-05:00", end: "2025-10-11T17:20:00-05:00", speakers: [{ name: "Hyunjoong Kim", affiliation: "University of Cincinnati" }] },
-          { title: "Are the differences between Parkinsonian and healthy subjects like other brain diseases?", start: "2025-10-11T17:20:00-05:00", end: "2025-10-11T17:40:00-05:00", speakers: [{ name: "Cheng Ly", affiliation: "Virginia Commonwealth University" }] },
-          { title: "Disentangling bidirectional astrocyte-neuron interactions during learned behavior", start: "2025-10-11T17:40:00-05:00", end: "2025-10-11T18:00:00-05:00", speakers: [{ name: "Sam Sooter", affiliation: "University of Arkansas" }] },
-          { title: "From Chaos to Coherence: Effects of High-Order Synaptic Correlations on Neural Dynamics", start: "2025-10-11T18:00:00-05:00", end: "2025-10-11T18:20:00-05:00", speakers: [{ name: "Krešimir Josić", affiliation: "University of Houston" }] }
+          { title: "How groups decide without leaders in changing environment", start: "2025-10-11T15:30:00-05:00", end: "2025-10-11T15:50:00-05:00", speakers: [{ name: "Hyunjoong Kim", affiliation: "University of Cincinnati" }] },
+          { title: "Are the differences between Parkinsonian and healthy subjects like other brain diseases?", start: "2025-10-11T15:50:00-05:00", end: "2025-10-11T16:10:00-05:00", speakers: [{ name: "Cheng Ly", affiliation: "Virginia Commonwealth University" }] },
+          { title: "Disentangling bidirectional astrocyte-neuron interactions during learned behavior", start: "2025-10-11T16:10:00-05:00", end: "2025-10-11T16:30:00-05:00", speakers: [{ name: "Sam Sooter", affiliation: "University of Arkansas" }] },
+          { title: "From Chaos to Coherence: Effects of High-Order Synaptic Correlations on Neural Dynamics", start: "2025-10-11T16:30:00-05:00", end: "2025-10-11T16:50:00-05:00", speakers: [{ name: "Krešimir Josić", affiliation: "University of Houston" }] }
         ]
       },
       {
-        start: "2025-10-12T10:10:00-05:00",
-        end: "2025-10-12T11:10:00-05:00",
+        start: "2025-10-11T17:00:00-05:00",
+        end: "2025-10-11T17:40:00-05:00",
         talks: [
-          { title: "Arousal: how the brain controls its proximity to criticality", start: "2025-10-12T10:10:00-05:00", end: "2025-10-12T10:30:00-05:00", speakers: [{ name: "Woodrow L. Shew", affiliation: "University of Arkansas" }] },
-          { title: "Spike-adding in bursting driven by slowly modulated rhythms", start: "2025-10-12T10:30:00-05:00", end: "2025-10-12T10:50:00-05:00", speakers: [{ name: "Rodica Curtu", affiliation: "Michigan Technological University" }] }
+          { title: "Arousal: how the brain controls its proximity to criticality", start: "2025-10-11T17:00:00-05:00", end: "2025-10-11T17:20:00-05:00", speakers: [{ name: "Woodrow L. Shew", affiliation: "University of Arkansas" }] },
+          { title: "Spike-adding in bursting driven by slowly modulated rhythms", start: "2025-10-11T17:20:00-05:00", end: "2025-10-11T17:40:00-05:00", speakers: [{ name: "Rodica Curtu", affiliation: "Michigan Technological University" }] }
         ]
       }
     ]
