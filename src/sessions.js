@@ -1869,12 +1869,12 @@ export default [
     ],
     sessions: [
       {
-        start: "2025-10-12T10:10:00-05:00",
-        end: "2025-10-12T11:10:00-05:00",
+        start: "2025-10-11T10:10:00-05:00",
+        end: "2025-10-11T11:10:00-05:00",
         talks: [
-          { title: "Vidyut3d: A performance portable adaptive mesh-based solver for non-equilibrium plasmas", start: "2025-10-12T10:10:00-05:00", end: "2025-10-12T10:30:00-05:00", speakers: [{ name: "Hari Sitaraman", affiliation: "" }, { name: "Nicholas Deak", affiliation: "National Renewable Energy Laboratory" }, { name: "T Taneja", affiliation: "University of Minnesota" }] },
-          { title: "Leveraging AMR to enable high-fidelity simulations of reacting and multiphase flows in practical energy systems with the Pele suite", start: "2025-10-12T10:30:00-05:00", end: "2025-10-12T10:50:00-05:00", speakers: [{ name: "Bruce A Perry", affiliation: "National Renewable Energy Laboratory" }, { name: "David Montgomery", affiliation: "National Renewable Energy Laboratory" }, { name: "Sreejtih Nadakkal Appukuttan", affiliation: "National Renewable Energy Laboratory" }, { name: "Shashank Yellapantula", affiliation: "National Renewable Energy Laboratory" }, { name: "Marc Day", affiliation: "National Renewable Energy Laboratory" }] },
-          { title: "High-Fidelity Simulations of Rayleigh–Taylor Instability Using Front-Tracking and Adaptive Mesh Refinement", start: "2025-10-12T10:50:00-05:00", end: "2025-10-12T11:10:00-05:00", speakers: [{ name: "James Burton", affiliation: "University of Arkansas" }] }
+          { title: "Vidyut3d: A performance portable adaptive mesh-based solver for non-equilibrium plasmas", start: "2025-10-11T10:10:00-05:00", end: "2025-10-11T10:30:00-05:00", speakers: [{ name: "Hari Sitaraman", affiliation: "" }, { name: "Nicholas Deak", affiliation: "National Renewable Energy Laboratory" }, { name: "T Taneja", affiliation: "University of Minnesota" }] },
+          { title: "Leveraging AMR to enable high-fidelity simulations of reacting and multiphase flows in practical energy systems with the Pele suite", start: "2025-10-11T10:30:00-05:00", end: "2025-10-11T10:50:00-05:00", speakers: [{ name: "Bruce A Perry", affiliation: "National Renewable Energy Laboratory" }, { name: "David Montgomery", affiliation: "National Renewable Energy Laboratory" }, { name: "Sreejtih Nadakkal Appukuttan", affiliation: "National Renewable Energy Laboratory" }, { name: "Shashank Yellapantula", affiliation: "National Renewable Energy Laboratory" }, { name: "Marc Day", affiliation: "National Renewable Energy Laboratory" }] },
+          { title: "High-Fidelity Simulations of Rayleigh–Taylor Instability Using Front-Tracking and Adaptive Mesh Refinement", start: "2025-10-11T10:50:00-05:00", end: "2025-10-11T11:10:00-05:00", speakers: [{ name: "James Burton", affiliation: "University of Arkansas" }] }
         ]
       }
     ]
