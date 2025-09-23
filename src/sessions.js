@@ -47,10 +47,10 @@ export default [
         end: "2025-10-11T16:50:00-05:00",
         talks: [
           {
-            title: "Gamma-Convergence and Asymptotic Analysis for a Diffuse Domain Problem with Transmission Boundary Conditions: Part 2, Numerical Confirmation",
+            title: "Gamma-Convergence and Asymptotic Analysis for a Diffuse Domain Problem with Transmission Boundary Conditions, Part 1: Theoretical Analysis",
             start: "2025-10-11T15:30:00-05:00",
             end: "2025-10-11T15:50:00-05:00",
-            speakers: [{ name: "Calvin Wong", affiliation: "The University of Tennessee, Knoxville" }]
+            speakers: [{ name: "Toai Luong", affiliation: "Virginia Commonwealth University" }]
           },
           {
             title: "Stability of Interfacial Energies Under Gradient Flows",
@@ -65,10 +65,10 @@ export default [
             speakers: [{ name: "Yanxiang Zhao", affiliation: "George Washington University" }]
           },
           {
-            title: "Gamma-Convergence and Asymptotic Analysis for a Diffuse Domain Problem with Transmission Boundary Conditions, Part 1: Theoretical Analysis",
+            title: "Gamma-Convergence and Asymptotic Analysis for a Diffuse Domain Problem with Transmission Boundary Conditions: Part 2, Numerical Confirmation",
             start: "2025-10-11T16:30:00-05:00",
             end: "2025-10-11T16:50:00-05:00",
-            speakers: [{ name: "Toai Luong", affiliation: "Virginia Commonwealth University" }]
+            speakers: [{ name: "Calvin Wong", affiliation: "The University of Tennessee, Knoxville" }]
           }
         ]
       },
@@ -1691,23 +1691,34 @@ export default [
             "affiliation": "University of Arkansas"
           }
         ]
+      },
+      {
+        "title": "Positive-Preserving fPINNs with Modified Fast L1 Algorithm for Time-Fractional Convection-Diffusion Equations",
+        "speakers": [
+          {
+            "name": "Yingli Li",
+            "affiliation": "Colorado State University"
+          }
+        ],
+        "abstract": "Fractional partial differential equations (fPDEs) are powerful tools for modeling anomalous transport and memory-dependent processes, but their numerical solution remains challenging due to the nonlocal nature of fractional operators. While physics-informed neural networks (PINNs) offer a mesh-free alternative for solving PDEs, their fractional counterparts (fPINNs) face critical limitations: (1) high computational cost in evaluating fractional derivatives and (2) loss of solution positivity. To address these challenges, we propose a novel framework that integrates the modified fast L1 (MFL1) algorithm into fPINNs for solving time-fractional convection-diffusion equations, enabling efficient and robust computation of Caputo fractional derivatives, while preserving solution non-negativity—an essential property for physical consistency."
       }
     ],
     sessions: [
       {
-        start: "2025-10-11T17:00:00-05:00",
-        end: "2025-10-11T18:20:00-05:00",
+        start: "2025-10-11T15:30:00-05:00",
+        end: "2025-10-11T16:50:00-05:00",
         talks: [
-          { title: "Numerical solution to the three-dimensional $p$-Laplace equation: Finite difference methods and biological applications", start: "2025-10-11T17:00:00-05:00", end: "2025-10-11T17:20:00-05:00", speakers: [{ name: "Matthias Dogbatsey", affiliation: "The University of Alabama" }] },
-          { title: "Identifying drug targets with a reduced model for competitive inhibitor stimulation", start: "2025-10-11T17:20:00-05:00", end: "2025-10-11T17:40:00-05:00", speakers: [{ name: "Garrett Young", affiliation: "University of Iowa" }] },
-          { title: "Fast Updating of Low-Rank Factorizations", start: "2025-10-11T17:40:00-05:00", end: "2025-10-11T18:00:00-05:00", speakers: [{ name: "Kamrun Nahar Keya", affiliation: "Arizona State University" }] },
-          { title: "Diffusive-interface size-modified Poisson-Boltzmann models: Ion-size effects", start: "2025-10-11T18:00:00-05:00", end: "2025-10-11T18:20:00-05:00", speakers: [{ name: "Md Borhan Uddin", affiliation: "The University of Alabama" }] }
+          { title: "Positive-Preserving fPINNs with Modified Fast L1 Algorithm for Time-Fractional Convection-Diffusion Equations", start: "2025-10-11T15:30:00-05:00", end: "2025-10-11T15:50:00-05:00", speakers: [{ name: "Yingli Li", affiliation: "Colorado State University" }] },
+          { title: "Numerical solution to the three-dimensional $p$-Laplace equation: Finite difference methods and biological applications", start: "2025-10-11T15:50:00-05:00", end: "2025-10-11T16:10:00-05:00", speakers: [{ name: "Matthias Dogbatsey", affiliation: "The University of Alabama" }] },
+          { title: "Identifying drug targets with a reduced model for competitive inhibitor stimulation", start: "2025-10-11T16:10:00-05:00", end: "2025-10-11T16:30:00-05:00", speakers: [{ name: "Garrett Young", affiliation: "University of Iowa" }] },
+          { title: "Fast Updating of Low-Rank Factorizations", start: "2025-10-11T16:30:00-05:00", end: "2025-10-11T16:50:00-05:00", speakers: [{ name: "Kamrun Nahar Keya", affiliation: "Arizona State University" }] }
         ]
       },
       {
-        start: "2025-10-12T10:10:00-05:00",
+        start: "2025-10-11T17:00:00-05:00",
         end: "2025-10-12T11:30:00-05:00",
         talks: [
+          { title: "Diffusive-interface size-modified Poisson-Boltzmann models: Ion-size effects", start: "2025-10-11T17:00:00-05:00", end: "2025-10-11T17:20:00-05:00", speakers: [{ name: "Md Borhan Uddin", affiliation: "The University of Alabama" }] },
           { title: "Improving Model Predictions: ALFFI for In-Depth Uncertainty Analysis in SIR Parameter Estimation", start: "2025-10-12T10:10:00-05:00", end: "2025-10-12T10:30:00-05:00", speakers: [{ name: "Madison Pratt", affiliation: "University of Tennessee, Knoxville" }] },
           { title: "Limiting Strategies for High-Order Discontinuous Galerkin Methods Based on Entropy Dissipation", start: "2025-10-12T10:30:00-05:00", end: "2025-10-12T10:50:00-05:00", speakers: [{ name: "Galiya Myrzabayeva", affiliation: "Iowa State University" }] },
           { title: "Mathematical Modeling of Infectious Disease Dynamics Using SIR and SIRS Frameworks", start: "2025-10-12T10:50:00-05:00", end: "2025-10-12T11:10:00-05:00", speakers: [{ name: "Anjuman Ara Rashid", affiliation: "University of Arkansas, Fayetteville" }] },
