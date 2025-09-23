@@ -273,6 +273,15 @@ export default [
             "affiliation": "TBD"
           }
         ]
+      },
+      {
+        "title": "A second-order accurate, positivity-preserving numerical scheme for the Poisson–Nernst–Planck–Navier–Stokes system",
+        "speakers": [
+          {
+            "name": "Yuzhe Qin",
+            "affiliation": "University of British Columbia"
+          }
+        ]
       }
     ],
     sessions: [
@@ -292,7 +301,8 @@ export default [
         talks: [
           { title: "Mathematical model of how the  immune system fights  a viral infection", start: "2025-10-11T15:30:00-05:00", end: "2025-10-11T15:50:00-05:00", speakers: [{ name: "Benito Chen-Charpentier", affiliation: "University of Texas at Arlington" }] },
           { title: "Numerical studies to the Chaplygin gas equation", start: "2025-10-11T15:50:00-05:00", end: "2025-10-11T16:10:00-05:00", speakers: [{ name: "Ying Wang", affiliation: "University of Oklahoma" }] },
-          { title: "TBD", start: "2025-10-11T16:10:00-05:00", end: "2025-10-11T16:30:00-05:00", speakers: [{ name: "Joanna Held", affiliation: "TBD" }] }
+          { title: "TBD", start: "2025-10-11T16:10:00-05:00", end: "2025-10-11T16:30:00-05:00", speakers: [{ name: "Joanna Held", affiliation: "TBD" }] },
+          { title: "A second-order accurate, positivity-preserving numerical scheme for the Poisson–Nernst–Planck–Navier–Stokes system", start: "2025-10-11T16:30:00-05:00", end: "2025-10-11T16:50:00-05:00", speakers: [{ name: "Yuzhe Qin", affiliation: "University of British Columbia" }] }
         ]
       }
     ]
@@ -1357,9 +1367,9 @@ export default [
       },
       {
         start: "2025-10-11T17:00:00-05:00",
-        end: "2025-10-11T18:00:00-05:00",
+        end: "2025-10-11T18:20:00-05:00",
         talks: [
-          { title: "Parameter-robust operator preconditioning for condensed hybridized systems", start: "2025-10-11T17:00:00-05:00", end: "2025-10-11T17:20:00-05:00", speakers: [{ name: "Jeonghun J. Lee", affiliation: "Baylor University" }] },
+          { title: "Finite element discretization of multiple-network poroelasticity with fluid transfer constraints", start: "2025-10-11T17:00:00-05:00", end: "2025-10-11T17:20:00-05:00", speakers: [{ name: "Jeonghun J. Lee", affiliation: "Baylor University" }] },
           { title: "Error Analysis of An Upwind Weak Galerkin Finite Element Method for Time-Dependent Hyperbolic Problems", start: "2025-10-11T17:20:00-05:00", end: "2025-10-11T17:40:00-05:00", speakers: [{ name: "Saqib Hussain", affiliation: "Texas A&M International University" }] },
           { title: "Semi-Lagrangian Discontinuous Galerkin Methods for Multiscale Vlasov-Poisson Systems", start: "2025-10-11T17:40:00-05:00", end: "2025-10-11T18:00:00-05:00", speakers: [{ name: "Dauda Gambo", affiliation: "Iowa State University" }] },
           { title: "A Dynamic Flux-Based Surrogate Approach to Interface Couplings Involving Full-Order Models and DMD-Based Surrogates", start: "2025-10-11T18:00:00-05:00", end: "2025-10-11T18:20:00-05:00", speakers: [{ name: "Edward Huynh", affiliation: "The University of Texas at Austin" }] }

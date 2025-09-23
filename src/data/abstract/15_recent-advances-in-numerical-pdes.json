@@ -46,17 +46,6 @@
       "_match": "title"
     },
     {
-      "title": "A second-order accurate, positivity-preserving numerical scheme for the Poisson–Nernst–Planck–Navier–Stokes system",
-      "speakers": [
-        {
-          "name": "Yuzhe Qin",
-          "affiliation": "University of British Columbia"
-        }
-      ],
-      "abstract": "Electro-diffusion of ions coupled with fluid motion arises in microfluidics, electrochemistry, and soft matter. I will present a structure-preserving, second-order scheme (in time and space) for the coupled Poisson--Nernst--Planck--Navier--Stokes system. The key idea is to recast the PNP equations as a gradient flow with non-constant mobility within the energetic variational framework, then use a MAC finite-difference discretization in space and a modified Crank-Nicolson with second-order extrapolation in time. Nonlinear regularization in the chemical potential guarantees positivity of concentrations; a semi-implicit treatment of convection and the momentum equations ensures stability without sacrificing accuracy. I will outline proofs of unique solvability, discrete total energy dissipation, and optimal order error bounds, and show benchmarks consistent with the theory. The result is a practical, rigorously analyzed tool for reliably simulating electro-hydrodynamic phenomena.",
-      "_match": "title"
-    },
-    {
       "title": "Semi-Lagrangian Discontinuous Galerkin Methods for Multiscale Vlasov-Poisson Systems",
       "speakers": [
         {
