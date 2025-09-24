@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from "react";
 import { motion } from "framer-motion";
-import { Calendar, CalendarClock, Clock, Filter, MapPin, Users, Search, Download, Globe2 } from "lucide-react";
+import { Calendar, CalendarClock, Clock, Filter, MapPin, Users, Search, Download, Globe2, Home } from "lucide-react";
 import { Link } from 'react-router-dom'
 // Load abstracts to auto-add minisymposia not present in sessions
 const abstractModules = import.meta.glob('./data/abstract/*.json', { eager: true });
@@ -349,6 +349,16 @@ export default function ProgramPage() {
           <div className="flex items-center gap-3">
             <Calendar className="h-6 w-6" />
             <h1 className="text-2xl font-semibold">UARK-SIAM-CSS-25 Conference Program</h1>
+            <a 
+              href="https://siam.uark.edu" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-blue-100 hover:bg-blue-200 transition-colors duration-200"
+              title="Go to UARK SIAM main website"
+              aria-label="Go to UARK SIAM main website"
+            >
+              <Home className="h-4 w-4 text-blue-600" />
+            </a>
           </div>
           <div className="flex flex-col md:flex-row gap-2 md:items-center">
             <div className="flex items-center gap-2">
