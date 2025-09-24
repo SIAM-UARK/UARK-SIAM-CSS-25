@@ -13,9 +13,9 @@ export default [
         start: "2025-10-11T10:10:00-05:00",
         end: "2025-10-11T11:30:00-05:00",
         talks: [
-          { title: "TBD", start: "2025-10-11T10:10:00-05:00", end: "2025-10-11T10:30:00-05:00", speakers: [{ name: "Ngoc T. Do", affiliation: "" }] },
+          { title: "Recovering elastic subdomains with strain-gradient elastic interfaces from force measurements", start: "2025-10-11T10:10:00-05:00", end: "2025-10-11T10:30:00-05:00", speakers: [{ name: "Giovanni Granados", affiliation: "University of North Carolina at Chapel Hill" }] },
           { title: "Numerical solution to the inverse electromagnetic scattering problem for periodic chiral media.", start: "2025-10-11T10:30:00-05:00", end: "2025-10-11T10:50:00-05:00", speakers: [{ name: "Cat Su Tran", affiliation: "Kansas State University" }] },
-          { title: "Recovering elastic subdomains with strain-gradient elastic interfaces from force measurements", start: "2025-10-11T10:50:00-05:00", end: "2025-10-11T11:10:00-05:00", speakers: [{ name: "Giovanni Granados", affiliation: "University of North Carolina at Chapel Hill" }] },
+          { title: "TBD", start: "2025-10-11T10:50:00-05:00", end: "2025-10-11T11:10:00-05:00", speakers: [{ name: "Ngoc T. Do", affiliation: "" }] },
           { title: "Efficient Symmetry-Driven Diffusion Models for Wideband Inverse Scattering", start: "2025-10-11T11:10:00-05:00", end: "2025-10-11T11:30:00-05:00", speakers: [{ name: "Borong Zhang", affiliation: "University of Wisconsin, Madison" }] }
         ]
       },
@@ -521,13 +521,14 @@ export default [
         ]
       },
       {
-        "title": "TBD",
+        "title": "Approximate Solutions for HIV Infection Dynamics via Legendre Collocation",
         "speakers": [
           {
             "name": "Beyza Cetin",
             "affiliation": "Missouri University of Science and Technology"
           }
-        ]
+        ],
+        "abstract": "We propose a Legendre polynomial collocation framework for simulating an HIV infection model that tracks uninfected CD4⁺ T cells, productively infected cells, and free virions. The scheme computes a polynomial approximation of the solution via Legendre collocation and reconstructs the state variables by integrating this approximation consistent with the prescribed initial data. To provide a fair evaluation, we adopt benchmark parameter sets from the literature and compare against the Laplace--Adomian decomposition method, the variational iteration method, the modified VIM , and a classical Runge--Kutta solver. Even at modest polynomial degrees (e.g., N=8), Legendre collocation yields consistently smaller residuals of the governing equations for T, I, and V, and produces trajectories that closely track reference solutions. Accuracy is comparable to or better than competing approaches. These findings support Legendre collocation as a reliable, easy-to-implement alternative for precise simulation and benchmarking of nonlinear ODE systems in virus dynamics."
       }
     ],
     sessions: [
@@ -556,7 +557,7 @@ export default [
         end: "2025-10-11T18:20:00-05:00",
         talks: [
           { title: "Complex Structure in the Endemic Equilibrium Set of an  SIS Epidemic Patch Model with the Mass-Action Infection Mechanism", start: "2025-10-11T17:00:00-05:00", end: "2025-10-11T17:20:00-05:00", speakers: [{ name: "Rachidi Salako", affiliation: "University of Nevada, Las Vegas" }] },
-          { title: "TBD", start: "2025-10-11T17:20:00-05:00", end: "2025-10-11T17:40:00-05:00", speakers: [{ name: "Beyza Cetin", affiliation: "Missouri University of Science and Technology" }] }
+          { title: "Approximate Solutions for HIV Infection Dynamics via Legendre Collocation", start: "2025-10-11T17:20:00-05:00", end: "2025-10-11T17:40:00-05:00", speakers: [{ name: "Beyza Cetin", affiliation: "Missouri University of Science and Technology" }] }
         ]
       }
     ]
