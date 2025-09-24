@@ -9,6 +9,13 @@ import Papa from 'papaparse'
 import rawSessions from "./sessions.js";
 
 // --- Utilities --------------------------------------------------------------
+
+// Case-insensitive search helper
+function caseInsensitiveMatch(query, text) {
+  if (!query || !text) return false;
+  return text.toLowerCase().includes(query.toLowerCase());
+}
+
 const fmtTime = (iso, tz) =>
   new Date(iso).toLocaleTimeString(undefined, {
     hour: "2-digit",
@@ -323,13 +330,13 @@ export default function ProgramPage() {
           talks: s.talks.filter((t) => {
             if (!q) return true;
             const hay = [t.title, ...(t.speakers || []).map((p) => p.name)].join(" ");
-            return hay.includes(q);
+            return caseInsensitiveMatch(q, hay);
           }),
         })),
       }))
       .filter((ms) =>
         q
-          ? [ms.title, ms.organizers.map((o) => o.name).join(" ")].join(" ").includes(q) ||
+          ? caseInsensitiveMatch(q, [ms.title, ms.organizers.map((o) => o.name).join(" ")].join(" ")) ||
             ms.sessions.some((s) => s.talks.length > 0)
           : true
       );
@@ -378,7 +385,7 @@ export default function ProgramPage() {
               <input
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
-                placeholder="Search talks, speakers, organizers…"
+                placeholder="Search talks, speakers, organizers… (case-insensitive)"
                 className="pl-9 pr-3 py-2 rounded-xl border text-sm shadow-sm w-64"
                 aria-label="Search"
               />
