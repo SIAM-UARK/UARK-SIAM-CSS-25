@@ -282,13 +282,14 @@ export default [
         ]
       },
       {
-        "title": "TBD",
+        "title": "Micro-macro decomposition schemes for the kinetic Vlasov system",
         "speakers": [
           {
             "name": "Joanna Held",
-            "affiliation": "TBD"
+            "affiliation": "Iowa State University"
           }
-        ]
+        ],
+        "abstract": "The numerical solution of the Vlasov family of kinetic equations is of interest in plasma physics applications. Modeling these systems present many challenges as they exist in a high-dimensional phase-space plus time. We are interested in applying a micro-macro decomposition method to the Vlasov equation paired with multiple collision operators in order to capture the important effect that collisions have in a plasma. The operators of interest include the famed Bhatnagar–Gross–Krook (BGK), Lenard-Bernstein operator (LBO), and the Fokker-Planck operator. We will walk through the decomposition method and some numerical results."
       },
       {
         "title": "A second-order accurate, positivity-preserving numerical scheme for the Poisson–Nernst–Planck–Navier–Stokes system",
@@ -317,7 +318,7 @@ export default [
         talks: [
           { title: "Mathematical model of how the  immune system fights  a viral infection", start: "2025-10-11T15:30:00-05:00", end: "2025-10-11T15:50:00-05:00", speakers: [{ name: "Benito Chen-Charpentier", affiliation: "University of Texas at Arlington" }] },
           { title: "Numerical studies to the Chaplygin gas equation", start: "2025-10-11T15:50:00-05:00", end: "2025-10-11T16:10:00-05:00", speakers: [{ name: "Ying Wang", affiliation: "University of Oklahoma" }] },
-          { title: "TBD", start: "2025-10-11T16:10:00-05:00", end: "2025-10-11T16:30:00-05:00", speakers: [{ name: "Joanna Held", affiliation: "TBD" }] },
+          { title: "Micro-macro decomposition schemes for the kinetic Vlasov system", start: "2025-10-11T16:10:00-05:00", end: "2025-10-11T16:30:00-05:00", speakers: [{ name: "Joanna Held", affiliation: "Iowa State University" }] },
           { title: "A second-order accurate, positivity-preserving numerical scheme for the Poisson–Nernst–Planck–Navier–Stokes system", start: "2025-10-11T16:30:00-05:00", end: "2025-10-11T16:50:00-05:00", speakers: [{ name: "Yuzhe Qin", affiliation: "University of British Columbia" }] }
         ]
       }
