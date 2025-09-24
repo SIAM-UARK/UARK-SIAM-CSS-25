@@ -951,13 +951,14 @@ export default [
         ]
       },
       {
-        "title": "TBD",
+        "title": "Analyzing Single-cell and Spatial Transcriptomics Data Using Optimal Transport",
         "speakers": [
           {
             "name": "Zixuan Cang",
             "affiliation": "North Carolina State University"
           }
-        ]
+        ],
+        "abstract": "Single-cell and spatial transcriptomics data examines high-throughput gene expression profiles at fine resolutions providing an unprecedented opportunity to elucidate the underlying complex biological processes. Optimal transport has proven to be an effective tool for various applications with such data, such as multi-omics integration. In this talk, we will discuss several optimal transport variants motivated by the biological applications, where there are detailed application-specific constraints, multiple distribution species, and multiple embedding spaces of the same system. We will illustrate the applications of these tools for addressing multi-compatible molecular species in cell-cell communication analysis and devising coherent trajectories of the same biological system from multi-omics datasets."
       },
       {
         "title": "Computational Modeling of Anti-Amyloid-beta Antibody Therapies in Alzheimer's Disease",
@@ -1033,7 +1034,7 @@ export default [
         talks: [
           { title: "Phase Field Modeling of  Dictyostelium Discoideum Chemotaxis", start: "2025-10-11T17:00:00-05:00", end: "2025-10-11T17:20:00-05:00", speakers: [{ name: "Yanxiang Zhao", affiliation: "George Washington University" }] },
           { title: "OTMol: Robust Molecular Structure Comparison via Optimal Transport", start: "2025-10-11T17:20:00-05:00", end: "2025-10-11T17:40:00-05:00", speakers: [{ name: "Xiaoqi Wei", affiliation: "North Carolina State University" }] },
-          { title: "TBD", start: "2025-10-11T17:40:00-05:00", end: "2025-10-11T18:00:00-05:00", speakers: [{ name: "Zixuan Cang", affiliation: "North Carolina State University" }] },
+          { title: "Analyzing Single-cell and Spatial Transcriptomics Data Using Optimal Transport", start: "2025-10-11T17:40:00-05:00", end: "2025-10-11T18:00:00-05:00", speakers: [{ name: "Zixuan Cang", affiliation: "North Carolina State University" }] },
           { title: "Computational Modeling of Anti-Amyloid-beta Antibody Therapies in Alzheimer's Disease", start: "2025-10-11T18:00:00-05:00", end: "2025-10-11T18:20:00-05:00", speakers: [{ name: "Lida Rabiei", affiliation: "Pennsylvania State University" }] }
         ]
       },
