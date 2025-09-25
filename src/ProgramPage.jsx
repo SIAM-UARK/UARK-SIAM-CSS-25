@@ -533,7 +533,10 @@ export default function ProgramPage() {
       </main>
 
       <footer className="max-w-6xl mx-auto px-4 py-10 text-sm text-neutral-500">
-        © {new Date().getFullYear()} Your Conference. Program subject to change.
+        <div className="text-center space-y-2">
+          <div className="text-base font-medium text-neutral-700">The 10th Annual Meeting of SIAM CSS at the University of Arkansas</div>
+          <div>© {new Date().getFullYear()} The Department of Mathematical Sciences at the University of Arkansas. </div>
+        </div>
       </footer>
     </div>
   );

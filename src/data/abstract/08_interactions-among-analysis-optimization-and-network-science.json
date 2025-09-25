@@ -154,6 +154,17 @@
       ],
       "abstract": "We cast continuous glucose monitoring (CGM) as a partially observed dynamical system and detect meals by testing for transient instability in a windowed Koopman approximation. Using a delay embedding to recover state from a single output, we perform Dynamic Mode Decomposition (DMD) on sliding windows: form $X_t,Y_t$ from snapshot pairs, compute a rank-$r$ SVD, and estimate the compressed propagator. Meal events manifest as growth modes with spectral radius $\\rho(\\Lambda)>1$, while mode shapes $\\Phi$ encode prandial magnitude. We model meal probability via a regularized classifier on short eigenvalue trajectories, enabling early decisions (10--15 minutes) from CGM alone, with population-level tuning and no subject-specific parameters. On in-silico UVA/Padova cohorts and two clinical datasets, the approach attains higher recall at shorter detection windows than a clinically validated baseline, with reduced latency. We discuss identifiability under noise, rank selection as a bias--variance trade-off, and how operator-theoretic features interface with closed-loop optimization. This highlights how advanced analysis (Koopman/DMD) and modest optimization (regularized classification) deliver deployable, interpretable signals for automated insulin delivery.",
       "_match": "title"
+    },
+    {
+      "title": "Modulus of families of measures and its applications",
+      "speakers": [
+        {
+          "name": "Hrant Hakobyan",
+          "affiliation": "Kansas State University"
+        }
+      ],
+      "abstract": "In this talk we will describe the notion of the modulus of families of measures and illustrate some of its applications in geometric mapping theory, including estimates of conformal dimension of certain random and deterministic fractals.",
+      "_match": "title"
     }
   ]
 }

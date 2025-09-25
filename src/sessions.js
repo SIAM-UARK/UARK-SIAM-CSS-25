@@ -566,7 +566,7 @@ export default [
   {
     "minisymposium_title": "Interactions among analysis optimization and network science",
     "organizers": [
-      { "name": "Nathan Albin", "affiliation": "University of Tennessee"},
+      { "name": "Nathan Albin", "affiliation": "Kansas State University"},
       { "name": "Joan Lind", "affiliation": "University of Tennessee"},
       { "name": "Pietro Poggi-Corradini", "affiliation": "Kansas State University"}
     ],
@@ -699,6 +699,15 @@ export default [
             "affiliation": "School of Data Science, University of Virginia"
           }
         ]
+      },
+      {
+        "title": "Modulus of families of measures and its applications",
+        "speakers": [
+          {
+            "name": "Hrant Hakobyan",
+            "affiliation": "Kansas State University"
+          }
+        ]
       }
     ],
     sessions: [
@@ -734,10 +743,11 @@ export default [
       },
       {
         start: "2025-10-12T10:10:00-05:00",
-        end: "2025-10-12T10:50:00-05:00",
+        end: "2025-10-12T11:10:00-05:00",
         talks: [
           { title: "Large Deviations of Dyson-type Diffusions and Multiradial SLE(0+)", start: "2025-10-12T10:10:00-05:00", end: "2025-10-12T10:30:00-05:00", speakers: [{ name: "Vivian Olsiewski Healey", affiliation: "Texas State University" }] },
-          { title: "Modulus of hypertrees", start: "2025-10-12T10:30:00-05:00", end: "2025-10-12T10:50:00-05:00", speakers: [{ name: "Huy Truong", affiliation: "Kansas State University" }] }
+          { title: "Modulus of hypertrees", start: "2025-10-12T10:30:00-05:00", end: "2025-10-12T10:50:00-05:00", speakers: [{ name: "Huy Truong", affiliation: "Kansas State University" }] },
+          { title: "Modulus of families of measures and its applications", start: "2025-10-12T10:50:00-05:00", end: "2025-10-12T11:10:00-05:00", speakers: [{ name: "Hrant Hakobyan", affiliation: "Kansas State University" }] }
         ]
       }
     ]
@@ -745,7 +755,8 @@ export default [
   {
     "minisymposium_title": "Mathematical Advances and Applications for High-Fidelity Numerical",
     "organizers": [
-      { "name": "Yonghua Yan", "affiliation": "Jackson State University"}
+      { "name": "Yonghua Yan", "affiliation": "Jackson State University"},
+      { "name": "Yong Yang", "affiliation": "West Texas A&M University"}
     ],
     day: "",
     room: "",

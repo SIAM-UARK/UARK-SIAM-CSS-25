@@ -68,6 +68,17 @@
       "_match": "title"
     },
     {
+      "title": "Micro-macro decomposition schemes for the kinetic Vlasov system",
+      "speakers": [
+        {
+          "name": "Joanna Held",
+          "affiliation": "Iowa State University"
+        }
+      ],
+      "abstract": "The numerical solution of the Vlasov family of kinetic equations is of interest in plasma physics applications. Modeling these systems present many challenges as they exist in a high-dimensional phase-space plus time. We are interested in applying a micro-macro decomposition method to the Vlasov equation paired with multiple collision operators in order to capture the important effect that collisions have in a plasma. The operators of interest include the famed Bhatnagar–Gross–Krook (BGK), Lenard-Bernstein operator (LBO), and the Fokker-Planck operator. We will walk through the decomposition method and some numerical results.",
+      "_match": "title"
+    },
+    {
       "title": "A second-order accurate, positivity-preserving numerical scheme for the Poisson–Nernst–Planck–Navier–Stokes system",
       "speakers": [
         {
