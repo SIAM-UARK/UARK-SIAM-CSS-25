@@ -359,6 +359,20 @@ export default function ProgramPage() {
             >
               <Home className="h-4 w-4 text-blue-600" />
             </a>
+            <Link
+              to="/participants"
+              className="ml-2 text-sm text-blue-700 hover:underline"
+              aria-label="Go to Participants"
+            >
+              View Participants
+            </Link>
+            <Link
+              to="/posters"
+              className="ml-2 text-sm text-blue-700 hover:underline"
+              aria-label="Go to Posters"
+            >
+              View Posters
+            </Link>
           </div>
           <div className="flex flex-col md:flex-row gap-2 md:items-center">
             <div className="flex items-center gap-2">

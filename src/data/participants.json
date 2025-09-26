@@ -1,0 +1,766 @@
+[
+  {
+    "name": "Irina Afanasyeva",
+    "affiliation": "University Of Arkansas"
+  },
+  {
+    "name": "Folashade B. Agusto",
+    "affiliation": "University Of Kansas"
+  },
+  {
+    "name": "Ahmed Al-taweel",
+    "affiliation": "Georgia Southern University"
+  },
+  {
+    "name": "Nathan Albin",
+    "affiliation": "Kansas State University"
+  },
+  {
+    "name": "Nisa Aliyeva",
+    "affiliation": "University Of Arkansas; University Of Arizona"
+  },
+  {
+    "name": "Sreejtih Nadakkal Appukuttan",
+    "affiliation": "National Renewable Energy Laboratory"
+  },
+  {
+    "name": "Mustafa Sencer Aydın",
+    "affiliation": "University Of Southern California"
+  },
+  {
+    "name": "Abhishek Balakrishna",
+    "affiliation": "University Of Southern California"
+  },
+  {
+    "name": "James Burton",
+    "affiliation": "University Of Arkansas"
+  },
+  {
+    "name": "Zixuan Cang",
+    "affiliation": "North Carolina State University"
+  },
+  {
+    "name": "Shuhao Cao",
+    "affiliation": "University of Missouri-Kansas City"
+  },
+  {
+    "name": "Luca Capogna",
+    "affiliation": "Smith College"
+  },
+  {
+    "name": "Beyza Cetin",
+    "affiliation": "Missouri University Of Science and Technology"
+  },
+  {
+    "name": "Caixia Chen",
+    "affiliation": "Jackson State University"
+  },
+  {
+    "name": "Dongwei Chen",
+    "affiliation": "Colorado State University"
+  },
+  {
+    "name": "Qifan Chen",
+    "affiliation": "The Ohio State University"
+  },
+  {
+    "name": "Zhan Chen",
+    "affiliation": "Georgia Southern University"
+  },
+  {
+    "name": "Ziyue Chen",
+    "affiliation": "Iowa State University"
+  },
+  {
+    "name": "Benito Chen-Charpentier",
+    "affiliation": "University Of Texas At Arlington"
+  },
+  {
+    "name": "Siu Wun Cheung",
+    "affiliation": "Lawrence Livermore National Laboratory"
+  },
+  {
+    "name": "Daniel Cooney",
+    "affiliation": "University Of Illinois Urbana-champaign"
+  },
+  {
+    "name": "Kiel Corkran",
+    "affiliation": "University Of Missouri-kansas City"
+  },
+  {
+    "name": "Baris Coskunuzer",
+    "affiliation": "University Of Texas At Dallas"
+  },
+  {
+    "name": "Rodica Curtu",
+    "affiliation": "Michigan Technological University"
+  },
+  {
+    "name": "Shibin Dai",
+    "affiliation": "The University Of Alabama"
+  },
+  {
+    "name": "Haridas Das",
+    "affiliation": "Oklahoma State University"
+  },
+  {
+    "name": "Marc Day",
+    "affiliation": "National Renewable Energy Laboratory"
+  },
+  {
+    "name": "Nicholas Deak",
+    "affiliation": "National Renewable Energy Laboratory"
+  },
+  {
+    "name": "Maria Deliyianni",
+    "affiliation": "University Of Arizona"
+  },
+  {
+    "name": "Tong Ding",
+    "affiliation": "Purdue Univeristy"
+  },
+  {
+    "name": "Ngoc T. Do",
+    "affiliation": "Missouri State University"
+  },
+  {
+    "name": "Matthias Dogbatsey",
+    "affiliation": "The University Of Alabama"
+  },
+  {
+    "name": "Xiaosong Du",
+    "affiliation": "Missouri University Of Science and Technology"
+  },
+  {
+    "name": "Maria Fernanda \"fer\" Mayorga Echeverria",
+    "affiliation": "University Of Arkansas"
+  },
+  {
+    "name": "Hongsong Feng",
+    "affiliation": "University Of North Carolina At Charlotte"
+  },
+  {
+    "name": "Dauda Gambo",
+    "affiliation": "Iowa State University"
+  },
+  {
+    "name": "Nikita Gautam",
+    "affiliation": "Kansas State University"
+  },
+  {
+    "name": "Weihua Geng",
+    "affiliation": "Southern Methodist University"
+  },
+  {
+    "name": "Lukas Geyer",
+    "affiliation": "Montana State University"
+  },
+  {
+    "name": "Seyed Mohammad Hossein Goushehgir",
+    "affiliation": "Missouri University Of Science and Technology"
+  },
+  {
+    "name": "Kanishka Goyal",
+    "affiliation": "Iowa State University"
+  },
+  {
+    "name": "Govanni Granados",
+    "affiliation": "University Of North Carolina At Chapel Hill"
+  },
+  {
+    "name": "Alex Grigo",
+    "affiliation": "University Of Oklahoma"
+  },
+  {
+    "name": "Pamela Guerrero",
+    "affiliation": "University Of Tennessee At Martin"
+  },
+  {
+    "name": "Hrant Hakobyan",
+    "affiliation": "Kansas State University"
+  },
+  {
+    "name": "Frank D. Han",
+    "affiliation": "Missouri University Of Science and Technology"
+  },
+  {
+    "name": "Xiaoming He",
+    "affiliation": "Missouri University Of Science and Technology"
+  },
+  {
+    "name": "Vivian Olsiewski Healey",
+    "affiliation": "Texas State University"
+  },
+  {
+    "name": "Joanna Held",
+    "affiliation": "Iowa State University"
+  },
+  {
+    "name": "Qingguo Hong",
+    "affiliation": "Missouri University Of Science and Technology"
+  },
+  {
+    "name": "Saman Hosseini",
+    "affiliation": "Kansas State University"
+  },
+  {
+    "name": "Alex Hsu",
+    "affiliation": "Purdue University"
+  },
+  {
+    "name": "Weizhang Huang",
+    "affiliation": "Department Of Mathematics, University Of Kansas"
+  },
+  {
+    "name": "Weizhang Huang",
+    "affiliation": "University Of Kansas"
+  },
+  {
+    "name": "Saqib Hussain",
+    "affiliation": "Texas A&m International University"
+  },
+  {
+    "name": "Edward Huynh",
+    "affiliation": "The University Of Texas At Austin"
+  },
+  {
+    "name": "Krešimir Josić",
+    "affiliation": "University Of Houston"
+  },
+  {
+    "name": "Tulin Kaman",
+    "affiliation": "University Of Zurich and University Of Arkansas",
+    "localOrganizer": true
+  },
+  {
+    "name": "Chamika Kankanamge",
+    "affiliation": "Phd Student"
+  },
+  {
+    "name": "Kamrun Nahar Keya",
+    "affiliation": "Arizona State University"
+  },
+  {
+    "name": "Zachary Kilpatrick",
+    "affiliation": "University Of Colorado Boulder"
+  },
+  {
+    "name": "Changho Kim",
+    "affiliation": "University Of California, Merced"
+  },
+  {
+    "name": "Hyunjoong Kim",
+    "affiliation": "University Of Cincinnati"
+  },
+  {
+    "name": "Aravinth Krishnan",
+    "affiliation": "Kansas State University"
+  },
+  {
+    "name": "Ty Kroells",
+    "affiliation": "Iowa St University"
+  },
+  {
+    "name": "Igor Kukavica",
+    "affiliation": "University Of Southern California"
+  },
+  {
+    "name": "Rongjie Lai",
+    "affiliation": "Purdue University"
+  },
+  {
+    "name": "Quanjun Lang",
+    "affiliation": "Duke University"
+  },
+  {
+    "name": "Arash Latifi",
+    "affiliation": "Kansas State University"
+  },
+  {
+    "name": "Thu Le",
+    "affiliation": "University Of Wisconsin–madison"
+  },
+  {
+    "name": "Jeonghun J. Lee",
+    "affiliation": "Baylor University"
+  },
+  {
+    "name": "Wonjun Lee",
+    "affiliation": "The Ohio State University"
+  },
+  {
+    "name": "Qianyi Li",
+    "affiliation": "Iowa State University"
+  },
+  {
+    "name": "Shuwang Li",
+    "affiliation": "Illinois Institute Of Technology"
+  },
+  {
+    "name": "Xiaofan Li",
+    "affiliation": "Illinois Institute Of Technology"
+  },
+  {
+    "name": "Yingli Li",
+    "affiliation": "Colorado State University"
+  },
+  {
+    "name": "Ying Liang",
+    "affiliation": "Duke University"
+  },
+  {
+    "name": "Chunyang Liao",
+    "affiliation": "University Of California, Los Angeles"
+  },
+  {
+    "name": "Youzou Lin",
+    "affiliation": "Unc-chapel Hill"
+  },
+  {
+    "name": "Joan Lind",
+    "affiliation": "University Of Tennessee"
+  },
+  {
+    "name": "James Liu",
+    "affiliation": "Colorado State University"
+  },
+  {
+    "name": "Liangchen Liu",
+    "affiliation": "The University Of Texas At Austin"
+  },
+  {
+    "name": "Pengyu (peter) Liu",
+    "affiliation": "University Of Rhode Island"
+  },
+  {
+    "name": "Longting Luo",
+    "affiliation": "Iowa State University"
+  },
+  {
+    "name": "Songting Luo",
+    "affiliation": "Iowa State University"
+  },
+  {
+    "name": "Toai Luong",
+    "affiliation": "Virginia Commonwealth University"
+  },
+  {
+    "name": "Cheng Ly",
+    "affiliation": "Virginia Commonwealth University"
+  },
+  {
+    "name": "Emily Hendryx Lyons",
+    "affiliation": "University Of Central Oklahoma"
+  },
+  {
+    "name": "Rasika Mahawattege",
+    "affiliation": "University Of Maryland Baltimore County"
+  },
+  {
+    "name": "Matin Marjani",
+    "affiliation": "Kansas State University"
+  },
+  {
+    "name": "Anastasios Matzavinos",
+    "affiliation": "Pontifical Catholic University Of Chile"
+  },
+  {
+    "name": "Haroun Meghaichi",
+    "affiliation": "The Ohio State University"
+  },
+  {
+    "name": "Shixu Meng",
+    "affiliation": "The University Of Texas At Dallas"
+  },
+  {
+    "name": "David Montgomery",
+    "affiliation": "National Renewable Energy Laboratory"
+  },
+  {
+    "name": "Chul Moon",
+    "affiliation": "Southern Methodist University"
+  },
+  {
+    "name": "Ian Morgan",
+    "affiliation": "Iowa State University"
+  },
+  {
+    "name": "Ian T. Morgan",
+    "affiliation": "Iowa State University"
+  },
+  {
+    "name": "Changhong Mou",
+    "affiliation": "Utah State University"
+  },
+  {
+    "name": "Lin Mu",
+    "affiliation": "University Of Georgia"
+  },
+  {
+    "name": "Phylis Njeri Muniu",
+    "affiliation": "University Of Kansas"
+  },
+  {
+    "name": "Phyllis Muniu",
+    "affiliation": "University Of Kansas"
+  },
+  {
+    "name": "Galiya Myrzabayeva",
+    "affiliation": "Iowa State University"
+  },
+  {
+    "name": "Anjali Nair",
+    "affiliation": "University Of Chicago"
+  },
+  {
+    "name": "Farzana Nasrin",
+    "affiliation": "University Of Tennessee"
+  },
+  {
+    "name": "Dinh-liem Nguyen",
+    "affiliation": "Kansas State University"
+  },
+  {
+    "name": "Thang Nguyen",
+    "affiliation": "New Mexico State University"
+  },
+  {
+    "name": "Trung Nguyen",
+    "affiliation": "University Of Tennessee, Knoxville"
+  },
+  {
+    "name": "Brighton Nuwagira",
+    "affiliation": "University Of Texas At Dallas"
+  },
+  {
+    "name": "Dalton Oxford",
+    "affiliation": "University Of Arkansas"
+  },
+  {
+    "name": "Rana Parshad",
+    "affiliation": "Iowa State University"
+  },
+  {
+    "name": "David Pechersky",
+    "affiliation": "Beijing Institute Of Mathematical Sciences and Applications (BIMSA)"
+  },
+  {
+    "name": "Bruce A Perry",
+    "affiliation": "National Renewable Energy Laboratory"
+  },
+  {
+    "name": "Pietro Poggi-corradini",
+    "affiliation": "Kansas State University"
+  },
+  {
+    "name": "Sara Pollock",
+    "affiliation": "University Of Florida"
+  },
+  {
+    "name": "Madison Pratt",
+    "affiliation": "University Of Tennessee, Knoxville"
+  },
+  {
+    "name": "Shuhuai Qin",
+    "affiliation": "Colorado State University"
+  },
+  {
+    "name": "Yuzhe Qin",
+    "affiliation": "University Of British Columbia"
+  },
+  {
+    "name": "Lida Rabiei",
+    "affiliation": "Pennsylvania State University"
+  },
+  {
+    "name": "Abba Ramadan",
+    "affiliation": "The University Of Alabama"
+  },
+  {
+    "name": "Md Masud Rana",
+    "affiliation": "Kennesaw State University"
+  },
+  {
+    "name": "Anjuman Ara Rashid",
+    "affiliation": "University Of Arkansas, Fayetteville"
+  },
+  {
+    "name": "Aravinth Ravi",
+    "affiliation": "Kansas State Univeristy"
+  },
+  {
+    "name": "Jorge Reyes",
+    "affiliation": "Virginia Tech"
+  },
+  {
+    "name": "James Rossmanith",
+    "affiliation": "Iowa State University"
+  },
+  {
+    "name": "Madhumita Roy",
+    "affiliation": "North Carolina State University"
+  },
+  {
+    "name": "Barsha Saha",
+    "affiliation": "University Of Missouri-kansas City"
+  },
+  {
+    "name": "Rachidi Salako",
+    "affiliation": "University Of Nevada, Las Vegas"
+  },
+  {
+    "name": "Mohammad Hossein Samaei",
+    "affiliation": "Kansas State University"
+  },
+  {
+    "name": "Heman Shakeri",
+    "affiliation": "School Of Data Science, University Of Virginia"
+  },
+  {
+    "name": "Natasha S. Sharma",
+    "affiliation": "The University Of Texas At El Paso"
+  },
+  {
+    "name": "Zhaiming Shen",
+    "affiliation": "Georgia Institute Of Technology"
+  },
+  {
+    "name": "Woodrow L. Shew",
+    "affiliation": "University Of Arkansas"
+  },
+  {
+    "name": "Ji Shi",
+    "affiliation": "University Of Houston"
+  },
+  {
+    "name": "Hari Sitaraman",
+    "affiliation": ""
+  },
+  {
+    "name": "Zilong Song",
+    "affiliation": "Utah State University"
+  },
+  {
+    "name": "Sam Sooter",
+    "affiliation": "University Of Arkansas"
+  },
+  {
+    "name": "Gareth Speight",
+    "affiliation": "University Of Cincinnati"
+  },
+  {
+    "name": "Zhe Su",
+    "affiliation": "Auburn University"
+  },
+  {
+    "name": "Jiguang Sun",
+    "affiliation": "Michigan Technological University"
+  },
+  {
+    "name": "Zheng Sun",
+    "affiliation": "The University Of Alabama"
+  },
+  {
+    "name": "Joey Takei",
+    "affiliation": "Yale University"
+  },
+  {
+    "name": "T Taneja",
+    "affiliation": "University Of Minnesota"
+  },
+  {
+    "name": "Cat Su Tran",
+    "affiliation": "Kansas State University"
+  },
+  {
+    "name": "Lan Trinh",
+    "affiliation": "Tulane University"
+  },
+  {
+    "name": "Huy Truong",
+    "affiliation": "Kansas State University"
+  },
+  {
+    "name": "Md Borhan Uddin",
+    "affiliation": "The University Of Alabama"
+  },
+  {
+    "name": "Urvashi Verma",
+    "affiliation": "Iowa State University"
+  },
+  {
+    "name": "Xiang Wan",
+    "affiliation": "Loyola University Chicago"
+  },
+  {
+    "name": "Dixi Wang",
+    "affiliation": "Purdue University"
+  },
+  {
+    "name": "Jingfeng Wang",
+    "affiliation": "North Carolina State University"
+  },
+  {
+    "name": "Taige Wang",
+    "affiliation": "University Of Cincinnati"
+  },
+  {
+    "name": "Ying Wang",
+    "affiliation": "University Of Oklahoma"
+  },
+  {
+    "name": "Yiran Wang",
+    "affiliation": "The University Of Alabama"
+  },
+  {
+    "name": "Zhuoran Wang",
+    "affiliation": "University Of Kansas"
+  },
+  {
+    "name": "Justin T. Webster",
+    "affiliation": "University Of Maryland, Baltimore County"
+  },
+  {
+    "name": "Xiaoqi Wei",
+    "affiliation": "North Carolina State University"
+  },
+  {
+    "name": "Calvin Wong",
+    "affiliation": "The University Of Tennessee, Knoxville"
+  },
+  {
+    "name": "Qiliang Wu",
+    "affiliation": "Ohio University"
+  },
+  {
+    "name": "Xingjian Xu",
+    "affiliation": "University Of Florida"
+  },
+  {
+    "name": "Ziyao Xu",
+    "affiliation": "Binghamton University"
+  },
+  {
+    "name": "Bani Yaghoub",
+    "affiliation": "University Of Missouri-kansas City"
+  },
+  {
+    "name": "Jue Yan",
+    "affiliation": "Iowa State University"
+  },
+  {
+    "name": "Yonghua Yan",
+    "affiliation": "Jackson State University"
+  },
+  {
+    "name": "Xiaofeng Yang",
+    "affiliation": "University Of South Carolina"
+  },
+  {
+    "name": "Yong Yang",
+    "affiliation": "West Texas A&m University"
+  },
+  {
+    "name": "Emmanuel Yangue",
+    "affiliation": "Oklahoma State University"
+  },
+  {
+    "name": "Shashank Yellapantula",
+    "affiliation": "National Renewable Energy Laboratory"
+  },
+  {
+    "name": "Garrett Young",
+    "affiliation": "University Of Iowa"
+  },
+  {
+    "name": "Pengtao Yue",
+    "affiliation": "Virginia Tech"
+  },
+  {
+    "name": "Vladimir Yushutin",
+    "affiliation": "University Of Tennessee, Knoxville"
+  },
+  {
+    "name": "Zachary Zerbe",
+    "affiliation": "Brookhaven National Laboratory"
+  },
+  {
+    "name": "Borong Zhang",
+    "affiliation": "University Of Wisconsin, Madison"
+  },
+  {
+    "name": "Sichong Zhang",
+    "affiliation": "Johns Hopkins University"
+  },
+  {
+    "name": "Xu Zhang",
+    "affiliation": "Oklahoma State University"
+  },
+  {
+    "name": "Zhiwei Zhang",
+    "affiliation": "Illinois Institute Of Technology"
+  },
+  {
+    "name": "Ziyang Zhang",
+    "affiliation": "Oklahoma State Unversity"
+  },
+  {
+    "name": "Jia Zhao",
+    "affiliation": "University Of Alabama"
+  },
+  {
+    "name": "Shan Zhao",
+    "affiliation": "The University Of Alabama"
+  },
+  {
+    "name": "Yanxiang Zhao",
+    "affiliation": "George Washington University"
+  },
+  {
+    "name": "Changfeng Zhou",
+    "affiliation": "University Of Cincinnati"
+  },
+  {
+    "name": "Wei Zhu",
+    "affiliation": "University Of Alabama"
+  },
+  {
+    "name": "Qiao Zhuang",
+    "affiliation": "University Of Missouri-kansas City"
+  },
+  {
+    "name": "Ahmed Zytoon",
+    "affiliation": "Oklahoma State University"
+  }
+  ,
+  {
+    "name": "Beatrice Riviere",
+    "affiliation": "Rice University",
+    "plenary": true
+  },
+  {
+    "name": "Irena Lasiecka",
+    "affiliation": "University of Memphis",
+    "plenary": true
+  },
+  {
+    "name": "Xiu Ye",
+    "affiliation": "University of Arkansas at Little Rock",
+    "plenary": true
+  },
+  {
+    "name": "Zachary Bradshaw",
+    "affiliation": "University Of Arkansas",
+    "localOrganizer": true
+  },
+  {
+    "name": "Jiahui Chen",
+    "affiliation": "University Of Arkansas",
+    "localOrganizer": true
+  },
+  {
+    "name": "Chen Liu",
+    "affiliation": "University Of Arkansas",
+    "localOrganizer": true
+  }
+]

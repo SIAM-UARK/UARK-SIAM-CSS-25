@@ -15,7 +15,7 @@ export default [
         talks: [
           { title: "Recovering elastic subdomains with strain-gradient elastic interfaces from force measurements", start: "2025-10-11T10:10:00-05:00", end: "2025-10-11T10:30:00-05:00", speakers: [{ name: "Giovanni Granados", affiliation: "University of North Carolina at Chapel Hill" }] },
           { title: "Numerical solution to the inverse electromagnetic scattering problem for periodic chiral media.", start: "2025-10-11T10:30:00-05:00", end: "2025-10-11T10:50:00-05:00", speakers: [{ name: "Cat Su Tran", affiliation: "Kansas State University" }] },
-          { title: "TBD", start: "2025-10-11T10:50:00-05:00", end: "2025-10-11T11:10:00-05:00", speakers: [{ name: "Ngoc T. Do", affiliation: "" }] },
+          { title: "Analysis for Full Field Inversion of the Attenuated Wave Equation", start: "2025-10-11T10:50:00-05:00", end: "2025-10-11T11:10:00-05:00", speakers: [{ name: "Ngoc T. Do", affiliation: "Missouri State University" }] },
           { title: "Efficient Symmetry-Driven Diffusion Models for Wideband Inverse Scattering", start: "2025-10-11T11:10:00-05:00", end: "2025-10-11T11:30:00-05:00", speakers: [{ name: "Borong Zhang", affiliation: "University of Wisconsin, Madison" }] }
         ]
       },

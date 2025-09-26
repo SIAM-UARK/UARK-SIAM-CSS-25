@@ -1,0 +1,194 @@
+[
+  {
+    "minisymposium_title": "Posters",
+    "talks": [
+      {
+        "title": "Towards improved pest management of the  soybean aphid",
+        "speakers": [
+          {
+            "name": "Urvashi Verma",
+            "affiliation": "Iowa State University",
+            "email": "uverma@iastate.edu"
+          }
+        ],
+        "abstract": "The soybean aphid is an invasive insect pest that continues to cause large-scale damage to soybean crops in the North Central United States. The poster is based on a manuscript and will include several mathematical models for the top-down bio-control of the aphid, as well as control via pesticides and neonicotinoids. The models are motivated empirically and constructed based on laboratory experiments conducted to test the control of aphids by green lacewing larvae, as well as by a parasitic wasp. The effectiveness of these models is compared by taking into account factors such as economic injury levels for soybeans, life history traits such as cannibalism amongst the predator, and intraguild predation between competing bio-control agents such as predators and parasitoids. The models predict multiple population peaks and transient chaotic dynamics when a predator and/or insecticides are used. It is observed that parasitoids, in conjunction with predators, are more efficient at stabilizing the population dynamics than insecticide use. The models also qualitatively capture the features seen in long-time field data from 2000-2013. We discuss applications of our results to pest management strategies for soybean aphids in the context of a changing climate, as well as regime shifts."
+      },
+      {
+        "title": "Multiplicity of Laplacian eigenvalues that can be represented by sum of two squares using number theory",
+        "speakers": [
+          {
+            "name": "Changfeng Zhou",
+            "affiliation": "University of Cincinnati",
+            "email": "zhoucf@mail.uc.edu"
+          }
+        ],
+        "abstract": "In this article, we use results of Number Theory to prove the conjecture on eigenvalue problem of a 2D elliptic PDE proposed by P. Korman in his recent paper \\cite{ref}: for any even integer $2k$, one can find an eigenvalue $N$ that can be represented as $N=a^{2}+b^{2}$, with integers $a\\neq b$ with multiplicity $2k$, while for any odd integer $2k + 1$, one can find an integer $M$ that can be represented as $M=a^{2}+b^{2}$ with $a\\neq b$ and multiplicity $2k+1$. In addition, the manuscript gives the formula to find those $N$'s."
+      },
+      {
+        "title": "A Study of the Regularized Gardner Equation",
+        "speakers": [
+          {
+            "name": "Pamela Guerrero",
+            "affiliation": "University of Tennessee at Martin",
+            "email": "pguerrer@utm.edu"
+          }
+        ],
+        "abstract": "Well posedness issues for the generalized BBM type equation, $u_t+u_x+uu_x+f(u)_x-u_{xxt}=0$ where $f(u)$ is a polynomial function of degree $n$, are discussed here, including the corresponding norm bounds on the growth of the solution. This class of equations includes the regularized long wave equation, oftentimes referred to as the BBM equation, and the regularized Gardner equation.  These types of equations have applications as models of wave phenomena including unidirectional water waves, long waves, and plasma physics.   The corresponding initial value problem is shown to be well posed, depending on the regularity of the initial data."
+      },
+      {
+        "title": "Disproof-Based Mechanistic Models in Science: The Case of the Classic Logistic Equation vs the Finke-Watzky 2-Step Chemical Mechanism and Population-Balance Modeling",
+        "speakers": [
+          {
+            "name": "Nisa Aliyeva",
+            "affiliation": "University of Arkansas; University of Arizona",
+            "email": "naliyeva@uark.edu"
+          }
+        ],
+        "abstract": "Protein aggregation refers to the pathological process in which mutated or improperly folded proteins accumulate and form aggregates, leading to neurodegenerative diseases such as Alzheimer's, Parkinson's, and amyotrophic lateral sclerosis.This study compares and connects three key modeling approaches for protein aggregation: the classic logistic growth model, the Finke-Watzky (FW) 2-step kinetic mechanism, and population balance modeling (PBM). We analyzed each of these methods by fitting the data to both logistic and Finke-Watzky (FW) 2-step kinetic mechanism and we found that there is strong agreement between the models. As a result, we showed that we are able to replicate the results derived from Finke-Watzky 2 Step (logistic) model by using the PBM model."
+      },
+      {
+        "title": "fPINN for time-fractional Black Scholes in option pricing",
+        "speakers": [
+          {
+            "name": "Shuhuai Qin",
+            "affiliation": "Colorado State University",
+            "email": "shuhuai.qin@colostate.edu"
+          }
+        ],
+        "abstract": "Physics-informed neural networks (PINNs) provide a mesh-free framework that embeds governing differential equations directly into a neural-network loss function, yielding closed-form surrogates that satisfy both data fidelity and physical laws. In the classical setting we train a PINN to approximate the European call-price surface C(S,t) governed by the Black–Scholes partial differential equation (PDE). The network minimises a composite objective comprising (i) a supervised mean-squared error on observed or synthetic option quotes and (ii) a mean-squared residual of the Black–Scholes operator, evaluated at randomly sampled collocation points. Automatic differentiation supplies first- and second-order derivatives. Numerical experiments were done on S&P 500 and AAPL option data.\n\nThe poster also include an extension: time-fractional Black–Scholes (tfBS) model, in which the first-order time derivative is replaced by a Caputo derivative of order α∈(0,1), capturing long-memory effects and subdiffusive asset dynamics. The resulting integro-differential operator is handled via the fractional PINN (fPINN) paradigm: integer-order spatial derivatives are computed by automatic differentiation, while the Caputo term is approximated by an L1 convolution quadrature embedded directly into the loss."
+      },
+      {
+        "title": "Analyzing Zoonotic Spillover Risk Under Extreme Weather Events: Using a Combination of Deterministic and Stochastic Lotka-Volterra Modelling Approach",
+        "speakers": [
+          {
+            "name": "Barsha Saha",
+            "affiliation": "University of Missouri-Kansas City",
+            "email": "bsfmt@umkc.edu"
+          }
+        ],
+        "abstract": "Extreme weather events—both acute and chronic—can fundamentally reshape ecological dynamics by altering species interactions, promoting competitive imbalances, and increasing the risk of extinction or dominance. Recent studies show increased urban rodent populations in the U.S., driven by warming and urbanization, raising public health concerns due to their role as reservoirs in zoonotic transmission. To investigate how climate disturbances influence reservoir dominance and spillover risk, we develop a stochastic Competitive Lotka–Volterra (CLV) model.  Our system is parameterized to exhibit Zeeman's Class 27 dynamics, which support heteroclinic coexistence through multiple limit cycles. The model incorporates white noise (seasonal fluctuations), and Lévy jumps (extreme shocks) to capture climate-induced variability. We establish the existence, positivity, and boundedness of global solutions and derive sufficient conditions for species persistence and extinction under both noises. Numerical simulations reveal how varying noise and jump intensities drive transitions between coexistence, dominance, and collapse. We further integrate a spatial spillover framework to quantify pathogen exposure under shifting ecological regimes. This study links ecological stability with public health risk, offering insights into the impact of climate-driven disturbances on zoonotic emergence."
+      },
+      {
+        "title": "Modelling spatio temporal distribution of mental health during COVID-19 pandemic in Great Plains and Rocky mountains",
+        "speakers": [
+          {
+            "name": "Phyllis Muniu",
+            "affiliation": "University of Kansas",
+            "email": "phyllis@aims.edu.gh"
+          }
+        ],
+        "abstract": "Mental health is a crucial component of overall well-being, yet access to care remains uneven across the United States, particularly in the Great Plains and Rocky Mountain regions. These states face persistent challenges, including high treatment costs and substantial rural populations with restricted healthcare access. This study examines the spatial and temporal relationships between poor mental health and socio-demographic determinants such as race, gender, income, unemployment, and health resources from 2019 to 2023 across ten states in these regions. We applied Geographically and Temporally Weighted Regression (GTWR), and Multiscale Geographically and Temporally Weighted Regression (MGTWR) to capture spatial non-stationarity and evolving temporal patterns. Results indicate that race, gender, poor health, and household income were consistently significant positive predictors of poor mental health, while the effects of unemployment, mental health provider availability, and primary care access varied across space and time. Cluster analysis revealed persistent high-rate areas in Kansas, Nebraska, Oklahoma, and Texas, and low-rate areas in North Dakota, Wyoming, and Montana. The findings underscore the importance of avoiding one-size-fits-all interventions and highlight the need for geographically tailored, time-sensitive strategies to address mental health disparities in underserved regions."
+      },
+      {
+        "title": "Future learning and uncertainty quantification of the Amery Ice Shelf",
+        "speakers": [
+          {
+            "name": "Zachary Zerbe",
+            "affiliation": "Brookhaven National Laboratory",
+            "email": "zachlzerbe22@gmail.com"
+          }
+        ],
+        "abstract": "Ice sheet models, typically built on partial differential equations, can be used to predict society-affecting quantities of interest such as sea-level contribution. In order to make the most informed policy decisions to mitigate or adapt to such environmental changes, it's prudent to quantify the uncertainties associated with the model inputs and their subsequent influence on future predictions. As additional future data becomes available, we can further constrain model inputs and thereby reduce uncertainty in all subsequent projections of sea-level contributions. Ice sheet response to climate change is generally slow, but there remains the possibility of a transition to rapid glacial movement and sea level contribution. In this project, we investigate the rate of uncertainty reduction, or future learning, of sea level contributions from the Amery Ice Shelf as model parameters are sequentially recalibrated on synthetic future observations. To accomplish this, we use Jantre et al. (2024)'s ensemble of ice-sheet model simulations—running through the year 2300 under a high greenhouse-gas emissions scenario. We then train Gaussian‐process emulators on the simulated cumulative grounded volume change data at selected years and use them to generate realistic future observations at those years. We take a Parametric Bayesian Inference approach to recalibrate our model's input parameters on this new data and sample from their posterior distributions. Finally, we leverage a multivariate principal component based Gaussian-process emulator from Jantre et. al. (2024) for sea-level contribution time series data to propagate updated uncertainty from model parameters to projections of glacier mass loss through 2300. Parameter learning is observed across the six model inputs, though the rate and extent of uncertainty reduction vary among them. We then assess how this reduction propagates into projections, both for cumulative grounded volume change and sea-level contributions."
+      },
+      {
+        "title": "Artificial Intelligence-Empowered User-Centered Smart Inhaler for Targeted and Evenly Distributed Small-Airway Drug Delivery",
+        "speakers": [
+          {
+            "name": "Ziyang Zhang",
+            "affiliation": "Oklahoma State University",
+            "email": "jan.zhang@okstate.edu"
+          }
+        ],
+        "abstract": "Small airways are the primary sites of airflow obstruction in chronic obstructive pulmonary disease (COPD). Delivering inhaled aerosolized medications directly to these regions is crucial for achieving effective treatment. However, conventional inhalation therapies often fail to achieve sufficient drug deposition in the small airways and let alone uniform distribution across peripheral lung lobes, leading to reduced therapeutic efficacy and increased side effects. This limitation arises because current inhalers lack adaptability to patient-specific breathing patterns, thereby optimizing particle release for targeted drug delivery (TDD) remains challenging. This study established a machine learning-based modeling framework integrated with the computational fluid-particle dynamics (CFPD) model to enable adaptive control of user-centered smart inhaler. A subject-specific airway geometry was reconstructed from computerized tomography (CT) scans, and 105 high-fidelity CFPD simulations were performed under varying inhalation flow rates, particle sizes, release positions and release timing. Particle release maps generated via backtracking identified optimal nozzle diameters and locations for uniform multi-lobe deposition with minimal off-target delivery. Sixteen advanced machine learning models, including the fully connected MLP, CNN, and transformer-based predictive models, were trained to map patient-specific inputs (i.e., flow rate, particle size, nozzle z coordinates, and release time) and optimal nozzle parameters (i.e., nozzle diameter, nozzle x and y coordinates). When embedded into a smart inhaler, the established ML model enables personalized TDD, bridging CFPD simulation-based inhaler optimization with real-time adaptive therapy."
+      },
+      {
+        "title": "A graph-aided symbolic learning-based electrostatic solver",
+        "speakers": [
+          {
+            "name": "Maria Fernanda \"Fer\" Mayorga Echeverria",
+            "affiliation": "University of Arkansas",
+            "email": "mfm003@uark.edu"
+          }
+        ],
+        "abstract": "The purpose of this project is to develop an alternative model for electrostatic analyses that matches the accuracy of the Poisson-Boltzmann equation but offers significantly lower computational costs, faster execution, and greater adaptability. While the generalized Born (GB) model provides a faster alternative to PB, it often sacrifices accuracy. Graph networks, which can model atomic structures, have shown promise in bridging this gap. This project aims to advance this concept by leveraging deep learning techniques through graph neural networks (GNNs) and symbolic learning to deliver accurate, efficient, and scalable predictions of molecular electrostatics.\n\nThe topology of a protein's atomic structure naturally mirrors the structure of nodes and edges in a GNN. Feature vectors in this framework can store key physical properties such as Born radii, and a \"message-passing\" mechanism within the GNN can facilitate the propagation of information through the network, allowing for more accurate approximations of electrostatic behavior. Symbolic learning will further enhance the model by learning explicit, physics-informed equations for Born radii, improving the representation of these properties in the GNN's feature vectors.\n\nBy integrating deep learning with symbolic learning, this project aims to create a powerful and innovative model for electrostatics, capable of improving accuracy while maintaining speed and scalability. This work not only contributes to advancements in molecular electrostatic modeling but also lays the foundation for new computational tools in molecular biology and related fields."
+      },
+      {
+        "title": "Estimation of Degradation rate in Biological cells",
+        "speakers": [
+          {
+            "name": "Lan Trinh",
+            "affiliation": "Tulane University",
+            "email": "ttrinh1@tulane.edu"
+          }
+        ],
+        "abstract": "In the biological cells of interest, particles are born at a source location and diffused as in Brownian motion. Over time, they may exit the domain, degrade, or remain alive at specific time points. Assuming the time is long enough for the system to be steady at the observed time, the number of alive particles is shown to follow a Poisson process with an intensity function governed by a Boundary Value Problem. Using snapshots of the locations of these alive particles, we study the estimation of the degradation rate and its statistical properties. In this poster, we present numerical results for the estimation problem using spatial data and demonstrate the consistency and asymptotic behavior of the estimator in simplified settings."
+      },
+      {
+        "title": "Feedback Control via Riccati Equation related to null controllability of PDE systems",
+        "speakers": [
+          {
+            "name": "Chamika Kankanamge",
+            "affiliation": "PhD student",
+            "email": "cdmlknkn@memphis.edu"
+          }
+        ],
+        "abstract": "Null controllability of PDE systems by means of appropriate Riccati equation will be discussed.\n\nRiccati equation naturally occurs when solving linear quadratic regulation problem in Hilbert Spaces.\n\nNull controllability can also be approached by solving suitable optimal control problem with a small parameter -say \\epsilon >0. \n\nFor each value of \\epsilon one has a suitable feedback mechanism represented by a solution of Riccati equation. The goal is to show that in the limit one obtains [under certain observability conditions] feedback mechanism driving the system to zero state via solution of singular Riccati equation"
+      },
+      {
+        "title": "Local Well-Posedness for a Kirchhoff-Type Fourth-Order Equation with Viscoelastic Memory under General Mixed Boundary Conditions",
+        "speakers": [
+          {
+            "name": "Thang Nguyen",
+            "affiliation": "New Mexico State University",
+            "email": "thangdn@nmsu.edu"
+          }
+        ],
+        "abstract": "We study a one-dimensional Kirchhoff-type plate equation with a viscoelastic convolution memory and \\emph{general mixed, nonhomogeneous} boundary data at both ends. A cubic boundary corrector $\\phi$ aligning four boundary constraints produces a reduced unknown $v=u-\\phi$ satisfying homogeneous mixed conditions; in 1D one has $\\BiLap\\phi\\equiv0$ while, generically, $\\Lap\\phi\\not\\equiv0$. Consequently the reduced equation bears a \\emph{corrector force} $R_\\phi$ and its time derivative, which we control explicitly. We develop a two-level energy method for $(v_t,\\Lap v)$ and $(v_{tt},\\Lap v_t)$, isolating the trace $g(0)$ and $g'\\in L^1$ when differentiating the memory. A mixed-boundary elliptic estimate in 1D then recovers $\\BiLap v$ and yields an $H^4$ bound. A Galerkin scheme with frozen coefficients and an Aubin--Lions--Simon compactness argument ensure strong convergence in $C([0,T];H^1)$, which closes the Kirchhoff nonlinearity. A Picard contraction on a closed ball of high-regularity functions gives local existence, uniqueness, and a continuation criterion."
+      },
+      {
+        "title": "Finite Element Methods For A Multi-Physics Phase-Field Model of Rapid Solidification of Dilute Binary Alloys",
+        "speakers": [
+          {
+            "name": "Seyed MohammadHossein Goushehgir",
+            "affiliation": "Dept. of Mathematics and Statistics, Missouri University of Science and Technology",
+            "email": "sgbkq@umsystem.edu"
+          }
+        ],
+        "abstract": "A finite element method is presented for a two-dimensional phase-field model of the rapid solidification of dilute binary alloys, including a fully implicit coupled finite element scheme. The model couples the phase field, the thermal field, and the solute diffusion/trapping together. We present the finite element formulations and verify the convergence rates through numerical experiments, confirming optimal temporal and spatial accuracy with both linear and quadratic finite elements. Numerical experiments also demonstrate the energy stability of the proposed finite element methods, as well as the sensitivity of the energy curve to boundary proximity."
+      },
+      {
+        "title": "Data Summarization Using Oversampling Algorithms",
+        "speakers": [
+          {
+            "name": "Emily Hendryx Lyons",
+            "affiliation": "University of Central Oklahoma",
+            "email": "ehendryx@uco.edu"
+          }
+        ],
+        "abstract": "Methods such as the discrete empirical interpolation method (DEIM) and column pivoted QR factorization are known to be able to identify columns of significance within a matrix. As such, these algorithms can be applied to data matrices for the purpose of subset selection. The computational cost of DEIM is largely driven by the formation of the matrix's singular value decomposition (SVD), which can be expensive for larger matrices. While a lower-rank SVD can be used, the number of columns selected by these algorithms is often limited by the rank of the analyzed matrix. Oversampling algorithms such as extended DEIM (E-DEIM) and DEIM with leverage scores (L-DEIM) have been proposed to mitigate this limitation, but there has been little comparison of such algorithms in the context of data class detection. Therefore, this work explores the application of both existing and novel oversampling algorithms for data summarization."
+      },
+      {
+        "title": "Adaptive Resampling-Conditioned Diffusion (ARCD) Generative Modeling for Robust Data Augmentation",
+        "speakers": [
+          {
+            "name": "Emmanuel Yangue",
+            "affiliation": "Oklahoma State University",
+            "email": "eyangue@okstate.edu"
+          }
+        ],
+        "abstract": "Data augmentation is a critical strategy in domains where high-quality synthetic data can significantly enhance model training, particularly when datasets are scarce, expensive, imbalanced, or difficult to annotate. However, existing generative models often struggle to capture the full data distribution, leading to poor augmentation and suboptimal downstream performance. This study proposes an augmented diffusion generative model termed Adaptive Resampling-Conditioned Diffusion (ARCD), a novel methodological framework integrating adaptive resampling features directly into the diffusion process. The proposed ARCD conditions the denoising network on resampling-derived difficulty measures, guiding sample generation toward minority regions that are most underrepresented, while also preserving the global distribution. This proposed new approach improves coverage of rare and borderline cases, addressing a key limitation of conventional generative augmentation. We validate ARCD on diverse datasets spanning from healthcare and manufacturing, benchmarking against classical resampling techniques and state-of-the-art deep generative models. Preliminary results show that ARCD produces more meaningful samples and improves model sensitivity. These findings highlight ARCD as a flexible and generalizable framework for robust data augmentation across modalities, with significant implications for both medical and industrial applications."
+      },
+      {
+        "title": "Bound-preserving neural network method for linear hyperbolic and parabolic equations",
+        "speakers": [
+          {
+            "name": "Ziyue Chen",
+            "affiliation": "Iowa State University",
+            "email": "alicech@iastate.edu"
+          }
+        ],
+        "abstract": "Machine learning with neural networks have been explored to directly solve partial differential equations (PDEs). Motivated by finite volume schemes, the cell-average neural network (CANN) is a local explicit one-step finite volume type (mesh dependent local solver) neural network for solving time dependent PDEs. While this method has demonstrated success in solving a large group of initial value problems, we want to further investigate the stability of the network for long time runs. In this work, we explore the bound-preserving neural network method and analyze how it impacts stability and generalization. We integrate bound preserving principles to ensure that the numerical solutions are stable for linear hyperbolic and parabolic equations. Using the advection equation as the model equation, we aim to further develop and refine this approach. Our findings provide insight for applications of the CANN method to more complex PDEs."
+      }
+    ]
+  }
+]

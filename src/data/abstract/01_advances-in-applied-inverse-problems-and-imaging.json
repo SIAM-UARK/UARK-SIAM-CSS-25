@@ -2,11 +2,12 @@
   "minisymposium_title": "Advances in Applied Inverse Problems and Imaging",
   "talks": [
     {
-      "title": "TBD",
+      "title": "Analysis for Full Field Inversion of the Attenuated Wave Equation",
       "speakers": [
-        { "name": "Ngoc T. Do", "affiliation": "" }
+        { "name": "Ngoc T. Do", "affiliation": "Missouri State University" }
       ],
-      "abstract": "TBD"
+      "abstract": "In the standard photoacoustic tomography (PAT) measurement setup, the used data consist of time-dependent signals measured on an observation surface. In contrast, the measured data from the recently invented full-field detection technique provide the solution of the wave equation on a spatial domain at a single instant in time. While reconstruction using classical PAT data has been extensively studied, not much is known for the full field PAT problem. In this talk, I will discuss the uniqueness, stability, and reconstruction algorithms of the full-field wave inversion problem with spatially variable sound speed and spatially variable damping.",
+      "_match": "title"
     },
     {
       "title": "Efficient Symmetry-Driven Diffusion Models for Wideband Inverse Scattering",
