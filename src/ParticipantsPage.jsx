@@ -24,7 +24,7 @@ export default function ParticipantsPage() {
       .filter((s) => s.name.length > 0)
       .sort((a, b) => {
         if (a.plenary !== b.plenary) return a.plenary ? -1 : 1
-        if (a.localOrganizer !== b.localOrganizer) return a.localOrganizer ? -1 : 1
+        if (a.localOrganizer !== b.localOrganizer) return a.localOrganizer ? 1 : -1
         return a.name.localeCompare(b.name, undefined, { sensitivity: 'base' })
       })
   }, [])
