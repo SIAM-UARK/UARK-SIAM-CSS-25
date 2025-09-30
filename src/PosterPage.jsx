@@ -35,12 +35,17 @@ export default function PosterPage() {
       }
     }
     
-    return allPosters.sort((a, b) => {
-      // Sort by primary speaker name
-      const aSpeaker = a.speakers[0]?.name || '';
-      const bSpeaker = b.speakers[0]?.name || '';
-      return aSpeaker.localeCompare(bSpeaker, undefined, { sensitivity: 'base' });
-    });
+    return allPosters
+      .sort((a, b) => {
+        // Sort by primary speaker name
+        const aSpeaker = a.speakers[0]?.name || '';
+        const bSpeaker = b.speakers[0]?.name || '';
+        return aSpeaker.localeCompare(bSpeaker, undefined, { sensitivity: 'base' });
+      })
+      .map((poster, index) => ({
+        ...poster,
+        posterNumber: index + 1
+      }));
   }, []);
 
   const filtered = useMemo(() => {
@@ -55,7 +60,7 @@ export default function PosterPage() {
   return (
     <div className="min-h-screen bg-neutral-50 text-neutral-900">
       <header className="sticky top-0 z-30 backdrop-blur bg-white/80 border-b">
-        <div className="max-w-3xl mx-auto px-4 py-4 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+        <div className="max-w-6xl mx-auto px-4 py-4 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
           <div className="flex items-center gap-3">
             <FileText className="h-6 w-6" />
             <h1 className="text-2xl font-semibold">UARK-SIAM-CSS-25 Conference Posters</h1>
@@ -97,7 +102,7 @@ export default function PosterPage() {
         </div>
       </header>
 
-      <main className="max-w-3xl mx-auto px-4 py-8">
+      <main className="max-w-6xl mx-auto px-4 py-8">
         <div className="bg-white rounded-2xl border shadow-sm">
           <div className="p-4 text-sm text-neutral-600 border-b">
             {filtered.length} {filtered.length === 1 ? 'poster' : 'posters'}
@@ -106,9 +111,14 @@ export default function PosterPage() {
             {filtered.map((poster, i) => (
               <article key={i} className="p-6">
                 <header className="mb-4">
-                  <h2 className="text-lg font-semibold mb-2 text-neutral-900 leading-tight">
-                    {poster.title}
-                  </h2>
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-blue-100 text-blue-700 text-sm font-medium">
+                      P{poster.posterNumber}
+                    </span>
+                    <h2 className="text-lg font-semibold text-neutral-900 leading-tight">
+                      {poster.title}
+                    </h2>
+                  </div>
                   <div className="flex flex-wrap items-center gap-4 text-sm text-neutral-600">
                     <span className="inline-flex items-center gap-1">
                       <Users className="h-4 w-4" />

@@ -56,6 +56,17 @@
       ],
       "abstract": "Trajectory inference is a central task in computational biology, particularly for uncovering cellular dynamics from high-dimensional and multimodal data. However, existing methods often fail to coherently integrate information across primary and secondary modalities, leading to suboptimal representations of biological processes. To address this challenge, we propose a neural network–based framework that incorporates Synchronized Optimal Transport (SyncOT) for trajectory inference. By jointly optimizing across primary and auxiliary spaces, our method achieves synchronized modeling of cellular dynamics while minimizing the aggregated cost across modalities. This enables more consistent and biologically meaningful trajectory reconstruction. Experimental results on biological datasets demonstrate that SyncOT provides a robust and effective approach for multimodal optimization, yielding more accurate and interpretable trajectories of cellular processes.",
       "_match": "title"
+    },
+    {
+      "title": "An Algebraic Graph Neural Network Model for Protein−Ligand Binding Affinity Prediction",
+      "speakers": [
+        {
+          "name": "Augustine Ouru",
+          "affiliation": "University of Arkansas"
+        }
+      ],
+      "abstract": "Predicting protein-ligand binding affinity is a fundamental challenge in drug discovery. Recent advances in deep learning have led to the development of numerous models, many of which rely on three-dimensional protein-ligand complex structures and focus primarily on affinity prediction. In this study, we introduce an Algebraic Graph Neural Network (AGNN) model designed to encode molecular structures into a low-dimensional graph representation while preserving critical biochemical interactions. While algebraic graph theory has been widely used in physical modeling and molecular studies, traditional methods often struggle to accurately capture the complexity of biomolecular interactions. To address this limitation, our proposed AGNN model leverages multiscale weighted colored subgraphs to describe molecular interactions through graph neural network. These representations allow the model to effectively learn the geometric and topological features of protein-ligand complexes. The AGNN model integrates graph convolutional layers and attention mechanisms to refine feature extraction and improve the interpretability of learned embeddings. Furthermore, we incorporate gradient boosting decision trees (GBDTs) to enhance the prediction of binding affinities by capturing nonlinear relationships between molecular features. Our approach is extensively validated using benchmark datasets, including PDBBind and CASF-2016, demonstrating superior performance in binding affinity prediction compared to state-of-the-art scoring functions.",
+      "_match": "title"
     }
   ]
 }

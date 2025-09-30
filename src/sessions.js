@@ -152,14 +152,24 @@ export default [
             "affiliation": "North Carolina State University"
           }
         ]
+      },
+      {
+        "title": "An Algebraic Graph Neural Network Model for Protein−Ligand Binding Affinity Prediction",
+        "speakers": [
+          {
+            "name": "Augustine Ouru",
+            "affiliation": "University of Arkansas"
+          }
+        ]
       }
     ],
     sessions: [
       {
         start: "2025-10-11T17:00:00-05:00",
-        end: "2025-10-11T17:20:00-05:00",
+        end: "2025-10-11T17:40:00-05:00",
         talks: [
-          { title: "Synchronized Optimal Transport for Trajectory Inference in Biological Systems", start: "2025-10-11T17:00:00-05:00", end: "2025-10-11T17:20:00-05:00", speakers: [{ name: "Jingfeng Wang", affiliation: "North Carolina State University" }] }
+          { title: "Synchronized Optimal Transport for Trajectory Inference in Biological Systems", start: "2025-10-11T17:00:00-05:00", end: "2025-10-11T17:20:00-05:00", speakers: [{ name: "Jingfeng Wang", affiliation: "North Carolina State University" }] },
+          { title: "An Algebraic Graph Neural Network Model for Protein−Ligand Binding Affinity Prediction", start: "2025-10-11T17:20:00-05:00", end: "2025-10-11T17:40:00-05:00", speakers: [{ name: "Augustine Ouru", affiliation: "University of Arkansas" }] }
         ]
       },
       {
@@ -1716,6 +1726,15 @@ export default [
           }
         ],
         "abstract": "Fractional partial differential equations (fPDEs) are powerful tools for modeling anomalous transport and memory-dependent processes, but their numerical solution remains challenging due to the nonlocal nature of fractional operators. While physics-informed neural networks (PINNs) offer a mesh-free alternative for solving PDEs, their fractional counterparts (fPINNs) face critical limitations: (1) high computational cost in evaluating fractional derivatives and (2) loss of solution positivity. To address these challenges, we propose a novel framework that integrates the modified fast L1 (MFL1) algorithm into fPINNs for solving time-fractional convection-diffusion equations, enabling efficient and robust computation of Caputo fractional derivatives, while preserving solution non-negativity—an essential property for physical consistency."
+      },
+      {
+        "title": "Hermitian rank in ideal powers",
+        "speakers": [
+          {
+            "name": "Abdullah Al Helal",
+            "affiliation": "Oklahoma State University"
+          }
+        ]
       }
     ],
     sessions: [
@@ -1731,13 +1750,21 @@ export default [
       },
       {
         start: "2025-10-11T17:00:00-05:00",
-        end: "2025-10-12T11:30:00-05:00",
+        end: "2025-10-11T18:20:00-05:00",
         talks: [
           { title: "Diffusive-interface size-modified Poisson-Boltzmann models: Ion-size effects", start: "2025-10-11T17:00:00-05:00", end: "2025-10-11T17:20:00-05:00", speakers: [{ name: "Md Borhan Uddin", affiliation: "The University of Alabama" }] },
-          { title: "Improving Model Predictions: ALFFI for In-Depth Uncertainty Analysis in SIR Parameter Estimation", start: "2025-10-12T10:10:00-05:00", end: "2025-10-12T10:30:00-05:00", speakers: [{ name: "Madison Pratt", affiliation: "University of Tennessee, Knoxville" }] },
-          { title: "Limiting Strategies for High-Order Discontinuous Galerkin Methods Based on Entropy Dissipation", start: "2025-10-12T10:30:00-05:00", end: "2025-10-12T10:50:00-05:00", speakers: [{ name: "Galiya Myrzabayeva", affiliation: "Iowa State University" }] },
-          { title: "Mathematical Modeling of Infectious Disease Dynamics Using SIR and SIRS Frameworks", start: "2025-10-12T10:50:00-05:00", end: "2025-10-12T11:10:00-05:00", speakers: [{ name: "Anjuman Ara Rashid", affiliation: "University of Arkansas, Fayetteville" }] },
-          { title: "Manifold-Based Approaches to Dimensionality Reduction in Machine Learning", start: "2025-10-12T11:10:00-05:00", end: "2025-10-12T11:30:00-05:00", speakers: [{ name: "Dalton Oxford", affiliation: "University of Arkansas" }] }
+          { title: "Improving Model Predictions: ALFFI for In-Depth Uncertainty Analysis in SIR Parameter Estimation", start: "2025-10-11T17:20:00-05:00", end: "2025-10-11T17:40:00-05:00", speakers: [{ name: "Madison Pratt", affiliation: "University of Tennessee, Knoxville" }] },
+          { title: "Limiting Strategies for High-Order Discontinuous Galerkin Methods Based on Entropy Dissipation", start: "2025-10-11T17:40:00-05:00", end: "2025-10-11T18:00:00-05:00", speakers: [{ name: "Galiya Myrzabayeva", affiliation: "Iowa State University" }] },
+          { title: "Mathematical Modeling of Infectious Disease Dynamics Using SIR and SIRS Frameworks", start: "2025-10-11T18:00:00-05:00", end: "2025-10-11T18:20:00-05:00", speakers: [{ name: "Anjuman Ara Rashid", affiliation: "University of Arkansas, Fayetteville" }] }
+        ]
+      },
+      {
+        start: "2025-10-12T10:10:00-05:00",
+        end: "2025-10-12T11:30:00-05:00",
+        talks: [
+          { title: "Manifold-Based Approaches to Dimensionality Reduction in Machine Learning", start: "2025-10-12T10:10:00-05:00", end: "2025-10-12T10:30:00-05:00", speakers: [{ name: "Dalton Oxford", affiliation: "University of Arkansas" }] },
+          { title: "Hermitian rank in ideal powers", start: "2025-10-12T10:30:00-05:00", end: "2025-10-12T10:50:00-05:00", speakers: [{ name: "Abdullah Al Helal", affiliation: "Oklahoma State University" }] },
+          { title: "Positive-Preserving fPINNs with Modified Fast L1 Algorithm for Time-Fractional Convection-Diffusion Equations", start: "2025-10-12T10:50:00-05:00", end: "2025-10-12T11:10:00-05:00", speakers: [{ name: "Yingli Li", affiliation: "Colorado State University" }] }
         ]
       }
     ]

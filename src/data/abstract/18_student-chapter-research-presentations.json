@@ -77,14 +77,24 @@
       ],
       "abstract": "he spread of infectious diseases can be effectively studied using compartmental models that describe the interaction of susceptible, infected, and recovered individuals within a population. In this project, we investigate the classical SIR model and its extension, the SIRS model with temporary immunity, to analyze epidemic dynamics. Using systems of nonlinear differential equations, we derive and interpret key parameters such as the basic reproduction number and explore their influence on long-term disease outcomes, including eradication, endemicity, and recurrent outbreaks. Numerical simulations illustrate the time evolution of susceptible, infected, and recovered classes under varying conditions of infection rate, recovery rate, and immunity duration. Applications to real-world diseases such as influenza and dengue fever are discussed, with parameter estimation carried out using basic statistical techniques. Our results demonstrate that the inclusion of temporary immunity in the SIRS model captures recurrent epidemic behavior that the SIR model alone cannot explain. This work highlights the utility of differential equation models in epidemiology and emphasizes their flexibility in adapting to different infectious disease contexts. The project serves both as an educational exploration of mathematical epidemiology and as a demonstration of how relatively simple models can provide valuable insights into public health phenomena",
       "_match": "title"
-    }
-    ,
+    },
     {
       "title": "Manifold-Based Approaches to Dimensionality Reduction in Machine Learning",
       "speakers": [
         { "name": "Dalton Oxford", "affiliation": "University of Arkansas" }
       ],
       "abstract": "High-dimensional datasets are common in modern machine learning, yet this can be expensive computational and lower dimensional representation provide better performance. Manifold learning methods exploit this idea by assuming that data lie on or near a lower-dimensional manifold embedded in a high-dimensional space. In this talk, I will introduce the motivation behind manifold-based dimensionality reduction. I will discuss how these approaches preserve local and global structure, their strengths and limitations, and their applications across domains such as image recognition, natural language processing, and environmental data. By \"unfolding\" data into lower dimensions, manifold learning provides both practical tools for visualization and deeper insight into the geometry underlying complex datasets."
+    },
+    {
+      "title": "Hermitian rank in ideal powers",
+      "speakers": [
+        {
+          "name": "Abdullah Al Helal",
+          "affiliation": "Oklahoma State University"
+        }
+      ],
+      "abstract": "We prove that the (hermitian) rank of QP^d is bounded from below by the rank of P^d whenever Q is not identically zero and real-analytic in a neighborhood of some point on the zero set of P in C^n and P is a polynomial of bidegree at most (1,1). This result generalizes the theorem of D'Angelo and Lebl which assumed that P was bihomogeneous. Examples show that no hypothesis can be dropped. This is a joint work with Prof. Jiří Lebl.",
+      "_match": "title"
     }
   ]
 }
