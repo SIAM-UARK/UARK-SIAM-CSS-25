@@ -21,7 +21,8 @@
   },
   {
     "name": "Sreejtih Nadakkal Appukuttan",
-    "affiliation": "National Renewable Energy Laboratory"
+    "affiliation": "National Renewable Energy Laboratory",
+    "remote": true
   },
   {
     "name": "Mustafa Sencer Aydın",
@@ -105,11 +106,13 @@
   },
   {
     "name": "Marc Day",
-    "affiliation": "National Renewable Energy Laboratory"
+    "affiliation": "National Renewable Energy Laboratory",
+    "remote": true
   },
   {
     "name": "Nicholas Deak",
-    "affiliation": "National Renewable Energy Laboratory"
+    "affiliation": "National Renewable Energy Laboratory",
+    "remote": true
   },
   {
     "name": "Maria Deliyianni",
@@ -374,7 +377,8 @@
   },
   {
     "name": "David Montgomery",
-    "affiliation": "National Renewable Energy Laboratory"
+    "affiliation": "National Renewable Energy Laboratory",
+    "remote": true
   },
   {
     "name": "Chul Moon",
@@ -566,7 +570,8 @@
   },
   {
     "name": "T Taneja",
-    "affiliation": "University Of Minnesota"
+    "affiliation": "University Of Minnesota",
+    "remote": true
   },
   {
     "name": "Cat Su Tran",
@@ -666,7 +671,8 @@
   },
   {
     "name": "Shashank Yellapantula",
-    "affiliation": "National Renewable Energy Laboratory"
+    "affiliation": "National Renewable Energy Laboratory",
+    "remote": true
   },
   {
     "name": "Garrett Young",

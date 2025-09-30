@@ -67,6 +67,28 @@
       ],
       "abstract": "Predicting protein-ligand binding affinity is a fundamental challenge in drug discovery. Recent advances in deep learning have led to the development of numerous models, many of which rely on three-dimensional protein-ligand complex structures and focus primarily on affinity prediction. In this study, we introduce an Algebraic Graph Neural Network (AGNN) model designed to encode molecular structures into a low-dimensional graph representation while preserving critical biochemical interactions. While algebraic graph theory has been widely used in physical modeling and molecular studies, traditional methods often struggle to accurately capture the complexity of biomolecular interactions. To address this limitation, our proposed AGNN model leverages multiscale weighted colored subgraphs to describe molecular interactions through graph neural network. These representations allow the model to effectively learn the geometric and topological features of protein-ligand complexes. The AGNN model integrates graph convolutional layers and attention mechanisms to refine feature extraction and improve the interpretability of learned embeddings. Furthermore, we incorporate gradient boosting decision trees (GBDTs) to enhance the prediction of binding affinities by capturing nonlinear relationships between molecular features. Our approach is extensively validated using benchmark datasets, including PDBBind and CASF-2016, demonstrating superior performance in binding affinity prediction compared to state-of-the-art scoring functions.",
       "_match": "title"
+    },
+    {
+      "title": "The Kaplan-Meier UCB Bandit Algorithm for Patient Assignment in Long-Term Clinical Trials",
+      "speakers": [
+        {
+          "name": "Yangfan Cui",
+          "affiliation": "North Carolina State University"
+        }
+      ],
+      "abstract": "Randomized controlled trials are the norm for determining treatment effectiveness in clinical research. However, an ethical dilemma arises when statistical power requires assigning patients to treatments that may be sub-optimal for their well being. One solution to this problem is to utilize a multi-armed bandit algorithm for patient assignment, designed specifically to balance the need for exploration to achieve statistical power against exploitation of the best treatment to serve patients' interests. In this paper, we propose the so-called Kaplan-Meier Upper Confidence Bound (KM-UCB) algorithm, a version of the standard UCB algorithm that we tailor to clinical trials where long-term patient survival is the goal. The KM-UCB provides theoretical guarantees on the estimation error of survival functions, and also has sublinear regret. In simulation, the KM-UCB consistently leads to an exploration/exploitation balance that produces estimated survival functions with less variance than those from greedy algorithms. Our empirical analyses include a bootstrapped simulation of data from a recent study on breast cancer treatments, which demonstrate the potential efficacy of KM-UCB in real-world clinical trials.",
+      "_match": "title"
+    },
+    {
+      "title": "Analyzing Zoonotic Spillover Risk Under Extreme Weather Events Using a Deterministic and Stochastic Lotka-Volterra Modeling Approach",
+      "speakers": [
+        {
+          "name": "Barsha Saha",
+          "affiliation": "University of Missouri-Kansas City"
+        }
+      ],
+      "abstract": "Extreme weather events—both acute and chronic—can fundamentally reshape ecological dynamics by altering species interactions, promoting competitive imbalances, and increasing the risk of extinction or dominance. Recent studies show increased urban rodent populations in the U.S., driven by warming and urbanization, raising public health concerns due to their role as reservoirs in zoonotic transmission. To investigate how climate disturbances influence reservoir dominance and spillover risk, we develop a stochastic Competitive Lotka–Volterra (CLV) model. Our system is parameterized to exhibit Zeeman's Class 27 dynamics, which support heteroclinic coexistence through multiple limit cycles. The model incorporates white noise (seasonal fluctuations), and Lévy jumps (extreme shocks) to capture climate-induced variability. We establish the existence, positivity, and boundedness of global solutions and derive sufficient conditions for species persistence and extinction under both noises. Numerical simulations reveal how varying noise and jump intensities drive transitions between coexistence, dominance, and collapse. We further integrate a spatial spillover framework to quantify pathogen exposure under shifting ecological regimes. This study links ecological stability with public health risk, offering insights into the impact of climate-driven disturbances on zoonotic emergence.",
+      "_match": "title"
     }
   ]
 }

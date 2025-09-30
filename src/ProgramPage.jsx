@@ -269,31 +269,91 @@ export default function ProgramPage() {
       const parsed = Papa.parse(contributedCsvRaw, { header: true, skipEmptyLines: true })
       const rows = (parsed?.data || []).filter((r) => (r.Title && r.Title.trim().length > 0))
       if (rows.length > 0) {
+        // Exclude talks that were moved into minisymposia sessions (avoid duplication)
+        const movedTitles = new Set([
+          'Physics-Informed Diffusion Models for Data Augmentation in Metal Additive Manufacturing',
+          'Inf-Sup Neural Networks for Solving High-Dimensional PDE Problems',
+          'A Generalized Energy-Based Adaptive Gradient Method for Optimization',
+          'Fast and Positive fPINNs for Time-Fractional Convection-Diffusion Equations via MFL1 Schemes',
+        ].map((t) => t.trim()))
+        const movedSpeakers = new Set(['Yingli Li'].map((s) => s.trim()))
+        const filteredRows = rows.filter((r) => {
+          const title = (r.Title || '').trim()
+          const name = [r['First Name'], r['Last Name']].filter(Boolean).join(' ').trim()
+          if (movedTitles.has(title)) return false
+          if (movedSpeakers.has(name)) return false
+          return true
+        })
         const msTitle = 'Contributed Talks'
         if (!existingTitles.has(slugify(msTitle))) {
+          // Build 16 talks and split into 4 sessions with 20-minute slots
+          const talks = filteredRows
+            .map((r) => ({
+              title: r.Title?.trim(),
+              speakers: [
+                { name: [r['First Name'], r['Last Name']].filter(Boolean).join(' ').trim(), affiliation: (r.Affiliation || '').trim() },
+              ],
+              start: null,
+              end: null,
+            }))
+            .slice(0, 16)
+
+          const slotTimes = [
+            // Saturday morning 10:10–11:30
+            [
+              ['2025-10-11T10:10:00-05:00', '2025-10-11T10:30:00-05:00'],
+              ['2025-10-11T10:30:00-05:00', '2025-10-11T10:50:00-05:00'],
+              ['2025-10-11T10:50:00-05:00', '2025-10-11T11:10:00-05:00'],
+              ['2025-10-11T11:10:00-05:00', '2025-10-11T11:30:00-05:00'],
+            ],
+            // Saturday 3:30–4:50 pm
+            [
+              ['2025-10-11T15:30:00-05:00', '2025-10-11T15:50:00-05:00'],
+              ['2025-10-11T15:50:00-05:00', '2025-10-11T16:10:00-05:00'],
+              ['2025-10-11T16:10:00-05:00', '2025-10-11T16:30:00-05:00'],
+              ['2025-10-11T16:30:00-05:00', '2025-10-11T16:50:00-05:00'],
+            ],
+            // Saturday 5:00–6:20 pm
+            [
+              ['2025-10-11T17:00:00-05:00', '2025-10-11T17:20:00-05:00'],
+              ['2025-10-11T17:20:00-05:00', '2025-10-11T17:40:00-05:00'],
+              ['2025-10-11T17:40:00-05:00', '2025-10-11T18:00:00-05:00'],
+              ['2025-10-11T18:00:00-05:00', '2025-10-11T18:20:00-05:00'],
+            ],
+            // Sunday 10:10–11:30 am
+            [
+              ['2025-10-12T10:10:00-05:00', '2025-10-12T10:30:00-05:00'],
+              ['2025-10-12T10:30:00-05:00', '2025-10-12T10:50:00-05:00'],
+              ['2025-10-12T10:50:00-05:00', '2025-10-12T11:10:00-05:00'],
+              ['2025-10-12T11:10:00-05:00', '2025-10-12T11:30:00-05:00'],
+            ],
+          ]
+
+          const sessions = slotTimes.map((slots, si) => {
+            const idxBase = si * 4
+            const sStart = slots[0][0]
+            const sEnd = slots[3][1]
+            return {
+              id: `CT-S${si + 1}`,
+              start: sStart,
+              end: sEnd,
+              chair: null,
+              talks: slots.map(([start, end], j) => ({
+                ...(talks[idxBase + j] || {}),
+                start,
+                end,
+              })).filter((t) => t.title),
+            }
+          })
+
           contributed = {
             id: 'CT',
             title: msTitle,
             organizers: [],
-            day: TEMP_DAY_OVERRIDE,
+            day: '2025-10-11',
             room: null,
             timezone: 'America/Chicago',
-            sessions: [
-              {
-                id: 'CT-S1',
-                start: TEMP_SESSION_START,
-                end: TEMP_SESSION_END,
-                chair: null,
-                talks: rows.map((r) => ({
-                  title: r.Title?.trim(),
-                  speakers: [
-                    { name: [r['First Name'], r['Last Name']].filter(Boolean).join(' ').trim(), affiliation: (r.Affiliation || '').trim() },
-                  ],
-                  start: null,
-                  end: null,
-                })),
-              },
-            ],
+            sessions,
           }
         }
       }

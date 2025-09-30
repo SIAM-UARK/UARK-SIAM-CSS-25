@@ -86,6 +86,14 @@
       "abstract": "High-dimensional datasets are common in modern machine learning, yet this can be expensive computational and lower dimensional representation provide better performance. Manifold learning methods exploit this idea by assuming that data lie on or near a lower-dimensional manifold embedded in a high-dimensional space. In this talk, I will introduce the motivation behind manifold-based dimensionality reduction. I will discuss how these approaches preserve local and global structure, their strengths and limitations, and their applications across domains such as image recognition, natural language processing, and environmental data. By \"unfolding\" data into lower dimensions, manifold learning provides both practical tools for visualization and deeper insight into the geometry underlying complex datasets."
     },
     {
+      "title": "Positive-Preserving fPINNs with Modified Fast L1 Algorithm for Time-Fractional Convection-Diffusion Equations",
+      "speakers": [
+        { "name": "Yingli Li", "affiliation": "Colorado State University" }
+      ],
+      "abstract": "Fractional partial differential equations (fPDEs) are powerful tools for modeling anomalous transport and memory-dependent processes, but their numerical solution remains challenging due to the nonlocal nature of fractional operators. While physics-informed neural networks (PINNs) offer a mesh-free alternative for solving PDEs, their fractional counterparts (fPINNs) face critical limitations: (1) high computational cost in evaluating fractional derivatives and (2) loss of solution positivity. To address these challenges, we propose a novel framework that integrates the modified fast L1 (MFL1) algorithm into fPINNs for solving time-fractional convection-diffusion equations, enabling efficient and robust computation of Caputo fractional derivatives, while preserving solution non-negativity—an essential property for physical consistency.",
+      "_match": "title"
+    },
+    {
       "title": "Hermitian rank in ideal powers",
       "speakers": [
         {

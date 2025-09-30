@@ -20,6 +20,7 @@ export default function ParticipantsPage() {
         email: (s?.email || '').trim(),
         plenary: Boolean(s?.plenary),
         localOrganizer: Boolean(s?.localOrganizer),
+        remote: Boolean(s?.remote),
       }))
       .filter((s) => s.name.length > 0)
       .sort((a, b) => {
@@ -96,6 +97,9 @@ export default function ParticipantsPage() {
                   {!s.plenary && s.localOrganizer && (
                     <span className="text-xs px-2 py-0.5 rounded-full border bg-blue-50 border-blue-200 text-blue-800">Local Organizer</span>
                   )}
+                  {s.remote && (
+                    <span className="text-xs px-2 py-0.5 rounded-full border bg-purple-50 border-purple-200 text-purple-800">Remote</span>
+                  )}
                 </div>
                 {s.affiliation && (
                   <div className="text-sm text-neutral-700">{s.affiliation}</div>
@@ -123,4 +127,3 @@ export default function ParticipantsPage() {
     </div>
   );
 }
-

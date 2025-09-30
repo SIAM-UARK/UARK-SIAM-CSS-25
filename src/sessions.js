@@ -47,12 +47,6 @@ export default [
         end: "2025-10-11T16:50:00-05:00",
         talks: [
           {
-            title: "Gamma-Convergence and Asymptotic Analysis for a Diffuse Domain Problem with Transmission Boundary Conditions, Part 1: Theoretical Analysis",
-            start: "2025-10-11T15:30:00-05:00",
-            end: "2025-10-11T15:50:00-05:00",
-            speakers: [{ name: "Toai Luong", affiliation: "Virginia Commonwealth University" }]
-          },
-          {
             title: "Stability of Interfacial Energies Under Gradient Flows",
             start: "2025-10-11T15:50:00-05:00",
             end: "2025-10-11T16:10:00-05:00",
@@ -63,6 +57,12 @@ export default [
             start: "2025-10-11T16:10:00-05:00",
             end: "2025-10-11T16:30:00-05:00",
             speakers: [{ name: "Yanxiang Zhao", affiliation: "George Washington University" }]
+          },
+          {
+            title: "Gamma-Convergence and Asymptotic Analysis for a Diffuse Domain Problem with Transmission Boundary Conditions, Part 1: Theoretical Analysis",
+            start: "2025-10-11T15:30:00-05:00",
+            end: "2025-10-11T15:50:00-05:00",
+            speakers: [{ name: "Toai Luong", affiliation: "Virginia Commonwealth University" }]
           },
           {
             title: "Gamma-Convergence and Asymptotic Analysis for a Diffuse Domain Problem with Transmission Boundary Conditions: Part 2, Numerical Confirmation",
@@ -161,15 +161,35 @@ export default [
             "affiliation": "University of Arkansas"
           }
         ]
+      },
+      {
+        "title": "The Kaplan-Meier UCB Bandit Algorithm for Patient Assignment in Long-Term Clinical Trials",
+        "speakers": [
+          {
+            "name": "Yangfan Cui",
+            "affiliation": "North Carolina State University"
+          }
+        ]
+      },
+      {
+        "title": "Analyzing Zoonotic Spillover Risk Under Extreme Weather Events Using a Deterministic and Stochastic Lotka-Volterra Modeling Approach",
+        "speakers": [
+          {
+            "name": "Barsha Saha",
+            "affiliation": "University of Missouri-Kansas City"
+          }
+        ]
       }
     ],
     sessions: [
       {
         start: "2025-10-11T17:00:00-05:00",
-        end: "2025-10-11T17:40:00-05:00",
+        end: "2025-10-11T18:20:00-05:00",
         talks: [
           { title: "Synchronized Optimal Transport for Trajectory Inference in Biological Systems", start: "2025-10-11T17:00:00-05:00", end: "2025-10-11T17:20:00-05:00", speakers: [{ name: "Jingfeng Wang", affiliation: "North Carolina State University" }] },
-          { title: "An Algebraic Graph Neural Network Model for Protein−Ligand Binding Affinity Prediction", start: "2025-10-11T17:20:00-05:00", end: "2025-10-11T17:40:00-05:00", speakers: [{ name: "Augustine Ouru", affiliation: "University of Arkansas" }] }
+          { title: "An Algebraic Graph Neural Network Model for Protein−Ligand Binding Affinity Prediction", start: "2025-10-11T17:20:00-05:00", end: "2025-10-11T17:40:00-05:00", speakers: [{ name: "Augustine Ouru", affiliation: "University of Arkansas" }] },
+          { title: "The Kaplan-Meier UCB Bandit Algorithm for Patient Assignment in Long-Term Clinical Trials", start: "2025-10-11T17:40:00-05:00", end: "2025-10-11T18:00:00-05:00", speakers: [{ name: "Yangfan Cui", affiliation: "North Carolina State University" }] },
+          { title: "Analyzing Zoonotic Spillover Risk Under Extreme Weather Events Using a Deterministic and Stochastic Lotka-Volterra Modeling Approach", start: "2025-10-11T18:00:00-05:00", end: "2025-10-11T18:20:00-05:00", speakers: [{ name: "Barsha Saha", affiliation: "University of Missouri-Kansas City" }] }
         ]
       },
       {
@@ -1530,9 +1550,12 @@ export default [
       },
       {
         start: "2025-10-12T10:10:00-05:00",
-        end: "2025-10-12T11:10:00-05:00",
+        end: "2025-10-12T11:30:00-05:00",
         talks: [
-          { title: "Conservative cell-average-based neural network method for nonlinear conservation laws", start: "2025-10-12T10:10:00-05:00", end: "2025-10-12T10:30:00-05:00", speakers: [{ name: "Ty Kroells", affiliation: "Iowa St University" }] }
+          { title: "Conservative cell-average-based neural network method for nonlinear conservation laws", start: "2025-10-12T10:10:00-05:00", end: "2025-10-12T10:30:00-05:00", speakers: [{ name: "Ty Kroells", affiliation: "Iowa St University" }] },
+          { title: "Physics-Informed Diffusion Models for Data Augmentation in Metal Additive Manufacturing", start: "2025-10-12T10:30:00-05:00", end: "2025-10-12T10:50:00-05:00", speakers: [{ name: "Hugo Rodriguez", affiliation: "Oklahoma State University" }] },
+          { title: "Inf-Sup Neural Networks for Solving High-Dimensional PDE Problems", start: "2025-10-12T10:50:00-05:00", end: "2025-10-12T11:10:00-05:00", speakers: [{ name: "Ziren Chen", affiliation: "Iowa State University" }] },
+          { title: "A Generalized Energy-Based Adaptive Gradient Method for Optimization", start: "2025-10-12T11:10:00-05:00", end: "2025-10-12T11:30:00-05:00", speakers: [{ name: "Lin Feng", affiliation: "Iowa State University" }] }
         ]
       }
     ]
@@ -1760,11 +1783,10 @@ export default [
       },
       {
         start: "2025-10-12T10:10:00-05:00",
-        end: "2025-10-12T11:30:00-05:00",
+        end: "2025-10-12T10:50:00-05:00",
         talks: [
           { title: "Manifold-Based Approaches to Dimensionality Reduction in Machine Learning", start: "2025-10-12T10:10:00-05:00", end: "2025-10-12T10:30:00-05:00", speakers: [{ name: "Dalton Oxford", affiliation: "University of Arkansas" }] },
-          { title: "Hermitian rank in ideal powers", start: "2025-10-12T10:30:00-05:00", end: "2025-10-12T10:50:00-05:00", speakers: [{ name: "Abdullah Al Helal", affiliation: "Oklahoma State University" }] },
-          { title: "Positive-Preserving fPINNs with Modified Fast L1 Algorithm for Time-Fractional Convection-Diffusion Equations", start: "2025-10-12T10:50:00-05:00", end: "2025-10-12T11:10:00-05:00", speakers: [{ name: "Yingli Li", affiliation: "Colorado State University" }] }
+          { title: "Hermitian rank in ideal powers", start: "2025-10-12T10:30:00-05:00", end: "2025-10-12T10:50:00-05:00", speakers: [{ name: "Abdullah Al Helal", affiliation: "Oklahoma State University" }] }
         ]
       }
     ]
