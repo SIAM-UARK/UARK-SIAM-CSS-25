@@ -20,11 +20,6 @@
     "affiliation": "University Of Arkansas; University Of Arizona"
   },
   {
-    "name": "Sreejtih Nadakkal Appukuttan",
-    "affiliation": "National Renewable Energy Laboratory",
-    "remote": true
-  },
-  {
     "name": "Mustafa Sencer Aydın",
     "affiliation": "University Of Southern California"
   },
@@ -103,16 +98,6 @@
   {
     "name": "Haridas Das",
     "affiliation": "Oklahoma State University"
-  },
-  {
-    "name": "Marc Day",
-    "affiliation": "National Renewable Energy Laboratory",
-    "remote": true
-  },
-  {
-    "name": "Nicholas Deak",
-    "affiliation": "National Renewable Energy Laboratory",
-    "remote": true
   },
   {
     "name": "Maria Deliyianni",
@@ -376,11 +361,6 @@
     "affiliation": "The University Of Texas At Dallas"
   },
   {
-    "name": "David Montgomery",
-    "affiliation": "National Renewable Energy Laboratory",
-    "remote": true
-  },
-  {
     "name": "Chul Moon",
     "affiliation": "Southern Methodist University"
   },
@@ -569,11 +549,6 @@
     "affiliation": "Yale University"
   },
   {
-    "name": "T Taneja",
-    "affiliation": "University Of Minnesota",
-    "remote": true
-  },
-  {
     "name": "Cat Su Tran",
     "affiliation": "Kansas State University"
   },
@@ -668,11 +643,6 @@
   {
     "name": "Emmanuel Yangue",
     "affiliation": "Oklahoma State University"
-  },
-  {
-    "name": "Shashank Yellapantula",
-    "affiliation": "National Renewable Energy Laboratory",
-    "remote": true
   },
   {
     "name": "Garrett Young",
