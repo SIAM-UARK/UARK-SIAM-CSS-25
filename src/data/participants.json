@@ -197,7 +197,7 @@
   },
   {
     "name": "Weizhang Huang",
-    "affiliation": "Department Of Mathematics, University Of Kansas"
+    "affiliation": "University Of Kansas"
   },
   {
     "name": "Weizhang Huang",
@@ -702,7 +702,7 @@
   },
   {
     "name": "Qiao Zhuang",
-    "affiliation": "University Of Missouri-kansas City"
+    "affiliation": "University Of Missouri-Kansas City"
   },
   {
     "name": "Ahmed Zytoon",
@@ -738,5 +738,33 @@
     "name": "Chen Liu",
     "affiliation": "University Of Arkansas",
     "localOrganizer": true
+  },
+  {
+    "name": "Lin Du",
+    "affiliation": "Missouri University of Science and Technology"
+  },
+  {
+    "name": "Seyed Mohammad Hossein G",
+    "affiliation": "University"
+  },
+  {
+    "name": "Daniel E Levine",
+    "affiliation": "Missouri University of Science and Technology"
+  },
+  {
+    "name": "Tyler Skaggs",
+    "affiliation": "University of Oklahoma"
+  },
+  {
+    "name": "Zhenteng Zeng",
+    "affiliation": "University of Kansas"
+  },
+  {
+    "name": "Tania Islam",
+    "affiliation": "Oklahoma State University"
+  },
+  {
+    "name": "Fang Liu",
+    "affiliation": "Oklahoma State University"
   }
 ]

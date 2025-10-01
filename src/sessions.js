@@ -1626,7 +1626,7 @@ export default [
         ]
       },
       {
-        "title": "Disentangling bidirectional astrocyte-neuron interactions during learned behavior",
+        "title": "Defining and measuring proximity to criticality",
         "speakers": [
           {
             "name": "Sam Sooter",
@@ -1679,7 +1679,7 @@ export default [
         talks: [
           { title: "How groups decide without leaders in changing environment", start: "2025-10-11T15:30:00-05:00", end: "2025-10-11T15:50:00-05:00", speakers: [{ name: "Hyunjoong Kim", affiliation: "University of Cincinnati" }] },
           { title: "Are the differences between Parkinsonian and healthy subjects like other brain diseases?", start: "2025-10-11T15:50:00-05:00", end: "2025-10-11T16:10:00-05:00", speakers: [{ name: "Cheng Ly", affiliation: "Virginia Commonwealth University" }] },
-          { title: "Disentangling bidirectional astrocyte-neuron interactions during learned behavior", start: "2025-10-11T16:10:00-05:00", end: "2025-10-11T16:30:00-05:00", speakers: [{ name: "Sam Sooter", affiliation: "University of Arkansas" }] },
+          { title: "Defining and measuring proximity to criticality", start: "2025-10-11T16:10:00-05:00", end: "2025-10-11T16:30:00-05:00", speakers: [{ name: "Sam Sooter", affiliation: "University of Arkansas" }] },
           { title: "From Chaos to Coherence: Effects of High-Order Synaptic Correlations on Neural Dynamics", start: "2025-10-11T16:30:00-05:00", end: "2025-10-11T16:50:00-05:00", speakers: [{ name: "Krešimir Josić", affiliation: "University of Houston" }] }
         ]
       },
