@@ -560,6 +560,42 @@ export default [
           }
         ],
         "abstract": "We propose a Legendre polynomial collocation framework for simulating an HIV infection model that tracks uninfected CD4⁺ T cells, productively infected cells, and free virions. The scheme computes a polynomial approximation of the solution via Legendre collocation and reconstructs the state variables by integrating this approximation consistent with the prescribed initial data. To provide a fair evaluation, we adopt benchmark parameter sets from the literature and compare against the Laplace--Adomian decomposition method, the variational iteration method, the modified VIM , and a classical Runge--Kutta solver. Even at modest polynomial degrees (e.g., N=8), Legendre collocation yields consistently smaller residuals of the governing equations for T, I, and V, and produces trajectories that closely track reference solutions. Accuracy is comparable to or better than competing approaches. These findings support Legendre collocation as a reliable, easy-to-implement alternative for precise simulation and benchmarking of nonlinear ODE systems in virus dynamics."
+      },
+      {
+        "title": "Delayed human behavioral adaptation from information lag shapes epidemic wave dynamics",
+        "speakers": [
+          {
+            "name": "Mahmud MD Shahriar",
+            "affiliation": "Iowa State University"
+          }
+        ]
+      },
+      {
+        "title": "Higher Codimension Bogdanov-Takens Bifurcation in Predator-Prey Systems with Additional Food Supplementation and Predator Competition",
+        "speakers": [
+          {
+            "name": "Kanishka Goyal",
+            "affiliation": "Iowa State University"
+          }
+        ]
+      },
+      {
+        "title": "An eco-epidemiological model with prey taxis and \"slow\" diffusion",
+        "speakers": [
+          {
+            "name": "Rana Parshad",
+            "affiliation": "Iowa State University"
+          }
+        ]
+      },
+      {
+        "title": "Dual Control of Lyme Disease and Emerald Ash Borer Under Climatic Forcing: A Hybrid ODE–PDE Model with Lévy Noise",
+        "speakers": [
+          {
+            "name": "Bani Yaghoub",
+            "affiliation": "University of Missouri-Kansas City"
+          }
+        ]
       }
     ],
     sessions: [
@@ -585,10 +621,11 @@ export default [
       },
       {
         start: "2025-10-11T17:00:00-05:00",
-        end: "2025-10-11T18:20:00-05:00",
+        end: "2025-10-11T18:40:00-05:00",
         talks: [
           { title: "Complex Structure in the Endemic Equilibrium Set of an  SIS Epidemic Patch Model with the Mass-Action Infection Mechanism", start: "2025-10-11T17:00:00-05:00", end: "2025-10-11T17:20:00-05:00", speakers: [{ name: "Rachidi Salako", affiliation: "University of Nevada, Las Vegas" }] },
-          { title: "Approximate Solutions for HIV Infection Dynamics via Legendre Collocation", start: "2025-10-11T17:20:00-05:00", end: "2025-10-11T17:40:00-05:00", speakers: [{ name: "Beyza Cetin", affiliation: "Missouri University of Science and Technology" }] }
+          { title: "Approximate Solutions for HIV Infection Dynamics via Legendre Collocation", start: "2025-10-11T17:20:00-05:00", end: "2025-10-11T17:40:00-05:00", speakers: [{ name: "Beyza Cetin", affiliation: "Missouri University of Science and Technology" }] },
+          { title: "Delayed human behavioral adaptation from information lag shapes epidemic wave dynamics", start: "2025-10-11T17:40:00-05:00", end: "2025-10-11T18:00:00-05:00", speakers: [{ name: "Mahmud MD Shahriar", affiliation: "Iowa State University" }] }
         ]
       }
     ]

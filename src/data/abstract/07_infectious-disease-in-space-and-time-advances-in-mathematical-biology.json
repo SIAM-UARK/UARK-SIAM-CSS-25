@@ -66,6 +66,50 @@
       ],
       "abstract": "We investigate the structure of the endemic equilibrium (EE) set in a multi-patch SIS epidemic model with mass-action transmission. For the corresponding single-patch model, the basic reproduction number $\\mathcal{R}_0$ completely determines the disease dynamics: a unique stable EE exists if and only if $\\mathcal{R}_0 > 1$. In contrast, the multi-patch setting exhibits far more complex behavior. First, we show that as the dispersal rate of susceptible individuals $d_S$ varies, the EE set consists of a finite union of disjoint curves. Under mild conditions, when $\\mathcal{R}_0 < 1$, the closure of each curve forms a loop in the $d_S \\times \\|{I}\\|_1$-plane, where $\\|{I}\\|_1$ denotes the total infected population at equilibrium. When $\\mathcal{R}_0 > 1$, the EE set contains two distinct types of curves: bounded and unbounded. Moreover, the structure of the EE set as $d_S \\to 0$ provides explicit spatial patterns of the EEs, offering insights into how restricting susceptible movement influences disease dynamics. Second, using $\\mathcal{R}_0$ as the bifurcation parameter, we establish that the EE set forms a simple unbounded curve in the $\\mathcal{R}_0 \\times \\|{I}\\|_1$-plane, which may exhibit an S-shape and undergo either a backward or forward transcritical bifurcation at $\\mathcal{R}_0 = 1$. These results refine and extend previous findings by revealing novel and intricate structures within the EE set. They underscore the interplay between population movement, total population size, and spatial heterogeneity, providing new insights into the long-term dynamics of infectious diseases. This is a joint work with Kingsley Ukandu.",
       "_match": "title"
+    },
+    {
+      "title": "Delayed human behavioral adaptation from information lag shapes epidemic wave dynamics",
+      "speakers": [
+        {
+          "name": "Mahmud MD Shahriar",
+          "affiliation": "Iowa State University"
+        }
+      ],
+      "abstract": "The recurrence of epidemic waves has been a hallmark of infectious disease outbreaks. Repeated surges in infections pose significant challenges to public health systems, yet the mechanisms that drive these waves remain insufficiently understood. Most prior models attribute epidemic waves to exogenous factors, such as transmission seasonality, viral mutations, or implementation of public health interventions. We show that epidemic waves can emerge autonomously from the feedback loop between infection dynamics and human behavior. Our results are based on a behavioral framework in which individuals continuously adjust their level of risk mitigation subject to their perceived risk of infection, which depends on information availability and disease severity. We show that delayed behavioral responses alone can lead to the emergence of multiple epidemic waves. The magnitude and frequency of these waves depend on the interplay between behavioral factors (delay, severity, and sensitivity of responses) and disease factors (transmission and recovery rates). Notably, if the response is either too prompt or excessively delayed, multiple waves cannot emerge. Our results further align with previous observations that adaptive human behavior can produce non-monotonic final epidemic sizes, shaped by the trade-offs between various biological and behavioral factors--namely, risk sensitivity, response stringency, and disease generation time. Interestingly, we found that the minimal final epidemic size occurs on regimes that exhibit a few damped oscillations. Altogether, our results emphasize the importance of integrating social and operational factors into infectious disease models, in order to capture the joint evolution of adaptive behavioral responses and epidemic dynamics.",
+      "_match": "title"
+    },
+    {
+      "title": "Higher Codimension Bogdanov-Takens Bifurcation in Predator-Prey Systems with Additional Food Supplementation and Predator Competition",
+      "speakers": [
+        {
+          "name": "Kanishka Goyal",
+          "affiliation": "Iowa State University"
+        }
+      ],
+      "abstract": "The theory of \"additional food\" suggests that a predator's ability to control pest populations can be enhanced by providing supplementary food sources. We analyze a predator–prey system incorporating additional food supplementation and intraspecific predator competition, focusing on its bifurcation structure. In this model, we identify parameter regimes in which the interior equilibrium undergoes a higher-codimension Bogdanov–Takens (BT) bifurcation. Analytical conditions for the critical parameters are derived, and the equilibrium is shown to correspond to a cusp singularity of codimension two. Our results provide deeper insight into how additional food supplementation and predator competition jointly shape complex population dynamics, with implications for sustainable pest management.",
+      "_match": "title"
+    },
+    {
+      "title": "An eco-epidemiological model with prey taxis and \"slow\" diffusion",
+      "speakers": [
+        {
+          "name": "Rana Parshad",
+          "affiliation": "Iowa State University"
+        }
+      ],
+      "abstract": "In this work we investigate the effects of prey-taxis on the existence of global-in-time solutions and dynamics in an eco-epidemiological model, under the influence of slow dispersal characterized by the p-Laplacian operator, and enhanced mortality of the infected prey, subject to specific assumptions on the taxis sensitivity functions. We prove the global existence of classical solutions when the infected prey disperses via classical laplacian operators and exhibits standard mortality. Under the assumption that the infected prey disperses \"slowly\" and exhibits enhanced mortality, we prove the global existence of weak solutions. We discuss applications to biological control of pests, under the prevalence of disease in the pest population.",
+      "_match": "title"
+    },
+    {
+      "title": "Dual Control of Lyme Disease and Emerald Ash Borer Under Climatic Forcing: A Hybrid ODE–PDE Model with Lévy Noise",
+      "speakers": [
+        {
+          "name": "Bani Yaghoub",
+          "affiliation": "University of Missouri-Kansas City"
+        }
+      ],
+      "abstract": "The ongoing rise in Lyme disease incidence across the Upper Midwest coincides with ecological disruptions such as emerald ash borer (EAB) invasion and ash tree mortality, which in turn affect host-vector dynamics within forest ecosystems. In this study, we develop a hybrid ODE–PDE model with Lévy noise to capture the endemic spatiotemporal dynamics of Lyme disease transmission in Minnesota, incorporating periodic extreme cold events (polar vortexes) and forest management interventions. We develop a dual control strategy which can be deployed immediately following cold-induced population dips. It can be shown that the system can transition from an endemic to a reduced-endemic or near-elimination state. The results have been numerically validated. Our findings highlight the importance of synchronizing ecological interventions with climatic windows to enhance effectiveness, reduce long-term intervention costs, and achieve both public health and conservation objectives.",
+      "_match": "title"
     }
   ]
 }
