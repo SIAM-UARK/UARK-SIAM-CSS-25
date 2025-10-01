@@ -24,14 +24,14 @@
       "_match": "title"
     },
     {
-      "title": "Bayesian Inference of MRSA Transmission from 2024 EHR Data in Drug-Using and Non–Drug-Using Patient Populations",
+      "title": "Bayesian Inference of MRSA Transmission in Drug-Using and Non–Drug-Using Patient Populations",
       "speakers": [
         {
           "name": "Kiel Corkran",
           "affiliation": "University of Missouri-Kansas City"
         }
       ],
-      "abstract": "We used Bayesian compartmental modeling to quantify healthcare-associated MRSA (HA-MRSA) transmission among drug-using and drug-free patient populations in a Midwestern safety-net hospital over 2024. From 18,192 electronic health records (7,076 drug-using; 11,116 drug-free), we estimated transmission, isolation, and discharge rates across multiple nursing unit types using the Delayed Rejection Adaptive Metropolis (DRAM) MCMC algorithm. Most nursing units showed higher mean transmission rates for drug-using patients, with differences up to 0.034, particularly in Progressive Care Units and Surgical ICUs. Only specialized units such as the Cardiac Care Center had higher rates in drug-free patients. These findings highlight structural vulnerabilities in high-acuity units serving drug-using populations and demonstrate the power of Bayesian modeling to guide targeted infection control interventions in safety-net hospital settings.",
+      "abstract": "Methicillin-resistant Staphylococcus aureus (MRSA) remains a critical public health challenge, particularly in safety-net hospitals (SAHs) that serve high-risk, underserved populations. Drug use is a known risk factor for healthcare-associated MRSA (HA-MRSA) due to repeated hospital exposures, skin barrier disruptions, and comorbidities. This study investigates MRSA transmission dynamics among drug-using patients in an urban, multi-center SAH over a five-year period (2019–2023), using Bayesian parameter estimation techniques. We performed a retrospective cohort analysis using 187,040 electronic health records, stratifying patients into drug-using and non–drug-using groups based on clinical documentation. A compartmental infectious disease model was developed to simulate transmission processes within the hospital. Key parameters—transmission, isolation, and discharge rates were estimated using the Delayed Rejection Adaptive Metropolis (DRAM) Markov Chain Monte Carlo algorithm, yielding full posterior distributions and credible intervals. Results indicate that drug-using patients experienced consistently higher MRSA transmission rates than their non–drug-using counterparts, with rates reaching 0.60/month (0.020/day) in some inpatient units. Although transmission declined during the peak of the COVID-19 pandemic (2021), a sharp resurgence was observed by 2023, including new outbreaks in units previously unaffected by MRSA. These trends suggest both structural vulnerabilities and the need for targeted infection control measures in this population. Our findings highlight the utility of Bayesian compartmental models in assessing pathogen dynamics within heterogeneous hospital populations. Sustained surveillance, stratified interventions, and improved care coordination for drug-using patients are essential to reduce HA-MRSA incidence in safety-net settings.",
       "_match": "title"
     },
     {

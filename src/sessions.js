@@ -172,11 +172,11 @@ export default [
         ]
       },
       {
-        "title": "Analyzing Zoonotic Spillover Risk Under Extreme Weather Events Using a Deterministic and Stochastic Lotka-Volterra Modeling Approach",
+        "title": "On generalizing the induced surface charge method to heterogeneous Poisson-Boltzmann models for electrostatic free energy calculation",
         "speakers": [
           {
-            "name": "Barsha Saha",
-            "affiliation": "University of Missouri-Kansas City"
+            "name": "Idowu Ijaodoro",
+            "affiliation": "The University of Alabama, Tuscaloosa"
           }
         ]
       }
@@ -189,7 +189,7 @@ export default [
           { title: "Synchronized Optimal Transport for Trajectory Inference in Biological Systems", start: "2025-10-11T17:00:00-05:00", end: "2025-10-11T17:20:00-05:00", speakers: [{ name: "Jingfeng Wang", affiliation: "North Carolina State University" }] },
           { title: "An Algebraic Graph Neural Network Model for Protein−Ligand Binding Affinity Prediction", start: "2025-10-11T17:20:00-05:00", end: "2025-10-11T17:40:00-05:00", speakers: [{ name: "Augustine Ouru", affiliation: "University of Arkansas" }] },
           { title: "The Kaplan-Meier UCB Bandit Algorithm for Patient Assignment in Long-Term Clinical Trials", start: "2025-10-11T17:40:00-05:00", end: "2025-10-11T18:00:00-05:00", speakers: [{ name: "Yangfan Cui", affiliation: "North Carolina State University" }] },
-          { title: "Analyzing Zoonotic Spillover Risk Under Extreme Weather Events Using a Deterministic and Stochastic Lotka-Volterra Modeling Approach", start: "2025-10-11T18:00:00-05:00", end: "2025-10-11T18:20:00-05:00", speakers: [{ name: "Barsha Saha", affiliation: "University of Missouri-Kansas City" }] }
+          { title: "On generalizing the induced surface charge method to heterogeneous Poisson-Boltzmann models for electrostatic free energy calculation", start: "2025-10-11T18:00:00-05:00", end: "2025-10-11T18:20:00-05:00", speakers: [{ name: "Idowu Ijaodoro", affiliation: "The University of Alabama, Tuscaloosa" }] }
         ]
       },
       {
