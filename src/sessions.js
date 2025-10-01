@@ -783,7 +783,7 @@ export default [
     ]
   },
   {
-    "minisymposium_title": "Mathematical Advances and Applications for High-Fidelity Numerical",
+    "minisymposium_title": "Mathematical Advances and Applications for High-Fidelity Numerical Simulation",
     "organizers": [
       { "name": "Yonghua Yan", "affiliation": "Jackson State University"},
       { "name": "Yong Yang", "affiliation": "West Texas A&M University"}
