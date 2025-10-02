@@ -13,6 +13,17 @@
       "_match": "title"
     },
     {
+      "title": "A unified approach to measuring proximity to criticality in neural systems",
+      "speakers": [
+        {
+          "name": "Andrea Barreiro",
+          "affiliation": "Southern Methodist University"
+        }
+      ],
+      "abstract": "Neural activity is often hypothesized to lie at or near a critical point; in physical systems, this is often defined in reference to the limiting point of a renormalization process, with a critical point being one that is invariant under rescaling. In mathematical models of neural systems, critical points are beneficial for information storage and transmission, and experiments have identified signatures of critical activity in many settings. However, there is not yet a unified agreement on how to identity \"how critical\" a system is, because the behavior of each signature depend on model details and parameters. We propose a theoretical framework and data-analytic strategy to quantify proximity to criticality, based on a temporal renormalization group (tRG) theory for time series. Our framework can operate directly on neural times series and is independent of model parameterization.",
+      "_match": "title"
+    },
+    {
       "title": "Are the differences between Parkinsonian and healthy subjects like other brain diseases?",
       "speakers": [
         {
