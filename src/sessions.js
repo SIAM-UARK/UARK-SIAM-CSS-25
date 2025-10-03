@@ -1811,6 +1811,24 @@ export default [
             "affiliation": "Oklahoma State University"
           }
         ]
+      },
+      {
+        "title": "NEURAL SOLVER FOR WASSERSTEIN GEODESICS AND OPTIMAL TRANSPORT DYNAMICS",
+        "speakers": [
+          {
+            "name": "Yan-Han Chen",
+            "affiliation": "Iowa State University"
+          }
+        ]
+      },
+      {
+        "title": "Complex Links, Multiplicities, and Applications in Topological Data Analysis",
+        "speakers": [
+          {
+            "name": "Saayan Mukherjee",
+            "affiliation": "Oklahoma State University"
+          }
+        ]
       }
     ],
     sessions: [
@@ -1836,10 +1854,12 @@ export default [
       },
       {
         start: "2025-10-12T10:10:00-05:00",
-        end: "2025-10-12T10:50:00-05:00",
+        end: "2025-10-12T11:30:00-05:00",
         talks: [
           { title: "Manifold-Based Approaches to Dimensionality Reduction in Machine Learning", start: "2025-10-12T10:10:00-05:00", end: "2025-10-12T10:30:00-05:00", speakers: [{ name: "Dalton Oxford", affiliation: "University of Arkansas" }] },
-          { title: "Hermitian rank in ideal powers", start: "2025-10-12T10:30:00-05:00", end: "2025-10-12T10:50:00-05:00", speakers: [{ name: "Abdullah Al Helal", affiliation: "Oklahoma State University" }] }
+          { title: "Hermitian rank in ideal powers", start: "2025-10-12T10:30:00-05:00", end: "2025-10-12T10:50:00-05:00", speakers: [{ name: "Abdullah Al Helal", affiliation: "Oklahoma State University" }] },
+          { title: "NEURAL SOLVER FOR WASSERSTEIN GEODESICS AND OPTIMAL TRANSPORT DYNAMICS", start: "2025-10-12T10:50:00-05:00", end: "2025-10-12T11:10:00-05:00", speakers: [{ name: "Yan-Han Chen", affiliation: "Iowa State University" }] },
+          { title: "Complex Links, Multiplicities, and Applications in Topological Data Analysis", start: "2025-10-12T11:10:00-05:00", end: "2025-10-12T11:30:00-05:00", speakers: [{ name: "Saayan Mukherjee", affiliation: "Oklahoma State University" }] }
         ]
       }
     ]

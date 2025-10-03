@@ -103,6 +103,28 @@
       ],
       "abstract": "We prove that the (hermitian) rank of QP^d is bounded from below by the rank of P^d whenever Q is not identically zero and real-analytic in a neighborhood of some point on the zero set of P in C^n and P is a polynomial of bidegree at most (1,1). This result generalizes the theorem of D'Angelo and Lebl which assumed that P was bihomogeneous. Examples show that no hypothesis can be dropped. This is a joint work with Prof. Jiří Lebl.",
       "_match": "title"
+    },
+    {
+      "title": "NEURAL SOLVER FOR WASSERSTEIN GEODESICS AND OPTIMAL TRANSPORT DYNAMICS",
+      "speakers": [
+        {
+          "name": "Yan-Han Chen",
+          "affiliation": "Iowa State University"
+        }
+      ],
+      "abstract": "We propose a sample-based learning framework for computing the Wasserstein geodesic between a source and target distribution, along with the associated velocity field. Building on the dynamical formulation of the optimal transport (OT) problem, we recast the constrained optimization as a minimax problem, using deep neural networks to approximate the relevant functions. This approach not only provides the Wasserstein geodesic but also recovers the OT map, enabling direct sampling from the target distribution. By estimating the OT map, we obtain velocity estimates along particle trajectories, which in turn allow us to learn the full velocity field. The framework is flexible and readily extends to general cost functions, including the commonly used quadratic cost. We demonstrate the effectiveness of our method through experiments on both synthetic and realistic datasets.",
+      "_match": "title"
+    },
+    {
+      "title": "Complex Links, Multiplicities, and Applications in Topological Data Analysis",
+      "speakers": [
+        {
+          "name": "Saayan Mukherjee",
+          "affiliation": "Oklahoma State University"
+        }
+      ],
+      "abstract": "Hilbert–Samuel multiplicity is a fundamental algebraic invariant that measures how singular a point is on a variety. Traditionally, its computation requires explicit equations, but in many modern applications, we only have point-cloud data sampled from an unknown variety. This work presents a framework to estimate such multiplicities directly from finite samples. The key idea is to reduce the problem to studying a curve at a point, where the multiplicity equals the Euler characteristic of the complex link. Using tools from topological data analysis, one can then infer this Euler characteristic—and hence the multiplicity—from sampled data with high confidence. This provides a new way to quantify local singularities in data sets, bridging algebraic geometry and TDA.",
+      "_match": "title"
     }
   ]
 }
