@@ -74,25 +74,31 @@ export default [
       },
       {
         start: "2025-10-11T17:00:00-05:00",
-        end: "2025-10-11T18:00:00-05:00",
+        end: "2025-10-11T18:20:00-05:00",
         talks: [
           {
-            title: "Minimizers for the Cahn–Hilliard Energy Functional with the Flory–Huggins Potential under Strong Anchoring Conditions",
+            title: "Limiting behavior of the De Gennes-Cahn-Hilliard Energy",
             start: "2025-10-11T17:00:00-05:00",
             end: "2025-10-11T17:20:00-05:00",
-            speakers: [{ name: "Abba Ramadan", affiliation: "The University of Alabama" }]
+            speakers: [{ name: "Shibin Dai", affiliation: "The University of Alabama" }]
           },
           {
-            title: "Limiting behavior of the De Gennes-Cahn-Hilliard Energy",
+            title: "Minimizers for the Cahn–Hilliard Energy Functional with the Flory–Huggins Potential under Strong Anchoring Conditions",
             start: "2025-10-11T17:20:00-05:00",
             end: "2025-10-11T17:40:00-05:00",
-            speakers: [{ name: "Shibin Dai", affiliation: "The University of Alabama" }]
+            speakers: [{ name: "Abba Ramadan", affiliation: "The University of Alabama" }]
           },
           {
             title: "An Efficient, Decoupled, and Linearly Stabilized Scheme for Phase-Field Models with Variable Mobility",
             start: "2025-10-11T17:40:00-05:00",
             end: "2025-10-11T18:00:00-05:00",
             speakers: [{ name: "Zhiwei Zhang (Speaker), Shuwang Li (co-author, Illinois Institute of Tecnology), and Steve Wise (co-author,University of Tennessee at Knoxville))", affiliation: "Illinois Institute of Technology" }]
+          },
+          {
+            title: "Non-Decaying Solutions for the 2D Dissipative Quasi-Geostrophic Equation",
+            start: "2025-10-11T18:00:00-05:00",
+            end: "2025-10-11T18:20:00-05:00",
+            speakers: [{ name: "Ryan Aschoff", affiliation: "Claremont Graduate University" }]
           }
         ]
       }
@@ -764,10 +770,10 @@ export default [
           {
             "name": "Heman Shakeri",
             "affiliation": "School of Data Science, University of Virginia"
-          }
-        ]
-      },
-      {
+      }
+    ]
+  },
+  {
         "title": "Modulus of families of measures and its applications",
         "speakers": [
           {

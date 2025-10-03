@@ -77,6 +77,17 @@
       ],
       "abstract": "Phase-field models for multiphysics problems, such as vesicle deformation under osmotic pressure, often result in complex, coupled nonlinear PDEs. A key computational challenge arises in systems with variable mobility, which can preclude the use of the most efficient, high-order implicit schemes that rely on constant-coefficient operators.  To address this challenge, we develop and analyze a novel numerical scheme based on the Multiple Scalar Auxiliary Variable (MSAV) method. Our approach introduces a linear stabilization term outside of the chemical potential. This strategy successfully decouples the system into a sequence of linear, constant-coefficient elliptic equations at each time step, which can be solved with high efficiency using fast direct solvers. We present a rigorous numerical verification of the scheme's second-order accuracy in time and an analysis of its spatial convergence properties. Numerical experiments demonstrate the scheme's computational efficiency against a baseline nonlinear multigrid (NLMG) solver, showing that our method's key advantage is replacing the complex, iterative nonlinear solve at each step with a small, fixed number of non-iterative linear solves.",
       "_match": "title"
+    },
+    {
+      "title": "Non-Decaying Solutions for the 2D Dissipative Quasi-Geostrophic Equation",
+      "speakers": [
+        {
+          "name": "Ryan Aschoff",
+          "affiliation": "Claremont Graduate University"
+        }
+      ],
+      "abstract": "The surface quasi-geostrophic (SQG) equation plays a central role in geophysical fluid dynamics, yet most well-posedness results rely on periodic settings or strong decay at infinity. In this talk, I will present new results for the subcritical dissipative SQG equation in $\\mathbb{R}^2$ that remove both of these assumptions. The key obstacle is that the constitutive law involves Riesz transforms, which can fail to make sense for general $L^\\infty$ data. I will describe a natural class of $L^\\infty$ initial data for which the constitutive law remains valid, leading to local well-posedness and persistence of the constitutive relation at positive times. Moreover, when $\\alpha \\in (\\tfrac{1}{2},1]$ and the initial data is $C^2$, we prove a maximum principle and obtain global classical solutions. These results open the door to studying SQG dynamics in the subcritical and critical regime using vanishing viscosity.",
+      "_match": "title"
     }
   ]
 }
