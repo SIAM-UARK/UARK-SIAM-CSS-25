@@ -329,43 +329,83 @@ export default function ProgramPage() {
             ],
           ]
 
-          const sessions = slotTimes.map((slots, si) => {
-            const idxBase = si * 4
-            const sStart = slots[0][0]
-            const sEnd = slots[3][1]
-            return {
-              id: `CT-S${si + 1}`,
-              start: sStart,
-              end: sEnd,
-              chair: null,
-              talks: slots.map(([start, end], j) => ({
-                ...(talks[idxBase + j] || {}),
-                start,
-                end,
-              })).filter((t) => t.title),
-            }
-          })
-
-          contributed = {
-            id: 'CT',
-            title: msTitle,
+          // Create three separate contributed talk sessions
+          const ct1 = {
+            id: 'CT1',
+            title: 'Contributed Talks 1',
             organizers: [],
             day: '2025-10-11',
-            room: null,
+            room: 'SCEN 406',
             timezone: 'America/Chicago',
-            sessions,
+            sessions: [{
+              id: 'CT1-S1',
+              start: '2025-10-11T10:10:00-05:00',
+              end: '2025-10-11T11:30:00-05:00',
+              chair: null,
+              room: 'SCEN 406',
+              talks: talks.slice(0, 4).map((t, j) => ({
+                ...t,
+                start: slotTimes[0][j][0],
+                end: slotTimes[0][j][1],
+              })).filter((t) => t.title),
+            }]
           }
+
+          const ct2 = {
+            id: 'CT2',
+            title: 'Contributed Talks 2',
+            organizers: [],
+            day: '2025-10-11',
+            room: 'SCEN 405',
+            timezone: 'America/Chicago',
+            sessions: [{
+              id: 'CT2-S1',
+              start: '2025-10-11T17:00:00-05:00',
+              end: '2025-10-11T18:20:00-05:00',
+              chair: null,
+              room: 'SCEN 405',
+              talks: talks.slice(4, 8).map((t, j) => ({
+                ...t,
+                start: slotTimes[2][j][0],
+                end: slotTimes[2][j][1],
+              })).filter((t) => t.title),
+            }]
+          }
+
+          const ct3 = {
+            id: 'CT3',
+            title: 'Contributed Talks 3',
+            organizers: [],
+            day: '2025-10-11',
+            room: 'SCEN 205',
+            timezone: 'America/Chicago',
+            sessions: [{
+              id: 'CT3-S1',
+              start: '2025-10-11T17:00:00-05:00',
+              end: '2025-10-11T18:20:00-05:00',
+              chair: null,
+              room: 'SCEN 205',
+              talks: talks.slice(8, 12).map((t, j) => ({
+                ...t,
+                start: slotTimes[2][j][0],
+                end: slotTimes[2][j][1],
+              })).filter((t) => t.title),
+            }]
+          }
+
+          // Return array of three contributed talk sessions
+          contributed = [ct1, ct2, ct3]
         }
       }
     }
 
-    const combined = contributed ? [...fromSessions, ...fromAbstractsOnly, contributed] : [...fromSessions, ...fromAbstractsOnly]
+    const combined = contributed ? [...fromSessions, ...fromAbstractsOnly, ...contributed] : [...fromSessions, ...fromAbstractsOnly]
 
-    // Assign sequential codes MS1, MS2, ... to minisymposia; keep Contributed Talks as CT
+    // Assign sequential codes MS1, MS2, ... to minisymposia; keep Contributed Talks as CT1, CT2, CT3
     let msCounter = 1
     return combined.map((ms) => {
-      const isContrib = (ms.title || '').trim().toLowerCase() === 'contributed talks'
-      const code = isContrib ? (ms.id || 'CT') : `MS${msCounter++}`
+      const isContrib = (ms.title || '').trim().toLowerCase().includes('contributed talks')
+      const code = isContrib ? ms.id : `MS${msCounter++}`
       const sessions = (ms.sessions || []).map((s, si) => ({
         ...s,
         id: `${code}-S${si + 1}`,

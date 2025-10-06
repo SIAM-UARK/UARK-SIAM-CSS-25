@@ -3,7 +3,7 @@
   "talks": [
     
     {
-      "title": "PLD-Tree: Persistent Laplacian Decision Tree for Protein-Protein Binding Free Energy Prediction",
+      "title": "Persistent Laplacian Neural network for Protein-Protein Interactions",
       "speakers": [
         {
           "name": "Xingjian Xu",

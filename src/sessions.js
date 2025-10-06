@@ -6,7 +6,7 @@ export default [
       { "name": "Thu Le", "affiliation": "University of Wisconsin-Madison"}
     ],
     day: "",
-    room: "",
+    room: "SCEN 206",
     timezone: "America/Chicago",
     sessions: [
       {
@@ -39,7 +39,7 @@ export default [
       { "name": "Natasha S. Sharma", "affiliation": "The University of Texas at El Paso"}
     ],
     day: "",
-    room: "",
+    room: "SCEN 201",
     timezone: "America/Chicago",
     sessions: [
       {
@@ -111,7 +111,7 @@ export default [
       { "name": "Md Masud Rana", "affiliation": "Kennesaw State University"}
     ],
     day: "",
-    room: "",
+    room: "SCEN 206",
     timezone: "America/Chicago",
     "talks": [
       {
@@ -217,7 +217,7 @@ export default [
       { "name": "Zhaiming Shen", "affiliation": "Georgia Institute of Technology"}
     ],
     day: "",
-    room: "",
+    room: "SCEN 202",
     timezone: "America/Chicago",
     // Talks list de-duplicated and reordered per final schedule
     "talks": [
@@ -260,7 +260,7 @@ export default [
       { "name": "Ying Wang", "affiliation": "University of Oklahoma"}
     ],
     day: "",
-    room: "",
+    room: "SCEN 203",
     timezone: "America/Chicago",
     "talks": [
       {
@@ -367,7 +367,7 @@ export default [
       { name: "Igor Kukavica", affiliation: "University of Southern California"}
     ],
     day: "",
-    room: "",
+    room: "SCEN 402",
     timezone: "America/Chicago",
     "talks": [
       {
@@ -473,7 +473,7 @@ export default [
       { "name": "Rana Parshad", "affiliation": "Iowa State University"}
     ],
     day: "",
-    room: "",
+    room: "SCEN 204",
     timezone: "America/Chicago",
     "talks": [
       {
@@ -644,7 +644,7 @@ export default [
       { "name": "Pietro Poggi-Corradini", "affiliation": "Kansas State University"}
     ],
     day: "",
-    room: "",
+    room: "SCEN 403",
     timezone: "America/Chicago",
     "talks": [
       {
@@ -832,7 +832,7 @@ export default [
       { "name": "Yong Yang", "affiliation": "West Texas A&M University"}
     ],
     day: "",
-    room: "",
+    room: "SCEN 201",
     timezone: "America/Chicago",
     "talks": [
       {
@@ -891,7 +891,7 @@ export default [
       { "name": "Yiran Wang", "affiliation": "The University of Alabama"}
     ],
     day: "",
-    room: "",
+    room: "SCEN 203",
     timezone: "America/Chicago",
     "talks": [
       {
@@ -941,7 +941,7 @@ export default [
       { "name": "Zhe Su", "affiliation": "Auburn University"}
     ],
     day: "",
-    room: "",
+    room: "SCEN 408",
     timezone: "America/Chicago",
     "talks": [
       {
@@ -1140,7 +1140,7 @@ export default [
       { "name": "James Liu", "affiliation": "Colorado State University"}
     ],
     day: "",
-    room: "",
+    room: "SCEN 205",
     timezone: "America/Chicago",
     "talks": [
       {
@@ -1247,7 +1247,7 @@ export default [
       { "name": "Siu Wun Cheung", "affiliation": "Lawrence Livermore National Laboratory"}
     ],
     day: "",
-    room: "",
+    room: "SCEN 202",
     timezone: "America/Chicago",
     "talks": [
       {
@@ -1307,7 +1307,7 @@ export default [
       { "name": "Youzou Lin", "affiliation": "UNC-Chapel Hill"}
     ],
     day: "",
-    room: "",
+    room: "SCEN 405",
     timezone: "America/Chicago",
     "talks": [
       {
@@ -1414,7 +1414,7 @@ export default [
       { "name": "Pengtao Yue", "affiliation": "Virginia Tech"}
     ],
     day: "",
-    room: "",
+    room: "SCEN 406",
     timezone: "America/Chicago",
     "talks": [
       {
@@ -1531,7 +1531,7 @@ export default [
       { "name": "Qingguo Hong", "affiliation": "Missouri University of Science and Technology"}
     ],
     day: "",
-    room: "",
+    room: "SCEN 402",
     timezone: "America/Chicago",
     "talks": [
       {
@@ -1610,7 +1610,7 @@ export default [
       { "name": "Krešimir Josić", "affiliation": "University of Houston"}
     ],
     day: "",
-    room: "",
+    room: "SCEN 404",
     timezone: "America/Chicago",
     "talks": [
       {
@@ -1718,7 +1718,7 @@ export default [
       { "name": "Haridas Das", "affiliation": "Oklahoma State University"}
     ],
     day: "",
-    room: "",
+    room: "SCEN 407",
     timezone: "America/Chicago",
     "talks": [
       {
@@ -1871,7 +1871,7 @@ export default [
       { "name": "Changhong Mou", "affiliation": "Utah State University"}
     ],
     day: "",
-    room: "",
+    room: "SCEN 322",
     timezone: "America/Chicago",
     "talks": [
       {
@@ -1976,7 +1976,7 @@ export default [
       { "name": "James Burton", "affiliation": "University of Arkansas" }
     ],
     day: "",
-    room: "",
+    room: "SCEN 322",
     timezone: "America/Chicago",
     "talks": [
       {
