@@ -1574,8 +1574,8 @@ export default [
         "title": "Conservative cell-average-based neural network method for nonlinear conservation laws",
         "speakers": [
           {
-            "name": "Ty Kroells",
-            "affiliation": "Iowa St University"
+            "name": "Tyler Kroells",
+            "affiliation": "Iowa State University"
           }
         ]
       }
