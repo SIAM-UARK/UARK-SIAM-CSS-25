@@ -49,8 +49,8 @@
       "title": "Conservative cell-average-based neural network method for nonlinear conservation laws",
       "speakers": [
         {
-          "name": "Ty Kroells",
-          "affiliation": "Iowa St University"
+          "name": "Tyler Kroells",
+          "affiliation": "Iowa State University"
         }
       ],
       "abstract": "This talk introduces the recently developed Cell-Average-Based Neural Network (CANN). The method utilizes the integral or weak formulation of partial differential equations and is inspired by finite volume schemes. The structure of the CANN network is designed to align with traditional one-step methods, with the well-trained network parameters serving as the scheme coefficients for an explicit one-step method. Unlike conventional numerical methods, the CANN approach is not constrained by small time-step CFL conditions, allowing for significantly larger time steps to be used for evolving solutions in an explicit manner. This results in a highly efficient and rapid method. We  present a conservative version of the CANN method for nonlinear conservation laws. This conser- vative approach ensures mass conservation and effectively captures physically relevant entropy so- lutions, including phenomena such as contact discontinuities, shock collisions, and interactions be- tween shocks and rarefaction waves.",
