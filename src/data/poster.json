@@ -102,7 +102,7 @@
         "abstract": "Small airways are the primary sites of airflow obstruction in chronic obstructive pulmonary disease (COPD). Delivering inhaled aerosolized medications directly to these regions is crucial for achieving effective treatment. However, conventional inhalation therapies often fail to achieve sufficient drug deposition in the small airways and let alone uniform distribution across peripheral lung lobes, leading to reduced therapeutic efficacy and increased side effects. This limitation arises because current inhalers lack adaptability to patient-specific breathing patterns, thereby optimizing particle release for targeted drug delivery (TDD) remains challenging. This study established a machine learning-based modeling framework integrated with the computational fluid-particle dynamics (CFPD) model to enable adaptive control of user-centered smart inhaler. A subject-specific airway geometry was reconstructed from computerized tomography (CT) scans, and 105 high-fidelity CFPD simulations were performed under varying inhalation flow rates, particle sizes, release positions and release timing. Particle release maps generated via backtracking identified optimal nozzle diameters and locations for uniform multi-lobe deposition with minimal off-target delivery. Sixteen advanced machine learning models, including the fully connected MLP, CNN, and transformer-based predictive models, were trained to map patient-specific inputs (i.e., flow rate, particle size, nozzle z coordinates, and release time) and optimal nozzle parameters (i.e., nozzle diameter, nozzle x and y coordinates). When embedded into a smart inhaler, the established ML model enables personalized TDD, bridging CFPD simulation-based inhaler optimization with real-time adaptive therapy."
       },
       {
-        "title": "A graph-aided symbolic learning-based electrostatic solver",
+        "title": "A graph-aided electrostatic solver",
         "speakers": [
           {
             "name": "Maria Fernanda \"Fer\" Mayorga Echeverria",
@@ -110,7 +110,7 @@
             "email": "mfm003@uark.edu"
           }
         ],
-        "abstract": "The purpose of this project is to develop an alternative model for electrostatic analyses that matches the accuracy of the Poisson-Boltzmann equation but offers significantly lower computational costs, faster execution, and greater adaptability. While the generalized Born (GB) model provides a faster alternative to PB, it often sacrifices accuracy. Graph networks, which can model atomic structures, have shown promise in bridging this gap. This project aims to advance this concept by leveraging deep learning techniques through graph neural networks (GNNs) and symbolic learning to deliver accurate, efficient, and scalable predictions of molecular electrostatics.\n\nThe topology of a protein's atomic structure naturally mirrors the structure of nodes and edges in a GNN. Feature vectors in this framework can store key physical properties such as Born radii, and a \"message-passing\" mechanism within the GNN can facilitate the propagation of information through the network, allowing for more accurate approximations of electrostatic behavior. Symbolic learning will further enhance the model by learning explicit, physics-informed equations for Born radii, improving the representation of these properties in the GNN's feature vectors.\n\nBy integrating deep learning with symbolic learning, this project aims to create a powerful and innovative model for electrostatics, capable of improving accuracy while maintaining speed and scalability. This work not only contributes to advancements in molecular electrostatic modeling but also lays the foundation for new computational tools in molecular biology and related fields."
+        "abstract": "The purpose of this project is to develop an alternative model for electrostatic analyses that matches the accuracy of the Poisson-Boltzmann equation but offers significantly lower computational costs, faster execution, and greater adaptability. While the generalized Born (GB) model provides a faster alternative to PB, it often sacrifices accuracy. Graph networks, which can model atomic structures, have shown promise in bridging this gap. This project aims to advance this concept by leveraging deep learning techniques such as graph neural networks (GNNs) to deliver accurate, efficient, and scalable predictions of molecular electrostatics. The topology of a protein's atomic structure naturally mirrors the structure of nodes and edges in a GNN. Feature vectors in this framework can store key physical properties such as Born radii, and a \"message-passing\" mechanism within the GNN can facilitate the propagation of information through the network, allowing for more accurate approximations of electrostatic behavior. With this implementation the project aims to create a powerful and innovative model for electrostatics, capable of improving accuracy while maintaining speed and scalability. This work not only contributes to advancements in molecular electrostatic modeling but also lays the foundation for new computational tools in molecular biology and related fields."
       },
       {
         "title": "Estimation of Degradation rate in Biological cells",
@@ -188,6 +188,39 @@
           }
         ],
         "abstract": "Machine learning with neural networks have been explored to directly solve partial differential equations (PDEs). Motivated by finite volume schemes, the cell-average neural network (CANN) is a local explicit one-step finite volume type (mesh dependent local solver) neural network for solving time dependent PDEs. While this method has demonstrated success in solving a large group of initial value problems, we want to further investigate the stability of the network for long time runs. In this work, we explore the bound-preserving neural network method and analyze how it impacts stability and generalization. We integrate bound preserving principles to ensure that the numerical solutions are stable for linear hyperbolic and parabolic equations. Using the advection equation as the model equation, we aim to further develop and refine this approach. Our findings provide insight for applications of the CANN method to more complex PDEs."
+      },
+      {
+        "title": "EpidemIQs: Prompt-to-Paper LLM agents for Epidemic Modeling and Analysis",
+        "speakers": [
+          {
+            "name": "Mohammad Hossein Samaei",
+            "affiliation": "Kansas State University",
+            "email": ""
+          }
+        ],
+        "abstract": "AI-driven approaches are revolutionizing scientific research and discovery, utilizing large language models (LLMs) and multi-agent systems to automate complex, interdisciplinary tasks and reduce turnaround time for testing new ideas. Epidemic modeling, characterized by its complexity and reliance on network science, dynamical systems, epidemiology, and stochastic simulations, represents a prime candidate for leveraging LLM-driven automation. We introduce EpidemIQs, a novel multi-LLM agents framework that integrates user inputs and autonomously conducts literature review, analytical derivation, network modeling, mechanistic modeling, stochastic simulations, data visualization and analysis, and finally documentation of findings in a structured manuscript."
+      },
+      {
+        "title": "Multi-level, multi-color mathematical graph neural networks for molecular property prediction",
+        "speakers": [
+          {
+            "name": "Trung Nguyen",
+            "affiliation": "University of Tennessee, Knoxville",
+            "email": ""
+          }
+        ],
+        "abstract": "Graph Neural Networks (GNNs) have demonstrated significant potential in molecular property prediction. However, current GNN architectures mostly rely on standard node or edge features that overlook the complex, multi-scale interactions between atoms in small molecules. This research introduces a mathematics-driven approach that integrates concepts from Geometric Graph Learning (GGL) and Algebraic Graph Learning (AGL) to enhance molecular representations. Drawing upon GGL principles, we construct multi-color molecular graphs where nodes represent atoms and edges are weighted based on both spatial distances and local geometric features, such as curvatures derived from differential geometry applied to atomic interactions. Furthermore, we encode high-dimensional atomic interactions through the spectral properties of algebraic subgraphs, such as the Laplacian and adjacency matrices derived from these geometric graphs. The construction of these multi-level graphs and their connectivity follow the principles of Persistent Spectral Graph Theory, where a filtration process generates a family of graphs across different scales, capturing both topological persistence and geometric evolution of atomic relationships. This integrated approach enables reliable and robust molecular representations by incorporating both short- and long-range dependencies, thereby surpassing the limitations of conventional GNNs. Our approach significantly improves predictive performance in molecular property prediction tasks and provides a reliable framework to advance drug discovery and materials science applications."
+      },
+      {
+        "title": "Metapopulation Modeling Frameworks for Pandemic Preparedness and Disease Control in the United States",
+        "speakers": [
+          {
+            "name": "Haridas Das",
+            "affiliation": "Oklahoma State University",
+            "email": ""
+          }
+        ],
+        "abstract": "When a new pathogen emerges, human mobility poses a significant challenge for public health authorities, who must act swiftly to contain its spread while preserving social and economic stability. Although mobility is a key driver of disease transmission, it also offers critical insights into population behavior that can help to understand and mitigate outbreaks. Despite its importance, the role of actual mobility patterns in driving or containing disease transmission has received relatively less attention. To address this limitation, we investigated the impact of network structure and human mobility on disease spread within a metapopulation and derived epidemic threshold formulas that consider mobility. We implemented simplified analogs of real-world networks, such as stars and cycles, and obtained classes of networks with the same epidemic threshold formula. However, incorporating such human mobility data into metapopulation models remains elusive, limiting their effectiveness in enhancing pandemic preparedness. Here, we incorporated cellphone mobility data into a simple, robust, and interpretable epidemic modeling platform within a metapopulation framework, enabling it to produce realistic synthetic simulations of disease spread. Using daily county-level travel networks across all 50 (fifty) U.S. states, we simulated various outbreak and intervention scenarios, capturing more nuanced epidemic dynamics than traditional models. We anticipate that our modeling framework, informed by cellphone mobility data, will yield actionable insights at the county level, which will help public health agencies design targeted and cost-effective strategies for future pandemics."
       }
     ]
   }
