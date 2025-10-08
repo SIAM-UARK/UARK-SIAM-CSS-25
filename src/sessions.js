@@ -1702,7 +1702,7 @@ export default [
         start: "2025-10-11T17:00:00-05:00",
         end: "2025-10-11T18:20:00-05:00",
         talks: [
-          { title: "Defining and measuring proximity to criticality", start: "2025-10-11T17:00:00-05:00", end: "2025-10-11T17:20:00-05:00", speakers: [{ name: "Sam Sooter", affiliation: "University of Arkansas" }] },
+          { title: "Disentangling bidirectional astrocyte-neuron interactions during learned behavior", start: "2025-10-11T17:00:00-05:00", end: "2025-10-11T17:20:00-05:00", speakers: [{ name: "Sam Sooter", affiliation: "University of Arkansas" }] },
           { title: "Arousal: how the brain controls its proximity to criticality", start: "2025-10-11T17:20:00-05:00", end: "2025-10-11T17:40:00-05:00", speakers: [{ name: "Woodrow L. Shew", affiliation: "University of Arkansas" }] },
           { title: "Spike-adding in bursting driven by slowly modulated rhythms", start: "2025-10-11T17:40:00-05:00", end: "2025-10-11T18:00:00-05:00", speakers: [{ name: "Rodica Curtu", affiliation: "Michigan Technological University" }] },
           { title: "Remember to Forget: Balancing Encoding and Removal Mechanisms in Working Memory", start: "2025-10-11T18:00:00-05:00", end: "2025-10-11T18:20:00-05:00", speakers: [{ name: "Zachary Kilpatrick", affiliation: "University of Colorado Boulder" }] }
