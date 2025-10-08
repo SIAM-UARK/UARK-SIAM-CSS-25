@@ -24,7 +24,7 @@ export default [
         end: "2025-10-11T16:50:00-05:00",
         talks: [
           { title: "Laser propagation through random media: speckle formation and the Gaussian conjecture", start: "2025-10-11T15:30:00-05:00", end: "2025-10-11T15:50:00-05:00", speakers: [{ name: "Anjali Nair", affiliation: "University of Chicago" }] },
-          { title: "Fourier-based model-infomed deep learning approach to solve the inverse source problem", start: "2025-10-11T15:50:00-05:00", end: "2025-10-11T16:10:00-05:00", speakers: [{ name: "Aravinth Krishnan", affiliation: "Kansas State University" }] },
+          { title: "Fourier-based model-infomed deep learning approach to solve the inverse source problem", start: "2025-10-11T15:50:00-05:00", end: "2025-10-11T16:10:00-05:00", speakers: [{ name: "Aravinth Krishnan Ravi", affiliation: "Kansas State University" }] },
           { title: "Exploring Low-Rank Structures in Inverse Scattering", start: "2025-10-11T16:10:00-05:00", end: "2025-10-11T16:30:00-05:00", speakers: [{ name: "Shixu Meng", affiliation: "The University of Texas at Dallas" }] },
           { title: "A fast sampling method for Maxwell's equations with applications to unprocessed experimental data", start: "2025-10-11T16:30:00-05:00", end: "2025-10-11T16:50:00-05:00", speakers: [{ name: "Thu Le", affiliation: "University of Wisconsin–Madison" }] }
         ]
@@ -534,7 +534,7 @@ export default [
         "title": "Dual Control of Lyme Disease and Emerald Ash Borer Under Climatic Forcing: A Hybrid ODE–PDE Model with Lévy Noise",
         "speakers": [
           {
-            "name": "Bani Yaghoub",
+            "name": "Bani-Yaghoub Majid",
             "affiliation": "University of Missouri-Kansas City"
           }
         ]
@@ -621,7 +621,7 @@ export default [
         talks: [
           { title: "Higher Codimension Bogdanov-Takens Bifurcation in Predator-Prey Systems with Additional Food Supplementation and Predator Competition", start: "2025-10-11T15:30:00-05:00", end: "2025-10-11T15:50:00-05:00", speakers: [{ name: "Kanishka Goyal", affiliation: "Iowa State University" }] },
           { title: "An eco-epidemiological model with prey taxis and \"slow\" diffusion", start: "2025-10-11T15:50:00-05:00", end: "2025-10-11T16:10:00-05:00", speakers: [{ name: "Rana Parshad", affiliation: "Iowa State University" }] },
-          { title: "Dual Control of Lyme Disease and Emerald Ash Borer Under Climatic Forcing: A Hybrid ODE–PDE Model with Lévy Noise", start: "2025-10-11T16:10:00-05:00", end: "2025-10-11T16:30:00-05:00", speakers: [{ name: "Bani Yaghoub", affiliation: "University of Missouri-Kansas City" }] },
+          { title: "Dual Control of Lyme Disease and Emerald Ash Borer Under Climatic Forcing: A Hybrid ODE–PDE Model with Lévy Noise", start: "2025-10-11T16:10:00-05:00", end: "2025-10-11T16:30:00-05:00", speakers: [{ name: "Majid Bani-Yaghoub", affiliation: "University of Missouri-Kansas City" }] },
           { title: "Spatial Pattern-Formation in Social-Ecological Systems", start: "2025-10-11T16:30:00-05:00", end: "2025-10-11T16:50:00-05:00", speakers: [{ name: "Daniel Cooney", affiliation: "University of Illinois Urbana-Champaign" }] }
         ]
       },
@@ -1303,7 +1303,7 @@ export default [
   {
     "minisymposium_title": "Recent Advances in Methods and Applications Related to PDEs",
     "organizers": [
-      { "name": "Longting Luo", "affiliation": "Iowa State University"}, 
+      { "name": "Songting Luo", "affiliation": "Iowa State University"}, 
       { "name": "Youzou Lin", "affiliation": "UNC-Chapel Hill"}
     ],
     day: "",
