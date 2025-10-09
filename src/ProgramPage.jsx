@@ -519,6 +519,76 @@ export default function ProgramPage() {
       </header>
 
       <main className="max-w-6xl mx-auto px-4 py-8">
+        {/* Plenary Speakers Section */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold mb-6 text-center">Plenary Speakers</h2>
+          <div className="grid gap-6 md:grid-cols-3">
+            {/* Saturday 8:30am - Beatrice Riviere */}
+            <motion.div
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.25 }}
+              className="bg-gradient-to-br from-blue-50 to-white rounded-2xl shadow-md border-2 border-blue-200 p-6"
+            >
+              <div className="flex items-center gap-2 text-blue-700 mb-3">
+                <Clock className="h-5 w-5" />
+                <span className="font-semibold">Saturday, 8:30 AM</span>
+              </div>
+              <h3 className="text-xl font-bold mb-2 text-neutral-900">Prof. Beatrice Riviere</h3>
+              <p className="text-lg font-medium text-blue-900 mb-3">Computational Methods for Two-Phase Flows at the Pore Scale</p>
+              <details className="text-sm text-neutral-700">
+                <summary className="cursor-pointer font-medium text-blue-700 hover:text-blue-900">View Abstract</summary>
+                <p className="mt-2 leading-relaxed">
+                  Modeling multicomponent flows in porous media is important for many applications relevant to the energy and the environment. Advances in pore-scale imaging, increasing availability of computational resources, and developments in numerical algorithms have started rendering direct pore-scale numerical simulations of multiphase flow in pore structures feasible. This talk presents stable and convergent discretizations of coupled flow and phase-field models for systems of two-phase flows in digital rocks. The three-dimensional computational domain is the union of voxels, obtained from the micro-CT scanning of rock samples. The solid rock structure is fixed and fluid flows through the connected pores. The mathematical model is based on coupling the Cahn-Hilliard equations with the Navier-Stokes equations. Wettability on rock-fluid interfaces is accounted for via an energy-penalty based wetting (contact-angle) boundary condition. Spatial discretization is based on the interior penalty discontinuous Galerkin methods. Time discretization utilizes a decoupled splitting approach. Both theory and application of the proposed methods to model flows in porous structures are discussed. Extension of the diffuse interface method for a system of two-phase flows with soluble surfactant is introduced.
+                </p>
+              </details>
+            </motion.div>
+
+            {/* Saturday 1:30pm - Xiu Ye */}
+            <motion.div
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.25, delay: 0.1 }}
+              className="bg-gradient-to-br from-green-50 to-white rounded-2xl shadow-md border-2 border-green-200 p-6"
+            >
+              <div className="flex items-center gap-2 text-green-700 mb-3">
+                <Clock className="h-5 w-5" />
+                <span className="font-semibold">Saturday, 1:30 PM</span>
+              </div>
+              <h3 className="text-xl font-bold mb-2 text-neutral-900">Prof. Xiu Ye</h3>
+              <p className="text-lg font-medium text-green-900 mb-3">Development of Discontinuous Finite Element Methods with Applications</p>
+              <details className="text-sm text-neutral-700">
+                <summary className="cursor-pointer font-medium text-green-700 hover:text-green-900">View Abstract</summary>
+                <p className="mt-2 leading-relaxed">
+                  Finite element methods (FEM) based on discontinuous approximations have been an active area of research over the past few decades, offering increased flexibility and robustness for a variety of partial differential equations. In this talk, I will present an overview of key developments in discontinuous FEM, including their connections to classical continuous FEM. Several prominent discontinuous methods will be discussed, such as the Discontinuous Galerkin (DG) method, Hybridizable Discontinuous Galerkin (HDG) method, and the Weak Galerkin (WG) method. The presentation will also highlight applications of these methods to problems such as convection–diffusion equations, the Stokes problem, and Brinkman equations. In these examples, discontinuous FEMs demonstrate significant advantages in terms of accuracy, stability, and adaptability to complex geometries.
+                </p>
+              </details>
+            </motion.div>
+
+            {/* Sunday 9:00am - Irena Lasiecka */}
+            <motion.div
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.25, delay: 0.2 }}
+              className="bg-gradient-to-br from-purple-50 to-white rounded-2xl shadow-md border-2 border-purple-200 p-6"
+            >
+              <div className="flex items-center gap-2 text-purple-700 mb-3">
+                <Clock className="h-5 w-5" />
+                <span className="font-semibold">Sunday, 9:00 AM</span>
+              </div>
+              <h3 className="text-xl font-bold mb-2 text-neutral-900">Prof. Irena Lasiecka</h3>
+              <p className="text-lg font-medium text-purple-900 mb-3">Stability in Non-Dissipative Hyperbolic Systems with Nonlinear Feedback Control</p>
+              <details className="text-sm text-neutral-700">
+                <summary className="cursor-pointer font-medium text-purple-700 hover:text-purple-900">View Abstract</summary>
+                <p className="mt-2 leading-relaxed">
+                  Long time behavior of a nonlinear PDE system subject to non-linear and nonlocal damping and unstable, unrestricted perturbations is considered. The latter leads to non-dissipative and non-conservative character of the resulting dynamics. A case study may include Navier Stokes fluid in a neighborhood of unstable equilibrium or civil constructions such as bridges/buildings under unstable flow of gas. In order to forge long time coherent structure and resulting stability, nonlinear feedback control in a form of nonlinear damping is applied.
+                  The important features-consequences of the model are: (i) the dynamical system does not have a gradient structure, (ii) the nonlinearity of the damping leads to an "overdamping" effect which than leads to the so called stability "paradox" where "more" is not "better". This prevents applicability of known methods for proving attractiveness [both weak and strong] properties of related dynamics.. In order to contend with the difficulties, new methodology based on barrier's method along with related optimization is developed. The ultimate results provide an existence of global attractor in a finite energy space which, under suitable conditions, is also smooth and finite dimensional. Thus, PDE hyperbolic unstable dynamics is reduced asymptotically to a finite dimensional system. In the case of unstable equilibria, methods of feedback control theory are applied to forge local stability.
+                </p>
+              </details>
+            </motion.div>
+          </div>
+        </section>
+
         <div className="grid gap-6">
           {filtered.map((ms, idx) => (
             <motion.section

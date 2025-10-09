@@ -1225,14 +1225,14 @@ export default [
           { title: "Computation of instability-driven turbulent flows with front-tracking/ghost-fluid method", start: "2025-10-11T10:10:00-05:00", end: "2025-10-11T10:30:00-05:00", speakers: [{ name: "Tulin Kaman", affiliation: "University of Zurich and University of Arkansas" }] },
           { title: "A Priori and a Posteriori Error Estimate for Pressure Robust Schemes for Incompressible Flow", start: "2025-10-11T10:30:00-05:00", end: "2025-10-11T10:50:00-05:00", speakers: [{ name: "Lin Mu", affiliation: "University of Georgia" }] },
           { title: "Enriched immersed finite element methods for 3D interface problem with nonhomogeneous Jump", start: "2025-10-11T10:50:00-05:00", end: "2025-10-11T11:10:00-05:00", speakers: [{ name: "Xu Zhang", affiliation: "Oklahoma State University" }] },
-          { title: "Well-balanced Any-order Numerical Solvers for Linear and Nonlinear Poroelasticity Based on Combination of BDF and Weak Galerkin", start: "2025-10-11T11:10:00-05:00", end: "2025-10-11T11:30:00-05:00", speakers: [{ name: "James Liu", affiliation: "Colorado State University" }] }
+          { title: "Variational data assimilation with finite element discretization for second order parabolic interface equation", start: "2025-10-11T11:10:00-05:00", end: "2025-10-11T11:30:00-05:00", speakers: [{ name: "Xiaoming He", affiliation: "Missouri University of Science and Technology" }] }
         ]
       },
       {
         start: "2025-10-11T15:30:00-05:00",
         end: "2025-10-11T16:50:00-05:00",
         talks: [
-          { title: "Variational data assimilation with finite element discretization for second order parabolic interface equation", start: "2025-10-11T15:30:00-05:00", end: "2025-10-11T15:50:00-05:00", speakers: [{ name: "Xiaoming He", affiliation: "Missouri University of Science and Technology" }] },
+          { title: "Well-balanced Any-order Numerical Solvers for Linear and Nonlinear Poroelasticity Based on Combination of BDF and Weak Galerkin", start: "2025-10-11T15:30:00-05:00", end: "2025-10-11T15:50:00-05:00", speakers: [{ name: "James Liu", affiliation: "Colorado State University" }] },
           { title: "General Numerical Framework for Structure-Preserving Reduced Order Models of Thermodynamically Consistent Reversible-Irreversible PDEs", start: "2025-10-11T15:50:00-05:00", end: "2025-10-11T16:10:00-05:00", speakers: [{ name: "Jia Zhao", affiliation: "University of Alabama" }] },
           { title: "Numerical Analysis of a Second-Order Numerical Scheme for a sixth-order Cahn-Hilliard type Equation", start: "2025-10-11T16:10:00-05:00", end: "2025-10-11T16:30:00-05:00", speakers: [{ name: "Natasha S. Sharma", affiliation: "The University of Texas at El Paso" }] },
           { title: "Parameter-free regularization preconditioners for nearly singular poroelasticity problems", start: "2025-10-11T16:30:00-05:00", end: "2025-10-11T16:50:00-05:00", speakers: [{ name: "Zhuoran Wang", affiliation: "University of Kansas" }] }
