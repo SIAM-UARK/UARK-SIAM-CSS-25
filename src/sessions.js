@@ -571,7 +571,7 @@ export default [
         "title": "Delayed human behavioral adaptation from information lag shapes epidemic wave dynamics",
         "speakers": [
           {
-            "name": "Mahmud MD Shahriar",
+            "name": "Md Shahriar Mahmud",
             "affiliation": "Iowa State University"
           }
         ]
@@ -1593,12 +1593,11 @@ export default [
       },
       {
         start: "2025-10-12T10:10:00-05:00",
-        end: "2025-10-12T11:30:00-05:00",
+        end: "2025-10-12T11:10:00-05:00",
         talks: [
           { title: "Conservative cell-average-based neural network method for nonlinear conservation laws", start: "2025-10-12T10:10:00-05:00", end: "2025-10-12T10:30:00-05:00", speakers: [{ name: "Ty Kroells", affiliation: "Iowa St University" }] },
           { title: "Physics-Informed Diffusion Models for Data Augmentation in Metal Additive Manufacturing", start: "2025-10-12T10:30:00-05:00", end: "2025-10-12T10:50:00-05:00", speakers: [{ name: "Hugo Rodriguez", affiliation: "Oklahoma State University" }] },
-          { title: "Inf-Sup Neural Networks for Solving High-Dimensional PDE Problems", start: "2025-10-12T10:50:00-05:00", end: "2025-10-12T11:10:00-05:00", speakers: [{ name: "Ziren Chen", affiliation: "Iowa State University" }] },
-          { title: "A Generalized Energy-Based Adaptive Gradient Method for Optimization", start: "2025-10-12T11:10:00-05:00", end: "2025-10-12T11:30:00-05:00", speakers: [{ name: "Lin Feng", affiliation: "Iowa State University" }] }
+          { title: "A Generalized Energy-Based Adaptive Gradient Method for Optimization", start: "2025-10-12T10:50:00-05:00", end: "2025-10-12T11:10:00-05:00", speakers: [{ name: "Lin Feng", affiliation: "Iowa State University" }] }
         ]
       }
     ]
