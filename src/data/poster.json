@@ -234,7 +234,7 @@
         "abstract": "We investigate proper holomorphic maps between annuli of the form f : {z ∈ C^n : r < ||z|| < 1} → {z ∈ C^N : R < ||z|| < 1}. Such maps are always rational. We prove that no new such maps exist if the target dimension lies strictly between n and (n choose 2). The identity and the homogeneous quadratic map are examples of boundary cases, but many other nontrivial maps occur in higher target dimensions. This yields the first gap interval for proper holomorphic maps between annuli, which surprisingly is much longer than the well-known first gap interval (n, 2n - 1) for ball maps."
       },
       {
-        "title": "Title to be updated",
+        "title": "An Upwind Weak Galerkin Finite Element Method for Parabolic Equation",
         "speakers": [
           {
             "name": "Noushin Gauhar",
@@ -242,7 +242,7 @@
             "email": ""
           }
         ],
-        "abstract": "Abstract to be updated later."
+        "abstract": "In this work, we develop and analyze a fully discrete upwind weak Galerkin finite element method for solving time-dependent linear parabolic equations. The proposed numerical framework incorporates spatial discretization via the weak Galerkin method and employs both backward Euler and Crank-Nicolson schemes for temporal discretization. An upwind stabilization is introduced to handle discontinuities effectively. Stability and error estimates in both L2 and energy norms are established. The numerical results demonstrate that the method achieves expected accuracy and stability, validating the proposed scheme's robustness and effectiveness for practical applications involving time-dependent convection-dominated problems."
       }
     ]
   }
