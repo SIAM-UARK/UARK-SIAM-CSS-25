@@ -149,7 +149,7 @@
         "title": "Finite Element Methods For A Multi-Physics Phase-Field Model of Rapid Solidification of Dilute Binary Alloys",
         "speakers": [
           {
-            "name": "Seyed MohammadHossein Goushehgir",
+            "name": "Seyed Mohammad Hossein Goushehgir",
             "affiliation": "Dept. of Mathematics and Statistics, Missouri University of Science and Technology",
             "email": "sgbkq@umsystem.edu"
           }
@@ -221,6 +221,28 @@
           }
         ],
         "abstract": "When a new pathogen emerges, human mobility poses a significant challenge for public health authorities, who must act swiftly to contain its spread while preserving social and economic stability. Although mobility is a key driver of disease transmission, it also offers critical insights into population behavior that can help to understand and mitigate outbreaks. Despite its importance, the role of actual mobility patterns in driving or containing disease transmission has received relatively less attention. To address this limitation, we investigated the impact of network structure and human mobility on disease spread within a metapopulation and derived epidemic threshold formulas that consider mobility. We implemented simplified analogs of real-world networks, such as stars and cycles, and obtained classes of networks with the same epidemic threshold formula. However, incorporating such human mobility data into metapopulation models remains elusive, limiting their effectiveness in enhancing pandemic preparedness. Here, we incorporated cellphone mobility data into a simple, robust, and interpretable epidemic modeling platform within a metapopulation framework, enabling it to produce realistic synthetic simulations of disease spread. Using daily county-level travel networks across all 50 (fifty) U.S. states, we simulated various outbreak and intervention scenarios, capturing more nuanced epidemic dynamics than traditional models. We anticipate that our modeling framework, informed by cellphone mobility data, will yield actionable insights at the county level, which will help public health agencies design targeted and cost-effective strategies for future pandemics."
+      },
+      {
+        "title": "Proper Maps of Annuli: How Donuts Transform across Dimensions",
+        "speakers": [
+          {
+            "name": "Abdullah Al Helal",
+            "affiliation": "Oklahoma State University",
+            "email": ""
+          }
+        ],
+        "abstract": "We investigate proper holomorphic maps between annuli of the form f : {z ∈ C^n : r < ||z|| < 1} → {z ∈ C^N : R < ||z|| < 1}. Such maps are always rational. We prove that no new such maps exist if the target dimension lies strictly between n and (n choose 2). The identity and the homogeneous quadratic map are examples of boundary cases, but many other nontrivial maps occur in higher target dimensions. This yields the first gap interval for proper holomorphic maps between annuli, which surprisingly is much longer than the well-known first gap interval (n, 2n - 1) for ball maps."
+      },
+      {
+        "title": "Title to be updated",
+        "speakers": [
+          {
+            "name": "Noushin Gauhar",
+            "affiliation": "Georgia Southern University",
+            "email": ""
+          }
+        ],
+        "abstract": "Abstract to be updated later."
       }
     ]
   }
