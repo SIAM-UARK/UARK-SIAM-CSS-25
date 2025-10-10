@@ -224,6 +224,7 @@ export default function ProgramPage() {
             end: t?.end || null,
             title: t?.title,
             speakers: t?.speakers || [],
+            cancelled: t?.cancelled || false,
           })),
         })),
       };
@@ -257,6 +258,7 @@ export default function ProgramPage() {
               end: null,
               title: t?.title,
               speakers: t?.speakers || [],
+              cancelled: t?.cancelled || false,
             })),
           },
         ],
@@ -288,14 +290,19 @@ export default function ProgramPage() {
         if (!existingTitles.has(slugify(msTitle))) {
           // Build 16 talks and split into 4 sessions with 20-minute slots
           const talks = filteredRows
-            .map((r) => ({
-              title: r.Title?.trim(),
-              speakers: [
-                { name: [r['First Name'], r['Last Name']].filter(Boolean).join(' ').trim(), affiliation: (r.Affiliation || '').trim() },
-              ],
-              start: null,
-              end: null,
-            }))
+            .map((r) => {
+              const presentationType = (r['Which type of presentation are you submitting?'] || '').trim()
+              const cancelled = presentationType.includes('CANCELLED')
+              return {
+                title: r.Title?.trim(),
+                speakers: [
+                  { name: [r['First Name'], r['Last Name']].filter(Boolean).join(' ').trim(), affiliation: (r.Affiliation || '').trim() },
+                ],
+                start: null,
+                end: null,
+                cancelled,
+              }
+            })
             .slice(0, 16)
 
           const slotTimes = [
@@ -675,7 +682,7 @@ export default function ProgramPage() {
                           <li key={ti} className="p-4 bg-white hover:bg-neutral-50 transition">
                             <Link to={`/talk/${slug}?ms=${msSlug}`} className="block">
                               <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
-                                <div>
+                                <div className="flex-1">
                                   {(t.start || t.end) && (
                                     <div className="text-sm text-neutral-600">
                                       {t.start ? fmtTime(t.start, tz) : ""}
@@ -683,9 +690,16 @@ export default function ProgramPage() {
                                       {t.end ? fmtTime(t.end, tz) : ""}
                                     </div>
                                   )}
-                                  <div className="font-medium text-blue-700 underline-offset-2 hover:underline">{t.title}</div>
+                                  <div className="flex items-center gap-2">
+                                    <div className={`font-medium underline-offset-2 hover:underline ${t.cancelled ? 'text-neutral-400 line-through' : 'text-blue-700'}`}>{t.title}</div>
+                                    {t.cancelled && (
+                                      <span className="text-xs px-2 py-0.5 rounded-full border bg-red-50 border-red-200 text-red-800 font-medium whitespace-nowrap">
+                                        CANCELLED
+                                      </span>
+                                    )}
+                                  </div>
                                   {t.speakers?.length > 0 && (
-                                    <div className="text-sm text-neutral-700">
+                                    <div className={`text-sm ${t.cancelled ? 'text-neutral-400' : 'text-neutral-700'}`}>
                                       {t.speakers.map((p, i) => (
                                         <span key={i}>
                                           {p.name}

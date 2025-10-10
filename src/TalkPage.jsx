@@ -33,6 +33,7 @@ export default function TalkPage() {
           speakers: t.speakers || [],
           abstract: t.abstract || '',
           slug: slugify(t.title),
+          cancelled: t.cancelled || false,
         })
       }
     }
@@ -47,12 +48,15 @@ export default function TalkPage() {
         const name = [r['First Name'], r['Last Name']].filter(Boolean).join(' ').trim()
         const affiliation = (r.Affiliation || '').trim()
         const abstract = (r.Abstract || '').trim()
+        const presentationType = (r['Which type of presentation are you submitting?'] || '').trim()
+        const cancelled = presentationType.includes('CANCELLED')
         all.push({
           msTitle: 'Contributed Talks',
           title,
           speakers: name ? [{ name, affiliation }] : [],
           abstract,
           slug: slugify(title),
+          cancelled,
         })
       }
     }
@@ -80,7 +84,7 @@ export default function TalkPage() {
     )
   }
 
-  const { msTitle, title, speakers, abstract } = talkData
+  const { msTitle, title, speakers, abstract, cancelled } = talkData
 
   return (
     <div className="min-h-screen bg-neutral-50 text-neutral-900">
@@ -90,7 +94,14 @@ export default function TalkPage() {
         </Link>
         <article className="mt-6 rounded-2xl bg-white border shadow-sm p-6">
           <header className="mb-4">
-            <h1 className="text-2xl font-semibold mb-2">{title}</h1>
+            <div className="flex items-start gap-3 mb-2">
+              <h1 className="text-2xl font-semibold flex-1">{title}</h1>
+              {cancelled && (
+                <span className="text-xs px-2 py-1 rounded-full border bg-red-50 border-red-200 text-red-800 font-medium">
+                  CANCELLED
+                </span>
+              )}
+            </div>
             <div className="flex flex-wrap items-center gap-4 text-sm text-neutral-600">
               {msTitle && (
                 <span className="inline-flex items-center gap-1"><Calendar className="h-4 w-4" />{msTitle}</span>
