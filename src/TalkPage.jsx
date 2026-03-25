@@ -73,7 +73,7 @@ export default function TalkPage() {
     return (
       <div className="min-h-screen bg-neutral-50 text-neutral-900">
         <div className="max-w-3xl mx-auto px-4 py-6">
-          <Link to="/" className="inline-flex items-center gap-2 text-sm text-blue-700 hover:underline">
+          <Link to="/students" className="inline-flex items-center gap-2 text-sm text-blue-700 hover:underline">
             <ArrowLeft className="h-4 w-4" /> Back to program
           </Link>
           <div className="mt-6 rounded-2xl bg-white border shadow-sm p-6">
@@ -89,7 +89,7 @@ export default function TalkPage() {
   return (
     <div className="min-h-screen bg-neutral-50 text-neutral-900">
       <div className="max-w-3xl mx-auto px-4 py-6">
-        <Link to="/" className="inline-flex items-center gap-2 text-sm text-blue-700 hover:underline">
+        <Link to="/students" className="inline-flex items-center gap-2 text-sm text-blue-700 hover:underline">
           <ArrowLeft className="h-4 w-4" /> Back to program
         </Link>
         <article className="mt-6 rounded-2xl bg-white border shadow-sm p-6">

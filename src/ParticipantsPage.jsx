@@ -42,7 +42,7 @@ export default function ParticipantsPage() {
         <div className="max-w-3xl mx-auto px-4 py-4 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
           <div className="flex items-center gap-3">
             <Users className="h-6 w-6" />
-            <h1 className="text-2xl font-semibold">UARK-SIAM-CSS-25 Conference Participants</h1>
+            <h1 className="text-2xl font-semibold">SIAM-CSS Second Student Meeting 2026 Participants</h1>
             <a
               href="https://siam.uark.edu"
               target="_blank"
@@ -54,7 +54,7 @@ export default function ParticipantsPage() {
               <Home className="h-4 w-4 text-blue-600" />
             </a>
             <Link
-              to="/"
+              to="/students"
               className="ml-2 text-sm text-blue-700 hover:underline"
               aria-label="Go to Program"
             >
@@ -120,7 +120,7 @@ export default function ParticipantsPage() {
 
       <footer className="max-w-6xl mx-auto px-4 py-10 text-sm text-neutral-500">
         <div className="text-center space-y-2">
-          <div className="text-base font-medium text-neutral-700">The 10th Annual Meeting of SIAM CSS at the University of Arkansas</div>
+          <div className="text-base font-medium text-neutral-700">SIAM-CSS Second Student Meeting 2026 at the University of Arkansas</div>
           <div>© {new Date().getFullYear()} The Department of Mathematical Sciences at the University of Arkansas. </div>
         </div>
       </footer>

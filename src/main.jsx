@@ -12,6 +12,7 @@ createRoot(document.getElementById('root')).render(
     <HashRouter>
       <Routes>
         <Route path="/" element={<App />} />
+        <Route path="/students" element={<App />} />
         <Route path="/participants" element={<ParticipantsPage />} />
         <Route path="/posters" element={<PosterPage />} />
         <Route path="/talk/:slug" element={<TalkPage />} />
