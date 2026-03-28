@@ -1,6 +1,6 @@
 import React from "react";
-import { CalendarDays, Clock3, Home, MapPin, NotebookText } from "lucide-react";
-import { Link } from "react-router-dom";
+import { CalendarDays, Clock3, MapPin, NotebookText } from "lucide-react";
+import participantsData from "./data/participants.json";
 
 const eventFacts = [
   { label: "Date", value: "8:30 AM April 4, 2026" },
@@ -144,6 +144,34 @@ const summaryItems = [
   "Conference end time: 4:25 PM",
 ];
 
+const studentPresenterNames = [
+  "Joie Lea Murorunkwere",
+  "James Burton",
+  "Bryan Haris",
+  "Priscilla Owusu Sekyere",
+  "Maria Fernanda \"fer\" Mayorga Echeverria",
+  "Mohammad Rubayet Rahman",
+  "Haridas Das",
+  "Prince Osei Affi",
+];
+
+const nonPresentingStudentNames = [
+  "Daniel Kwame Okyere",
+  "Soheil Jamali",
+  "Fang Liu",
+  "Luan Fabricio Lopes",
+];
+
+const studentParticipants = participantsData.filter((participant) =>
+  [...studentPresenterNames, ...nonPresentingStudentNames].includes(participant.name),
+);
+
+const allStudentParticipants = studentParticipants.sort(
+  (a, b) =>
+    [...studentPresenterNames, ...nonPresentingStudentNames].indexOf(a.name) -
+    [...studentPresenterNames, ...nonPresentingStudentNames].indexOf(b.name),
+);
+
 function SectionTable({ title, rows }) {
   return (
     <section className="rounded-3xl border border-neutral-200 bg-white shadow-sm overflow-hidden">
@@ -195,34 +223,10 @@ export default function ProgramPage() {
   return (
     <div className="min-h-screen bg-neutral-50 text-neutral-900">
       <header className="sticky top-0 z-30 border-b bg-white/90 backdrop-blur">
-        <div className="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-4 md:flex-row md:items-center md:justify-between">
+        <div className="mx-auto flex max-w-6xl px-4 py-4">
           <div className="flex items-center gap-3">
             <CalendarDays className="h-6 w-6" />
             <h1 className="text-2xl font-semibold">SIAM-CSS Student Conference 2026</h1>
-            <a
-              href="https://siam.uark.edu"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-blue-100 transition-colors duration-200 hover:bg-blue-200"
-              title="Go to UARK SIAM main website"
-              aria-label="Go to UARK SIAM main website"
-            >
-              <Home className="h-4 w-4 text-blue-600" />
-            </a>
-            <Link
-              to="/participants"
-              className="ml-2 text-sm text-blue-700 hover:underline"
-              aria-label="Go to Participants"
-            >
-              View Participants
-            </Link>
-            <Link
-              to="/posters"
-              className="ml-2 text-sm text-blue-700 hover:underline"
-              aria-label="Go to Posters"
-            >
-              View Posters
-            </Link>
           </div>
         </div>
       </header>
@@ -289,6 +293,22 @@ export default function ProgramPage() {
               </div>
             ))}
           </div>
+        </section>
+
+        <section className="mt-8 rounded-3xl border border-neutral-200 bg-white px-6 py-6 shadow-sm">
+          <h2 className="mb-2 text-2xl font-semibold text-neutral-950">Student Participants</h2>
+          <p className="mb-6 text-neutral-600">
+            Retrieved from the current participant updates for this student conference page.
+          </p>
+
+          <ul className="grid gap-3 md:grid-cols-2">
+            {allStudentParticipants.map((participant) => (
+              <li key={participant.name} className="rounded-2xl border border-neutral-200 bg-neutral-50 px-4 py-3">
+                <div className="font-medium text-neutral-900">{participant.name}</div>
+                <div className="text-sm text-neutral-600">{participant.affiliation}</div>
+              </li>
+            ))}
+          </ul>
         </section>
       </main>
 
