@@ -37,6 +37,9 @@ const scheduleSections = [
         speaker: "Zhuoran Wang",
         affiliation: "University of Kansas",
         href: "https://mathematics.ku.edu/people/zhuoran-wang",
+        talkTitle: "Poroelastic fluid-solid coupling: Numerical methods and applications",
+        abstract:
+          "Biot’s theory of poroelasticity provides a fundamental framework for modeling the mechanical behavior of fluid-solid interaction in porous media. This theory is central to diverse fields, including geomechanics, biomechanics, petroleum engineering, and hydrology. Despite its broad applicability, several major challenges persist in numerical modeling, including the design of stable finite element spaces, the treatment of heterogeneous physical parameters, and the efficient numerical solution of large, indefinite algebraic systems. In this talk, we present recent advances in numerical methods that address these challenges through the development of stable, parameter-free finite element methods and parameter-robust preconditioning strategies. We introduce flexible finite element spaces that are stable, locking-free and penalty-free, while achieving optimal-order convergence. In addition, we develop parameter-robust and efficient inexact block Schur complement preconditioners for efficient solution of fluid-solid interaction problems. Finally, we verify the effectiveness of the developed methods through real-world applications, including biomechanical simulations of spinal cord dynamics relevant to the study of syringomyelia. These results demonstrate the potential of advanced poroelastic modeling techniques to provide reliable and computationally scalable tools for complex multiphysics systems.",
       },
     ],
   },
@@ -97,6 +100,17 @@ function SectionTable({ title, rows }) {
                   </a>
                   {row.affiliation ? `, ${row.affiliation}` : ""}
                 </div>
+              )}
+              {row.talkTitle && (
+                <div className="mt-2 text-sm font-medium text-neutral-800">{row.talkTitle}</div>
+              )}
+              {row.abstract && (
+                <details className="mt-2 text-sm text-neutral-700">
+                  <summary className="cursor-pointer font-medium text-blue-700 hover:text-blue-900">
+                    View Abstract
+                  </summary>
+                  <p className="mt-3 leading-7">{row.abstract}</p>
+                </details>
               )}
             </div>
           </div>
