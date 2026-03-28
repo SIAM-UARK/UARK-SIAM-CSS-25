@@ -25,6 +25,10 @@ const scheduleSections = [
         speaker: "Xu Zhang",
         affiliation: "Oklahoma State University",
         href: "https://math.okstate.edu/people/xzhang/",
+        talkTitle:
+          "Immersed Finite Element Method for Interface Problems: Basic Idea, Algorithm Development, Error Analysis, and Applications.",
+        abstract:
+          "Interface problems are ubiquitous in sciences and engineering applications. They are often modeled by partial differential equations (PDE), whose typically exhibits low regularity, including kinks, singularities, discontinuities, and other non-smooth behaviors. Conventional finite element methods require meshes that align with the interface, which can be costly when the geometry is complex, especially in three dimensions. The immersed finite element (IFE) method provides an effective framework for solving such problems on interface-unfitted meshes.\n\nThis talk presents two recent advances in the development and analysis of IFE methods. First, we introduce a geometry-conforming IFE spaces on triangular meshes for 2D elliptic interface problems. These spaces are constructed via a Frenet-Serret mapping that transforms the interface curve into a straight line, allowing the interface jump conditions to be enforced exactly. Unlike previous IFE methods, this construction yields a locally conforming approximation space. Incorporated into discontinuous Galerkin formulations, they achieve optimal convergence rates. Second, we extend IFE methods to 3D interface problems on unfitted meshes with general interface geometries. We establish fundamental analytical results, including trace and inversed inequalities, and the approximation capabilities will be established. Optimal a priori error estimates are proved in both energy and L2 norms. Numerical experiments are provided to validate the theoretical estimates and demonstrate the effectiveness in practical 3D applications.",
       },
       {
         time: "9:10 - 9:35 AM",
