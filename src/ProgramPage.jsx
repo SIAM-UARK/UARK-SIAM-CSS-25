@@ -3,8 +3,8 @@ import { CalendarDays, Clock3, Home, MapPin, NotebookText } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const eventFacts = [
-  { label: "Date", value: "To be announced" },
-  { label: "Venue", value: "To be announced" },
+  { label: "Date", value: "8:30 AM April 4, 2026" },
+  { label: "Venue", value: "SECN 408, University of Arkansas, Fayetteville" },
   { label: "Registration", value: "Details will be posted here once confirmed" },
 ];
 
