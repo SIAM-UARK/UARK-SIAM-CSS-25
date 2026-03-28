@@ -95,6 +95,9 @@ const scheduleSections = [
         speaker: "Shuang Liu",
         affiliation: "University of North Texas",
         href: "https://sites.math.unt.edu/~shuangliu/",
+        talkTitle: "Computational Moving Boundary Problems",
+        abstract:
+          "Moving boundary (or often called \"free boundary\") problems are ubiquitous in nature and technology. A computational perspective of moving boundary problems can provide insight into the \"invisible\" properties of complex dynamics systems, advance the design of novel technologies, and improve the understanding of biological and chemical phenomena. However, challenges lie in the numerical study of moving boundary problems. Examples include difficulties in solving PDEs in irregular domains, handling moving boundaries efficiently and accurately, as well as computing efficiency difficulties. In this talk, I will discuss three specific topics of moving boundary problems, with applications to ecology (population dynamics), plasma physics (ITER tokamak machine design), and cell biology (cell movement).",
       },
       {
         time: "2:10 - 2:35 PM",
