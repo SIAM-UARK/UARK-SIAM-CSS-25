@@ -12,27 +12,42 @@ const scheduleSections = [
   {
     title: "Opening",
     rows: [
-      { time: "8:20 - 8:30 AM", session: "Registration" },
-      { time: "8:30 - 8:40 AM", session: "Opening Remarks" },
+      { time: "7:30 - 8:00 AM", session: "Registration" },
+      { time: "8:00 - 8:10 AM", session: "Opening Remarks" },
     ],
   },
   {
     title: "Morning Session",
     rows: [
       {
-        time: "8:40 - 9:40 AM",
+        time: "8:10 - 9:10 AM",
         session: "Plenary Talk 1",
         speaker: "Xu Zhang",
         affiliation: "Oklahoma State University",
         href: "https://math.okstate.edu/people/xzhang/",
       },
-      { time: "9:40 - 9:50 AM", session: "Break / Transition" },
-      { time: "9:50 - 10:20 AM", session: "Student Talk 1" },
-      { time: "10:20 - 10:50 AM", session: "Student Talk 2" },
-      { time: "10:50 - 11:00 AM", session: "Break" },
-      { time: "11:00 - 11:30 AM", session: "Student Talk 3" },
       {
-        time: "11:30 AM - 12:30 PM",
+        time: "9:10 - 9:35 AM",
+        session: "Student Talk 1",
+        speaker: "Joie Lea Murorunkwere",
+        affiliation: "University of Arkansas at Little Rock",
+        talkTitle: "A MODEL OF AN ONLINE SOCIAL NETWORK (OSN)",
+        abstract:
+          "We introduce a new epidemic framework to model the adoption and abandonment dynamics of users (SPIR) on online social networks (OSN), with special emphasis on the novel compartment pauci-engaged. Pauci-engaged individuals have been exposed to an invitation to OSN, but remain undecided about joining, reflecting real-world hesitation and trial behaviors. Building on the infectious-recovery dynamics studied by Chen, Kong, and Wang (2021), we derive the basic reproduction number R0 and establish threshold conditions for the stability of both the information-free (user-free) equilibrium and a unique endemic equilibrium. Local stability analysis using the Jacobian and global stability via Lyapunov functions show that when R0 < 1, the OSN fails to attract a self-sustaining user base, while for R0 > 1, sustained network engagement emerges. Our findings highlight the pivotal role of the decision-making phase in the growth of the digital platform and offer actionable insights to optimize user recruitment and retention strategies in coexisting OSNs.",
+      },
+      {
+        time: "9:35 - 10:00 AM",
+        session: "Student Talk 2",
+        speaker: "James Burton",
+        affiliation: "University of Arkansas",
+        talkTitle:
+          "Simulations of two-dimensional single-mode Rayleigh-Taylor Instability using front-tracking/ghost-fluid method: comparison to experiments and theory",
+        abstract:
+          "The Rayleigh-Taylor Instability (RTI) is a ubiquitous fluid-flow process that occurs across a wide range of scales and applications, from geological changes unfolding over years and spanning miles, to events lasting only a few nanoseconds in millimeter-scale regions during Inertial Confinement Fusion. The importance of RTI in a wide range of fields has made capturing features such as interface profiles, bubble/spike penetration and velocity fields a subject of study in experiments, numerical simulations, and theory. In the present work, two-dimensional single-mode RTI is simulated using an accurate and robust front-tracking/ghost-fluid method (FT/GFM) with high-order weighted essentially non-oscillatory (WENO) scheme. We compare our numerical results with the single-mode RTI experiments of Renoult, Rosenblatt and Carles (2015). We further show the velocity vector fields for the bubble and spike in the linear and nonlinear regimes are consistent with the theory for the single wavelength perturbation.",
+      },
+      { time: "10:00 - 10:30 AM", session: "Break / Rest" },
+      {
+        time: "10:30 AM - 11:30 AM",
         session: "Plenary Talk 2",
         speaker: "Zhuoran Wang",
         affiliation: "University of Kansas",
@@ -41,36 +56,92 @@ const scheduleSections = [
         abstract:
           "Biot’s theory of poroelasticity provides a fundamental framework for modeling the mechanical behavior of fluid-solid interaction in porous media. This theory is central to diverse fields, including geomechanics, biomechanics, petroleum engineering, and hydrology. Despite its broad applicability, several major challenges persist in numerical modeling, including the design of stable finite element spaces, the treatment of heterogeneous physical parameters, and the efficient numerical solution of large, indefinite algebraic systems. In this talk, we present recent advances in numerical methods that address these challenges through the development of stable, parameter-free finite element methods and parameter-robust preconditioning strategies. We introduce flexible finite element spaces that are stable, locking-free and penalty-free, while achieving optimal-order convergence. In addition, we develop parameter-robust and efficient inexact block Schur complement preconditioners for efficient solution of fluid-solid interaction problems. Finally, we verify the effectiveness of the developed methods through real-world applications, including biomechanical simulations of spinal cord dynamics relevant to the study of syringomyelia. These results demonstrate the potential of advanced poroelastic modeling techniques to provide reliable and computationally scalable tools for complex multiphysics systems.",
       },
+      {
+        time: "11:30 - 11:55 AM",
+        session: "Student Talk 3",
+        speaker: "Bryan Haris",
+        affiliation: "University of Missouri-Kansas City",
+        talkTitle:
+          "Leveraging NCBI Genomic Metadata for Epidemiological Insights: Example of Enterobacterales",
+        abstract:
+          "Numerous studies have utilized NCBI data for genomic analysis, gene annotation, and identifying disease-associated variants, yet NCBI's epidemiological potential remains underexplored. This study demonstrates how NCBI datasets can be systematically leveraged to extract and interpret infectious disease patterns across spatial and temporal dimensions. Using Enterobacterales as a case study, we analyzed over 477,000 genomic records and metadata, including collection date, location, host species, and isolation source. We compared trends of Escherichia coli and Salmonella in NCBI data with CDC's National Outbreak Reporting System (NORS). While both datasets showed consistent seasonal peaks and foodborne sources, NCBI data revealed broader host species (e.g., wildlife, environmental reservoirs), greater isolate diversity, and finer spatial-temporal resolution. These insights were enabled by our open-source Python package, EpiNCBI_V1, developed for real-time downloading, filtering, and cleaning of pathogen genomic metadata from NCBI. This work highlights the value of integrating genomic repositories into public health analytics to enhance surveillance, outbreak detection, and cross-species transmission tracking globally.",
+      },
+      {
+        time: "11:55 AM - 12:20 PM",
+        session: "Student Talk 4",
+        speaker: "Priscilla Owusu Sekyere",
+        affiliation: "University of Missouri-Kansas City",
+        talkTitle:
+          "A Comparative Study of Machine Learning and Physics-Informed Neural Networks for Tumor Growth Modeling",
+        abstract:
+          "Classical mathematical models, such as reaction-diffusion systems and ordinary differential equations (ODEs), provide strong mechanistic insight into tumor progression but often struggle with predictive accuracy. On the other hand, purely data-driven machine learning approaches achieve high predictive performance but often lack biological interpretability and consistency. Our work proposes a Physics-Informed Neural Network (PINN) framework that integrates mechanistic tumor growth models with data-driven learning to address these limitations in vascular and lung cancer modeling. The approach embeds tumor-immune interaction dynamics, governed by nonlinear ODEs, directly into the neural network's loss function. This enables the model to learn both the underlying biological mechanisms and tumor growth trajectories from data while keeping high predictive performance. Our results show that the proposed PINN framework achieves competitive predictive accuracy compared to standard machine learning models, such as NN and XGBoost, while providing enhanced interpretability through biologically meaningful parameters, such as tumor growth rates and interaction coefficients.",
+      },
     ],
   },
   {
     title: "Lunch",
-    rows: [{ time: "12:30 - 2:00 PM", session: "Lunch (1.5 hr)" }],
+    rows: [{ time: "12:20 - 1:10 PM", session: "Lunch (50 min)" }],
   },
   {
     title: "Afternoon Session",
     rows: [
-      { time: "2:00 - 2:30 PM", session: "Student Talk 4" },
-      { time: "2:30 - 3:00 PM", session: "Student Talk 5" },
-      { time: "3:00 - 3:10 PM", session: "Break" },
       {
-        time: "3:10 - 4:10 PM",
+        time: "1:10 - 2:10 PM",
         session: "Plenary Talk 3",
         speaker: "Shuang Liu",
         affiliation: "University of North Texas",
         href: "https://sites.math.unt.edu/~shuangliu/",
       },
-      { time: "4:10 - 4:30 PM", session: "Student Talk 6" },
+      {
+        time: "2:10 - 2:35 PM",
+        session: "Student Talk 5",
+        speaker: "Maria Fernanda Mayorga Echeverria",
+        affiliation: "University of Arkansas",
+        talkTitle: "A graph-aided electrostatic solver",
+        abstract:
+          "The purpose of this project is to develop an alternative model for electrostatic analyses that matches the accuracy of the Poisson-Boltzmann (PB) equation but offers significantly lower computational costs, faster execution, and greater adaptability. While the generalized Born (GB) model provides a faster alternative to PB, it often sacrifices accuracy. Graph networks, which can model atomic structures, have shown promise in bridging this gap. This project aims to advance this concept by leveraging deep learning techniques such as graph neural networks (GNNs) to deliver accurate, efficient, and scalable predictions of molecular electrostatics. The topology of a protein's atomic structure naturally mirrors the structure of nodes and edges in a GNN. Feature vectors in this framework can store key physical properties such as Born radii, and a message-passing mechanism within the GNN can facilitate the propagation of information through the network, allowing for more accurate approximations of electrostatic behavior. With this implementation the project aims to create a powerful and innovative model for electrostatics, capable of improving accuracy while maintaining speed and scalability. Preliminary results compared the relative error between the calculated PB values (MIBPB) and GB values with the relative error between MIBPB and the predictions added to the GB values. This work contributes to advancements in molecular electrostatic modeling and the development of new computational tools in molecular biology and related fields.",
+      },
+      {
+        time: "2:35 - 3:00 PM",
+        session: "Student Talk 6",
+        speaker: "Mohammad Rubayet Rahman",
+        affiliation: "Oklahoma State University",
+        talkTitle:
+          "Oscillatory Regimes in a Game-Theoretic Model for Mosquito Population Dynamics under Breeding Site Control",
+        abstract:
+          "Mosquito-borne diseases remain a major public-health threat, and the effective control of mosquito populations requires sustained household participation in removing breeding sites. While environmental drivers of mosquito oscillations have been extensively studied, the influence of spontaneous household decision-making on the dynamics of mosquito populations remains poorly understood. We introduce a game-theoretic model in which the fraction of households performing breeding site control evolves through imitation dynamics driven by perceived risks. Household behavior regulates the carrying capacity of the aquatic mosquito stage, creating a feedback between control actions and mosquito population growth. For a simplified model with constant payoffs, we characterize four locally stable equilibria, corresponding to full or no household control and the presence or absence of mosquito populations. When the perceived risk of not controlling breeding sites depends on mosquito prevalence, the system admits an additional equilibrium with partial household engagement. We derive conditions under which this equilibrium undergoes a Hopf bifurcation, yielding sustained oscillations arising solely from the interaction between mosquito abundance and household behavior. Numerical simulations and parameter explorations further describe the amplitude and phase properties of these oscillatory regimes.",
+      },
+      { time: "3:00 - 3:10 PM", session: "Break" },
+      {
+        time: "3:10 - 3:35 PM",
+        session: "Student Talk 7",
+        speaker: "Haridas Kumar Das",
+        affiliation: "Oklahoma State University",
+        talkTitle:
+          "From Mechanistic to Stochastic Transitions in Metapopulation Modeling: Assessing the Impact of Network Structure and Vaccinations",
+        abstract:
+          "Human behavior, including mobility patterns and vaccination decisions, strongly influences the spatial spread and persistence of infectious diseases. We develop deterministic and stochastic metapopulation models to examine how adaptive behavior, coupled with mobility and heterogeneous vaccination strategies, shapes epidemic thresholds, outbreak trajectories, and disease persistence. Our approach accounts for variability in transmission, recovery, and mortality arising from demographic heterogeneity and spatial connectivity. Using illustrative examples, we show that stochastic fluctuations and non-uniform vaccination can shift epidemic thresholds in nontrivial ways, while uniform vaccination enhances robustness against perturbations. These results highlight the critical roles of network structure, mobility, and adaptive behavior in shaping outbreak dynamics and guiding targeted interventions under uncertainty.",
+      },
+      {
+        time: "3:35 - 4:00 PM",
+        session: "Student Talk 8",
+        speaker: "Prince Osei Affi",
+        affiliation: "Wichita State University",
+        talkTitle: "Robust and High-Order Numerical Simulation for Phase Field Modeling",
+        abstract:
+          "We develop robust and high-order time integration schemes for phase-field modeling, using the Allen-Cahn equation as a prototype. Our approach leverages the Scalar Auxiliary Variable (SAV) framework to construct energy-stable numerical methods while achieving high-order temporal accuracy. By combining SAV reformulation with advanced Runge-Kutta techniques, the proposed schemes ensure unconditional energy dissipation and improved computational efficiency. Numerical experiments demonstrate the accuracy, stability, and effectiveness of the methods for simulating phase separation dynamics.",
+      },
+      { time: "4:00 - 4:25 PM", session: "Student Talk 9" },
     ],
   },
 ];
 
 const summaryItems = [
   "Plenary talks: 3",
-  "Student talks: 6",
+  "Student talks: 9",
   "Opening remarks included",
-  "Lunch break: 1.5 hours",
-  "Conference end time: 4:30 PM",
+  "Lunch break: 50 minutes",
+  "Conference end time: 4:25 PM",
 ];
 
 function SectionTable({ title, rows }) {
@@ -178,7 +249,7 @@ export default function ProgramPage() {
                   <Clock3 className="h-4 w-4" />
                   Time Window
                 </div>
-                <div className="text-base font-semibold text-blue-950">8:20 AM - 4:30 PM</div>
+                <div className="text-base font-semibold text-blue-950">7:30 AM - 4:25 PM</div>
               </div>
               {eventFacts.map((fact) => (
                 <div key={fact.label} className="rounded-2xl border border-neutral-200 bg-neutral-50 px-4 py-4">
