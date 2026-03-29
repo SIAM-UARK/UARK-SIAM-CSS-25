@@ -138,7 +138,16 @@ const scheduleSections = [
         abstract:
           "We develop robust and high-order time integration schemes for phase-field modeling, using the Allen-Cahn equation as a prototype. Our approach leverages the Scalar Auxiliary Variable (SAV) framework to construct energy-stable numerical methods while achieving high-order temporal accuracy. By combining SAV reformulation with advanced Runge-Kutta techniques, the proposed schemes ensure unconditional energy dissipation and improved computational efficiency. Numerical experiments demonstrate the accuracy, stability, and effectiveness of the methods for simulating phase separation dynamics.",
       },
-      { time: "4:00 - 4:25 PM", session: "Student Talk 9" },
+      {
+        time: "4:00 - 4:25 PM",
+        session: "Student Talk 9",
+        speaker: "Kiel Corkran",
+        affiliation: "University of Missouri-Kansas City",
+        talkTitle:
+          "Binge Bayes: A Multilevel Bayesian Framework for Modeling Binge Drinking Behavior",
+        abstract:
+          "Binge drinking remains a major public health concern and is associated with increased risk of injury, chronic disease, and adverse mental health outcomes. In this study, we introduce Binge Bayes, a Bayesian proportional modeling framework designed to identify individual-level factors associated with binge drinking behavior. Using demographic and behavioral covariates such as age, sex, and socioeconomic indicators, we model binge drinking outcomes within a proportional structure that allows for interpretable estimation of relative risk across ordered drinking categories. The Bayesian formulation enables incorporation of prior information, full posterior uncertainty quantification, and flexible inference for heterogeneous populations. Our approach emphasizes individual-level risk profiling rather than aggregate prevalence, allowing for identification of subpopulations with elevated posterior risk. Model estimation is performed using Markov chain Monte Carlo methods, and results are summarized through posterior distributions of proportional effects. This work provides a statistical foundation for understanding behavioral risk patterns while demonstrating how Bayesian proportional models can be applied to complex public health data. The Binge Bayes framework is intended as a generalizable tool for analyzing ordered behavioral outcomes and informing targeted prevention strategie.",
+      },
     ],
   },
 ];
@@ -160,6 +169,7 @@ const studentPresenterNames = [
   "Mohammad Rubayet Rahman",
   "Haridas Das",
   "Prince Osei Affi",
+  "Kiel Corkran",
 ];
 
 const nonPresentingStudentNames = [
