@@ -148,16 +148,26 @@ const scheduleSections = [
         abstract:
           "Binge drinking remains a major public health concern and is associated with increased risk of injury, chronic disease, and adverse mental health outcomes. In this study, we introduce Binge Bayes, a Bayesian proportional modeling framework designed to identify individual-level factors associated with binge drinking behavior. Using demographic and behavioral covariates such as age, sex, and socioeconomic indicators, we model binge drinking outcomes within a proportional structure that allows for interpretable estimation of relative risk across ordered drinking categories. The Bayesian formulation enables incorporation of prior information, full posterior uncertainty quantification, and flexible inference for heterogeneous populations. Our approach emphasizes individual-level risk profiling rather than aggregate prevalence, allowing for identification of subpopulations with elevated posterior risk. Model estimation is performed using Markov chain Monte Carlo methods, and results are summarized through posterior distributions of proportional effects. This work provides a statistical foundation for understanding behavioral risk patterns while demonstrating how Bayesian proportional models can be applied to complex public health data. The Binge Bayes framework is intended as a generalizable tool for analyzing ordered behavioral outcomes and informing targeted prevention strategie.",
       },
+      {
+        time: "4:25 - 4:50 PM",
+        session: "Student Talk 10",
+        speaker: "Soheil Jamali",
+        affiliation: "University of Arkansas",
+        talkTitle:
+          "Diffusion Models for Accelerating Molecular Dynamics: Synthetic Trajectory Generation and Free Energy Reconstruction",
+        abstract:
+          "In contrast to the experimental process, which generates an average structure, molecular dynamics (MD) simulations enable the simulation of molecular behavior at an atomic level and high temporal resolution across diverse thermodynamic conditions. However, MD simulations have been and will continue to be fundamentally limited by slow sampling and hardware constraints since the Newtonian equations should be solved for motions of every atom in a system. Conversely, machine learning techniques, particularly deep learning-based MD models, have been utilized in the MD field, whether in force field development, simulation analysis, or sampling. Diffusion models are considered a distinct class of deep generative models due to their capabilities in generating precise details. This method has been applied in various fields such as image editing and computer vision. This study introduced a novel application of the diffusion model in the generation of synthetic trajectories in a low-dimensional space that can be used in the calculation of the free energy surface. First, a simplified two-dimensional model followed by an overdamped Langevin dynamics equation is used as a training dataset. The dataset showed deviations from the analytical form of the Muller potential surface, but the diffusion model revealed improved accuracy to the ground truth. Following this stage, this model was applied to a small peptide (alanine dipeptide) as well as a membrane transporter to assess its accuracy in generating free energy. This novel method is able to accelerate significantly the MD synthetic trajectories while accurately reconstructing the free energy surface.",
+      },
     ],
   },
 ];
 
 const summaryItems = [
   "Plenary talks: 3",
-  "Student talks: 9",
+  "Student talks: 10",
   "Opening remarks included",
   "Lunch break: 50 minutes",
-  "Conference end time: 4:25 PM",
+  "Conference end time: 4:50 PM",
 ];
 
 const studentPresenterNames = [
@@ -170,6 +180,7 @@ const studentPresenterNames = [
   "Haridas Das",
   "Prince Osei Affi",
   "Kiel Corkran",
+  "Soheil Jamali",
 ];
 
 const nonPresentingStudentNames = [
@@ -270,7 +281,7 @@ export default function ProgramPage() {
                   <Clock3 className="h-4 w-4" />
                   Time Window
                 </div>
-                <div className="text-base font-semibold text-blue-950">7:30 AM - 4:25 PM</div>
+                <div className="text-base font-semibold text-blue-950">7:30 AM - 4:50 PM</div>
               </div>
               {eventFacts.map((fact) => (
                 <div key={fact.label} className="rounded-2xl border border-neutral-200 bg-neutral-50 px-4 py-4">
