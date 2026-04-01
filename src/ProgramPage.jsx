@@ -3,9 +3,14 @@ import { CalendarDays, Clock3, MapPin, NotebookText } from "lucide-react";
 import participantsData from "./data/participants.json";
 
 const eventFacts = [
-  { label: "Date", value: "9:00 AM April 4, 2026" },
-  { label: "Venue", value: "SECN 408, University of Arkansas, Fayetteville" },
-  { label: "Registration", value: "Details will be posted here once confirmed" },
+  { label: "Date", value: "8:00 AM April 4, 2026" },
+  {
+    label: "Venue",
+    value: "SCEN 408, University of Arkansas, Fayetteville",
+    href: "https://www.google.com/maps/place/University+of+Arkansas+Department+of+Mathematical+Sciences/@36.0672414,-94.1727381,19.52z/data=!4m6!3m5!1s0x87c96ee75c89113b:0xd0cc065d6a6ce717!8m2!3d36.0670013!4d-94.1723743!16s%2Fg%2F1td_c688?entry=ttu&g_ep=EgoyMDI2MDMzMS4wIKXMDSoASAFQAw%3D%3D",
+  },
+  { label: "Parking", value: "Parking is free on campus on Saturday" },
+  { label: "Registration", value: "Registration is also in SCEN 408" },
 ];
 
 const scheduleSections = [
@@ -13,14 +18,14 @@ const scheduleSections = [
     title: "Opening",
     rows: [
       { time: "8:00 - 8:30 AM", session: "Registration" },
-      { time: "8:30 - 8:40 AM", session: "Opening Remarks" },
+      { time: "8:25 - 8:30 AM", session: "Opening Remarks" },
     ],
   },
   {
     title: "Morning Session",
     rows: [
       {
-        time: "8:40 - 9:40 AM",
+        time: "8:30 - 9:30 AM",
         session: "Plenary Talk 1",
         speaker: "Xu Zhang",
         affiliation: "Oklahoma State University",
@@ -31,7 +36,7 @@ const scheduleSections = [
           "Interface problems are ubiquitous in sciences and engineering applications. They are often modeled by partial differential equations (PDE), whose typically exhibits low regularity, including kinks, singularities, discontinuities, and other non-smooth behaviors. Conventional finite element methods require meshes that align with the interface, which can be costly when the geometry is complex, especially in three dimensions. The immersed finite element (IFE) method provides an effective framework for solving such problems on interface-unfitted meshes.\n\nThis talk presents two recent advances in the development and analysis of IFE methods. First, we introduce a geometry-conforming IFE spaces on triangular meshes for 2D elliptic interface problems. These spaces are constructed via a Frenet-Serret mapping that transforms the interface curve into a straight line, allowing the interface jump conditions to be enforced exactly. Unlike previous IFE methods, this construction yields a locally conforming approximation space. Incorporated into discontinuous Galerkin formulations, they achieve optimal convergence rates. Second, we extend IFE methods to 3D interface problems on unfitted meshes with general interface geometries. We establish fundamental analytical results, including trace and inversed inequalities, and the approximation capabilities will be established. Optimal a priori error estimates are proved in both energy and L2 norms. Numerical experiments are provided to validate the theoretical estimates and demonstrate the effectiveness in practical 3D applications.",
       },
       {
-        time: "9:40 - 10:05 AM",
+        time: "9:30 - 9:55 AM",
         session: "Student Talk 1",
         speaker: "Joie Lea Murorunkwere",
         affiliation: "University of Arkansas at Little Rock",
@@ -40,7 +45,7 @@ const scheduleSections = [
           "We introduce a new epidemic framework to model the adoption and abandonment dynamics of users (SPIR) on online social networks (OSN), with special emphasis on the novel compartment pauci-engaged. Pauci-engaged individuals have been exposed to an invitation to OSN, but remain undecided about joining, reflecting real-world hesitation and trial behaviors. Building on the infectious-recovery dynamics studied by Chen, Kong, and Wang (2021), we derive the basic reproduction number R0 and establish threshold conditions for the stability of both the information-free (user-free) equilibrium and a unique endemic equilibrium. Local stability analysis using the Jacobian and global stability via Lyapunov functions show that when R0 < 1, the OSN fails to attract a self-sustaining user base, while for R0 > 1, sustained network engagement emerges. Our findings highlight the pivotal role of the decision-making phase in the growth of the digital platform and offer actionable insights to optimize user recruitment and retention strategies in coexisting OSNs.",
       },
       {
-        time: "10:05 - 10:30 AM",
+        time: "9:55 - 10:20 AM",
         session: "Student Talk 2",
         speaker: "James Burton",
         affiliation: "University of Arkansas",
@@ -49,9 +54,9 @@ const scheduleSections = [
         abstract:
           "The Rayleigh-Taylor Instability (RTI) is a ubiquitous fluid-flow process that occurs across a wide range of scales and applications, from geological changes unfolding over years and spanning miles, to events lasting only a few nanoseconds in millimeter-scale regions during Inertial Confinement Fusion. The importance of RTI in a wide range of fields has made capturing features such as interface profiles, bubble/spike penetration and velocity fields a subject of study in experiments, numerical simulations, and theory. In the present work, two-dimensional single-mode RTI is simulated using an accurate and robust front-tracking/ghost-fluid method (FT/GFM) with high-order weighted essentially non-oscillatory (WENO) scheme. We compare our numerical results with the single-mode RTI experiments of Renoult, Rosenblatt and Carles (2015). We further show the velocity vector fields for the bubble and spike in the linear and nonlinear regimes are consistent with the theory for the single wavelength perturbation.",
       },
-      { time: "10:30 - 10:45 AM", session: "Break / Rest" },
+      { time: "10:20 - 10:40 AM", session: "Break / Rest" },
       {
-        time: "10:45 AM - 11:45 AM",
+        time: "10:40 AM - 11:40 AM",
         session: "Plenary Talk 2",
         speaker: "Zhuoran Wang",
         affiliation: "University of Kansas",
@@ -61,7 +66,7 @@ const scheduleSections = [
           "Biot’s theory of poroelasticity provides a fundamental framework for modeling the mechanical behavior of fluid-solid interaction in porous media. This theory is central to diverse fields, including geomechanics, biomechanics, petroleum engineering, and hydrology. Despite its broad applicability, several major challenges persist in numerical modeling, including the design of stable finite element spaces, the treatment of heterogeneous physical parameters, and the efficient numerical solution of large, indefinite algebraic systems. In this talk, we present recent advances in numerical methods that address these challenges through the development of stable, parameter-free finite element methods and parameter-robust preconditioning strategies. We introduce flexible finite element spaces that are stable, locking-free and penalty-free, while achieving optimal-order convergence. In addition, we develop parameter-robust and efficient inexact block Schur complement preconditioners for efficient solution of fluid-solid interaction problems. Finally, we verify the effectiveness of the developed methods through real-world applications, including biomechanical simulations of spinal cord dynamics relevant to the study of syringomyelia. These results demonstrate the potential of advanced poroelastic modeling techniques to provide reliable and computationally scalable tools for complex multiphysics systems.",
       },
       {
-        time: "11:45 AM - 12:10 PM",
+        time: "11:40 AM - 12:05 PM",
         session: "Student Talk 3",
         speaker: "Bryan Haris",
         affiliation: "University of Missouri-Kansas City",
@@ -71,7 +76,7 @@ const scheduleSections = [
           "Numerous studies have utilized NCBI data for genomic analysis, gene annotation, and identifying disease-associated variants, yet NCBI's epidemiological potential remains underexplored. This study demonstrates how NCBI datasets can be systematically leveraged to extract and interpret infectious disease patterns across spatial and temporal dimensions. Using Enterobacterales as a case study, we analyzed over 477,000 genomic records and metadata, including collection date, location, host species, and isolation source. We compared trends of Escherichia coli and Salmonella in NCBI data with CDC's National Outbreak Reporting System (NORS). While both datasets showed consistent seasonal peaks and foodborne sources, NCBI data revealed broader host species (e.g., wildlife, environmental reservoirs), greater isolate diversity, and finer spatial-temporal resolution. These insights were enabled by our open-source Python package, EpiNCBI_V1, developed for real-time downloading, filtering, and cleaning of pathogen genomic metadata from NCBI. This work highlights the value of integrating genomic repositories into public health analytics to enhance surveillance, outbreak detection, and cross-species transmission tracking globally.",
       },
       {
-        time: "12:10 - 12:35 PM",
+        time: "12:05 - 12:30 PM",
         session: "Student Talk 4",
         speaker: "Priscilla Owusu Sekyere",
         affiliation: "University of Missouri-Kansas City",
@@ -84,7 +89,7 @@ const scheduleSections = [
   },
   {
     title: "Lunch",
-    rows: [{ time: "12:35 - 1:30 PM", session: "Lunch (55 min)" }],
+    rows: [{ time: "12:30 - 1:30 PM", session: "Lunch (60 min)" }],
   },
   {
     title: "Afternoon Session",
@@ -166,7 +171,7 @@ const summaryItems = [
   "Plenary talks: 3",
   "Student talks: 10",
   "Opening remarks included",
-  "Lunch break: 55 minutes",
+  "Lunch break: 60 minutes",
   "Conference end time: 5:10 PM",
 ];
 
@@ -187,6 +192,8 @@ const nonPresentingStudentNames = [
   "Daniel Kwame Okyere",
   "Soheil Jamali",
   "Innocent Obed Awidi",
+  "Madylan Rusinek",
+  "Agnes Frimpong",
   "Fang Liu",
   "Luan Fabricio Lopes",
 ];
@@ -289,10 +296,24 @@ export default function ProgramPage() {
                   <div className="mb-1 flex items-center gap-2 text-sm font-medium text-neutral-700">
                     {fact.label === "Date" && <CalendarDays className="h-4 w-4" />}
                     {fact.label === "Venue" && <MapPin className="h-4 w-4" />}
+                    {fact.label === "Parking" && <MapPin className="h-4 w-4" />}
                     {fact.label === "Registration" && <NotebookText className="h-4 w-4" />}
                     {fact.label}
                   </div>
-                  <div className="text-sm leading-6 text-neutral-900">{fact.value}</div>
+                  <div className="text-sm leading-6 text-neutral-900">
+                    {fact.href ? (
+                      <a
+                        href={fact.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-700 hover:underline"
+                      >
+                        {fact.value}
+                      </a>
+                    ) : (
+                      fact.value
+                    )}
+                  </div>
                 </div>
               ))}
             </div>
