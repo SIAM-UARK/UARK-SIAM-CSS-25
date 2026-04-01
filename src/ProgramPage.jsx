@@ -3,7 +3,7 @@ import { CalendarDays, Clock3, MapPin, NotebookText } from "lucide-react";
 import participantsData from "./data/participants.json";
 
 const eventFacts = [
-  { label: "Date", value: "8:30 AM April 4, 2026" },
+  { label: "Date", value: "9:00 AM April 4, 2026" },
   { label: "Venue", value: "SECN 408, University of Arkansas, Fayetteville" },
   { label: "Registration", value: "Details will be posted here once confirmed" },
 ];
@@ -12,15 +12,15 @@ const scheduleSections = [
   {
     title: "Opening",
     rows: [
-      { time: "7:30 - 8:00 AM", session: "Registration" },
-      { time: "8:00 - 8:10 AM", session: "Opening Remarks" },
+      { time: "8:00 - 8:30 AM", session: "Registration" },
+      { time: "8:30 - 8:40 AM", session: "Opening Remarks" },
     ],
   },
   {
     title: "Morning Session",
     rows: [
       {
-        time: "8:10 - 9:10 AM",
+        time: "8:40 - 9:40 AM",
         session: "Plenary Talk 1",
         speaker: "Xu Zhang",
         affiliation: "Oklahoma State University",
@@ -31,7 +31,7 @@ const scheduleSections = [
           "Interface problems are ubiquitous in sciences and engineering applications. They are often modeled by partial differential equations (PDE), whose typically exhibits low regularity, including kinks, singularities, discontinuities, and other non-smooth behaviors. Conventional finite element methods require meshes that align with the interface, which can be costly when the geometry is complex, especially in three dimensions. The immersed finite element (IFE) method provides an effective framework for solving such problems on interface-unfitted meshes.\n\nThis talk presents two recent advances in the development and analysis of IFE methods. First, we introduce a geometry-conforming IFE spaces on triangular meshes for 2D elliptic interface problems. These spaces are constructed via a Frenet-Serret mapping that transforms the interface curve into a straight line, allowing the interface jump conditions to be enforced exactly. Unlike previous IFE methods, this construction yields a locally conforming approximation space. Incorporated into discontinuous Galerkin formulations, they achieve optimal convergence rates. Second, we extend IFE methods to 3D interface problems on unfitted meshes with general interface geometries. We establish fundamental analytical results, including trace and inversed inequalities, and the approximation capabilities will be established. Optimal a priori error estimates are proved in both energy and L2 norms. Numerical experiments are provided to validate the theoretical estimates and demonstrate the effectiveness in practical 3D applications.",
       },
       {
-        time: "9:10 - 9:35 AM",
+        time: "9:40 - 10:05 AM",
         session: "Student Talk 1",
         speaker: "Joie Lea Murorunkwere",
         affiliation: "University of Arkansas at Little Rock",
@@ -40,7 +40,7 @@ const scheduleSections = [
           "We introduce a new epidemic framework to model the adoption and abandonment dynamics of users (SPIR) on online social networks (OSN), with special emphasis on the novel compartment pauci-engaged. Pauci-engaged individuals have been exposed to an invitation to OSN, but remain undecided about joining, reflecting real-world hesitation and trial behaviors. Building on the infectious-recovery dynamics studied by Chen, Kong, and Wang (2021), we derive the basic reproduction number R0 and establish threshold conditions for the stability of both the information-free (user-free) equilibrium and a unique endemic equilibrium. Local stability analysis using the Jacobian and global stability via Lyapunov functions show that when R0 < 1, the OSN fails to attract a self-sustaining user base, while for R0 > 1, sustained network engagement emerges. Our findings highlight the pivotal role of the decision-making phase in the growth of the digital platform and offer actionable insights to optimize user recruitment and retention strategies in coexisting OSNs.",
       },
       {
-        time: "9:35 - 10:00 AM",
+        time: "10:05 - 10:30 AM",
         session: "Student Talk 2",
         speaker: "James Burton",
         affiliation: "University of Arkansas",
@@ -49,9 +49,9 @@ const scheduleSections = [
         abstract:
           "The Rayleigh-Taylor Instability (RTI) is a ubiquitous fluid-flow process that occurs across a wide range of scales and applications, from geological changes unfolding over years and spanning miles, to events lasting only a few nanoseconds in millimeter-scale regions during Inertial Confinement Fusion. The importance of RTI in a wide range of fields has made capturing features such as interface profiles, bubble/spike penetration and velocity fields a subject of study in experiments, numerical simulations, and theory. In the present work, two-dimensional single-mode RTI is simulated using an accurate and robust front-tracking/ghost-fluid method (FT/GFM) with high-order weighted essentially non-oscillatory (WENO) scheme. We compare our numerical results with the single-mode RTI experiments of Renoult, Rosenblatt and Carles (2015). We further show the velocity vector fields for the bubble and spike in the linear and nonlinear regimes are consistent with the theory for the single wavelength perturbation.",
       },
-      { time: "10:00 - 10:30 AM", session: "Break / Rest" },
+      { time: "10:30 - 10:45 AM", session: "Break / Rest" },
       {
-        time: "10:30 AM - 11:30 AM",
+        time: "10:45 AM - 11:45 AM",
         session: "Plenary Talk 2",
         speaker: "Zhuoran Wang",
         affiliation: "University of Kansas",
@@ -61,7 +61,7 @@ const scheduleSections = [
           "Biot’s theory of poroelasticity provides a fundamental framework for modeling the mechanical behavior of fluid-solid interaction in porous media. This theory is central to diverse fields, including geomechanics, biomechanics, petroleum engineering, and hydrology. Despite its broad applicability, several major challenges persist in numerical modeling, including the design of stable finite element spaces, the treatment of heterogeneous physical parameters, and the efficient numerical solution of large, indefinite algebraic systems. In this talk, we present recent advances in numerical methods that address these challenges through the development of stable, parameter-free finite element methods and parameter-robust preconditioning strategies. We introduce flexible finite element spaces that are stable, locking-free and penalty-free, while achieving optimal-order convergence. In addition, we develop parameter-robust and efficient inexact block Schur complement preconditioners for efficient solution of fluid-solid interaction problems. Finally, we verify the effectiveness of the developed methods through real-world applications, including biomechanical simulations of spinal cord dynamics relevant to the study of syringomyelia. These results demonstrate the potential of advanced poroelastic modeling techniques to provide reliable and computationally scalable tools for complex multiphysics systems.",
       },
       {
-        time: "11:30 - 11:55 AM",
+        time: "11:45 AM - 12:10 PM",
         session: "Student Talk 3",
         speaker: "Bryan Haris",
         affiliation: "University of Missouri-Kansas City",
@@ -71,7 +71,7 @@ const scheduleSections = [
           "Numerous studies have utilized NCBI data for genomic analysis, gene annotation, and identifying disease-associated variants, yet NCBI's epidemiological potential remains underexplored. This study demonstrates how NCBI datasets can be systematically leveraged to extract and interpret infectious disease patterns across spatial and temporal dimensions. Using Enterobacterales as a case study, we analyzed over 477,000 genomic records and metadata, including collection date, location, host species, and isolation source. We compared trends of Escherichia coli and Salmonella in NCBI data with CDC's National Outbreak Reporting System (NORS). While both datasets showed consistent seasonal peaks and foodborne sources, NCBI data revealed broader host species (e.g., wildlife, environmental reservoirs), greater isolate diversity, and finer spatial-temporal resolution. These insights were enabled by our open-source Python package, EpiNCBI_V1, developed for real-time downloading, filtering, and cleaning of pathogen genomic metadata from NCBI. This work highlights the value of integrating genomic repositories into public health analytics to enhance surveillance, outbreak detection, and cross-species transmission tracking globally.",
       },
       {
-        time: "11:55 AM - 12:20 PM",
+        time: "12:10 - 12:35 PM",
         session: "Student Talk 4",
         speaker: "Priscilla Owusu Sekyere",
         affiliation: "University of Missouri-Kansas City",
@@ -84,13 +84,13 @@ const scheduleSections = [
   },
   {
     title: "Lunch",
-    rows: [{ time: "12:20 - 1:10 PM", session: "Lunch (50 min)" }],
+    rows: [{ time: "12:35 - 1:30 PM", session: "Lunch (55 min)" }],
   },
   {
     title: "Afternoon Session",
     rows: [
       {
-        time: "1:10 - 2:10 PM",
+        time: "1:30 - 2:30 PM",
         session: "Plenary Talk 3",
         speaker: "Shuang Liu",
         affiliation: "University of North Texas",
@@ -100,7 +100,7 @@ const scheduleSections = [
           "Moving boundary (or often called \"free boundary\") problems are ubiquitous in nature and technology. A computational perspective of moving boundary problems can provide insight into the \"invisible\" properties of complex dynamics systems, advance the design of novel technologies, and improve the understanding of biological and chemical phenomena. However, challenges lie in the numerical study of moving boundary problems. Examples include difficulties in solving PDEs in irregular domains, handling moving boundaries efficiently and accurately, as well as computing efficiency difficulties. In this talk, I will discuss three specific topics of moving boundary problems, with applications to ecology (population dynamics), plasma physics (ITER tokamak machine design), and cell biology (cell movement).",
       },
       {
-        time: "2:10 - 2:35 PM",
+        time: "2:30 - 2:55 PM",
         session: "Student Talk 5",
         speaker: "Maria Fernanda Mayorga Echeverria",
         affiliation: "University of Arkansas",
@@ -109,7 +109,7 @@ const scheduleSections = [
           "The purpose of this project is to develop an alternative model for electrostatic analyses that matches the accuracy of the Poisson-Boltzmann (PB) equation but offers significantly lower computational costs, faster execution, and greater adaptability. While the generalized Born (GB) model provides a faster alternative to PB, it often sacrifices accuracy. Graph networks, which can model atomic structures, have shown promise in bridging this gap. This project aims to advance this concept by leveraging deep learning techniques such as graph neural networks (GNNs) to deliver accurate, efficient, and scalable predictions of molecular electrostatics. The topology of a protein's atomic structure naturally mirrors the structure of nodes and edges in a GNN. Feature vectors in this framework can store key physical properties such as Born radii, and a message-passing mechanism within the GNN can facilitate the propagation of information through the network, allowing for more accurate approximations of electrostatic behavior. With this implementation the project aims to create a powerful and innovative model for electrostatics, capable of improving accuracy while maintaining speed and scalability. Preliminary results compared the relative error between the calculated PB values (MIBPB) and GB values with the relative error between MIBPB and the predictions added to the GB values. This work contributes to advancements in molecular electrostatic modeling and the development of new computational tools in molecular biology and related fields.",
       },
       {
-        time: "2:35 - 3:00 PM",
+        time: "2:55 - 3:20 PM",
         session: "Student Talk 6",
         speaker: "Mohammad Rubayet Rahman",
         affiliation: "Oklahoma State University",
@@ -118,9 +118,9 @@ const scheduleSections = [
         abstract:
           "Mosquito-borne diseases remain a major public-health threat, and the effective control of mosquito populations requires sustained household participation in removing breeding sites. While environmental drivers of mosquito oscillations have been extensively studied, the influence of spontaneous household decision-making on the dynamics of mosquito populations remains poorly understood. We introduce a game-theoretic model in which the fraction of households performing breeding site control evolves through imitation dynamics driven by perceived risks. Household behavior regulates the carrying capacity of the aquatic mosquito stage, creating a feedback between control actions and mosquito population growth. For a simplified model with constant payoffs, we characterize four locally stable equilibria, corresponding to full or no household control and the presence or absence of mosquito populations. When the perceived risk of not controlling breeding sites depends on mosquito prevalence, the system admits an additional equilibrium with partial household engagement. We derive conditions under which this equilibrium undergoes a Hopf bifurcation, yielding sustained oscillations arising solely from the interaction between mosquito abundance and household behavior. Numerical simulations and parameter explorations further describe the amplitude and phase properties of these oscillatory regimes.",
       },
-      { time: "3:00 - 3:10 PM", session: "Break" },
+      { time: "3:20 - 3:30 PM", session: "Break" },
       {
-        time: "3:10 - 3:35 PM",
+        time: "3:30 - 3:55 PM",
         session: "Student Talk 7",
         speaker: "Haridas Kumar Das",
         affiliation: "Oklahoma State University",
@@ -130,7 +130,7 @@ const scheduleSections = [
           "Human behavior, including mobility patterns and vaccination decisions, strongly influences the spatial spread and persistence of infectious diseases. We develop deterministic and stochastic metapopulation models to examine how adaptive behavior, coupled with mobility and heterogeneous vaccination strategies, shapes epidemic thresholds, outbreak trajectories, and disease persistence. Our approach accounts for variability in transmission, recovery, and mortality arising from demographic heterogeneity and spatial connectivity. Using illustrative examples, we show that stochastic fluctuations and non-uniform vaccination can shift epidemic thresholds in nontrivial ways, while uniform vaccination enhances robustness against perturbations. These results highlight the critical roles of network structure, mobility, and adaptive behavior in shaping outbreak dynamics and guiding targeted interventions under uncertainty.",
       },
       {
-        time: "3:35 - 4:00 PM",
+        time: "3:55 - 4:20 PM",
         session: "Student Talk 8",
         speaker: "Prince Osei Affi",
         affiliation: "Wichita State University",
@@ -139,7 +139,7 @@ const scheduleSections = [
           "We develop robust and high-order time integration schemes for phase-field modeling, using the Allen-Cahn equation as a prototype. Our approach leverages the Scalar Auxiliary Variable (SAV) framework to construct energy-stable numerical methods while achieving high-order temporal accuracy. By combining SAV reformulation with advanced Runge-Kutta techniques, the proposed schemes ensure unconditional energy dissipation and improved computational efficiency. Numerical experiments demonstrate the accuracy, stability, and effectiveness of the methods for simulating phase separation dynamics.",
       },
       {
-        time: "4:00 - 4:25 PM",
+        time: "4:20 - 4:45 PM",
         session: "Student Talk 9",
         speaker: "Kiel Corkran",
         affiliation: "University of Missouri-Kansas City",
@@ -149,7 +149,7 @@ const scheduleSections = [
           "Binge drinking remains a major public health concern and is associated with increased risk of injury, chronic disease, and adverse mental health outcomes. In this study, we introduce Binge Bayes, a Bayesian proportional modeling framework designed to identify individual-level factors associated with binge drinking behavior. Using demographic and behavioral covariates such as age, sex, and socioeconomic indicators, we model binge drinking outcomes within a proportional structure that allows for interpretable estimation of relative risk across ordered drinking categories. The Bayesian formulation enables incorporation of prior information, full posterior uncertainty quantification, and flexible inference for heterogeneous populations. Our approach emphasizes individual-level risk profiling rather than aggregate prevalence, allowing for identification of subpopulations with elevated posterior risk. Model estimation is performed using Markov chain Monte Carlo methods, and results are summarized through posterior distributions of proportional effects. This work provides a statistical foundation for understanding behavioral risk patterns while demonstrating how Bayesian proportional models can be applied to complex public health data. The Binge Bayes framework is intended as a generalizable tool for analyzing ordered behavioral outcomes and informing targeted prevention strategie.",
       },
       {
-        time: "4:25 - 4:50 PM",
+        time: "4:45 - 5:10 PM",
         session: "Student Talk 10",
         speaker: "Soheil Jamali",
         affiliation: "University of Arkansas",
@@ -166,8 +166,8 @@ const summaryItems = [
   "Plenary talks: 3",
   "Student talks: 10",
   "Opening remarks included",
-  "Lunch break: 50 minutes",
-  "Conference end time: 4:50 PM",
+  "Lunch break: 55 minutes",
+  "Conference end time: 5:10 PM",
 ];
 
 const studentPresenterNames = [
@@ -186,6 +186,7 @@ const studentPresenterNames = [
 const nonPresentingStudentNames = [
   "Daniel Kwame Okyere",
   "Soheil Jamali",
+  "Innocent Obed Awidi",
   "Fang Liu",
   "Luan Fabricio Lopes",
 ];
@@ -281,7 +282,7 @@ export default function ProgramPage() {
                   <Clock3 className="h-4 w-4" />
                   Time Window
                 </div>
-                <div className="text-base font-semibold text-blue-950">7:30 AM - 4:50 PM</div>
+                <div className="text-base font-semibold text-blue-950">8:00 AM - 5:10 PM</div>
               </div>
               {eventFacts.map((fact) => (
                 <div key={fact.label} className="rounded-2xl border border-neutral-200 bg-neutral-50 px-4 py-4">
