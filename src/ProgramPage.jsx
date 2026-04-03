@@ -157,6 +157,7 @@ const scheduleSections = [
       {
         time: "4:45 - 5:10 PM",
         session: "Student Talk 10",
+        cancelled: true,
         speaker: "Prince Osei Affi",
         affiliation: "Wichita State University",
         talkTitle: "Robust and High-Order Numerical Simulation for Phase Field Modeling",
@@ -222,25 +223,35 @@ function SectionTable({ title, rows }) {
           >
             <div className="text-sm font-medium text-neutral-600">{row.time}</div>
             <div>
-              <div className="text-base text-neutral-900">{row.session}</div>
+              <div className={`text-base ${row.cancelled ? "text-neutral-400 line-through" : "text-neutral-900"}`}>
+                {row.session}
+              </div>
               {row.speaker && (
-                <div className="mt-1 text-sm text-neutral-600">
-                  <a
-                    href={row.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="font-medium text-blue-700 hover:underline"
-                  >
-                    {row.speaker}
-                  </a>
+                <div className={`mt-1 text-sm ${row.cancelled ? "text-neutral-400" : "text-neutral-600"}`}>
+                  {row.href ? (
+                    <a
+                      href={row.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={row.cancelled ? "font-medium line-through" : "font-medium text-blue-700 hover:underline"}
+                    >
+                      {row.speaker}
+                    </a>
+                  ) : (
+                    <span className={row.cancelled ? "font-medium line-through" : "font-medium"}>
+                      {row.speaker}
+                    </span>
+                  )}
                   {row.affiliation ? `, ${row.affiliation}` : ""}
                 </div>
               )}
               {row.talkTitle && (
-                <div className="mt-2 text-sm font-medium text-neutral-800">{row.talkTitle}</div>
+                <div className={`mt-2 text-sm font-medium ${row.cancelled ? "text-neutral-400 line-through" : "text-neutral-800"}`}>
+                  {row.talkTitle}
+                </div>
               )}
               {row.abstract && (
-                <details className="mt-2 text-sm text-neutral-700">
+                <details className={`mt-2 text-sm ${row.cancelled ? "text-neutral-400" : "text-neutral-700"}`}>
                   <summary className="cursor-pointer font-medium text-blue-700 hover:text-blue-900">
                     View Abstract
                   </summary>
